@@ -1,0 +1,648 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="sets1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Sets Part 1</title>
+	<introduction>
+		<p>
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Making Sets From Other Sets.</title>
+			<idx><h>Making Sets From Other Sets.</h></idx>
+			<statement>
+				<p>
+Let <m>A= \{ x \mid 1 &lt; x &lt; 3 \}</m>, <m>B = \{ x \mid 5 \leq x \leq 7 \}</m> and <m>C= \{ x \mid 2 &lt; x &lt; 6 \}</m>, where <m>x</m> represents a real number. Write the following sets in "set builder" notation.
+
+			<ol>
+
+				<li>
+					<p>
+ <m>A \cup C </m>.
+
+<solution>
+<p>
+\[
+A \cup C = \{ x \mid 1 &lt; x &lt; 6 \}
+\]
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>(A \cup B ) \cap C</m>.
+
+<solution>
+<p>
+\[
+(A \cup B) \cap C = \{ x \mid 2 &lt; x &lt; 3 \} \cup \{ x \mid 5 \leq x &lt; 6 \}
+\]
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>B \cap \overline{C}</m>.
+
+<solution>
+<p>
+\[
+B \cap \overline{C} = \{ x \mid 6 \leq  x  \leq 7 \} \
+\]
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Element, Subset or Neither?</title>
+			<idx><h>Element, Subset or Neither?</h></idx>
+			<statement>
+				<p>
+Mark each of the following statements as <em> true</em> or <em> false</em>
+
+
+			<ol>
+				<li>
+					<p>
+ Let <m>A = \{ 1, \{ 1 \} \}</m>.
+
+			<ol>
+				<li>
+					<p>
+ <m> 1 \in A</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\{ 1 \} \in A</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\{ \{ 1 \} \} \in A</m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>B = \{ 1, 2, 3 \}</m>
+
+			<ol>
+
+				<li>
+					<p>
+ <m>3 \in B</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  <m>\{ 3 \} \in B</m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  <m>\{ 3 \} \subset B</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>C = \{ \{1,2\}, \{ \emptyset \} \}</m>
+
+			<ol>
+
+				<li>
+					<p>
+ <m>\emptyset \in C </m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  <m>\emptyset \subset C </m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  <m>|C|=3</m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>D = \{ \{1, 2 \}, \{ 3, 4, 5 \} \}</m>
+
+			<ol>
+
+
+				<li>
+					<p>
+ <m>|D|=5 </m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\{ 1, 2 \} \subset D </m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+   <m>4 \in D</m>
+<solution>
+<p>
+<em> false</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m> E = \{ \emptyset, \{ \emptyset \} , 0 \}</m>
+
+			<ol>
+
+				<li>
+					<p>
+ <m>\emptyset \in E</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  <m> \{ \{ \emptyset \} \}  \subset E </m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+					</p>
+				</li>
+				<li>
+					<p>
+  <m>|E|=3</m>
+<solution>
+<p>
+<em> true</em>
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>DeMorgan's Law</title>
+			<idx><h>DeMorgan's Law</h></idx>
+			<statement>
+				<p>
+Consider the following DeMorgan Law:
+
+\[
+\overline{(A \cap B)} = \overline{A} \cup \overline{B}.
+\]
+
+			<ol>
+				<li>
+					<p>
+ Prove this law using a Venn diagram
+
+			</p><p>
+
+<solution>
+<p>
+
+Both of your Venn diagrams will look  like this:
+
+
+			<image width="50%" xml:id="fig-img-sets10">
+				<latex-image>
+\begin{tikzpicture}
+
+\draw[thick, fill=blue!50, opacity=.5] (0,4) rectangle (5.5,0);
+
+
+\begin{scope}
+\clip (2,2) circle (1.5);
+\clip (3.5,2) circle (1.5);
+
+\fill[white] (0,4) rectangle (5.5,0);
+
+\end{scope}
+
+\draw[very thick] (2,2) circle (1.5);
+\draw[very thick] (3.5,2) circle (1.5);
+
+\node at (1.5,2) {<m>A</m>};
+\node at (4,2) {<m>B</m>};
+
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+</p>
+</solution>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove this law using a carefully argued double inclusion proof.
+
+<solution>
+<p>
+First, we prove that if <m>x \in \overline{(A \cap B)}</m> then <m>x \in \overline{A} \cup \overline{B}</m>. XXXXXYY
+
+<me>
+\begin{array}{rcl}
+x \in \overline{(A \cap B)}
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \cap B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \mbox{ AND } x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } (  x \in A) \mbox{ OR } \mbox{NOT } ( x \in  B) \\
+&amp; \Rightarrow &amp;   x \in \overline{A} \mbox{ OR }  x \in  \overline{B} \\
+&amp; \Rightarrow &amp;   x \in \overline{A}  \cup  \overline{B} \\
+\end{array}
+</me>
+
+Let's talk about that third step, since this is a new idea. We know that the statement "<m>x  \in A</m> AND <m>x \in B</m>" is FALSE. So (at least) one of these statements is FALSE. In other words, either <m>x \notin A</m> or <m>x \notin B</m>.
+
+			</p><p>
+
+Next, we prove that if <m>x \in \overline{A} \cup \overline{B}</m> then <m>x \in \overline{(A \cap B)}</m>. If you look carefully, this is just the previous argument in reverse. (This happens for simpler problems.)
+<me>
+\begin{array}{rcl}
+x \in \overline{A}  \cup  \overline{B}  &amp; \Rightarrow &amp;   x \in \overline{A} \mbox{ OR }  x \in  \overline{B} \\
+&amp; \Rightarrow &amp; \mbox{ NOT } (  x \in A) \mbox{ OR } \mbox{NOT } ( x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \mbox{ AND } x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \cap B) \\
+&amp; \Rightarrow &amp;  x \in \overline{(A \cap B)}  \\
+\end{array}
+</me>
+Let's talk about the third step in this case. We know that either <m>x \notin A</m> or <m>x \notin B</m>. Therefore is is NOT true that "<m>x \in A</m> and <m>x \in B</m> are both true".
+
+
+
+
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Empty Sets All the Way Down</title>
+			<idx><h>Empty Sets All the Way Down</h></idx>
+			<statement>
+				<p>
+Consider the following sequence of sets
+
+\[
+\emptyset,  \{ \emptyset \},  \Big\{ \emptyset, \{ \emptyset \} \Big\},  \bigg\{  \emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\}.
+\]
+
+			<ol>
+				<li>
+					<p>
+ What is the size of each of these sets?
+<solution>
+<p>
+In order, these set sizes are 0, 1, 2 and 3.
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ What is the next set in this series?
+
+<solution>
+<p>
+\[
+\bigg\{ \emptyset,
+\{ \emptyset \},
+\Big\{ \emptyset, \{ \emptyset \} \Big\},
+\bigg\{
+\emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\}
+\bigg\}
+\]
+And here is the next one:
+\[
+\bigg\{ \emptyset,
+\{ \emptyset \},
+\Big\{ \emptyset, \{ \emptyset \} \Big\},
+\bigg\{
+\emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\},
+\bigg\{ \emptyset,
+\{ \emptyset \},
+\Big\{ \emptyset, \{ \emptyset \} \Big\},
+\bigg\{
+\emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\}
+\bigg\}
+\bigg\}
+\]
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Dr.~Philomath says, "You can create the natural numbers from nothing." Explain why she is right.
+
+
+
+<solution>
+<p>
+
+If you think of an empty set as a "nothing" then she is right. (But it's really a something that has nothing inside it.)
+
+			</p><p>
+
+We have constructed sets of sizes 0,1,2,3,4 and 5. We can keep going and get a set of size <m>n \in \N</m>. However, the elements are just sets of sets, and the ultimate sets are empty. All we have is a bunch of nested empty set.
+
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>The Barber Paradox</title>
+			<idx><h>The Barber Paradox</h></idx>
+			<statement>
+				<p>
+Consider the following classic paradox: "The barber is a man in town who shaves all those (and only those) men in town who do not shave themselves. Who shaves the barber?"
+
+			</p><p>
+
+Note that I've updated the classic phrasing of this "paradox" so that it actually a paradox. Also, let us assume that every man shaves (even if it's just to clean up his beard).
+
+			<ol>
+				<li>
+					<p>
+ Explain the logical paradox of this description of the barber.
+
+
+<solution>
+<p>
+The barber is a man, and (1) he shaves all men who don't shave themselves and (2) he doesn't shave any man who shaves himself. So this is becomes an "if and only if" statement. This leads to the following:
+		<ul>
+			<li>
+			<p>
+ The barber cannot shave himself because (by definition), he only shaves men who do not shave themselves.
+			</p>
+			</li>
+			<li>
+			<p>
+ However, if the barber does not shave himself, then he is one of the men shaved by the barber.
+			</p>
+			</li>
+			<li>
+			<p>
+ But the barber only shaves men who don't shave themselves. This brings us back where we started.
+			</p>
+			</li>
+			<li>
+			<p>
+ This loop continues forever without resolution.
+			</p>
+			</li>
+		</ul>
+
+This is an example of how self-referential statements can lead to paradoxes. So this sentence is problematic. A mathematician would say that a paradox is NOT a mathematical statement, because it is neither true nor false.
+
+</p>
+</solution>
+
+					</p>
+				</li>
+				<li>
+					<p>
+  The classic formulation of the "barber paradox" is  actually: "The barber shaves every man in town who does not shave themselves. Who shaves the barber?" There are multiple reasons why this statement is NOT a paradox. Can you find at least one?
+
+<solution>
+<p>
+Here are four reasons why this phrasing is NOT a paradox. The first three tackle implicit (and possibly incorrect) assumptions about the barber. The last reason actually shows that the reader has actually made a logical mistake!
+
+		<ul>
+			<li>
+			<p>
+ The clearest way out is when <em>the barber is not a man</em>. The barber could be a woman or non-gender conforming. Ages ago, the word "barber" required that the person was male. But this is clearly not the case in our modern times. Therefore, we must update the "barber paradox" to explicitly state that the barber is man.
+
+			</p>
+			</li>
+			<li>
+			<p>
+ The second assumption is that <em>the barber is a person who shaves</em>. This assumption could be wrong, even if the barber is a man. (And there is nothing like a huge, unkept beard to inspire confidence in a barber's clients.)
+
+			</p>
+			</li>
+			<li>
+			<p>
+ The barber is a  man <em>in town</em>. Hundreds of years ago, you had to live in the same town in which you worked. What would "in town" mean in our modern times, when people commute to work?
+
+			</p>
+			</li>
+			<li>
+			<p>
+ But let's assume that the barber is male gendered,  and that he shaves.  The classic phrasing actually <em>says NOTHING about men who shaves themselves</em>. A male barber is free to shave himself, since the statement does not preclude him doing so.
+
+			</p><p>
+
+Here is why. The statement is: "The barber  shaves all men who do not shave  themselves." This is equivalent to saying "If man <m>M</m> does not shave himself, then the barber shaves <m>M</m>." What if <m>M</m> does shave himself? The implication does not tell us anything at all about <m>M</m>.
+
+
+
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>A Weird Set</title>
+			<idx><h>A Weird Set</h></idx>
+			<statement>
+				<p>
+Let <m>S</m> be the set of sets that do not contain themselves. Consider the following two statements:
+\[
+S \in S  \mbox{ and }  S \subset S.
+\]
+Which of these statements is true, and which of these statements is a paradox?
+
+<solution>
+<p>
+For any set <m>A</m>, we always have <m>A \subset A</m>. Therefore in this case <m>S \subset S</m>. However, if we try to resolve <m>S \in S</m>, we end up in a paradox.
+
+		<ul>
+			<li>
+			<p>
+ Suppose that <m>S \in S</m>. Then the set <m>S</m> contains itself. So actually <m>S</m> cannot be an element of <m>S</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ But if <m>S</m> does not contain itself, then <m>S</m> actually is an element of <m>S</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ This brings us back where we started, and we continue to loop forever without resolution.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
+
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dm Sets Part 1</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
+ \newcommand{\notdivide}{{\not{\mid}}}
+ \newcommand{\notsubset}{\not\subset}
+ \newcommand{\lcm}{\operatorname{lcm}}
+ \newcommand{\gf}{\operatorname{GF}}
+ \newcommand{\inn}{\operatorname{Inn}}
+ \newcommand{\aut}{\operatorname{Aut}}
+ \newcommand{\Hom}{\operatorname{Hom}}
+ \newcommand{\cis}{\operatorname{cis}}
+ \newcommand{\chr}{\operatorname{char}}
+ \newcommand{\Null}{\operatorname{Null}}
+
+
+ \def\Z{\mathbb Z}
+ \def\R{\mathbb R}
+ \def\Q{\mathbb Q}
+ \def\N{\mathbb N}
+ \def\C{\mathbb C}
+
+ \def\ba{{\mathbf{a}}}
+ \def\bb{\mathbf{b}}
+ \def\bh{{\mathbf{h}}}
+ \def\bu{{\mathbf{u}}}
+ \def\bv{{\mathbf{v}}}
+ \def\bw{{\mathbf{w}}}   
+ \def\bx{{\mathbf{x}}}
+ \def\by{\mathbf{y}}    
+ \def\bone{{\mathbf{1}}}
+ \def\bzero{\mathbf{0}}
+
+ \def\var{{\mbox{var}}}
+ \def\P{{\mathbb{P}}}
+ \def\E{{\mathbb{E}}}
+
+ \def\cA{{\mathcal{A}}}
+ \def\cB{{\mathcal{B}}}
+ \def\cC{{\mathcal{C}}}
+ \def\cP{\mathcal P}
+ \def\cE{\mathcal E}
+ \def\cO{\mathcal O}
+
+
+
+
+ \def\kin{k^{\mathrm{in}}}
+ \def\kout{k^{\mathrm{out}}}
+
+ \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+ \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+ \tikzset{-&gt;-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="combi.html"><span class="title">Discrete Mathematics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="part-slf.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-slf.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="sets2.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="part-slf.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-slf.html" title="Up">Up</a><a class="next-button button toolbar-item" href="sets2.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-slf.html" data-scroll="part-slf"><span class="codenumber">I</span> <span class="title">Sets, Logic and Functions</span></a></li>
+<li class="link active"><a href="sets1.html" data-scroll="sets1"><span class="codenumber">1</span> <span class="title">Sets Part 1</span></a></li>
+<li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">2</span> <span class="title">Sets Part 2</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="sets1"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">1</span> <span class="title">Sets Part 1</span>
+</h2>
+<section class="introduction" id="introduction-1"><p id="p-1"></p></section><section class="exercises" id="exercises-1"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-1"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Making Sets From Other Sets..</span>
+</h6>
+<p id="p-2">Let \(A= \{ x \mid 1 &lt; x &lt; 3 \}\text{,}\) \(B = \{ x \mid 5 \leq x \leq 7 \}\) and \(C= \{ x \mid 2 &lt; x &lt; 6 \}\text{,}\) where \(x\) represents a real number. Write the following sets in "set builder" notation.</p>
+<ol class="lower-alpha">
+<li id="li-1"><p id="p-3">\(A \cup C \text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-1" id="solution-1"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-1"><div class="solution solution-like"><p id="p-4">\[ A \cup C = \{ x \mid 1 &lt; x &lt; 6 \} \]</p></div></div></p></li>
+<li id="li-2"><p id="p-5">\((A \cup B ) \cap C\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-2" id="solution-2"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-2"><div class="solution solution-like"><p id="p-6">\[ (A \cup B) \cap C = \{ x \mid 2 &lt; x &lt; 3 \} \cup \{ x \mid 5 \leq x &lt; 6 \} \]</p></div></div></p></li>
+<li id="li-3"><p id="p-7">\(B \cap \overline{C}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-3" id="solution-3"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-3"><div class="solution solution-like"><p id="p-8">\[ B \cap \overline{C} = \{ x \mid 6 \leq  x  \leq 7 \} \ \]</p></div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-2"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Element, Subset or Neither?</span>
+</h6>
+<p id="p-9">Mark each of the following statements as <em class="emphasis">true</em> or <em class="emphasis">false</em></p>
+<ol class="lower-alpha">
+<li id="li-4">
+<p id="p-10">Let \(A = \{ 1, \{ 1 \} \}\text{.}\)</p>
+<ol class="lower-roman">
+<li id="li-5"><p id="p-11">\(1 \in A\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-4" id="solution-4"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-4"><div class="solution solution-like"><p id="p-12"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-6"><p id="p-13">\(\{ 1 \} \in A\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-5" id="solution-5"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-5"><div class="solution solution-like"><p id="p-14"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-7"><p id="p-15">\(\{ \{ 1 \} \} \in A\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-6" id="solution-6"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-6"><div class="solution solution-like"><p id="p-16"><em class="emphasis">false</em></p></div></div></p></li>
+</ol>
+</li>
+<li id="li-8">
+<p id="p-17">Let \(B = \{ 1, 2, 3 \}\)</p>
+<ol class="lower-roman">
+<li id="li-9"><p id="p-18">\(3 \in B\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-7" id="solution-7"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-7"><div class="solution solution-like"><p id="p-19"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-10"><p id="p-20">\(\{ 3 \} \in B\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-8" id="solution-8"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-8"><div class="solution solution-like"><p id="p-21"><em class="emphasis">false</em></p></div></div></p></li>
+<li id="li-11"><p id="p-22">\(\{ 3 \} \subset B\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-9" id="solution-9"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-9"><div class="solution solution-like"><p id="p-23"><em class="emphasis">true</em></p></div></div></p></li>
+</ol>
+</li>
+<li id="li-12">
+<p id="p-24">\(C = \{ \{1,2\}, \{ \emptyset \} \}\)</p>
+<ol class="lower-roman">
+<li id="li-13"><p id="p-25">\(\emptyset \in C \) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-10" id="solution-10"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-10"><div class="solution solution-like"><p id="p-26"><em class="emphasis">false</em></p></div></div></p></li>
+<li id="li-14"><p id="p-27">\(\emptyset \subset C \) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-11" id="solution-11"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-11"><div class="solution solution-like"><p id="p-28"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-15"><p id="p-29">\(|C|=3\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-12" id="solution-12"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-12"><div class="solution solution-like"><p id="p-30"><em class="emphasis">false</em></p></div></div></p></li>
+</ol>
+</li>
+<li id="li-16">
+<p id="p-31">\(D = \{ \{1, 2 \}, \{ 3, 4, 5 \} \}\)</p>
+<ol class="lower-roman">
+<li id="li-17"><p id="p-32">\(|D|=5 \) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-13" id="solution-13"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-13"><div class="solution solution-like"><p id="p-33"><em class="emphasis">false</em></p></div></div></p></li>
+<li id="li-18"><p id="p-34">\(\{ 1, 2 \} \subset D \) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-14" id="solution-14"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-14"><div class="solution solution-like"><p id="p-35"><em class="emphasis">false</em></p></div></div></p></li>
+<li id="li-19"><p id="p-36">\(4 \in D\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-15" id="solution-15"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-15"><div class="solution solution-like"><p id="p-37"><em class="emphasis">false</em></p></div></div></p></li>
+</ol>
+</li>
+<li id="li-20">
+<p id="p-38">\(E = \{ \emptyset, \{ \emptyset \} , 0 \}\)</p>
+<ol class="lower-roman">
+<li id="li-21"><p id="p-39">\(\emptyset \in E\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-16" id="solution-16"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-16"><div class="solution solution-like"><p id="p-40"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-22"><p id="p-41">\(\{ \{ \emptyset \} \}  \subset E \) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-17" id="solution-17"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-17"><div class="solution solution-like"><p id="p-42"><em class="emphasis">true</em></p></div></div></p></li>
+<li id="li-23"><p id="p-43">\(|E|=3\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-18" id="solution-18"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-18"><div class="solution solution-like"><p id="p-44"><em class="emphasis">true</em></p></div></div></p></li>
+</ol>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-3"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">DeMorgan's Law.</span>
+</h6>
+<p id="p-45">Consider the following DeMorgan Law: \[ \overline{(A \cap B)} = \overline{A} \cup \overline{B}. \]</p>
+<ol class="lower-alpha">
+<li id="li-24">
+<p id="p-46">Prove this law using a Venn diagram</p>
+<p id="p-47"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-19" id="solution-19"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-19"><div class="solution solution-like"><p id="p-48">Both of your Venn diagrams will look  like this: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-sets10.svg" role="img" class="contained"></div></p></div></div></p>
+</li>
+<li id="li-25"><p id="p-49">Prove this law using a carefully argued double inclusion proof. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-20" id="solution-20"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-20"><div class="solution solution-like">
+<p id="p-50">First, we prove that if \(x \in \overline{(A \cap B)}\) then \(x \in \overline{A} \cup \overline{B}\text{.}\) XXXXXYY</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+x \in \overline{(A \cap B)}
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \cap B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \mbox{ AND } x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } (  x \in A) \mbox{ OR } \mbox{NOT } ( x \in  B) \\
+&amp; \Rightarrow &amp;   x \in \overline{A} \mbox{ OR }  x \in  \overline{B} \\
+&amp; \Rightarrow &amp;   x \in \overline{A}  \cup  \overline{B} \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Let's talk about that third step, since this is a new idea. We know that the statement "\(x  \in A\) AND \(x \in B\)" is FALSE. So (at least) one of these statements is FALSE. In other words, either \(x \notin A\) or \(x \notin B\text{.}\)</p>
+<p id="p-51">Next, we prove that if \(x \in \overline{A} \cup \overline{B}\) then \(x \in \overline{(A \cap B)}\text{.}\) If you look carefully, this is just the previous argument in reverse. (This happens for simpler problems.)</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+x \in \overline{A}  \cup  \overline{B}  &amp; \Rightarrow &amp;   x \in \overline{A} \mbox{ OR }  x \in  \overline{B} \\
+&amp; \Rightarrow &amp; \mbox{ NOT } (  x \in A) \mbox{ OR } \mbox{NOT } ( x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \mbox{ AND } x \in  B) \\
+&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \cap B) \\
+&amp; \Rightarrow &amp;  x \in \overline{(A \cap B)}  \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">Let's talk about the third step in this case. We know that either \(x \notin A\) or \(x \notin B\text{.}\) Therefore is is NOT true that "\(x \in A\) and \(x \in B\) are both true".</p>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-4"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Empty Sets All the Way Down.</span>
+</h6>
+<p id="p-52">Consider the following sequence of sets \[ \emptyset,  \{ \emptyset \},  \Big\{ \emptyset, \{ \emptyset \} \Big\},  \bigg\{  \emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\}. \]</p>
+<ol class="lower-alpha">
+<li id="li-26"><p id="p-53">What is the size of each of these sets? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-21" id="solution-21"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-21"><div class="solution solution-like"><p id="p-54">In order, these set sizes are 0, 1, 2 and 3.</p></div></div></p></li>
+<li id="li-27"><p id="p-55">What is the next set in this series? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-22" id="solution-22"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-22"><div class="solution solution-like"><p id="p-56">\[ \bigg\{ \emptyset, \{ \emptyset \}, \Big\{ \emptyset, \{ \emptyset \} \Big\}, \bigg\{ \emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\} \bigg\} \] And here is the next one: \[ \bigg\{ \emptyset, \{ \emptyset \}, \Big\{ \emptyset, \{ \emptyset \} \Big\}, \bigg\{ \emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\}, \bigg\{ \emptyset, \{ \emptyset \}, \Big\{ \emptyset, \{ \emptyset \} \Big\}, \bigg\{ \emptyset , \{ \emptyset \} , \Big\{ \emptyset, \{ \emptyset \} \Big\} \bigg\} \bigg\} \bigg\} \]</p></div></div></p></li>
+<li id="li-28"><p id="p-57">Dr.~Philomath says, "You can create the natural numbers from nothing." Explain why she is right. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-23" id="solution-23"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-23"><div class="solution solution-like">
+<p id="p-58">If you think of an empty set as a "nothing" then she is right. (But it's really a something that has nothing inside it.)</p>
+<p id="p-59">We have constructed sets of sizes 0,1,2,3,4 and 5. We can keep going and get a set of size \(n \in \N\text{.}\) However, the elements are just sets of sets, and the ultimate sets are empty. All we have is a bunch of nested empty set.</p>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-5"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">The Barber Paradox.</span>
+</h6>
+<p id="p-60">Consider the following classic paradox: "The barber is a man in town who shaves all those (and only those) men in town who do not shave themselves. Who shaves the barber?"</p>
+<p id="p-61">Note that I've updated the classic phrasing of this "paradox" so that it actually a paradox. Also, let us assume that every man shaves (even if it's just to clean up his beard).</p>
+<ol class="lower-alpha">
+<li id="li-29"><p id="p-62">Explain the logical paradox of this description of the barber. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-24" id="solution-24"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-24"><div class="solution solution-like">
+<p id="p-63">The barber is a man, and (1) he shaves all men who don't shave themselves and (2) he doesn't shave any man who shaves himself. So this is becomes an "if and only if" statement. This leads to the following:</p>
+<ul class="disc">
+<li id="li-30"><p id="p-64">The barber cannot shave himself because (by definition), he only shaves men who do not shave themselves.</p></li>
+<li id="li-31"><p id="p-65">However, if the barber does not shave himself, then he is one of the men shaved by the barber.</p></li>
+<li id="li-32"><p id="p-66">But the barber only shaves men who don't shave themselves. This brings us back where we started.</p></li>
+<li id="li-33"><p id="p-67">This loop continues forever without resolution.</p></li>
+</ul>
+<p class="continuation">This is an example of how self-referential statements can lead to paradoxes. So this sentence is problematic. A mathematician would say that a paradox is NOT a mathematical statement, because it is neither true nor false.</p>
+</div></div></p></li>
+<li id="li-34"><p id="p-68">The classic formulation of the "barber paradox" is  actually: "The barber shaves every man in town who does not shave themselves. Who shaves the barber?" There are multiple reasons why this statement is NOT a paradox. Can you find at least one? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-25" id="solution-25"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-25"><div class="solution solution-like">
+<p id="p-69">Here are four reasons why this phrasing is NOT a paradox. The first three tackle implicit (and possibly incorrect) assumptions about the barber. The last reason actually shows that the reader has actually made a logical mistake!</p>
+<ul class="disc">
+<li id="li-35"><p id="p-70">The clearest way out is when <em class="emphasis">the barber is not a man</em>. The barber could be a woman or non-gender conforming. Ages ago, the word "barber" required that the person was male. But this is clearly not the case in our modern times. Therefore, we must update the "barber paradox" to explicitly state that the barber is man.</p></li>
+<li id="li-36"><p id="p-71">The second assumption is that <em class="emphasis">the barber is a person who shaves</em>. This assumption could be wrong, even if the barber is a man. (And there is nothing like a huge, unkept beard to inspire confidence in a barber's clients.)</p></li>
+<li id="li-37"><p id="p-72">The barber is a  man <em class="emphasis">in town</em>. Hundreds of years ago, you had to live in the same town in which you worked. What would "in town" mean in our modern times, when people commute to work?</p></li>
+<li id="li-38">
+<p id="p-73">But let's assume that the barber is male gendered,  and that he shaves.  The classic phrasing actually <em class="emphasis">says NOTHING about men who shaves themselves</em>. A male barber is free to shave himself, since the statement does not preclude him doing so.</p>
+<p id="p-74">Here is why. The statement is: "The barber  shaves all men who do not shave  themselves." This is equivalent to saying "If man \(M\) does not shave himself, then the barber shaves \(M\text{.}\)" What if \(M\) does shave himself? The implication does not tell us anything at all about \(M\text{.}\)</p>
+</li>
+</ul>
+</div></div></p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-6"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">A Weird Set.</span>
+</h6>
+<p id="p-75">Let \(S\) be the set of sets that do not contain themselves. Consider the following two statements: \[ S \in S  \mbox{ and }  S \subset S. \] Which of these statements is true, and which of these statements is a paradox? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-26" id="solution-26"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-26"><div class="solution solution-like">
+<p id="p-76">For any set \(A\text{,}\) we always have \(A \subset A\text{.}\) Therefore in this case \(S \subset S\text{.}\) However, if we try to resolve \(S \in S\text{,}\) we end up in a paradox.</p>
+<ul class="disc">
+<li id="li-39"><p id="p-77">Suppose that \(S \in S\text{.}\) Then the set \(S\) contains itself. So actually \(S\) cannot be an element of \(S\text{.}\)</p></li>
+<li id="li-40"><p id="p-78">But if \(S\) does not contain itself, then \(S\) actually is an element of \(S\text{.}\)</p></li>
+<li id="li-41"><p id="p-79">This brings us back where we started, and we continue to loop forever without resolution.</p></li>
+</ul>
+</div></div></p></article></section></section></div></main>
+</div>
+</body>
+</html>
