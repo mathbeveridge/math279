@@ -47,7 +47,7 @@ pull the name of the problem from the first line  of  the \item
 
     <xi:include href="./bookinfo.xml" /> <!-- ISBN, website, other metadata -->
 
-    <book xml:id="combi">
+    <book xml:id="dm">
     <title>Discrete Mathematics</title>
     <subtitle>Activities and Exercises</subtitle>
 
@@ -59,7 +59,9 @@ pull the name of the problem from the first line  of  the \item
     <part xml:id="part-slf">
         <title>Sets, Logic and Functions</title>
             <xi:include href="./a01-sets1.xml" />   
-            <xi:include href="./a01-sets2.xml" />                
+            <xi:include href="./a01-sets2.xml" />
+            <xi:include href="./a01-logic1.xml" />   
+            <xi:include href="./a01-logic2.xml" />              
             <!--xi:include href="./ex01-counting.xml" /-->                       
     </part>
 

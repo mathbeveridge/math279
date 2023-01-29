@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="logic2" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Logical Arguments</title>
+	<introduction>
+		<p>
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+
+		<exercise>
+			<title>Implications</title>
+			<idx><h>Implications</h></idx>
+			<statement>
+				<p>
+Write down the contrapositive, converse and inverse of the implication: "if <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>." Which of these four statements are <em> true</em>? Which ones are <em> false</em>?
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Quantifiers</title>
+			<idx><h>Quantifiers</h></idx>
+			<statement>
+				<p>
+Let <m>X</m> be the set of people. Let <m>P(x,y)</m> be the statement "<m>x</m> loves <m>y</m>." Rewrite each of the following statements using formal quantifiers and variables.
+
+			<ol>
+				<li>
+					<p>
+ Everybody loves somebody.
+
+					</p>
+				</li>
+				<li>
+					<p>
+  Somebody loves everybody.
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Negating Quantifiers</title>
+			<idx><h>Negating Quantifiers</h></idx>
+			<statement>
+				<p>
+Negate the formal statements you made in the previous problem, then translate them into everyday English. Do these negations make sense, when compared to the original statements?
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Fooling Around</title>
+			<idx><h>Fooling Around</h></idx>
+			<statement>
+				<p>
+Negate the statement "You can fool all of the people all of the time" by first creating a formal statement using quantifiers. Hint: you are considering two sets: <em>people</em> and <em>times</em>.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Equivalent Statements</title>
+			<idx><h>Equivalent Statements</h></idx>
+			<statement>
+				<p>
+
+			<ol>
+				<li>
+					<p>
+ Use a truth table to show that <m>\neg (P \Rightarrow Q)</m> is equivalent to <m>P \wedge \neg Q</m>.
+
+<me>
+\begin{array}{c|c||c|c|c|c}
+P &amp; Q &amp; P \Rightarrow Q &amp; \neg(P \Rightarrow Q)  &amp; \neg Q &amp; P \wedge \neg Q \\
+\hline
+T &amp; T &amp;  &amp;  &amp; &amp; \\
+T &amp; F &amp;  &amp; &amp; &amp; \\
+F &amp; T &amp;  &amp; &amp; &amp;\\
+F &amp; F &amp;  &amp; &amp;  &amp;\\
+\end{array}
+</me>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Negate the statement "For all <m>x \in \R</m>, if <m>x</m> is an integer then <m>x</m> is positive." Use part (a) to find an equivalent statement, and then explain why providing one counterexample is enough to disprove that <m>P \Rightarrow Q</m>
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Evaluating an Argument</title>
+			<idx><h>Evaluating an Argument</h></idx>
+			<statement>
+				<p>
+Determine the validity of the following arguments. Include a truth table to justify your conclusion.
+
+			<ol>
+
+				<li>
+					<p>
+ If I stay up late at night, then I will be tired in the morning. I am tired this morning. Therefore, I stayed up late last night.
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ If I stay up late at night, then I will be tired in the morning. I am not tired this morning. Therefore, I did not stay up late last night.
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Evaluating Another Argument</title>
+			<idx><h>Evaluating Another Argument</h></idx>
+			<statement>
+				<p>
+Determine the validity of the following argument. Include a truth table to justify your conclusion.
+
+			</p><p>
+
+If I work hard, then I earn lots of money. If I earn lots of money, then I pay high taxes. Therefore, if I pay high taxes, then I have worked hard.
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>

@@ -13,9 +13,11 @@
 		<title>Practice Problems</title>
 
 		<exercise>
+			<title>Union and Intersection</title>
+			<idx><h>Union and Intersection</h></idx>
 			<statement>
 				<p>
- The concepts of union and intersection naturally correspond to the concepts of "or" and "and." Explain why using words and/or pictures.
+The concepts of union and intersection naturally correspond to the concepts of "or" and "and." Explain why using words and/or pictures.
 
 <solution>
 <p>
@@ -32,9 +34,11 @@ A \cap B &amp;=&amp; \{ x \mid x \in A \mbox{ AND } x \in B \}
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Counting Subsets</title>
+			<idx><h>Counting Subsets</h></idx>
 			<statement>
 				<p>
- Let <m>A</m> be any set. In this problem, we will see why mathematicians decided that is it "right" to say that <m>\emptyset \subset A</m> and <m>A \subset A</m>.
+Let <m>A</m> be any set. In this problem, we will see why mathematicians decided that is it "right" to say that <m>\emptyset \subset A</m> and <m>A \subset A</m>.
 
 			<ol>
 				<li>
@@ -104,9 +108,11 @@ If <m>|A|=n</m> then  <m>| \mathcal{P}(A)|=2^n</m>
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Distributive Laws</title>
+			<idx><h>Distributive Laws</h></idx>
 			<statement>
 				<p>
- Prove the following <em>distributive laws</em> in two ways. First, using a Venn diagram, and then using a double inclusion proof.
+Prove the following <em>distributive laws</em> in two ways. First, using a Venn diagram, and then using a double inclusion proof.
 
 			<ol>
 				<li>
