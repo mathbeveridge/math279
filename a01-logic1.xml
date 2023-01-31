@@ -35,6 +35,22 @@ F &amp; F &amp;  &amp; \\
 \end{array}
 </me>
 
+<solution>
+<p>
+
+<me>
+\begin{array}{c|c|c|c} %mathbook tabular
+P &amp; Q &amp; P \wedge Q &amp; \neg (P \wedge Q) \\
+\hline
+T &amp; T &amp;  T&amp;  F\\
+T &amp; F &amp; F &amp; T\\
+F &amp; T &amp; F &amp; T\\
+F &amp; F &amp; F &amp; T\\
+\end{array}
+</me>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -54,6 +70,22 @@ F &amp; F &amp; &amp; &amp;  \\
 </me>
 
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c|c|c|c}
+P &amp; Q &amp; \neg P &amp; \neg  Q &amp; \neg P \vee \neg Q  \\
+\hline
+T &amp; T &amp; F&amp; F&amp; F \\
+T &amp; F &amp; F &amp; T &amp; T\\
+F &amp; T &amp; T &amp; F &amp;  T\\
+F &amp; F &amp; T &amp;  T &amp; T \\
+\end{array}
+</me>
+
+
+</p>
+</solution>
 
 
 					</p>
@@ -62,6 +94,16 @@ F &amp; F &amp; &amp; &amp;  \\
 					<p>
  Look at the last column of each of the two tables above. What do you conclude? Write a mathematical statement (using symbols) that summarizes your observation.
 
+<solution>
+<p>
+
+These two statements are equivalent. In other words,
+\[
+\neg (P \wedge Q) \Longleftrightarrow \neg P \vee \neg Q.
+\]
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -90,6 +132,22 @@ F &amp; F &amp;  &amp;   \\
 \end{array}
 </me>
 
+<solution>
+<p>
+
+<me>
+\begin{array}{c|c|c|c|c|c|c} %mathbook tabular
+P &amp; Q &amp; P \vee Q &amp; \neg (P \vee Q)  &amp; \neg P &amp; \neg Q &amp; \neg P \wedge \neg Q \\
+\hline
+T &amp; T &amp; T &amp; F &amp; F &amp; F &amp; F \\
+T&amp; F &amp; T&amp; F &amp; F &amp; T&amp; F \\
+F &amp; T&amp; T&amp; F &amp; T &amp; F &amp; F \\
+F &amp; F &amp; F &amp; T &amp; T &amp; T &amp; T \\
+\end{array}
+</me>
+
+</p>
+</solution>
 
 
 
@@ -103,6 +161,11 @@ F &amp; F &amp;  &amp;   \\
 				<p>
 Look back at the last two problems. What is the effect of <em>negation</em> on the AND operator? The OR operator?
 
+<solution>
+<p>
+Under negation, AND becomes OR, while OR becomes AND.
+</p>
+</solution>
 
 
 
@@ -115,7 +178,7 @@ Look back at the last two problems. What is the effect of <em>negation</em> on t
 			<statement>
 				<p>
 
-The table below shows that are 16 possible outcomes for a compound statement involving <m>P</m> and <m>Q</m>. Find a statement corresponding to each of these 16 possibilities!
+The table below shows that are 16 possible outcomes for a compound statement involving <m>P</m> and/or <m>Q</m>. Find a statement corresponding to each of these 16 possibilities! Most of your statements will depend on both <m>P</m> and <m>Q</m>, but some will only depend on one or the other.
 
 			</p><p>
 You will need one final connector: the exclusive or <m>P \oplus Q</m> which is true when <em>exactly one</em> of <m>P</m> and <m>Q</m> is <em> true</em>.
@@ -133,6 +196,36 @@ F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&
 \end{array}
 </me>
 
+<solution>
+<p>
+
+I'll split this into two tables for readability. We have
+<me>
+\begin{array}{c|c||c|c|c|c|c|c|c|c}
+P &amp; Q &amp; P \vee \neg P &amp; P \vee Q  &amp; P \vee \neg Q  &amp; P &amp;  \neg P \vee Q &amp; Q  &amp;  P \Leftrightarrow Q  &amp; P \wedge \neg Q \\
+\hline
+T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T\\
+T&amp;F&amp;T&amp;T&amp;T&amp;T&amp;F&amp;F&amp;F&amp;F\\
+F&amp;T&amp;T&amp;T&amp;F&amp;F&amp;T&amp;T&amp;F&amp;F\\
+F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F
+\end{array}
+</me>
+and
+<me>
+\begin{array}{c|c||c|c|c|c|c|c|c|c}
+P &amp; Q &amp; P \wedge \neg P &amp; P \oplus Q  &amp; \neg Q  &amp; P \wedge \neg Q  &amp; \neg P  &amp; \neg P \wedge  Q  &amp; \neg P \wedge \neg Q  &amp; P \wedge \neg P \\
+\hline
+T&amp;T&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F\\
+T&amp;F&amp;T&amp;T&amp;T&amp;T&amp;F&amp;F&amp;F&amp;F\\
+F&amp;T&amp;T&amp;T&amp;F&amp;F&amp;T&amp;T&amp;F&amp;F\\
+F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F
+\end{array}
+</me>
+
+Hopefully, you noticed that there is an "anti-symmetry" to this table. The first column is the negation of the last column. The second column is the negation of the second-to-last column, and so on! So you can negate the  <m>k</m>th statement <m>k</m> to find the <m>(17-k)</m>th statement.
+
+</p>
+</solution>
 
 
 				</p>
@@ -168,6 +261,19 @@ Fill in the blanks using the symbols <m>A</m>, <m>B</m>, <m>\cup</m> and <m>\cap
 
 You have just  turned an expression about mathematical statements into an expression about sets!
 
+<solution>
+<p>
+
+
+<me>
+\begin{array}{rcl}
+A \cap B  = \{ x \in \mathbb{Z} \mid P(x) \wedge Q(x)  \mbox{ is true} \} \\
+A \cup B   = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
+\end{array}
+</me>
+
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -191,6 +297,15 @@ In this problem, we will see that the <em>order</em> of our quantifiers matters
 Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
 
 
+<solution>
+<p>
+
+The statement is: "There exists a <m>y \in \R</m>, such that for all <m>x \in \R</m>, we have <m>x=y^3</m>."
+
+This is <em> false</em> since this statement says that there is a single number <m>y</m> that works for every <m>x</m> simultaneously.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -207,6 +322,13 @@ Restate the above in plain English (as well as you can). Is this statement <em> 
 
 			</p><p>
 
+<solution>
+<p>
+The statement is: "For each <m>y \in \R</m>, there exists an <m>x \in \R</m>, such that <m>x=y^3</m>."
+
+This statement is <em> true</em>. This time, the choice of <m>x</m> depends on the given <m>y</m>. In particular, we take <m>x = \sqrt[3]{y}</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -231,6 +353,13 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  Rewrite the definition of <em>bounded</em> only using mathematical symbols and quantifiers.
 
+<solution>
+<p>
+\[
+\exists M \in \R,  \forall x \in S,  |x| \leq M.
+\]
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -238,6 +367,14 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  The definition of <em>unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English.
 
+<solution>
+<p>
+\[
+\forall M \in \R,  \exists x \in S,  |x| &gt; M.
+\]
+For every <m>M \in \R</m>, there exists an <m>x \in S</m> such that <m>|x| &gt; M</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
