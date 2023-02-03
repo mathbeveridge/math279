@@ -319,9 +319,6 @@ This is <em> false</em> since this statement says that there is a single number 
 
 Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
 
-
-			</p><p>
-
 <solution>
 <p>
 The statement is: "For each <m>y \in \R</m>, there exists an <m>x \in \R</m>, such that <m>x=y^3</m>."

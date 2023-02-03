@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="function1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Functions</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Different Kinds of Functions</title>
+			<idx><h>Different Kinds of Functions</h></idx>
+			<statement>
+				<p>
+In each of the following problems, give an example of a function <m>f: [n] \rightarrow [m]</m> of the specified type. <em>You get to pick the values for <m>n</m> and <m>m</m>.</em> Describe your function by using a picture. Then decide if there is a required relationship between <m>n</m> and <m>m</m>, the sizes of the domain and the codomain (also called the "target").
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ Create a function <m>f: [n] \rightarrow [m]</m> that is injective (one-to-one) but NOT surjective (onto). What is the required relationship between <m>n</m> and <m>m</m>? (One of: <m>n  &gt;m</m> or <m>n &lt; m</m> or <m>n = m</m> or "none.")
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: [n] \rightarrow [m]</m> that is injective (one-to-one) and surjective (onto). What is the required relationship between <m>n</m> and <m>m</m>? (One of: <m>n  &gt;m</m> or <m>n &lt; m</m> or <m>n = m</m> or "none.")
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: [n] \rightarrow [m]</m> that is NOT injective (one-to-one) but is surjective (onto). What is the required relationship between <m>n</m> and <m>m</m>? (One of: <m>n  &gt;m</m> or <m>n &lt; m</m> or <m>n = m</m> or "none.")
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: [n] \rightarrow [m]</m> that is NOT injective (one-to-one) and NOT surjective (onto). What is the required relationship between <m>n</m> and <m>m</m>? (One of: <m>n  &gt;m</m> or <m>n &lt; m</m> or <m>n = m</m> or "none.")
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Listing all functions</title>
+			<idx><h>Listing all functions</h></idx>
+			<statement>
+				<p>
+List all the functions from <m>\{a,b,c \}</m> to <m>\{ x,y \}</m>. For example, one function <m>f_1</m> is given by <m>f_1(a)=x</m> and <m>f_1(b)=y</m> and <m>f_1(c)=y</m>.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Counting  functions</title>
+			<idx><h>Counting  functions</h></idx>
+			<statement>
+				<p>
+How many functions are there from <m>\{a,b,c,d \}</m> to <m>\{x,y,z \}</m>? This time, justify your answer with an argument rather than listing all possible functions.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>More counting functions</title>
+			<idx><h>More counting functions</h></idx>
+			<statement>
+				<p>
+Without making lists or drawing pictures, how many functions are there <m>\ldots</m>
+
+			<ol>
+				<li>
+					<p>
+ from a four-element set to a ten-element set?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ rom a ten-element set to a four-element set?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+  from an <m>r</m>-element set to an <m>s</m>-element set?
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Injective? Surjective?</title>
+			<idx><h>Injective? Surjective?</h></idx>
+			<statement>
+				<p>
+For each of the functions below, decide whether it is injective and/or surjective. If it does not satisfy the property, explain why by giving an example that violates the property. If it does satisfy the property, then provide a proof.
+
+
+
+			<ol>
+
+				<li>
+					<p>
+ <m>f: \Z \rightarrow \Z</m> given by <m>\displaystyle{f(n) = \left\lfloor \frac{n}{2} \right\rfloor}</m> where
+<m>\left\lfloor x \right\rfloor</m> is the floor function, which "rounds down" to the nearest integer.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g: \Z \rightarrow \Z</m> given by <m>g(n) = 4n -1</m>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>h: \R \backslash \{ 0 \} \rightarrow \R</m> given by <m>\displaystyle{h(x) = \frac{x+1}{x}}</m>.
+
+
+
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+</chapter>

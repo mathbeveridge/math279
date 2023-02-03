@@ -126,6 +126,7 @@
 <li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">2</span> <span class="title">Sets Part 2</span></a></li>
 <li class="link active"><a href="logic1.html" data-scroll="logic1"><span class="codenumber">3</span> <span class="title">Logical Connectors and Quantifiers</span></a></li>
 <li class="link"><a href="logic2.html" data-scroll="logic2"><span class="codenumber">4</span> <span class="title">Logical Arguments</span></a></li>
+<li class="link"><a href="function1.html" data-scroll="function1"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="logic1"><h2 class="heading">
@@ -324,17 +325,16 @@ A \cup B   = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
 \forall y \in \mathbb{R},   \exists x \in \mathbb{R},  x = y^3.
 \end{equation*}
 </div>
-<p class="continuation">Restate the above in plain English (as well as you can). Is this statement <em class="emphasis">true</em> or <em class="emphasis">false</em>?</p>
-<p id="p-121"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like"><p id="p-122">The statement is: "For each \(y \in \R\text{,}\) there exists an \(x \in \R\text{,}\) such that \(x=y^3\text{.}\)" This statement is <em class="emphasis">true</em>. This time, the choice of \(x\) depends on the given \(y\text{.}\) In particular, we take \(x = \sqrt[3]{y}\text{.}\)</p></div></div></p>
+<p class="continuation">Restate the above in plain English (as well as you can). Is this statement <em class="emphasis">true</em> or <em class="emphasis">false</em>? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-43" id="solution-43"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-43"><div class="solution solution-like"><p id="p-121">The statement is: "For each \(y \in \R\text{,}\) there exists an \(x \in \R\text{,}\) such that \(x=y^3\text{.}\)" This statement is <em class="emphasis">true</em>. This time, the choice of \(x\) depends on the given \(y\text{.}\) In particular, we take \(x = \sqrt[3]{y}\text{.}\)</p></div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-16"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Bounded and Unbounded.</span>
 </h6>
-<p id="p-123">Here is a mathematical definition for a <em class="emphasis">bounded</em> set.</p>
-<p id="p-124">"A set \(S \subset \mathbb{R}\) is <em class="emphasis">bounded</em> if there is an \(M \in \mathbb{R}\) such that \(|x| \leq M\) for all \(x \in S\text{.}\) A set is <em class="emphasis">unbounded</em> if no such \(M\) exists."</p>
+<p id="p-122">Here is a mathematical definition for a <em class="emphasis">bounded</em> set.</p>
+<p id="p-123">"A set \(S \subset \mathbb{R}\) is <em class="emphasis">bounded</em> if there is an \(M \in \mathbb{R}\) such that \(|x| \leq M\) for all \(x \in S\text{.}\) A set is <em class="emphasis">unbounded</em> if no such \(M\) exists."</p>
 <ol class="lower-alpha">
-<li id="li-54"><p id="p-125">Rewrite the definition of <em class="emphasis">bounded</em> only using mathematical symbols and quantifiers. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like"><p id="p-126">\[ \exists M \in \R,  \forall x \in S,  |x| \leq M. \]</p></div></div></p></li>
-<li id="li-55"><p id="p-127">The definition of <em class="emphasis">unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like"><p id="p-128">\[ \forall M \in \R,  \exists x \in S,  |x| &gt; M. \] For every \(M \in \R\text{,}\) there exists an \(x \in S\) such that \(|x| &gt; M\text{.}\)</p></div></div></p></li>
+<li id="li-54"><p id="p-124">Rewrite the definition of <em class="emphasis">bounded</em> only using mathematical symbols and quantifiers. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-44" id="solution-44"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-44"><div class="solution solution-like"><p id="p-125">\[ \exists M \in \R,  \forall x \in S,  |x| \leq M. \]</p></div></div></p></li>
+<li id="li-55"><p id="p-126">The definition of <em class="emphasis">unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-45" id="solution-45"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-45"><div class="solution solution-like"><p id="p-127">\[ \forall M \in \R,  \exists x \in S,  |x| &gt; M. \] For every \(M \in \R\text{,}\) there exists an \(x \in S\) such that \(|x| &gt; M\text{.}\)</p></div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

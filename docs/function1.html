@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>dm Discrete Mathematics</title>
+<title>dm Functions</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -112,10 +112,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><span id="previousbutton" class="previous-button button toolbar-item disabled">Prev</span><span id="upbutton" class="up-button button disabled toolbar-item">Up</span><a id="nextbutton" class="next-button button toolbar-item" href="frontmatter.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="logic2.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-slf.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><span class="previous-button button toolbar-item disabled">Prev</span><span class="up-button button disabled toolbar-item">Up</span><a class="next-button button toolbar-item" href="frontmatter.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="logic2.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-slf.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -126,13 +126,47 @@
 <li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">2</span> <span class="title">Sets Part 2</span></a></li>
 <li class="link"><a href="logic1.html" data-scroll="logic1"><span class="codenumber">3</span> <span class="title">Logical Connectors and Quantifiers</span></a></li>
 <li class="link"><a href="logic2.html" data-scroll="logic2"><span class="codenumber">4</span> <span class="title">Logical Arguments</span></a></li>
-<li class="link"><a href="function1.html" data-scroll="function1"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
+<li class="link active"><a href="function1.html" data-scroll="function1"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="book" id="dm"><nav class="summary-links"><ul>
-<li><a href="frontmatter.html"><span class="title">Front Matter</span></a></li>
-<li><a href="part-slf.html"><span class="codenumber">I</span> <span class="title">Sets, Logic and Functions</span></a></li>
-</ul></nav></section></div></main>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="function1"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">5</span> <span class="title">Functions</span>
+</h2>
+<section class="introduction" id="introduction-5"><p id="p-143"></p></section><section class="exercises" id="exercises-5"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-24"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Different Kinds of Functions.</span>
+</h6>
+<p id="p-144">In each of the following problems, give an example of a function \(f: [n] \rightarrow [m]\) of the specified type. <em class="emphasis">You get to pick the values for \(n\) and \(m\text{.}\)</em> Describe your function by using a picture. Then decide if there is a required relationship between \(n\) and \(m\text{,}\) the sizes of the domain and the codomain (also called the "target").</p>
+<ol class="lower-alpha">
+<li id="li-62"><p id="p-145">Create a function \(f: [n] \rightarrow [m]\) that is injective (one-to-one) but NOT surjective (onto). What is the required relationship between \(n\) and \(m\text{?}\) (One of: \(n  &gt;m\) or \(n &lt; m\) or \(n = m\) or "none.")</p></li>
+<li id="li-63"><p id="p-146">Create a function \(f: [n] \rightarrow [m]\) that is injective (one-to-one) and surjective (onto). What is the required relationship between \(n\) and \(m\text{?}\) (One of: \(n  &gt;m\) or \(n &lt; m\) or \(n = m\) or "none.")</p></li>
+<li id="li-64"><p id="p-147">Create a function \(f: [n] \rightarrow [m]\) that is NOT injective (one-to-one) but is surjective (onto). What is the required relationship between \(n\) and \(m\text{?}\) (One of: \(n  &gt;m\) or \(n &lt; m\) or \(n = m\) or "none.")</p></li>
+<li id="li-65"><p id="p-148">Create a function \(f: [n] \rightarrow [m]\) that is NOT injective (one-to-one) and NOT surjective (onto). What is the required relationship between \(n\) and \(m\text{?}\) (One of: \(n  &gt;m\) or \(n &lt; m\) or \(n = m\) or "none.")</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-25"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Listing all functions.</span>
+</h6>
+<p id="p-149">List all the functions from \(\{a,b,c \}\) to \(\{ x,y \}\text{.}\) For example, one function \(f_1\) is given by \(f_1(a)=x\) and \(f_1(b)=y\) and \(f_1(c)=y\text{.}\)</p></article><article class="exercise exercise-like" id="exercise-26"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Counting  functions.</span>
+</h6>
+<p id="p-150">How many functions are there from \(\{a,b,c,d \}\) to \(\{x,y,z \}\text{?}\) This time, justify your answer with an argument rather than listing all possible functions.</p></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">More counting functions.</span>
+</h6>
+<p id="p-151">Without making lists or drawing pictures, how many functions are there \(\ldots\)</p>
+<ol class="lower-alpha">
+<li id="li-66"><p id="p-152">from a four-element set to a ten-element set?</p></li>
+<li id="li-67"><p id="p-153">rom a ten-element set to a four-element set?</p></li>
+<li id="li-68"><p id="p-154">from an \(r\)-element set to an \(s\)-element set?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Injective? Surjective?</span>
+</h6>
+<p id="p-155">For each of the functions below, decide whether it is injective and/or surjective. If it does not satisfy the property, explain why by giving an example that violates the property. If it does satisfy the property, then provide a proof.</p>
+<ol class="lower-alpha">
+<li id="li-69"><p id="p-156">\(f: \Z \rightarrow \Z\) given by \(\displaystyle{f(n) = \left\lfloor \frac{n}{2} \right\rfloor}\) where \(\left\lfloor x \right\rfloor\) is the floor function, which "rounds down" to the nearest integer.</p></li>
+<li id="li-70"><p id="p-157">\(g: \Z \rightarrow \Z\) given by \(g(n) = 4n -1\)</p></li>
+<li id="li-71"><p id="p-158">\(h: \R \backslash \{ 0 \} \rightarrow \R\) given by \(\displaystyle{h(x) = \frac{x+1}{x}}\text{.}\)</p></li>
+</ol></article></section></section></div></main>
 </div>
 </body>
 </html>
