@@ -22,6 +22,32 @@
 				<p>
 Write down the contrapositive, converse and inverse of the implication: "if <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>." Which of these four statements are <em> true</em>? Which ones are <em> false</em>?
 
+<solution>
+<p>
+		<ul>
+			<li>
+			<p>
+ statement: <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>. This is <em> false</em>, since <m>-4 &lt; 3</m> and <m>(-4)^2 = 16 &gt; 9</m>
+			</p>
+			</li>
+			<li>
+			<p>
+ contrapositive: if <m>x^2 \geq 9</m> then <m>x \geq 3</m>. This is <em> false</em> for the same reason.
+			</p>
+			</li>
+			<li>
+			<p>
+ converse: if <m>x^2 &lt; 9</m> then <m>x &lt; 3</m>.  This is <em> true</em> because the first statement forces <m>-3 \leq x \leq 3</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ inverse: if  <m>x \geq 3</m> then <m>x^2 \geq 9</m> .  This is <em> true</em>.
+			</p>
+			</li>
+		</ul>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -47,6 +73,25 @@ Let <m>X</m> be the set of people. Let <m>P(x,y)</m> be the statement "<m>x</m> 
 				</li>
 			</ol>
 
+<solution>
+<p>
+Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x</m> loves <m>y</m>."
+
+
+			<ol>
+				<li>
+					<p>
+ <m>\forall x \in X, \exists y \in Y, P(x,y)</m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\exists x \in X, \forall y \in Y, P(x,y)</m>
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -58,6 +103,22 @@ Let <m>X</m> be the set of people. Let <m>P(x,y)</m> be the statement "<m>x</m> 
 				<p>
 Negate the formal statements you made in the previous problem, then translate them into everyday English. Do these negations make sense, when compared to the original statements?
 
+<solution>
+<p>
+			<ol>
+				<li>
+					<p>
+ <m>\exists x \in X, \forall y \in Y, \neg P(x,y)</m>, which means  "Somebody hates everybody."
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\forall x \in X, \exists y \in Y, \neg P(x,y)</m>, which means  "Everybody hates somebody."
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -69,6 +130,19 @@ Negate the formal statements you made in the previous problem, then translate th
 				<p>
 Negate the statement "You can fool all of the people all of the time" by first creating a formal statement using quantifiers. Hint: you are considering two sets: <em>people</em> and <em>times</em>.
 
+<solution>
+<p>
+Let <m>X</m> be the set of people and let <m>T</m> be the set of times. Let <m>P(x,t)</m> be the statement "you can fool person <m>x</m> at time <m>t</m>. The original statement is
+<me>
+\forall x \in X, \forall t \in T, P(x,t).
+</me>
+The simple negation of the statement leads to the adage "You can't fool all of the people all of the time." What if we try to say this in precise mathematical language? We get
+<me>
+\exists x \in X,  \exists t \in T,   \neg P(x,t),
+</me>
+which means there is a person and a time where you fail to fool them.
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -95,6 +169,20 @@ F &amp; F &amp;  &amp; &amp;  &amp;\\
 \end{array}
 </me>
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c||c|c|c|c}
+P &amp; Q &amp; P \Rightarrow Q &amp; \neg(P \Rightarrow Q)  &amp; \neg Q &amp; P \wedge \neg Q \\
+\hline
+T &amp; T &amp; T &amp; F &amp; F&amp; F\\
+T &amp; F &amp; F &amp;T &amp; T&amp; T\\
+F &amp; T &amp; T &amp;F &amp; F&amp;F\\
+F &amp; F &amp; T &amp;F &amp; T &amp;F\\
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -102,6 +190,16 @@ F &amp; F &amp;  &amp; &amp;  &amp;\\
 					<p>
  Negate the statement "For all <m>x \in \R</m>, if <m>x</m> is an integer then <m>x</m> is positive." Use part (a) to find an equivalent statement, and then explain why providing one counterexample is enough to disprove that <m>P \Rightarrow Q</m>
 
+<solution>
+<p>
+The negation is "There exists an integer that is not positive." Note that "not positive" isn't the same as "negative" because 0 is neither positive nor negative.
+
+			</p><p>
+
+This uses the existential quantifiers (at least one), so we just need one example of a non-positive integer.
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -125,6 +223,23 @@ Determine the validity of the following arguments. Include a truth table to just
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am tired this morning. Therefore, I stayed up late last night.
 
+<solution>
+<p>
+Let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
+
+<me>
+\begin{array}{c|c|c|c|c}
+P &amp; Q &amp; P \rightarrow Q &amp; Q \wedge (P \rightarrow Q) &amp; \big( Q \wedge (P \rightarrow Q) \big) \rightarrow P \\
+\hline
+T &amp; T &amp; T &amp; T &amp; T  \\
+T &amp; F &amp; F &amp; F &amp;  T \\
+F &amp; T &amp; T &amp; T &amp;  F \\
+F &amp; F &amp; T &amp; F &amp;  T \\
+\end{array}
+</me>
+The third line of the final column is <em> false</em>. Therefore the argument is not valid. This is because there are other reasons that I might be tired (perhaps I ran a marathon yesterday).
+</p>
+</solution>
 
 
 					</p>
@@ -133,6 +248,24 @@ Determine the validity of the following arguments. Include a truth table to just
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am not tired this morning. Therefore, I did not stay up late last night.
 
+<solution>
+<p>
+Once again, let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
+
+<me>
+\begin{array}{c|c|c|c|c|c|c}
+P &amp; Q &amp; P \rightarrow Q &amp; \neg Q  &amp; \neg Q \wedge (P \rightarrow Q) &amp; \neg P &amp; \big( \neg Q \wedge (P \rightarrow Q) \big) \rightarrow \neg P \\
+\hline
+T &amp; T &amp; T &amp; F &amp; F &amp; F &amp; T  \\
+T &amp; F &amp; F &amp; T &amp; F &amp; F &amp; T \\
+F &amp; T &amp; T &amp; F &amp; T &amp; T &amp;  T \\
+F &amp; F &amp; T &amp; T &amp; F &amp; T &amp; T \\
+\end{array}
+</me>
+
+The final column only contains <em> true</em> values. Therefore the argument is valid.
+</p>
+</solution>
 
 
 
@@ -161,6 +294,36 @@ Determine the validity of the following argument. Include a truth table to justi
 If I work hard, then I earn lots of money. If I earn lots of money, then I pay high taxes. Therefore, if I pay high taxes, then I have worked hard.
 
 
+<solution>
+<p>
+
+
+Let <m>P = </m> "I work hard" and <m>Q = </m> "I earn lots of money" and  <m>R = </m> "I pay high taxes."
+
+
+<me>
+\begin{array}{c|c|c|c|c|c|c|c}
+P &amp; Q &amp; R &amp; P \rightarrow Q &amp; Q \rightarrow R  &amp; (P \rightarrow Q) \wedge (Q \rightarrow R) &amp;R \rightarrow P &amp;
+\big( (P \rightarrow Q) \wedge (Q \rightarrow R) \big) \rightarrow (R \rightarrow P)\\
+\hline
+T &amp; T &amp; T &amp; T &amp; T &amp; T &amp; T  &amp; T\\
+T &amp; T &amp; F &amp; T &amp; F &amp; F &amp; T &amp; T\\
+T &amp; F &amp; T &amp; F &amp; T &amp; F &amp;  T &amp; T\\
+T &amp; F &amp; F &amp; F &amp; T &amp; F &amp; T &amp; T\\
+F &amp; T &amp; T &amp; T &amp; T &amp; T &amp; F  &amp; F\\
+F &amp; T &amp; F &amp; T &amp; F &amp; F &amp; T  &amp; T\\
+F &amp; F &amp; T &amp; T &amp; T &amp; T &amp;  F &amp; F\\
+F &amp; F &amp; F &amp; T &amp; T &amp; T &amp; T &amp; T\\
+\end{array}
+</me>
+
+The fifth and seven lines in the final column are <em> false</em>, so the argument is invalid. This line captures the fact that there are other reasons (besides working hard) that I can pay high taxes. For example, I could win the lottery.
+
+
+
+
+</p>
+</solution>
 
 				</p>
 			</statement>
