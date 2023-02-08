@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="function3" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Fun with Functions</title>
+	<introduction>
+		<p>
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>A function from <m>\R^2</m> to <m>\R^2</m></title>
+			<idx><h>A function from <m>\R^2</m> to <m>\R^2</m></h></idx>
+			<statement>
+				<p>
+Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (2y, x-y)</m>. Is <m>f</m> injective? surjective? Justify your answer with either a proof or a counterexample.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Another function from <m>\R^2</m> to <m>\R^2</m></title>
+			<idx><h>Another function from <m>\R^2</m> to <m>\R^2</m></h></idx>
+			<statement>
+				<p>
+Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (5x+5y, x+y)</m>. Is <m>f</m> injective? surjective? Justify your answer with either a proof or a counterexample.
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Functions from <m>\Z</m> to <m>\Z</m></title>
+			<idx><h>Functions from <m>\Z</m> to <m>\Z</m></h></idx>
+			<statement>
+				<p>
+			<ol>
+				<li>
+					<p>
+ Create a function <m>f: \Z \rightarrow \Z</m> that is bijective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: \Z \rightarrow \Z</m> that is injective but not surjective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: \Z \rightarrow \Z</m> that is surjective but not injective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Create a function <m>f: \Z \rightarrow \Z</m> that is not injective and not surjective.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>The Image of a Subset</title>
+			<idx><h>The Image of a Subset</h></idx>
+			<statement>
+				<p>
+Let <m>f : X \rightarrow Y</m> be a function. Let <m>A \subset X</m> and <m>B \subset X</m>. For a subset <m>S \subset X</m>, define the subset <m>f(S) \subset Y</m> by
+<m></m>f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}<m></m>
+
+			<ol>
+
+				<li>
+					<p>
+ Prove that if <m>A \subset B</m> then <m>f(A) \subset f(B)</m>
+
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Draw an example for which <m>A \not\subset B</m>, but <m>f(A) \subset f(B)</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove that <m>f(A \cap B) \subset f(A) \cap f(B)</m>.
+
+
+			</p><p>
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Draw an example for which <m>f(A \cap B) \neq f(A) \cap f(B)</m>
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>The Identity Function</title>
+			<idx><h>The Identity Function</h></idx>
+			<statement>
+				<p>
+The <em>identity function</em> <m>\mbox{Id}_X: X \rightarrow X</m> is given by <m>\mbox{Id}_X(x) = x</m>. (So every element just maps to itself.)
+Let <m>f : X \rightarrow Y</m> and <m>g: Y \rightarrow X</m> be  functions so that <m>g \circ f = \mbox{Id}_X</m>.
+
+			<ol>
+
+				<li>
+					<p>
+ Give an example where <m>g \circ f = \mbox{Id}_X</m> but <m>f \circ g \neq \mbox{Id}_Y</m>.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove that if <m>g \circ f = \mbox{Id}_X</m> then  <m>f</m> is injective.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Prove that if <m>g \circ f = \mbox{Id}_X</m> then  <m>g</m> is surjective.
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Clock Math</title>
+			<idx><h>Clock Math</h></idx>
+			<statement>
+				<p>
+For a fixed <m>n</m>, let <m>\Z_n = \{ 0,1,2, \ldots, n-1 \}</m>. We define a function <m>f: \Z \rightarrow \Z_n</m> by <m>f(k) = k \mbox{ mod } n</m>, which is the integer remainder when <m>k</m> is divided by <m>n</m>.
+
+			<ol>
+
+
+
+				<li>
+					<p>
+ Consider the function <m>f: \Z \rightarrow \Z_{5}</m> given by <m>f(k) = k \mbox{ mod } 5.</m>  Is <m>f</m> injective? Is <m>f</m> surjective? Justify your answers.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Consider the function <m>g: \Z_{6} \rightarrow \Z_{6}</m> given by <m>g(k) = 2k \mbox{ mod } 6</m>. Is <m>g</m> injective? Is <m>g</m> surjective? Justify your answer.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+  Consider the function <m>h: \Z_{7} \rightarrow \Z_{7}</m> given by <m>g(k) = 2k \mbox{ mod } 7</m>. Is <m>h</m> injective? Is <m>f</m> surjective? Justify your answer.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+  Fix a positive integer <m>n</m>, and consider the function the function <m>g: \Z_{n} \rightarrow \Z_{n}</m> given by <m>g(k) = 2k \mbox{ mod } n</m>. Prove that this function is injective if and only if <m>n</m> is odd. Then prove that this function is surjective if and only if <m>n</m> is odd.
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+</chapter>

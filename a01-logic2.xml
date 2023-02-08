@@ -181,6 +181,7 @@ F &amp; T &amp; T &amp;F &amp; F&amp;F\\
 F &amp; F &amp; T &amp;F &amp; T &amp;F\\
 \end{array}
 </me>
+The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are identical. So these statements are equivalent.
 </p>
 </solution>
 
