@@ -80,7 +80,9 @@ Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (5
 			<statement>
 				<p>
 Let <m>f : X \rightarrow Y</m> be a function. Let <m>A \subset X</m> and <m>B \subset X</m>. For a subset <m>S \subset X</m>, define the subset <m>f(S) \subset Y</m> by
-<m></m>f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}<m></m>
+<me>
+f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
+</me>
 
 			<ol>
 
