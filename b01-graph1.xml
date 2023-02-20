@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <chapter xml:id="graph1" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>GRAPH.3 Counting on Graphs</title>
+	<title>Graphs Part 1</title>
 	<introduction>
 		<p>
 
@@ -218,7 +218,7 @@ inner sep=0pt]
 			<ol>
 				<li>
 					<p>
- <em>Paths</em> The path <m>P_n</m> is the graph consisting of a path on <m>n</m> vertices.
+ <em>Paths.</em> The path <m>P_n</m> is the graph consisting of a path on <m>n</m> vertices.
 
 
 			<image width="80%" xml:id="fig-img-graph13">
@@ -317,7 +317,7 @@ How many edges are there in <m>P_n</m> for <m>n \geq 2</m>?
 				</li>
 				<li>
 					<p>
- <em>Cycles</em> The cycle <m>C_n</m> is the graph corresponding to a closed walk on <m>n</m> vertices whose only repetition is the first/last vertex.
+ <em>Cycles.</em> The cycle <m>C_n</m> is the graph corresponding to a closed walk on <m>n</m> vertices whose only repetition is the first/last vertex.
 
 
 			<image width="80%" xml:id="fig-img-graph14">
@@ -420,7 +420,7 @@ How many edges are there is the cycle <m>C_n</m> for <m>n \geq 3</m>?
 				</li>
 				<li>
 					<p>
- <em>Wheels</em> The wheel <m>W_n</m> is the graph consisting of a cycle <m>C_{n-1}</m> along with a single hub node that is adjacent with each node in that cycle.
+ <em>Wheels.</em> The wheel <m>W_n</m> is the graph consisting of a cycle <m>C_{n-1}</m> along with a single hub node that is adjacent with each node in that cycle.
 
 
 
@@ -535,7 +535,7 @@ How many edges are there in the wheel <m>W_n</m> for <m>n \geq 4</m>?
 				</li>
 				<li>
 					<p>
- <em>Complete Graphs</em> The complete graph <m>K_n</m> is the graph on <m>n</m> vertices with every possible edge.
+ <em>Complete Graphs.</em> The complete graph <m>K_n</m> is the graph on <m>n</m> vertices with every possible edge.
 
 
 
@@ -631,7 +631,7 @@ How many edges are there in the complete graph <m>K_n</m> for <m>n \geq 2</m>?
 
 <solution>
 <p>
-<m>{n \choose 2}</m>
+<m>n(n-1)/2</m>
 </p>
 </solution>
 
@@ -639,7 +639,7 @@ How many edges are there in the complete graph <m>K_n</m> for <m>n \geq 2</m>?
 				</li>
 				<li>
 					<p>
- <em>Complete Bipartite Graphs</em> The complete bipartite graph <m>K_{r,s}</m> is the graph whose vertices are divided into sets <m>A</m> and <m>B</m>, where <m>|A|=r</m> and <m>|B|=s</m>. Every vertex in <m>A</m> is adjacent to every vertex in <m>B</m>. There are no other edges.
+ <em>Complete Bipartite Graphs.</em> The complete bipartite graph <m>K_{r,s}</m> is the graph whose vertices are divided into sets <m>A</m> and <m>B</m>, where <m>|A|=r</m> and <m>|B|=s</m>. Every vertex in <m>A</m> is adjacent to every vertex in <m>B</m>. There are no other edges.
 
 
 
@@ -723,7 +723,7 @@ Let <m>G = (V,E)</m> be a graph on <m>n</m> vertices with <m>m</m> edges.
 
 				<li>
 					<p>
- \myname{The Handshaking Lemma} Prove that
+ <em>The Handshaking Lemma.</em> Prove that
 <m></m>\sum_{v \in V} \deg(v) = 2|E|.<m></m>
 This is our first example of a "combinatorial identity": you are counting the same set in two different ways. This equality is known as "the handshaking lemma."
 
