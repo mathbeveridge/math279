@@ -103,7 +103,7 @@ This graph <m>G</m> has <m>|V|=6</m> and <m>|E|=8</m>.
 				</li>
 				<li>
 					<p>
- The <em>complement</em> <m>\overline{G}</m> of graph <m>G</m> is the "graph of edges missing in <m>G</m>."  It has the same vertices as <m>G</m>. But the edge <m>(u,v) \in E(\overline{G})</m> if and only if <m>(u,v) \notin V(G)</m>. Draw the complement
+ The <em>complement</em> <m>\overline{G}</m> of graph <m>G</m> is the "graph of edges missing in <m>G</m>."  It has the same vertices as <m>G</m>. But the edge <m>(u,v) \in E(\overline{G})</m> if and only if <m>(u,v) \notin E(G)</m>. Draw the complement
 <m>\overline{G}</m> of the graph <m>G</m>.  Can you draw <m>\overline{G}</m> so that none of its edges are crossing?
 
 
