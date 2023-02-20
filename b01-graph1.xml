@@ -616,7 +616,9 @@ Let <m>G = (V,E)</m> be a graph on <m>n</m> vertices with <m>m</m> edges.
 				<li>
 					<p>
  <em>The Handshaking Lemma.</em> Prove that
-<m></m>\sum_{v \in V} \deg(v) = 2|E|.<m></m>
+<me>
+\sum_{v \in V} \deg(v) = 2|E|.
+</me>
 This is our first example of a "combinatorial identity": you are counting the same set in two different ways. This equality is known as "the handshaking lemma."
 
 
