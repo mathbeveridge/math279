@@ -64,9 +64,13 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a01-logic2.xml" />  
             <xi:include href="./a01-function1.xml" /> 
             <xi:include href="./a01-function2.xml" />     
-            <xi:include href="./a01-function3.xml" />          
-            <!--xi:include href="./ex01-counting.xml" /-->                       
+            <xi:include href="./a01-function3.xml" />                                 
     </part>
+    <part xml:id="part-gi">
+        <title>Graphs, Trees, Induction</title>
+            <xi:include href="./b01-graph1.xml" />            
+            <!--xi:include href="./ex01-counting.xml" /-->                       
+    </part>    
 
     </book>
 
