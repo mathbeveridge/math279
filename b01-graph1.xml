@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <chapter xml:id="graph1" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Graphs Introduction</title>
+	<title>Graphs</title>
 	<introduction>
 		<p>
 
@@ -763,7 +763,14 @@ By the previous problem, the Left Hand Side is even. Clearly <m>\sum_{v \in V_{e
 
 <solution>
 <p>
-For any vertex <m>v \in V</m>, we have <m>1 \leq \deg(v) \leq n-1</m>. Since there are <m>n</m> vertices, by the pigeonhole principle, at least two must have the same degree.
+For any vertex <m>v \in V</m>, we have <m>1 \leq \deg(v) \leq n-1</m>. Why? The graph is connected, so <m>deg(v) \geq 1</m> for each vertex. Meanwhile, the largest possible degree is <m>n-1</m>, which means that the vertex is adjacent to every  other vertex.
+
+			</p><p>
+
+Now we have  <m>n</m> vertices. There are only <m>n-1</m> possible values for the degrees, so there must be at least two vertices that have the same degree.
+
+			</p><p>
+This argument (<m>n</m> things with <m>n-1</m> different types) is an example of the <em>pigeonhole principle</em>. We'll see this kind of argument again!
 </p>
 </solution>
 
