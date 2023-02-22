@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dm Graph Isomorphisms</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
+ \newcommand{\notdivide}{{\not{\mid}}}
+ \newcommand{\notsubset}{\not\subset}
+ \newcommand{\lcm}{\operatorname{lcm}}
+ \newcommand{\gf}{\operatorname{GF}}
+ \newcommand{\inn}{\operatorname{Inn}}
+ \newcommand{\aut}{\operatorname{Aut}}
+ \newcommand{\Hom}{\operatorname{Hom}}
+ \newcommand{\cis}{\operatorname{cis}}
+ \newcommand{\chr}{\operatorname{char}}
+ \newcommand{\Null}{\operatorname{Null}}
+
+
+ \def\Z{\mathbb Z}
+ \def\R{\mathbb R}
+ \def\Q{\mathbb Q}
+ \def\N{\mathbb N}
+ \def\C{\mathbb C}
+
+ \def\ba{{\mathbf{a}}}
+ \def\bb{\mathbf{b}}
+ \def\bh{{\mathbf{h}}}
+ \def\bu{{\mathbf{u}}}
+ \def\bv{{\mathbf{v}}}
+ \def\bw{{\mathbf{w}}}   
+ \def\bx{{\mathbf{x}}}
+ \def\by{\mathbf{y}}    
+ \def\bone{{\mathbf{1}}}
+ \def\bzero{\mathbf{0}}
+
+ \def\var{{\mbox{var}}}
+ \def\P{{\mathbb{P}}}
+ \def\E{{\mathbb{E}}}
+
+ \def\cA{{\mathcal{A}}}
+ \def\cB{{\mathcal{B}}}
+ \def\cC{{\mathcal{C}}}
+ \def\cP{\mathcal P}
+ \def\cE{\mathcal E}
+ \def\cO{\mathcal O}
+
+
+
+
+ \def\kin{k^{\mathrm{in}}}
+ \def\kout{k^{\mathrm{out}}}
+
+ \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+ \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+ \tikzset{-&gt;-/.style={decoration={
+  markings,
+  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm.html"><span class="title">Discrete Mathematics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="graph1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="graph1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-slf.html" data-scroll="part-slf"><span class="codenumber">I</span> <span class="title">Sets, Logic and Functions</span></a></li>
+<li class="link"><a href="sets1.html" data-scroll="sets1"><span class="codenumber">1</span> <span class="title">Sets</span></a></li>
+<li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">2</span> <span class="title">Unions and Intersections</span></a></li>
+<li class="link"><a href="logic1.html" data-scroll="logic1"><span class="codenumber">3</span> <span class="title">Logical Connectors and Quantifiers</span></a></li>
+<li class="link"><a href="logic2.html" data-scroll="logic2"><span class="codenumber">4</span> <span class="title">Logical Arguments</span></a></li>
+<li class="link"><a href="function1.html" data-scroll="function1"><span class="codenumber">5</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="function2.html" data-scroll="function2"><span class="codenumber">6</span> <span class="title">Injections and Surjections</span></a></li>
+<li class="link"><a href="function3.html" data-scroll="function3"><span class="codenumber">7</span> <span class="title">Fun with Functions</span></a></li>
+<li class="link part"><a href="part-gi.html" data-scroll="part-gi"><span class="codenumber">II</span> <span class="title">Graphs, Trees, Induction</span></a></li>
+<li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">8</span> <span class="title">Graphs Introduction</span></a></li>
+<li class="link active"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">9</span> <span class="title">Graph Isomorphisms</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph2"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">9</span> <span class="title">Graph Isomorphisms</span>
+</h2>
+<section class="introduction" id="introduction-9"><p id="p-338">Graphs \(G=(V(G),E(G))\) and \(H=(V(H), E(H))\) are <em class="emphasis">isomorphic</em> when there is a bijection</p>
+<div class="displaymath">
+\begin{equation*}
+\phi: V(G) \rightarrow V(H)
+\end{equation*}
+</div>
+<p class="continuation">such that</p>
+<div class="displaymath">
+\begin{equation*}
+(u,v) \in E(G) \Longleftrightarrow (\phi(u), \phi(v)) \in E(H).
+\end{equation*}
+</div>
+<p class="continuation">In this case, we write \(G \cong H\text{.}\)</p>
+<p id="p-339">To prove that two graphs  are <em class="emphasis">isomorphic</em>, you must explicitly give the mapping between the vertices.</p>
+<p id="p-340">To prove that two graphs  are <em class="emphasis">not isomorphic</em>, you must find a structural property that they do not share. Here are some structural properties: the degree sequence, being bipartite, being connected, having a \(k\)-cycle, and more.</p></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
+<p id="p-341">Draw two 3-regular graphs on 8 vertices, one of which is connected and one of which has two components. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><p id="p-342">Here is a 3-regular connected graph on 8 vertices (there are some other non-isomorphic graphs with these properties) and a 3-regular disconnected graph on 8 vertices (all such graphs are isomorphic to this one). <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph20.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-343">Are the two graphs shown below isomorphic? If so, exhibit the isomorphism. If not, find a property that should be preserved by isomorphism for which the two graphs differ. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-graph21.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><p id="p-344">They are not isomorphic. The graph on the right has a 3-cycle, while the graph on the left does not. In fact, the graph of the left is bipartite.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-46"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-345">Draw the seven nonisomorphic subgraphs of \(K_3\text{.}\)</p>
+<p id="p-346"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like"><p id="p-347"><div class="image-box" style="width: 8-%; margin-left: NaN%; margin-right: NaN%;"><img src="images/fig-img-graph22.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-348">Prove that \(C_5 \cong \overline{C_5}\text{.}\) Can any other cycle graph be isomorphic to its complement? Justify your answer with example(s) or proof. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><p id="p-349">Both \(C_5\) and its complement are cycles on five vertices: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-graph23.svg" role="img" class="contained"></div> For a cycle \(C_n\text{,}\) the degree of each vertex is \(2\text{,}\) so the degree of each vertex in \(\overline{C}_n\) is \((n-1)-2=n-3\text{.}\) In order for \(C_n \cong \overline{C}_n\text{,}\) we must have \(2 = n-3\) and therefore \(n=5\text{.}\) In other words, \(C_5\) is the only cycles that is isomorphic to its complement.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-48"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
+<p id="p-350">Are the three graphs shown below isomorphic? (Are any two of them isomorphic?) If so, exhibit the isomorphism. If not, find a property that should be preserved by isomorphism for which the two graphs differ.</p></article></section><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph24.svg" role="img" class="contained"></div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like"><p id="p-351">The last graph is not isomorphic to the other two: every vertex has degree 4, while the vertices in the other two graphs each have degree 3. The first two graphs are isomorphic. We give one such isomorphism below. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-graph25.svg" role="img" class="contained"></div></p></div></div></section></div></main>
+</div>
+</body>
+</html>
