@@ -138,7 +138,7 @@ Here is a 3-regular connected graph on 8 vertices (there are some other non-isom
 
 <solution>
 <p>
-They are not isomorphic. The graph on the right has a 3-cycle, while the graph on the left does not. In fact, the graph of the left is bipartite.
+They are not isomorphic. The graph on the right has a 3-cycle, while the graph on the left does not. In fact, the graph on the left is bipartite.
 
 </p>
 </solution>
