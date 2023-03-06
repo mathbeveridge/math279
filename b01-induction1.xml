@@ -307,11 +307,19 @@ For <m>n \geq 1</m>, any <m>2^n \times 2^n</m> checkerboard with one square miss
 
 
 
-\item<em>Inductive Hypothesis:</em> State your inductive hypothesis for <m>n</m>.
+					</p>
+				</li>
+				<li>
+					<p>
+ <em>Inductive Hypothesis:</em> State your inductive hypothesis for <m>n</m>.
 
 
 
-\item<em>Inductive Step:</em>  Write down what you want to SHOW for <m>n+1</m>. Then try to find "a copy of the size <m>n</m> problem" in the size <m>n+1</m> problem.
+					</p>
+				</li>
+				<li>
+					<p>
+  <em>Inductive Step:</em>  Write down what you want to SHOW for <m>n+1</m>. Then try to find "a copy of the size <m>n</m> problem" in the size <m>n+1</m> problem.
 Rearrange and use your inductive hypothesis to prove the result!
 
 
