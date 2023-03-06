@@ -60,6 +60,8 @@ for all <m>n \geq 0</m>.
 			<idx><h>The Number of Edges in <m>K_n</m></h></idx>
 			<statement>
 				<p>
+Use induction to prove that the complete graph <m>K_n</m> has
+<m>\displaystyle{\frac{n(n-1)}{2}}</m> edges.
 
 
 
