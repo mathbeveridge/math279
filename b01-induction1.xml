@@ -627,7 +627,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 <solution>
 <p>
-By splitting the board down the middle (both horizontally and vertically, we now have the option to think of this one board as four independent boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  one missing square, then we end up with 4 independent instances of <m>4 \times 4</m> boards.
+By splitting the board down the middle (both horizontally and vertically), we now have the option to think of this one board as four independent boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  one missing square, then we end up with 4 independent instances of <m>4 \times 4</m> boards.
 </p>
 </solution>
 
@@ -698,7 +698,7 @@ Use <m>(\star)</m> to prove that any <m>2^{n+1} \times 2^{n+1}</m> board that is
 
 			</p><p>
 
-By splitting the board down the middle (both horizontally and vertically, we now have the option to think of this one board as four independent <m>2^n \times 2^n</m> boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  no missing square, then we end up with 4 independent instances of the problem using  <m>2^n \times 2^n</m> boards  (each missing one square).
+By splitting the board down the middle (both horizontally and vertically), we now have the option to think of this one board as four independent <m>2^n \times 2^n</m> boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  no missing square, then we end up with 4 independent instances of the problem using  <m>2^n \times 2^n</m> boards  (each missing one square).
 
 			</p><p>
 
