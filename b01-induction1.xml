@@ -627,7 +627,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 <solution>
 <p>
-By splitting the board down the middle (both horizontally and vertically, we now have the option to think of this one board as four independent boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  no missing square, then we end up with 4 independent instances of <m>4 \times 4</m> boards.
+By splitting the board down the middle (both horizontally and vertically, we now have the option to think of this one board as four independent boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  one missing square, then we end up with 4 independent instances of <m>4 \times 4</m> boards.
 </p>
 </solution>
 
