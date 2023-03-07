@@ -291,7 +291,7 @@ This diagram shows all three valid moves from this starting postion:
 
 \begin{scope}[shift={(-7,-2)}]
 
-\node(b1) at (0,0) {<m>-</m>};
+\draw[fill] (0,0) circle (4pt);
 \node[draw,circle] (b2) at (1,0) {T};
 \node[draw,circle] (b3) at (2,0) {T};
 \node[draw,circle] (b4) at (3,0) {H};
@@ -303,7 +303,7 @@ This diagram shows all three valid moves from this starting postion:
 \begin{scope}[shift={(0,-2)}]
 
 \node[draw,circle] (c1) at (0,0) {T};
-\node (c2) at (1,0) {<m>-</m>};
+\draw[fill] (1,0) circle (4pt);
 \node[draw,circle] (c3) at (2,0) {H};
 \node[draw,circle] (c4) at (3,0) {H};
 \node[draw,circle] (c5) at (4,0) {T};
@@ -314,7 +314,7 @@ This diagram shows all three valid moves from this starting postion:
 \node[draw,circle] (d1) at (0,0) {H};
 \node[draw,circle] (d2) at (1,0) {H};
 \node[draw,circle] (d3) at (2,0) {H};
-\node (d4) at (3,0) {<m>-</m>};
+\draw[fill] (3,0) circle (4pt);
 \node[draw,circle] (d5) at (4,0) {H};
 \end{scope}
 
@@ -324,6 +324,7 @@ This diagram shows all three valid moves from this starting postion:
 
 Note that <em>removing a coin leaves an empty space</em>. So that coin is now missing, so the coins you flipped are now missing a neighbor.
 
+			</p><p>
 
 <em>The Question:</em> For which arrangements of heads and tails can we remove all coins?
 
@@ -358,7 +359,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 
 			</p><p>
 
-<em> Inductive Hypothesis:</em> When <m>k &lt; n</m>, the winning \&amp; losing positions are as described in part (b).
+<em> Inductive Hypothesis:</em> When <m>k &lt; n</m>, the winning positions and losing positions are as described in part (b).
 
 			</p><p>
 
@@ -368,14 +369,14 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 			<ol>
 				<li>
 					<p>
- {\bf{Case 1:}} You start with an odd number of heads. Remove the leftmost heads up coin and flip its neighbors. This leaves two smaller lists of coins, <m>L</m> and <m>R</m>, which are to the left and right of the coin you removed. One of these sets could be empty; why? What can you say about the configuration of coins in each of <m>L</m> and <m>R</m>? Explain why this proves that the original configuration was winning/losing.
+ <em>Case 1:</em> You start with an odd number of heads. Remove the leftmost heads up coin and flip its neighbors. This leaves two smaller lists of coins, <m>L</m> and <m>R</m>, which are to the left and right of the coin you removed. One of these sets could be empty; why? What can you say about the configuration of coins in each of <m>L</m> and <m>R</m>? Explain why this proves that the original configuration was winning/losing.
 
 
 					</p>
 				</li>
 				<li>
 					<p>
- {\bf{Case 2:}} You start with an even number of heads. Pick any heads-up coin, remove it and flip its neighbors. Once again, this leaves two smaller lists of coins, <m>L</m> and <m>R</m>. Explain why one of these sets must contain an even number of heads-up coins. Explain why this proves that the original configuration was winning/losing.
+ <em>Case 2:</em> You start with an even number of heads. Pick any heads-up coin, remove it and flip its neighbors. Once again, this leaves two smaller lists of coins, <m>L</m> and <m>R</m>. Explain why one of these sets must contain an even number of heads-up coins. Explain why this proves that the original configuration was winning/losing.
 
 
 					</p>
