@@ -12,8 +12,14 @@
 </head>
 <body>
 <article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">12.5.c.i</span><span class="period">.</span>
+<span class="type">Item</span><span class="period">.</span>
 </h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Case 1:</em> You start with an odd number of heads. Remove the leftmost heads up coin and flip its neighbors. This leaves two smaller lists of coins, \(L\) and \(R\text{,}\) which are to the left and right of the coin you removed. One of these sets could be empty; why? What can you say about the configuration of coins in each of \(L\) and \(R\text{?}\) Explain why this proves that the original configuration was winning/losing.</p></article><span class="incontext"><a href="exercises-12.html#li-220">in-context</a></span>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that  the sum of the angles in an \(n\)-gon is equal to \(180 (n-2).\) Label the vertices as \(1,2, \ldots, n\text{.}\) Pick the diagonal connecting vertex 1 to vertex \(k\) where \(3 \leq k \leq n-1\text{.}\) Break the polygon apart along this diagonal. This creates a \(k\)-gon \(P_1\) and an \((n-k+2)\)-gon \(P_2\text{,}\) where \(k \geq 3\text{.}\) (Note that we have added one more edge which is used twice: once in each polygon. So vertices 1 and \(k\) appear in both \(P_1\) and \(P_2\text{.}\)) By induction, the sum of the angles in these polygons is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+180 (k-2) + 180 (n-k+2 - 2) = 180 (n-2).
+\end{equation*}
+</div>
+<p class="continuation">When we add these angles, we get the sum of the angles in the original polygon.</p></article><span class="incontext"><a href="exercises-12.html#li-220">in-context</a></span>
 </body>
 </html>

@@ -72,7 +72,8 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./b01-graph2.xml" />  
             <xi:include href="./b01-tree1.xml" />  
             <xi:include href="./b01-induction1.xml" />  
-            <xi:include href="./b01-induction2.xml" />                
+            <xi:include href="./b01-induction2.xml" />   
+            <xi:include href="./b01-planar.xml" />               
             <!--xi:include href="./ex01-counting.xml" /-->                       
     </part>    
 
