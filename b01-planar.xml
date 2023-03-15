@@ -385,8 +385,8 @@ In the previous problem, we  showed that for any planar graph, we have <m>e \leq
 			</statement>
 		</exercise>
 		<exercise>
-			<title>A bound on the number of faces when <m>G</m> has no triangles</title>
-			<idx><h>A bound on the number of faces when <m>G</m> has no triangles</h></idx>
+			<title><m>K_{3,3}</m> is not planar</title>
+			<idx><h><m>K_{3,3}</m> is not planar</h></idx>
 			<statement>
 				<p>
 The argument from Problem 5 can be generalized when we know that the planar graph <m>G</m> does not have any triangles (3-cycles). In this case, we must have
