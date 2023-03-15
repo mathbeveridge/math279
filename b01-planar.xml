@@ -264,6 +264,7 @@ v_G -e_G +f_G = 2.
 					<p>
  <em> Strong Inductive Hypothesis: </em> Assume that a plane drawing of a connected planar graph <m>H</m> with fewer than <m>k</m> cycles satisfies
 <me>
+v_H - e_H + f_H = 2. \qquad \qquad {(\star)}
 </me>
 
 
@@ -493,6 +494,7 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 
 \foreach \x in {0,1,2,3,4}
 {
+
 \draw[fill] (\x*72+18:1) circle (3pt);
 
 
