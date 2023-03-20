@@ -449,7 +449,9 @@ In other words, if <m>G</m> is planar it cannot have "too many" edges.
 <p>
 
 We have
-<m></m> f \leq \frac{2}{3} e.<m></m>
+<me>
+f \leq \frac{2}{3} e.
+</me>
 Plugging this into <m>v-e+f= 2</m> gives
 <me>
 \begin{array}{lcr}
