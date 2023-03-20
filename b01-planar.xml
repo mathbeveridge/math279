@@ -364,7 +364,7 @@ Hint: what is a <em>lower bound</em> on the number of edges in the boundary of e
 			<idx><h>An upper bound on the number of edges</h></idx>
 			<statement>
 				<p>
-Use the fact that <m>v-e+f=2</m> and <m>3f \leq 2e</m> to prove that if <m>G</m> is a planar graph then <m></m>e \leq 3v -6.<m></m>
+Use the fact that <m>v-e+f=2</m> and <m>3f \leq 2e</m> to prove that if <m>G</m> is a planar graph then <m>e \leq 3v -6.</m>
 In other words, if <m>G</m> is planar it cannot have "too many" edges.
 
 
