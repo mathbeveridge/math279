@@ -357,13 +357,13 @@ By induction <m>(\star)</m>, we know that
 </p>
 <md>
 <mrow>
-n_H - m_H + r_H &amp;= 2
+v_H - e_H + f_H &amp;= 2
 </mrow>
 <mrow>
-n_G - (m_G -1) + (r_G -1) &amp;= 2
+v_G - (e_G -1) + (f_G -1) &amp;= 2
 </mrow>
 <mrow>
-n_G - m_G + r_G &amp;= 2.
+v_G - e_G + f_G &amp;= 2.
 </mrow>
 </md>
 <p>
@@ -526,7 +526,10 @@ Since <m>G</m> has no 3-cycles, every region is bounded by at least 4 edges. Thi
 <me>
 4f  \leq  \sum_{i=1}^r \mbox{len}(A_i) = 2 e,
 </me>
-or equivalently, <m></m>r \leq \frac{1}{2}e.<m></m>
+or equivalently,
+<me>
+r \leq \frac{1}{2}e.
+</me>
 Plugging this into <m>v-e+f = 2</m> gives
 </p>
 <md>
