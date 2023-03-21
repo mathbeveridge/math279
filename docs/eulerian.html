@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>dm Graph Isomorphisms</title>
+<title>dm Eulerian Graphs</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -112,10 +112,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="graph1.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="tree1.html" title="Next">Next</a></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="graph1.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a class="next-button button toolbar-item" href="tree1.html" title="Next">Next</a>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -131,42 +131,65 @@
 <li class="link"><a href="function3.html" data-scroll="function3"><span class="codenumber">7</span> <span class="title">Fun with Functions</span></a></li>
 <li class="link part"><a href="part-gi.html" data-scroll="part-gi"><span class="codenumber">II</span> <span class="title">Graphs, Trees, Induction</span></a></li>
 <li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">8</span> <span class="title">Graphs</span></a></li>
-<li class="link active"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">9</span> <span class="title">Graph Isomorphisms</span></a></li>
+<li class="link"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">9</span> <span class="title">Graph Isomorphisms</span></a></li>
 <li class="link"><a href="tree1.html" data-scroll="tree1"><span class="codenumber">10</span> <span class="title">Trees</span></a></li>
 <li class="link"><a href="induction1.html" data-scroll="induction1"><span class="codenumber">11</span> <span class="title">Induction</span></a></li>
 <li class="link"><a href="induction2.html" data-scroll="induction2"><span class="codenumber">12</span> <span class="title">Strong Induction</span></a></li>
 <li class="link"><a href="planar.html" data-scroll="planar"><span class="codenumber">13</span> <span class="title">Planar Graphs</span></a></li>
-<li class="link"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">14</span> <span class="title">Eulerian Graphs</span></a></li>
+<li class="link active"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">14</span> <span class="title">Eulerian Graphs</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
-<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="graph2"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">9</span> <span class="title">Graph Isomorphisms</span>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="eulerian"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">14</span> <span class="title">Eulerian Graphs</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-340">Graphs \(G=(V(G),E(G))\) and \(H=(V(H), E(H))\) are <em class="emphasis">isomorphic</em> when there is a bijection</p>
-<div class="displaymath">
-\begin{equation*}
-\phi: V(G) \rightarrow V(H)
-\end{equation*}
-</div>
-<p class="continuation">such that</p>
-<div class="displaymath">
-\begin{equation*}
-(u,v) \in E(G) \Longleftrightarrow (\phi(u), \phi(v)) \in E(H).
-\end{equation*}
-</div>
-<p class="continuation">In this case, we write \(G \cong H\text{.}\)</p>
-<p id="p-341">To prove that two graphs  are <em class="emphasis">isomorphic</em>, you must explicitly give the mapping between the vertices.</p>
-<p id="p-342">To prove that two graphs  are <em class="emphasis">not isomorphic</em>, you must find a structural property that they do not share. Here are some structural properties: the degree sequence, being bipartite, being connected, having a \(k\)-cycle, and more.</p></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-14"><p id="p-546">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
+<ul class="disc">
+<li id="li-253"><p id="p-547">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
+<li id="li-254"><p id="p-548">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
+<li id="li-255"><p id="p-549">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-256"><p id="p-550">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
+<li id="li-257"><p id="p-551">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
+</ul>
+<p class="continuation">And here are the definitions that we need for today.</p>
+<ul class="disc">
+<li id="li-258"><p id="p-552">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
+<li id="li-259"><p id="p-553">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
+<li id="li-260"><p id="p-554">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
+</ul></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-44"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-343">Draw two 3-regular graphs on 8 vertices, one of which is connected and one of which has two components. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-106" id="solution-106"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-106"><div class="solution solution-like"><p id="p-344">Here is a 3-regular connected graph on 8 vertices (there are some other non-isomorphic graphs with these properties) and a 3-regular disconnected graph on 8 vertices (all such graphs are isomorphic to this one). <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph20.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-345">Are the two graphs shown below isomorphic? If so, exhibit the isomorphism. If not, find a property that should be preserved by isomorphism for which the two graphs differ. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-graph21.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-107" id="solution-107"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-107"><div class="solution solution-like"><p id="p-346">They are not isomorphic. The graph on the right has a 3-cycle, while the graph on the left does not. In fact, the graph on the left is bipartite.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-46"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-347">Draw the seven nonisomorphic subgraphs of \(K_3\text{.}\)</p>
-<p id="p-348"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-108" id="solution-108"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-108"><div class="solution solution-like"><p id="p-349"><div class="image-box" style="width: 8-%; margin-left: NaN%; margin-right: NaN%;"><img src="images/fig-img-graph22.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-350">Prove that \(C_5 \cong \overline{C_5}\text{.}\) Can any other cycle graph be isomorphic to its complement? Justify your answer with example(s) or proof. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-109" id="solution-109"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-109"><div class="solution solution-like"><p id="p-351">Both \(C_5\) and its complement are cycles on five vertices: <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-graph23.svg" role="img" class="contained"></div> For a cycle \(C_n\text{,}\) the degree of each vertex is \(2\text{,}\) so the degree of each vertex in \(\overline{C}_n\) is \((n-1)-2=n-3\text{.}\) In order for \(C_n \cong \overline{C}_n\text{,}\) we must have \(2 = n-3\) and therefore \(n=5\text{.}\) In other words, \(C_5\) is the only cycles that is isomorphic to its complement.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-48"><h6 class="heading"><span class="codenumber">5<span class="period">.</span></span></h6>
-<p id="p-352">Are the three graphs shown below isomorphic? (Are any two of them isomorphic?) If so, exhibit the isomorphism. If not, find a property that should be preserved by isomorphism for which the two graphs differ.</p></article></section><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph24.svg" role="img" class="contained"></div>
-<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-110" id="solution-110"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-110"><div class="solution solution-like"><p id="p-353">The last graph is not isomorphic to the other two: every vertex has degree 4, while the vertices in the other two graphs each have degree 3. The first two graphs are isomorphic. We give one such isomorphism below. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-graph25.svg" role="img" class="contained"></div></p></div></div></section></div></main>
+<article class="exercise exercise-like" id="exercise-72"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Examples and Non-Examples.</span>
+</h6>
+<p id="p-555">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div></p></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">DIY Eulerian Properties.</span>
+</h6>
+<p id="p-556">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail?</p></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Circuit.</span>
+</h6>
+<p id="p-557">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>.</p></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Trail.</span>
+</h6>
+<p id="p-558">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>.</p></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Using EC condition to prove ET condition.</span>
+</h6>
+<p id="p-559">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that [ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Circuit Implies EC condition holds.</span>
+</h6>
+<p id="p-560">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC.</p></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">EC condition implies \(G\) has an Eulerian Circuit.</span>
+</h6>
+<p id="p-561">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy.</p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Guan's Postman Problem.</span>
+</h6>
+<p id="p-562">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
+<p id="p-563"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
+<p id="p-564">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
+<ol class="lower-alpha">
+<li id="li-261"><p id="p-565">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div></p></li>
+<li id="li-262"><p id="p-566">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them?</p></li>
+<li id="li-263"><p id="p-567">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div></p></li>
+</ol></article></section></section></div></main>
 </div>
 </body>
 </html>
