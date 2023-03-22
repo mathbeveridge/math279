@@ -173,22 +173,24 @@
 <p id="p-558">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>.</p></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Using EC condition to prove ET condition.</span>
 </h6>
-<p id="p-559">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that [ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
+<p id="p-559">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
+<p id="p-560">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
+<p id="p-561"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property?</p></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Circuit Implies EC condition holds.</span>
 </h6>
-<p id="p-560">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC.</p></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
+<p id="p-562">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC.</p></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">EC condition implies \(G\) has an Eulerian Circuit.</span>
 </h6>
-<p id="p-561">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy.</p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading">
+<p id="p-563">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy.</p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Guan's Postman Problem.</span>
 </h6>
-<p id="p-562">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
-<p id="p-563"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
-<p id="p-564">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
+<p id="p-564">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
+<p id="p-565"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
+<p id="p-566">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
 <ol class="lower-alpha">
-<li id="li-261"><p id="p-565">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div></p></li>
-<li id="li-262"><p id="p-566">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them?</p></li>
-<li id="li-263"><p id="p-567">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div></p></li>
+<li id="li-261"><p id="p-567">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div></p></li>
+<li id="li-262"><p id="p-568">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them?</p></li>
+<li id="li-263"><p id="p-569">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

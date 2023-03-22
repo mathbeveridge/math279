@@ -268,9 +268,15 @@ Make a conjecture about what structural property guarantees that <m>G</m> has an
 			<statement>
 				<p>
 Assume that your <em>Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em>Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that
+
+			</p><p>
 [ Property EC <m>\rightarrow</m>  Eulerian circuit ]
 <m>\rightarrow</m>
 [ Property ET <m>\rightarrow</m>  Eulerian trail ].
+
+			</p><p>
+
+<em>Hint:</em> What small change could you make to a graph <m>G</m> with the ET property so that it becomes a graph <m>H</m> with the EC property?
 
 
 
