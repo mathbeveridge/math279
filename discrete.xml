@@ -76,7 +76,12 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./b01-planar.xml" />  
             <xi:include href="./b01-eulerian.xml" />              
             <!--xi:include href="./ex01-counting.xml" /-->                       
-    </part>    
+    </part>  
+    <part xml:id="part-count">
+        <title>Graphs, Trees, Induction</title>         
+            <xi:include href="./c01-warmup.xml" />    
+            <xi:include href="./c01-add-mult.xml" />                      
+    </part> 
 
     </book>
 

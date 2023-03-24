@@ -112,10 +112,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="part-count.html" title="Next">Next</a></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="planar.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a class="next-button button toolbar-item" href="part-count.html" title="Next">Next</a>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -137,6 +137,9 @@
 <li class="link"><a href="induction2.html" data-scroll="induction2"><span class="codenumber">12</span> <span class="title">Strong Induction</span></a></li>
 <li class="link"><a href="planar.html" data-scroll="planar"><span class="codenumber">13</span> <span class="title">Planar Graphs</span></a></li>
 <li class="link active"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">14</span> <span class="title">Eulerian Graphs</span></a></li>
+<li class="link part"><a href="part-count.html" data-scroll="part-count"><span class="codenumber">III</span> <span class="title">Graphs, Trees, Induction</span></a></li>
+<li class="link"><a href="count-warmup.html" data-scroll="count-warmup"><span class="codenumber">15</span> <span class="title">Basic Counting Problems</span></a></li>
+<li class="link"><a href="add-mult.html" data-scroll="add-mult"><span class="codenumber">16</span> <span class="title">Addition Principle and Multiplication Principle</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="eulerian"><h2 class="heading">
@@ -217,9 +220,7 @@
 </ul></div></div></p></li>
 <li id="li-278"><p id="p-593">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like">
 <p id="p-594">The states with odd degrees are (from left to right): CA, NV, UT, ND, TX, MO, LA, IL, KY, OH, WV, GA, MD, NC, VT, NY, NJ, DE, NH, MA, CT, ME. Observe that ND is at least 3 steps away from all the other odd degree vertices. We can pair it up with UT at a cost of 3, and we cannot do any better. So we can double the edges (ND, MT), (MT, ID), (ID, UT) (or we can pick another path of length 3 between ND and UT).</p>
-<p id="p-595">We can pair the remaining odd states with an odd neighboring state as follows: 
-  (CA, NV), (UT,  ND), (MO, IL), (TX, LA), (VT, NY), (NJ, DE), (MA, CT), (NH, ME), (KY, OH), (WV, MD), (GA,  NC).
-  We must double a total of 14 edges to solve the Postman Problem.</p>
+<p id="p-595">We can pair the remaining odd states with an odd neighboring state as follows: (CA, NV) (UT,  ND) (MO, IL) (TX, LA) (VT, NY) (NJ, DE) (MA, CT) (NH, ME) (KY, OH) (WV, MD) (GA,  NC) We must double a total of 14 edges to solve the Postman Problem.</p>
 </div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
