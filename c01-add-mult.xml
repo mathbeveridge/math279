@@ -107,9 +107,11 @@ I have three favorite restaurants in St Paul. Each of them has a choice of 3 kin
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Subtraction Principle</title>
+			<idx><h>Subtraction Principle</h></idx>
 			<statement>
 				<p>
- Recall that  <em>subset</em> <m>B</m> of a set <m>A</m> is a subcollection of the elements of <m>A</m>. For example, the the set <m>B= \{ 1, 3, 5 \}</m> is a subset of <m>A = \{ 1, 2, 3,4,5\}</m>. Meanwhile, <m>C = \{ 2, 4, 6 \}</m> is not a subset of <m>A</m> since <m>6 \notin A</m>. We write <m>B \subset A</m> when <m>B</m> is a subset of <m>A</m>.
+Recall that  <em>subset</em> <m>B</m> of a set <m>A</m> is a subcollection of the elements of <m>A</m>. For example, the the set <m>B= \{ 1, 3, 5 \}</m> is a subset of <m>A = \{ 1, 2, 3,4,5\}</m>. Meanwhile, <m>C = \{ 2, 4, 6 \}</m> is not a subset of <m>A</m> since <m>6 \notin A</m>. We write <m>B \subset A</m> when <m>B</m> is a subset of <m>A</m>.
 
 Suppose that <m>B \subset A</m>. Formulate a natural <em>subtraction principle</em> for this situation.
 
@@ -119,9 +121,11 @@ Suppose that <m>B \subset A</m>. Formulate a natural <em>subtraction principle</
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Passwords</title>
+			<idx><h>Passwords</h></idx>
 			<statement>
 				<p>
- A computer system requires an alphanumeric (letters and numbers) password of length 8. At least one of these characters must be a number. Use your Subtraction Principle to count the number of  passwords.
+A computer system requires an alphanumeric (letters and numbers) password of length 8. At least one of these characters must be a number. Use your Subtraction Principle to count the number of  passwords.
 
 
 
