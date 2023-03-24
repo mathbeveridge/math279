@@ -60,7 +60,7 @@ If  <m>A_1,  A_2, \ldots, A_k</m>, are  sets then
 			<idx><h>License Plates</h></idx>
 			<statement>
 				<p>
-License plates in the Netherlands consist consist of three groups of two characters (either letters or numbers). Two of the groups must be of one type and the third group must be of the other. For example, the following are all valid license plates:
+License plates in the Netherlands consist of three groups of two characters (either letters or numbers). Two of the groups must be of one type and the third group must be of the other. For example, the following are all valid license plates:
 AB-12-CD, 12-34-AB, 12-AB-34
 How many possible license plates are there?
 
