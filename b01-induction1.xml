@@ -22,6 +22,7 @@
 			<idx><h>A Formula for a Sum</h></idx>
 			<statement>
 				<p>
+Use induction to prove that
 <me>
 \sum_{k=0}^{n} 2^k = 2^{n+1} -1
 </me>
@@ -93,14 +94,14 @@ We must show that  <m>\sum_{k=0}^{n+1} 2^k = 2^{n+2} -1</m>.
 			</p><p>
 
 Starting with the left hand side, we have
-\[
+<me>
 \begin{array}{rcl}
 \sum_{k=0}^{n+1} 2^k &amp;=&amp; \sum_{k=0}^{n} 2^k + 2^{n+1} \\
 &amp;=&amp; \left( 2^{n+1}  -1 \right) + 2^{n+1}   \mbox{by} \,  (\star)\\
 &amp;=&amp; 2 \cdot 2^{n+1} - 1 \\
 &amp;=&amp; 2^{n+2} -1.
 \end{array}
-\]
+</me>
 
 
 </p>
@@ -214,6 +215,7 @@ edges in the <m>K_{n+1}</m>.
 			<idx><h>A Divisibility Problem</h></idx>
 			<statement>
 				<p>
+Use induction to prove that
 <m>4</m> divides <m>(5^n -1)</m> for <m>n \geq 1</m>.
 
 
@@ -726,6 +728,7 @@ By <m>(\star)</m>, we can cover each of these four boards using triominoes. When
 			<idx><h>Nearest Neighbor Pie Fight</h></idx>
 			<statement>
 				<p>
+Consider a pie fight between an odd number of people in which everyone throws a pie at her nearest neighbor. Assume that all pairwise distances are distinct. Prove that in such a pie fight between <m>2k+1</m> people with <m>k \geq 1</m>, there is at least one person who is not hit by a pie.
 
 			<ol>
 
@@ -817,11 +820,12 @@ Consider a pie fight between <m>2(k+1)+1 =2k+3</m> people. Again, let Alice and 
 				</li>
 			</ol>
 
+
+
 				</p>
 			</statement>
 		</exercise>
 	</exercises>
-
 
 
 
