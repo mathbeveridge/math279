@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="count-pigeonhole" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Pigeonhole Principle</title>
+	<introduction>
+		<p>
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+
+
+		<exercise>
+			<title>Warm Up Questions</title>
+			<idx><h>Warm Up Questions</h></idx>
+			<statement>
+				<p>
+
+			<ol>
+				<li>
+					<p>
+ Each of the four cards below has a digit printed on one side and a letter printed on the other side.
+
+
+			<image width="50%" xml:id="fig-img-count-pigeonhole0">
+				<latex-image>
+\begin{tikzpicture}
+
+
+\draw (0,0) node [draw] {E};
+\draw (2,0) node [draw] {D};
+\draw (4,0) node [draw] {2};
+\draw (6,0) node [draw] {3};
+
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+A classmate makes the following claim:
+"If there is a vowel on one side of a card then there is an odd number  on the other side."
+Which cards must be turned over to check whether this statement is true?
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Suppose that four women are drinking in a bar. The owner  wants to enforce the rule that no one under twenty-one is allowed to drink alcohol. The owner asks each person to tell him either (1) what she is drinking, or (2) how old they are. Here are their truthful answers:
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+Alice
+</cell>
+<cell>
+Barbara
+</cell>
+<cell>
+Clarice
+</cell>
+<cell>
+Daria
+</cell>
+</row>
+<row>
+<cell>
+"I am drinking Coke."
+</cell>
+<cell>
+"I am sixteen."
+</cell>
+<cell>
+"I am drinking beer."
+</cell>
+<cell>
+"I am twenty-five."
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+Which of the people have to answer the second question in order for the owners to ensure that the law is being observed?
+
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>First to Four Wins</title>
+			<idx><h>First to Four Wins</h></idx>
+			<statement>
+				<p>
+Two teams play basketball games until one team wins four games. What is the fewest number of games that they must play to be guaranteed that one team will  four games? (What are your pigeons? What are your pigeonholes?)
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>What's Your Birth Stone?</title>
+			<idx><h>What's Your Birth Stone?</h></idx>
+			<statement>
+				<p>
+There 28 students enrolled in a math course. What is the largest number of these students that you can guarantee are  born in the same month?  (What are your pigeons? What are your pigeonholes?)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Tables and Chairs</title>
+			<idx><h>Tables and Chairs</h></idx>
+			<statement>
+				<p>
+A conference room contains 8 tables and 99 chairs. What is the smallest possible number of chairs at a table having the most chairs? (What are your pigeons? What are your pigeonholes?)
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Coin Flips</title>
+			<idx><h>Coin Flips</h></idx>
+			<statement>
+				<p>
+A coin is flipped 3 times and the outcomes are recorded (in order). For example, if heads comes up the first two times and tails the third time, then we write <m>HHT</m>. How many times must we flip a coin three time to be guaranteed that we have at least two outcomes that are identical? Remember: an <em>outcome</em> is an ordered list of the 3 flips. (What are your pigeons? What are your pigeonholes?)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Midpoint Madness</title>
+			<idx><h>Midpoint Madness</h></idx>
+			<statement>
+				<p>
+Suppose that we have  5 points <m>(x,y)</m> in <m>\R^2</m> with integer coordinates. This means that both the <m>x</m>-coordinate and the <m>y</m>-coordinate are integers. Prove that the midpoint of the segment joining some pair of points also has integer coordinates. (Hint: this is a pigeonhole problem. The five "pigeons" are the points. What are the four "pigeonholes?" )
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Points Inside a Square</title>
+			<idx><h>Points Inside a Square</h></idx>
+			<statement>
+				<p>
+Suppose that we have 10 points <m>(x,y)</m> in the unit square <m>[0,1] \times [0,1]</m>. In other words, <m>0 \leq x \leq 1</m> and <m>0 \leq y \leq 1</m>. Prove that there are two points that are at distance at most <m>\sqrt{2}/3</m> from one another? (Hint: this time we have 10 pigeons. Create 9 pigeonholes in the unit square using a simple, geometric way.)
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+
+</chapter>

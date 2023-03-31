@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="count-include-exclude" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Inclusion/Exclusion</title>
+	<introduction>
+		<p>
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Rolling 10 Dice</title>
+			<idx><h>Rolling 10 Dice</h></idx>
+			<statement>
+				<p>
+We roll 6-sided die 10 times, and then list the outcomes in order as <m>(x_1, x_2, \ldots , x_{10} )</m>. We are interested in counting the total number outcomes in which 1 or 2 appears at least once.  We break this process into multiple steps.
+
+			<ol>
+				<li>
+					<p>
+ Let <m>X</m> be the set of all possible outcomes <m>(x_1, x_2, \ldots , x_{10} )</m>. What is <m>|X|</m>?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Let <m>X_1</m> be the set of outcomes that <em>do not </em> contain any 1's. I would call <m>X_1</m> the set of "bad outcomes for 1." What is <m>|X_1|</m>?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Define <m>X_2</m> in the same way as in part (b), where <m>X_2</m> is the set of "bad outcomes for 2." What is <m>|X_2|</m>?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many outcomes are there in which neither 1 or 2 appears? How would you describe this set using the symbols <m>X_1</m> and <m>X_2</m>?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes."
+
+
+\item
+Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both?
+
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>{2, 5, 7 Hater</title>
+			<idx><h>{2, 5, 7 Hater</h></idx>
+			<statement>
+				<p>
+In this question, you will determine how many numbers between 1 and 140 are <em>not</em> divisible by any of 2, 5 or 7? As in the previous exercise, we  start by counting the complement of the set we are interested in (because it is easier to count).
+
+			<ol>
+				<li>
+					<p>
+ Negate the statement "<m>n</m> is not divisible by any of 2, 5 and 7."
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The set of numbers that you described in part (a) can be found using inclusion-exclusion. Do so.
+
+
+
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use your answer to (b) to find how many numbers in [140] are <em>not</em> divisible by any of 2, 5 and 7.
+
+
+					</p>
+				</li>
+			</ol>
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
