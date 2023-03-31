@@ -51,8 +51,11 @@ We roll 6-sided die 10 times, and then list the outcomes in order as <m>(x_1, x_
  Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes."
 
 
-\item
-Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both?
+					</p>
+				</li>
+				<li>
+					<p>
+ Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both?
 
 
 					</p>
@@ -69,7 +72,7 @@ Now use your answer from part (d) to find the number of "good  outcomes." Namely
 			<idx><h>I Hate 2, 5, and 7</h></idx>
 			<statement>
 				<p>
-In this question, you will determine how many numbers between 1 and 140 are <em>not</em> divisible by any of 2, 5 or 7? As in the previous exercise, we  start by counting the complement of the set we are interested in (because it is easier to count).
+In this question, you will determine how many numbers between 1 and 140 are <em>not</em> divisible by any of 2, 5 or 7. As in the previous question, we  start by counting the complement of the set we are interested in (because it is easier to count).
 
 			<ol>
 				<li>
