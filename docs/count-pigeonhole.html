@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>dm Pigeonhole Principle</title>
+<title>dm Permutations and Combinations</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -112,10 +112,10 @@
 </div></div>
 <nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
 <div class="navbar-top-buttons">
-<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="count-include-exclude.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-count.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="count-pigeonhole.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-count.html" title="Up">Up</a><span id="nextbutton" class="next-button button toolbar-item disabled">Next</span></span></div>
 </div>
 <div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
-<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="count-include-exclude.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-count.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="count-pigeonhole.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-count.html" title="Up">Up</a><span class="next-button button toolbar-item disabled">Next</span>
 </div>
 </div></nav></header><div class="page">
 <div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
@@ -141,57 +141,89 @@
 <li class="link"><a href="count-warmup.html" data-scroll="count-warmup"><span class="codenumber">15</span> <span class="title">Basic Counting Problems</span></a></li>
 <li class="link"><a href="add-mult.html" data-scroll="add-mult"><span class="codenumber">16</span> <span class="title">Addition Principle and Multiplication Principle</span></a></li>
 <li class="link"><a href="count-include-exclude.html" data-scroll="count-include-exclude"><span class="codenumber">17</span> <span class="title">Inclusion/Exclusion</span></a></li>
-<li class="link active"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">18</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">18</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link active"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">19</span> <span class="title">Permutations and Combinations</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-pigeonhole"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">18</span> <span class="title">Pigeonhole Principle</span>
+<span class="type">Chapter</span> <span class="codenumber">19</span> <span class="title">Permutations and Combinations</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-658"></p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-19"><p id="p-670">Here are the formulas to count  sublists and subsets of the set \([n] = \{1,2,\ldots, n\}\text{.}\)</p>
+<ul class="disc">
+<li id="li-307">
+<p id="p-671">A <em class="emphasis">permutation</em> of \([n]\) is an ordered list of its elements. The number of permutations of \([n]\) is</p>
+<div class="displaymath">
+\begin{equation*}
+n! = n (n-1) (n-2) \cdots 2 \cdot 1.
+\end{equation*}
+</div>
+</li>
+<li id="li-308">
+<p id="p-672">A  \(k\)-<em class="emphasis">list</em> of \([n]\) (also called a \(k\)<em class="emphasis">-permutation</em>) is an ordered list of \(k\) elements of \([n]\text{.}\) The number of \(k\)-lists of \([n]\) is</p>
+<div class="displaymath">
+\begin{equation*}
+P(n,k) = (n)_k = n (n-1) \cdots (n-k+1).
+\end{equation*}
+</div>
+</li>
+<li id="li-309">
+<p id="p-673">A \(k\)<em class="emphasis">-set</em> of \([n]\) (also called a \(k\)<em class="emphasis">- combination</em>) is a subset containing \(k\) elements of \([n]\text{.}\) The number of \(k\)-sets of \([n]\) is</p>
+<div class="displaymath">
+\begin{equation*}
+C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
+\end{equation*}
+</div>
+</li>
+</ul></section><section class="exercises" id="exercises-19"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-89"><h6 class="heading">
-<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Warm Up Questions.</span>
+<article class="exercise exercise-like" id="exercise-96"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Bus Stop.</span>
 </h6>
-<ol id="p-659" class="lower-alpha">
-<li id="li-304"><p id="p-660">Each of the four cards below has a digit printed on one side and a letter printed on the other side. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-count-pigeonhole0.svg" role="img" class="contained"></div> A classmate makes the following claim: "If there is a vowel on one side of a card then there is an odd number  on the other side." Which cards must be turned over to check whether this statement is true?</p></li>
-<li id="li-305">
-<p id="p-661">Suppose that four women are drinking in a bar. The owner  wants to enforce the rule that no one under twenty-one is allowed to drink alcohol. The owner asks each person to tell him either (1) what she is drinking, or (2) how old they are. Here are their truthful answers:</p>
-<figure class="table table-like" id="table-1"><figcaption><span class="type">Table</span><span class="space"> </span><span class="codenumber">18.0.1<span class="period">.</span></span><span class="space"> </span></figcaption><div class="tabular-box natural-width"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines">Alice</td>
-<td class="l m b1 r1 l0 t1 lines">Barbara</td>
-<td class="l m b1 r1 l0 t1 lines">Clarice</td>
-<td class="l m b1 r1 l0 t1 lines">Daria</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">"I am drinking Coke."</td>
-<td class="l m b1 r1 l0 t0 lines">"I am sixteen."</td>
-<td class="l m b1 r1 l0 t0 lines">"I am drinking beer."</td>
-<td class="l m b1 r1 l0 t0 lines">"I am twenty-five."</td>
-</tr>
-</table></div></figure><p id="p-662">Which of the people have to answer the second question in order for the owners to ensure that the law is being observed?</p>
-</li>
-<li id="li-306"><p id="p-663">Which of the previous questions was easier, (a) or (b)? Why?</p></li>
-</ol></article><article class="exercise exercise-like" id="exercise-90"><h6 class="heading">
-<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">First to Four Wins.</span>
+<p id="p-674">Four adults and seven children are waiting at a bus stop.</p>
+<ol class="lower-alpha">
+<li id="li-310"><p id="p-675">How many ways can they sit in a row?</p></li>
+<li id="li-311"><p id="p-676">How many ways can they sit in a row if the adults must sit together and the childreh must sit together?</p></li>
+<li id="li-312"><p id="p-677">How many ways can they sit in a row if the the children must sit together?</p></li>
+<li id="li-313"><p id="p-678">How many ways can they sit in a row if <em class="emphasis">just</em> the children are sitting together (and the adults must not sit together)?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-97"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">In the Queue.</span>
 </h6>
-<p id="p-664">Two teams play basketball games until one team wins four games. What is the fewest number of games that they must play to be guaranteed that one team will  four games? (What are your pigeons? What are your pigeonholes?)</p></article><article class="exercise exercise-like" id="exercise-91"><h6 class="heading">
-<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">What's Your Birth Stone?</span>
+<p id="p-679">How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.)</p></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Forming a Circle.</span>
 </h6>
-<p id="p-665">There 28 students enrolled in a math course. What is the largest number of these students that you can guarantee are  born in the same month?  (What are your pigeons? What are your pigeonholes?)</p></article><article class="exercise exercise-like" id="exercise-92"><h6 class="heading">
-<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Tables and Chairs.</span>
+<p id="p-680">In how many ways can \(n\) people stand in a circle? (How is this problem different from standing in a line?)</p></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Five Digits, No Zeros.</span>
 </h6>
-<p id="p-666">A conference room contains 8 tables and 99 chairs. What is the smallest possible number of chairs at a table having the most chairs? (What are your pigeons? What are your pigeonholes?)</p></article><article class="exercise exercise-like" id="exercise-93"><h6 class="heading">
-<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Coin Flips.</span>
+<ol id="p-681" class="lower-alpha">
+<li id="li-314"><p id="p-682">How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear?</p></li>
+<li id="li-315"><p id="p-683">Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.")</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-100"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Coin Toss.</span>
 </h6>
-<p id="p-667">A coin is flipped 3 times and the outcomes are recorded (in order). For example, if heads comes up the first two times and tails the third time, then we write \(HHT\text{.}\) How many times must we flip a coin three time to be guaranteed that we have at least two outcomes that are identical? Remember: an <em class="emphasis">outcome</em> is an ordered list of the 3 flips. (What are your pigeons? What are your pigeonholes?)</p></article><article class="exercise exercise-like" id="exercise-94"><h6 class="heading">
-<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Midpoint Madness.</span>
+<p id="p-684">A coin is tossed 10 times and a sequence of heads and tails is observed.</p>
+<ol class="lower-alpha">
+<li id="li-316"><p id="p-685">How many different sequences are possible?</p></li>
+<li id="li-317"><p id="p-686">In how how many of these sequences are there exactly 4 heads?</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-101"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Dinner Party.</span>
 </h6>
-<p id="p-668">Suppose that we have  5 points \((x,y)\) in \(\R^2\) with integer coordinates. This means that both the \(x\)-coordinate and the \(y\)-coordinate are integers. Prove that the midpoint of the segment joining some pair of points also has integer coordinates. (Hint: this is a pigeonhole problem. The five "pigeons" are the points. What are the four "pigeonholes?" )</p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading">
-<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Points Inside a Square.</span>
+<p id="p-687">A woman has 9 close friends.</p>
+<ol class="lower-alpha">
+<li id="li-318"><p id="p-688">In how many ways can she invite 6 of them to dinner?</p></li>
+<li id="li-319"><p id="p-689">Repeat (a) if two of her friends don't get along and will not attend together.</p></li>
+<li id="li-320"><p id="p-690">Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them.</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-102"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">10 Points.</span>
 </h6>
-<p id="p-669">Suppose that we have 10 points \((x,y)\) in the unit square \([0,1] \times [0,1]\text{.}\) In other words, \(0 \leq x \leq 1\) and \(0 \leq y \leq 1\text{.}\) Prove that there are two points that are at distance at most \(\sqrt{2}/3\) from one another? (Hint: this time we have 10 pigeons. Create 9 pigeonholes in the unit square using a simple, geometric way.)</p></article></section></section></div></main>
+<p id="p-691">Ten points in a plane, no three colinear, are given.</p>
+<ol class="lower-alpha">
+<li id="li-321"><p id="p-692">Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points?</p></li>
+<li id="li-322"><p id="p-693">Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles are at points other than the original 10 points!)</p></li>
+</ol></article><article class="exercise exercise-like" id="exercise-103"><h6 class="heading">
+<span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Executive Board.</span>
+</h6>
+<p id="p-694">How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members?</p></article></section></section></div></main>
 </div>
 </body>
 </html>

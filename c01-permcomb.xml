@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="count-pigeonhole" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Permutations and Combinations</title>
+	<introduction>
+		<p>
+
+
+Here are the formulas to count  sublists and subsets of the set <m>[n] = \{1,2,\ldots, n\}</m>.
+		<ul>
+			<li>
+			<p>
+ A <em>permutation</em> of <m>[n]</m> is an ordered list of its elements. The number of permutations of <m>[n]</m> is
+<me>
+n! = n (n-1) (n-2) \cdots 2 \cdot 1.
+</me>
+			</p>
+			</li>
+			<li>
+			<p>
+ A  <m>k</m>-<em>list</em> of <m>[n]</m> (also called a <m>k</m><em>-permutation</em>) is an ordered list of <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-lists of <m>[n]</m> is
+<me>
+P(n,k) = (n)_k = n (n-1) \cdots (n-k+1).
+</me>
+			</p>
+			</li>
+			<li>
+			<p>
+ A <m>k</m><em>-set</em> of <m>[n]</m> (also called a <m>k</m><em>- combination</em>) is a subset containing <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-sets of <m>[n]</m> is
+<me>
+C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
+</me>
+			</p>
+			</li>
+		</ul>
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Bus Stop</title>
+			<idx><h>Bus Stop</h></idx>
+			<statement>
+				<p>
+Four adults and seven children are waiting at a bus stop.
+
+			<ol>
+				<li>
+					<p>
+ How many ways can they sit in a row?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many ways can they sit in a row if the adults must sit together and the childreh must sit together?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many ways can they sit in a row if the the children must sit together?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many ways can they sit in a row if <em>just</em> the children are sitting together (and the adults must not sit together)?
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>In the Queue</title>
+			<idx><h>In the Queue</h></idx>
+			<statement>
+				<p>
+How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Forming a Circle</title>
+			<idx><h>Forming a Circle</h></idx>
+			<statement>
+				<p>
+In how many ways can <m>n</m> people stand in a circle? (How is this problem different from standing in a line?)
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Five Digits, No Zeros</title>
+			<idx><h>Five Digits, No Zeros</h></idx>
+			<statement>
+				<p>
+			<ol>
+				<li>
+					<p>
+ How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.")
+
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Coin Toss</title>
+			<idx><h>Coin Toss</h></idx>
+			<statement>
+				<p>
+A coin is tossed 10 times and a sequence of heads and tails is observed.
+
+			<ol>
+				<li>
+					<p>
+ How many different sequences are possible?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ In how how many of these sequences are there exactly 4 heads?
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Dinner Party</title>
+			<idx><h>Dinner Party</h></idx>
+			<statement>
+				<p>
+A woman has 9 close friends.
+
+			<ol>
+
+				<li>
+					<p>
+ In how many ways can she invite 6 of them to dinner?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Repeat (a) if two of her friends don't get along and will not attend together.
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them.
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>10 Points</title>
+			<idx><h>10 Points</h></idx>
+			<statement>
+				<p>
+Ten points in a plane, no three colinear, are given.
+
+			<ol>
+
+
+				<li>
+					<p>
+ Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points?
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles
+are at points other than the original 10 points!)
+
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Executive Board</title>
+			<idx><h>Executive Board</h></idx>
+			<statement>
+				<p>
+How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members?
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
