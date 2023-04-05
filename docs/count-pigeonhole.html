@@ -175,7 +175,7 @@
 </li>
 <li id="li-306"><p id="p-665">Which of the previous questions was easier, (a) or (b)? Why? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like">
 <p id="p-666">Most people will find question (b) to be easier because it matches a context that we are already familiar with: the drinking age in the United States is 21. Meanwhile, the rule in part (a) is unfamiliar and we don't really know why the rule exists.</p>
-<p id="p-667">But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form \(P \rightarrow Q\text{.}\)</p>
+<p id="p-667">But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form \(P \rightarrow Q\text{.}\) That also means that we have to check situations where \(\neg Q \rightarrow \neg P\) would apply.</p>
 </div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-90"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">First to Four Wins.</span>
@@ -210,7 +210,9 @@ HHH  HHT  HTH  HTT  THH  THT  TTH  TTT
 <p id="p-679">This time, we have four pigeonholes, labeled by</p>
 <div class="displaymath">
 \begin{equation*}
-\mbox{(even, even)}  \mbox{(even, odd)}  \mbox{(odd, even)}  \mbox{(odd, odd)}.
+\begin{array}{cccc}
+\mbox{(even, even)} &amp; \mbox{(even, odd)} &amp; \mbox{(odd, even)} &amp; \mbox{(odd, odd)}.
+\end{array}
 \end{equation*}
 </div>
 <p class="continuation">The pigeons in this case are the points in \(\R^2\) with integer coordinates. We place a given point in the box that describes the parity (even/odd) of its two coordinates. By the pigeonhole principle, we must choose 5 points to guarantee that two end up in the same pigeonhole. Suppose that these two points are \((x_1, y_1)\) and \((x_2,y_2)\text{.}\) The midpoint is</p>

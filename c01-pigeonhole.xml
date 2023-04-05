@@ -118,7 +118,7 @@ The owner must find out what Barbara is drinking, and the owner must find out th
 Most people will find question (b) to be easier because it matches a context that we are already familiar with: the drinking age in the United States is 21. Meanwhile, the rule in part (a) is unfamiliar and we don't really know why the rule exists.
 
 			</p><p>
-But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form <m>P \rightarrow Q</m>.
+But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form <m>P \rightarrow Q</m>. That also means that we have to check situations where <m>\neg Q \rightarrow \neg P</m> would apply.
 
 </p>
 </solution>
@@ -226,7 +226,9 @@ Suppose that we have  5 points <m>(x,y)</m> in <m>\R^2</m> with integer coordina
 <p>
 This time, we have four pigeonholes, labeled by
 <me>
-\mbox{(even, even)}  \mbox{(even, odd)}  \mbox{(odd, even)}  \mbox{(odd, odd)}.
+\begin{array}{cccc}
+\mbox{(even, even)} &amp; \mbox{(even, odd)} &amp; \mbox{(odd, even)} &amp; \mbox{(odd, odd)}.
+\end{array}
 </me>
 The pigeons in this case are the points in <m>\R^2</m> with integer coordinates. We place a given point in the box that describes the parity (even/odd) of its two coordinates. By the pigeonhole principle, we must choose 5 points to guarantee that two end up in the same pigeonhole.
 
