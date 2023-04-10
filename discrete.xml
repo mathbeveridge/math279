@@ -83,7 +83,8 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c01-add-mult.xml" />    
             <xi:include href="./c01-inclusion-exclusion.xml" />      
             <xi:include href="./c01-pigeonhole.xml" />    
-            <xi:include href="./c01-permcomb.xml" />             
+            <xi:include href="./c01-permcomb.xml" />   
+            <xi:include href="./c01-binomial.xml" />           
     </part> 
 
     </book>

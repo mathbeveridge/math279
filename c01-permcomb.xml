@@ -20,13 +20,13 @@ n! = n (n-1) (n-2) \cdots 2 \cdot 1.
 			<p>
  A  <m>k</m>-<em>list</em> of <m>[n]</m> (also called a <m>k</m><em>-permutation</em>) is an ordered list of <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-lists of <m>[n]</m> is
 <me>
-P(n,k) = (n)_k = n (n-1) \cdots (n-k+1).
+P(n,k) = (n)_k = n (n-1) \cdots (n-k+1) = \frac{n!}{(n-k)!}.
 </me>
 			</p>
 			</li>
 			<li>
 			<p>
- A <m>k</m><em>-set</em> of <m>[n]</m> (also called a <m>k</m><em>- combination</em>) is a subset containing <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-sets of <m>[n]</m> is
+ A <m>k</m><em>-set</em> of <m>[n]</m> (also called a <m>k</m>{\bf-combination}) is a subset containing <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-sets of <m>[n]</m> is
 <me>
 C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
 </me>
@@ -54,13 +54,28 @@ Four adults and seven children are waiting at a bus stop.
 					<p>
  How many ways can they sit in a row?
 
+<solution>
+<p>
+<me>
+11!
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
 				<li>
 					<p>
- How many ways can they sit in a row if the adults must sit together and the childreh must sit together?
+ How many ways can they sit in a row if the adults must sit together and the children must sit together?
 
+<solution>
+<p>
+<me>
+2 \times 4! \times 7!
+</me>
+The factor of 2 comes from the fact that the children can be to the left or the right of the adults.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -68,6 +83,14 @@ Four adults and seven children are waiting at a bus stop.
 					<p>
  How many ways can they sit in a row if the the children must sit together?
 
+<solution>
+<p>
+<me>
+7! \times 5!
+</me>
+We seat the children in <m>7!</m> ways and them treat them as one "person" who must be seated with the four adults.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -75,6 +98,14 @@ Four adults and seven children are waiting at a bus stop.
 					<p>
  How many ways can they sit in a row if <em>just</em> the children are sitting together (and the adults must not sit together)?
 
+<solution>
+<p>
+Let's use "good = all - bad." We count the ways that the children can sit together and subtract the number of ways that both the children and the adults are sitting together.
+<me>
+7! \times 5! - 2 \times 4! \times 7!
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -90,6 +121,14 @@ Four adults and seven children are waiting at a bus stop.
 				<p>
 How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.)
 
+<solution>
+<p>
+First we line up the adults, and there are <m>10!</m> ways to do so. Now there are 11 spots to place the 5 children: at the front of the line, or behind the <m>k</m>th adult, where <m>1 \leq k \leq 10</m>. Therefore there are <m>(11)_5</m> ways to place the children. So the final answer is
+<me>
+10! \times (11)_5 = 10! \, P(11,5).
+</me>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -101,6 +140,15 @@ How many ways can 10 adults and 5 children stand in a line so that no two childr
 				<p>
 In how many ways can <m>n</m> people stand in a circle? (How is this problem different from standing in a line?)
 
+<solution>
+<p>
+When standing in the circle, we have a rotational symmetry that does not appear when standing a line. For <m>0 \leq k \leq n-1</m>, everyone can move counterclockwise by <m>k</m> spots, and we still have the same configuration. Therefore the total number of circular configurations is
+
+<me>
+\frac{n!}{n} = (n-1)!
+</me>
+</p>
+</solution>
 
 				</p>
 			</statement>
@@ -115,6 +163,13 @@ In how many ways can <m>n</m> people stand in a circle? (How is this problem dif
 					<p>
  How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear?
 
+<solution>
+<p>
+<me>
+(9)_5 = P(9,5)
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -122,6 +177,19 @@ In how many ways can <m>n</m> people stand in a circle? (How is this problem dif
 					<p>
  Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.")
 
+<solution>
+<p>
+The bad numbers are the ones that don't contain both a 3 and a 6. Using inclusion-exclusion, there are
+<me>
+(8)_5 + (8)_5 - (7)_5 = P(8,5) + P(8,5) - P(7,5)
+</me>
+bad numbers. Therefore we have
+<me>
+(9)_5 - 2 (8)_5 + (7)_5 = p(9,5) - 2 P(8,5) + P(7,5)
+</me>
+good numbers.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -143,6 +211,13 @@ A coin is tossed 10 times and a sequence of heads and tails is observed.
 					<p>
  How many different sequences are possible?
 
+<solution>
+<p>
+<me>
+2^{10}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -150,6 +225,13 @@ A coin is tossed 10 times and a sequence of heads and tails is observed.
 					<p>
  In how how many of these sequences are there exactly 4 heads?
 
+<solution>
+<p>
+<me>
+{10 \choose 4}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -171,6 +253,13 @@ A woman has 9 close friends.
 					<p>
  In how many ways can she invite 6 of them to dinner?
 
+<solution>
+<p>
+<me>
+{9 \choose 6}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -178,6 +267,45 @@ A woman has 9 close friends.
 					<p>
  Repeat (a) if two of her friends don't get along and will not attend together.
 
+<solution>
+<p>
+We give three solutions.
+
+		<ul>
+			<li>
+			<p>
+ First, we have
+<me>
+{7 \choose 5} + {7 \choose 5} + {7 \choose 6} = 49
+</me>
+corresponding to inviting friend one (and not friend two), inviting friend two (and not friend one), and inviting neither of them.
+
+
+			</p>
+			</li>
+			<li>
+			<p>
+ Second, we have
+<me>
+{9 \choose 6} - {7 \choose 4} = 49
+</me>
+using the classic "good = all - bad" theorem. There are <m>{9 \choose 6}</m> ways to invite any six people, and there are <m>{7 \choose 4}</m> ways to invite the two people who don't get along.
+
+			</p>
+			</li>
+			<li>
+			<p>
+ Finally, let's use inclusion-exclusion. We have
+<me>
+{8 \choose 6} + {8 \choose 6} - {7 \choose 6} = 28 + 28 - 7 =  49
+</me>
+corresponding to   <m>|A \cup B|  = |A| + |B| - |A \cap B|</m> where <m>A</m> is  the set of the parties with the first friend but not the second and <m>B</m> is the set of  parties with the second friend but not  the first.
+			</p>
+			</li>
+		</ul>
+
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -185,6 +313,14 @@ A woman has 9 close friends.
 					<p>
  Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them.
 
+<solution>
+<p>
+We must invite two or three couples, which gives:
+<me>
+{3 \choose 2} {3 \choose 2} + {3 \choose 3} = 3 \times 3 + 1 = 10.
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -207,6 +343,13 @@ Ten points in a plane, no three colinear, are given.
 					<p>
  Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points?
 
+<solution>
+<p>
+<me>
+{10 \choose 2}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -215,6 +358,14 @@ Ten points in a plane, no three colinear, are given.
  Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles
 are at points other than the original 10 points!)
 
+<solution>
+<p>
+<me>
+{{10 \choose 2} \choose 3}
+</me>
+We need to choose a 3-set of the lines.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -230,6 +381,14 @@ are at points other than the original 10 points!)
 				<p>
 How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members?
 
+<solution>
+<p>
+<me>
+{20 \choose 1} {19 \choose 1} {18 \choose 1} {17 \choose 2}
+</me>
+corresponding to choosing the president, then the secretary, then the treasurer, and finally the last two members.
+</p>
+</solution>
 
 				</p>
 			</statement>
