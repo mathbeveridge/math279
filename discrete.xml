@@ -84,7 +84,9 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c01-inclusion-exclusion.xml" />      
             <xi:include href="./c01-pigeonhole.xml" />    
             <xi:include href="./c01-permcomb.xml" />   
-            <xi:include href="./c01-binomial.xml" />           
+            <xi:include href="./c01-binomial.xml" />   
+            <xi:include href="./c01-balls-in-boxes1.xml" />      
+            <xi:include href="./c01-balls-in-boxes2.xml" />              
     </part> 
 
     </book>
