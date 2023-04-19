@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 
+
 <chapter xml:id="games-combgame" xmlns:xi="http://www.w3.org/2001/XInclude">
 	<title>Combinatorial Games</title>
 	<introduction>
@@ -93,7 +94,7 @@ Find sets <m>\cA</m> and <m>\cB</m> that satisfy the properties above.
 		<exercise>
 			<statement>
 				<p>
- Play these games of Nim, and decide whether each is an \Npos~or a \Ppos. Write <m>\cN</m> or <m>\cP</m> next to each game, as appropriate.
+ Play these games of Nim, and decide whether each is an <m>\cN</m>-position or a <m>\cP</m>-position. Write <m>\cN</m> or <m>\cP</m> next to each game, as appropriate.
 
 
 			<image width="100%" xml:id="fig-img-games-combgame0">
