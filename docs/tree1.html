@@ -47,59 +47,119 @@
 <!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
 </head>
 <body class="pretext-book has-toc has-sidebar-left">
-<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\( \newcommand{\identity}{\mathrm{id}}
- \newcommand{\notdivide}{{\not{\mid}}}
- \newcommand{\notsubset}{\not\subset}
- \newcommand{\lcm}{\operatorname{lcm}}
- \newcommand{\gf}{\operatorname{GF}}
- \newcommand{\inn}{\operatorname{Inn}}
- \newcommand{\aut}{\operatorname{Aut}}
- \newcommand{\Hom}{\operatorname{Hom}}
- \newcommand{\cis}{\operatorname{cis}}
- \newcommand{\chr}{\operatorname{char}}
- \newcommand{\Null}{\operatorname{Null}}
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(    \newcommand{\identity}{\mathrm{id}}
+    \newcommand{\notdivide}{{\not{\mid}}}
+    \newcommand{\notsubset}{\not\subset}
+    \newcommand{\lcm}{\operatorname{lcm}}
+    \newcommand{\gf}{\operatorname{GF}}
+    \newcommand{\inn}{\operatorname{Inn}}
+    \newcommand{\aut}{\operatorname{Aut}}
+    \newcommand{\Hom}{\operatorname{Hom}}
+    \newcommand{\cis}{\operatorname{cis}}
+    \newcommand{\chr}{\operatorname{char}}
+    \newcommand{\Null}{\operatorname{Null}}
 
 
- \def\Z{\mathbb Z}
- \def\R{\mathbb R}
- \def\Q{\mathbb Q}
- \def\N{\mathbb N}
- \def\C{\mathbb C}
+    \def\Z{\mathbb Z}
+    \def\R{\mathbb R}
+    \def\Q{\mathbb Q}
+    \def\N{\mathbb N}
+    \def\C{\mathbb C}
 
- \def\ba{{\mathbf{a}}}
- \def\bb{\mathbf{b}}
- \def\bh{{\mathbf{h}}}
- \def\bu{{\mathbf{u}}}
- \def\bv{{\mathbf{v}}}
- \def\bw{{\mathbf{w}}}   
- \def\bx{{\mathbf{x}}}
- \def\by{\mathbf{y}}    
- \def\bone{{\mathbf{1}}}
- \def\bzero{\mathbf{0}}
+    \def\ba{{\mathbf{a}}}
+    \def\bb{\mathbf{b}}
+    \def\bh{{\mathbf{h}}}
+    \def\bu{{\mathbf{u}}}
+    \def\bv{{\mathbf{v}}}
+    \def\bw{{\mathbf{w}}}   
+    \def\bx{{\mathbf{x}}}
+    \def\by{\mathbf{y}}    
+    \def\bone{{\mathbf{1}}}
+    \def\bzero{\mathbf{0}}
 
- \def\var{{\mbox{var}}}
- \def\P{{\mathbb{P}}}
- \def\E{{\mathbb{E}}}
+    \def\var{{\mbox{var}}}
+    \def\P{{\mathbb{P}}}
+    \def\E{{\mathbb{E}}}
 
- \def\cA{{\mathcal{A}}}
- \def\cB{{\mathcal{B}}}
- \def\cC{{\mathcal{C}}}
- \def\cP{\mathcal P}
- \def\cE{\mathcal E}
- \def\cO{\mathcal O}
+    \def\cA{{\mathcal{A}}}
+    \def\cB{{\mathcal{B}}}
+    \def\cC{{\mathcal{C}}}
+    \def\cP{\mathcal P}
+    \def\cN{\mathcal N}
+    \def\cE{\mathcal E}
+    \def\cO{\mathcal O}
+    \def\cF{\mathcal F}
+    \def\cX{\mathcal X}
+
+    \def\nimsum{\, \oplus \,}
+    \def\mex{{\mathrm{mex}}}
+
+    \def\g{g}
 
 
+   
 
+    \def\kin{k^{\mathrm{in}}}
+    \def\kout{k^{\mathrm{out}}}
 
- \def\kin{k^{\mathrm{in}}}
- \def\kout{k^{\mathrm{out}}}
+    \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+    \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
 
- \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
- \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+    \tikzset{-&gt;-/.style={decoration={
+     markings,
+     mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+  
 
- \tikzset{-&gt;-/.style={decoration={
-  markings,
-  mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+     
+
+\newcommand{\nimbleboard}[1]{
+
+\begin{scope}[shift={(.25, .4)}]
+\draw (0,-.3) -- (#1,-.3) -- (#1+.45, .7) -- (#1+.45, 1);
+\draw (0,0) -- (#1,0);
+\draw (.45,1) -- (#1+.45,1);
+
+\foreach \i in {0, ..., #1} {
+  \draw (\i, -.3) -- (\i, 0) -- (\i+.45,1);
+}
+
+\foreach \i in {1, ..., #1} {
+  \node[style={font=\sffamily\scriptsize}] at (\i - .5, -.15) {\i};
+}
+
+\end{scope}
+
+}
+\newcommand{\coin}[1]{
+\begin{scope}[shift={#1}]
+
+\draw[color=white, fill=white] (-.4, 0) -- (-.4, -.1) -- (.4,-.1) --  (.4,0) -- cycle;
+\draw[thick, fill=white] (0,0) ellipse (0.4 and 0.10);
+\draw[thick, fill=white] (.4,-.1) arc (0:-180:0.4 and 0.10);
+\draw[thick] (0.4,0) -- (0.4, -.1);
+\draw[thick] (-0.4,0) -- (-0.4, -.1);
+
+\end{scope}
+
+}
+
+\newcommand{\bean}[2]{
+\begin{scope}[shift={#1}, rotate={#2}]
+
+\draw [very thick, fill=gray!50] plot [smooth cycle] coordinates {(-.2,0) (-.175, .07) (-.1,.1) (0,.075) (.1,.1) (.175, .07) (.2,0) (.15, -.07) (0,-.1) (-.15, -.07)};
+
+\end{scope}
+
+}
+
+\newcommand{\heap}[2]{
+\begin{scope}[shift={#1}]
+
+\draw[very thick] (0,0) circle ({#2});
+
+\end{scope}
+
+}
 \newcommand{\lt}{&lt;}
 \newcommand{\gt}{&gt;}
 \newcommand{\amp}{&amp;}
@@ -146,6 +206,9 @@
 <li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">20</span> <span class="title">Binomial Theorem</span></a></li>
 <li class="link"><a href="count-balls-in-boxes1.html" data-scroll="count-balls-in-boxes1"><span class="codenumber">21</span> <span class="title">Balls in Boxes Part 1</span></a></li>
 <li class="link"><a href="count-balls-in-boxes2.html" data-scroll="count-balls-in-boxes2"><span class="codenumber">22</span> <span class="title">Balls in Boxes Part 2</span></a></li>
+<li class="link part"><a href="part-games.html" data-scroll="part-games"><span class="codenumber">IV</span> <span class="title">Games</span></a></li>
+<li class="link"><a href="games-nimble.html" data-scroll="games-nimble"><span class="codenumber">23</span> <span class="title">The Game of Nimble</span></a></li>
+<li class="link"><a href="games-combgame.html" data-scroll="games-combgame"><span class="codenumber">24</span> <span class="title">Combinatorial Games</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="tree1"><h2 class="heading">

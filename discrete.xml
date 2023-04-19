@@ -89,6 +89,12 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c01-balls-in-boxes2.xml" />              
     </part> 
 
+    <part xml:id="part-games">
+        <title>Games</title>         
+            <xi:include href="./d01-nimble.xml" />    
+            <xi:include href="./d01-combgame.xml" />          
+    </part> 
+
     </book>
 
 </pretext>

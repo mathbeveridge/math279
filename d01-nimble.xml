@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+<chapter xml:id="games-nimble" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>The Game of Nimble</title>
+	<introduction>
+		<p>
+
+
+
+
+
+			</p><p>
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+
+		<exercise>
+			<statement>
+				<p>
+ Alice and Bob play the following games of Nimble. Alice goes first. Decide who has a winning strategy. Mark each game as "Alice Win" or "Bob Win"  next to each board, as appropriate.
+
+
+			<image width="100%" xml:id="fig-img-games-nimble0">
+				<latex-image>
+\begin{tikzpicture}[scale=.9] %mathbook width=100%
+
+\begin{scope}
+
+\node at (-.5,1) {(a)};
+
+\nimbleboard{6};
+\coin{(3,1)};
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(0,-2.5)}]
+
+\node at (-.5,1) {(b)};
+
+\nimbleboard{6};
+\coin{(2,1)};
+
+\coin{(2.05,1.1)};
+
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(0,-5)}]
+
+\node at (-.5,1) {(c)};
+
+\nimbleboard{6};
+\coin{(1,1)};
+
+\coin{(3,1)};
+
+
+\end{scope}
+
+
+
+\begin{scope}[shift={(9,0)}]
+
+\node at (-.5,1) {(d)};
+
+\nimbleboard{6};
+\coin{(1,1)};
+
+\coin{(4,1)};
+
+\coin{(3.95,1.12)};
+
+\coin{(5,1)};
+
+
+\end{scope}
+
+
+
+
+
+\begin{scope}[shift={(9,-2.5)}]
+
+\node at (-.5,1) {(e)};
+
+\nimbleboard{6};
+\coin{(1,1)};
+
+\coin{(2,1)};
+
+\coin{(3,1)};
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(9,-5)}]
+
+\node at (-.5,1) {(f)};
+
+\nimbleboard{6};
+
+\coin{(1,1)};
+
+\coin{(2,1)};
+
+\coin{(5,1)};
+
+\node at (5,1.75) {Alice Win};
+
+\end{scope}
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+			</p><p>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Create the complete game trees for  positions (a) and  (b) above. Label the leaves (terminal positions) as <m>\cP</m> and then work your way up the tree, marking each position with an <m>\cN</m> or a <m>\cP</m>. Remember to follow the two rules:
+		<ul>
+			<li>
+			<p>
+ An <m>\cN</m>-position must have at least one follower that is a <m>\cP</m>-position.
+			</p>
+			</li>
+			<li>
+			<p>
+ Every follower of a <m>\cP</m>-position  must be an <m>\cN</m>-position.
+			</p>
+			</li>
+		</ul>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<statement>
+				<p>
+ Create the complete game tree for  position (c) above, as you did in problem 2. Mark each position with an <m>\cN</m> or a <m>\cP</m>.
+Once you are done, compare your answer to this problem with the trees in problem 2. Make any useful observations that you can.
+
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
