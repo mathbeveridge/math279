@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+
+
+<chapter xml:id="games-nimsum" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Nim Sums</title>
+	<introduction>
+		<p>
+
+
+
+			</p><p>
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+		<exercise>
+			<title>Covert to Binary</title>
+			<idx><h>Covert to Binary</h></idx>
+			<statement>
+				<p>
+Write each of the following numbers in binary by first writing them as a sum of powers of 2.
+
+			<ol>
+
+
+				<li>
+					<p>
+ <m>14</m>
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>25</m>
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>40</m>
+
+
+			</p><p>
+
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>63</m>
+
+					</p>
+				</li>
+			</ol>
+
+
+
+
+			</p><p>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Nim Sums</title>
+			<idx><h>Nim Sums</h></idx>
+			<statement>
+				<p>
+Calculate the following nim sums
+
+			<ol>
+				<li>
+					<p>
+ <m>12 \oplus 10 \oplus 8</m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>20 \oplus  15  \oplus 10 </m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>23 \oplus  17  \oplus 10 \oplus 4 </m>
+					</p>
+				</li>
+			</ol>
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Nim Sums for Nim Positions</title>
+			<idx><h>Nim Sums for Nim Positions</h></idx>
+			<statement>
+				<p>
+You have analyzed the following Nim positions in a previous exercise. For each position, calculate the nim sum of the pile sizes. What do you observe?
+
+			<image width="90%" xml:id="fig-img-games-nimsum0">
+				<latex-image>
+\begin{tikzpicture}[scale=.7] %mathbook width=90%
+
+\begin{scope}[shift={(-1,0)}]
+
+
+\node at (-2,0) {(a)};
+
+\heap{(0,0)}{1};
+\bean{(-.23, 0)}{10};
+\bean{(.6, .2)}{-20};
+\bean{(-.1, -.6)}{-15};
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(-1,-4)}]
+
+
+
+\node at (-2,0) {(b)};
+
+\heap{(0,0)}{1};
+\bean{(0, 0)}{10};
+
+
+
+\heap{(3,0)}{1};
+\bean{(2.5, 0)}{-10};
+\bean{(3.3, .3)}{-30};
+
+
+
+\end{scope}
+
+
+\begin{scope}[shift={(-1,-8)}]
+
+\node at (-2,0) {(c)};
+
+\heap{(0,0)}{1};
+\bean{(0, -.3)}{44};
+\bean{(.3, .3)}{-25};
+
+
+\heap{(3,0)}{1};
+\bean{(3, 0)}{10};
+\bean{(3.6, .2)}{-20};
+
+
+\end{scope}
+
+
+
+\begin{scope}[shift={(9,0)}]
+
+\node at (-2,0) {(d)};
+
+
+
+
+
+\heap{(0,0)}{1};
+\bean{(0, 0)}{10};
+
+
+
+\heap{(2.5,0)}{1};
+\bean{(2.5, 0)}{10};
+\bean{(3.1, .2)}{-20};
+\bean{(2.3, .5)}{-20};
+\bean{(2.1, -.4)}{-20};
+
+\heap{(5,0)}{1};
+\bean{(5.3, -.1)}{10};
+\bean{(4.8, .2)}{-120};
+\bean{(5.3, .5)}{-20};
+\bean{(4.7, -.4)}{20};
+
+
+\heap{(7.5,0)}{1};
+\bean{(7.4, 0)}{140};
+\bean{(8.1, .2)}{15};
+\bean{(7.3, .5)}{-25};
+\bean{(7.1, -.4)}{-10};
+\bean{(7.9, -.3)}{-50};
+
+
+\end{scope}
+
+
+
+
+
+
+
+\begin{scope}[shift={(9,-4)}]
+
+
+\node at (-2,0) {(e)};
+
+\heap{(0,0)}{1};
+\bean{(0, 0)}{10};
+
+
+
+\heap{(2.5,0)}{1};
+\bean{(2.3, 0)}{10};
+\bean{(3.1, .2)}{-20};
+
+
+\heap{(5,0)}{1};
+\bean{(4.7, 0)}{10};
+\bean{(5.6, -.2)}{90};
+\bean{(5.3, .5)}{-20};
+
+
+
+
+
+\end{scope}
+
+
+
+\begin{scope}[shift={(9,-8)}]
+
+\node at (-2,0) {(f)};
+
+\heap{(0,0)}{1};
+\bean{(0, 0)}{10};
+
+\heap{(2.5,0)}{1};
+\bean{(2.5, 0)}{10};
+\bean{(3.1, .2)}{-20};
+
+
+\heap{(5,0)}{1};
+\bean{(4.6, .2)}{-10};
+\bean{(5.6, -.2)}{90};
+\bean{(5.3, .5)}{-20};
+\bean{(5.1, .1)}{20};
+\bean{(4.8, -.5)}{50};
+
+
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Who Wins these Nim Positions?</title>
+			<idx><h>Who Wins these Nim Positions?</h></idx>
+			<statement>
+				<p>
+Use nim sums to determine whether each of these nim positions  is an <m>\cN</m>-postion or a <m>\cP</m>-position. If it is an <m>\cN</m>-position, list all of the winning moves.
+
+
+
+
+
+			<image width="60%" xml:id="fig-img-games-nimsum1">
+				<latex-image>
+\begin{tikzpicture} %mathbook width=60%
+
+
+
+\begin{scope}[shift={(0,-2.5)}]
+
+
+\node at (-2,0) {(a)};
+
+\heap{(0,0)}{1};
+\bean{(.3, -.1)}{10};
+\bean{(-.35, .25)}{-140};
+
+
+
+\heap{(2.5,0)}{1};
+\bean{(2.3, -.2)}{10};
+\bean{(3.1, .2)}{-20};
+\bean{(2.5, .5)}{90};
+
+
+\heap{(5,0)}{1};
+\bean{(4.7, -.1)}{10};
+\bean{(5.6, -.2)}{90};
+\bean{(5.3, .5)}{-20};
+\bean{(5, -.5)}{-170};
+\bean{(4.7, .5)}{100};
+
+
+
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+			</p><p>
+
+			<image width="60%" xml:id="fig-img-games-nimsum2">
+				<latex-image>
+\begin{tikzpicture} %mathbook width=60%
+\begin{scope}[shift={(0,0)}]
+
+\node at (-2,0) {(b)};
+
+\heap{(0,0)}{1};
+\bean{(.2, 0)}{10};
+\bean{(-.4, -.3)}{70};
+
+
+\heap{(2.5,0)}{1};
+\bean{(2.5, 0)}{10};
+\bean{(3.1, .2)}{-20};
+
+
+\heap{(5,0)}{1};
+\bean{(4.6, .4)}{-10};
+\bean{(5.6, -.2)}{90};
+\bean{(5.3, .5)}{-20};
+\bean{(5.1, .1)}{20};
+\bean{(4.4, -.25)}{80};
+\bean{(5.1, -.6)}{200};
+
+
+\heap{(7.5,0)}{1};
+\bean{(7.2, 0)}{10};
+\bean{(8.1, -.2)}{-70};
+\bean{(7.5, -.5)}{-170};
+\bean{(7.6, .5)}{160};
+
+
+
+\end{scope}
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+			</p><p>
+
+			<image width="60%" xml:id="fig-img-games-nimsum3">
+				<latex-image>
+\begin{tikzpicture} %mathbook width=60%
+
+\begin{scope}[shift={(0,-5)}]
+
+\node at (-2,0) {(c)};
+
+
+
+
+
+\heap{(0,0)}{1};
+\bean{(0, 0)}{10};
+
+
+
+\heap{(2.5,0)}{1};
+\bean{(2.5, 0)}{10};
+\bean{(3.1, .2)}{-20};
+\bean{(2.1, -.4)}{-20};
+
+\heap{(5,0)}{1};
+\bean{(5.3, -.1)}{10};
+\bean{(4.8, .2)}{-120};
+\bean{(5.3, .5)}{-20};
+\bean{(4.7, -.4)}{20};
+
+
+\heap{(7.5,0)}{1};
+\bean{(7.4, 0)}{140};
+\bean{(8.1, .2)}{15};
+\bean{(7.3, .5)}{-25};
+\bean{(7.1, -.4)}{-10};
+\bean{(7.9, -.3)}{-50};
+
+\end{scope}
+
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+			</p><p>
+
+
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
