@@ -33,6 +33,7 @@
     \def\Q{\mathbb Q}
     \def\N{\mathbb N}
     \def\C{\mathbb C}
+    \def\W{\mathbb W}
 
     \def\ba{{\mathbf{a}}}
     \def\bb{\mathbf{b}}
@@ -61,7 +62,7 @@
 
     \def\nimsum{\, \oplus \,}
     \def\mex{{\mathrm{mex}}}
-
+    \newcommand{\pile}[1]{\bullet{#1}}
     \def\g{g}
 
 

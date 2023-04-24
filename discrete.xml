@@ -93,7 +93,8 @@ pull the name of the problem from the first line  of  the \item
         <title>Games</title>         
             <xi:include href="./d01-nimble.xml" />    
             <xi:include href="./d01-combgame.xml" />    
-            <xi:include href="./d01-nimsum.xml" />        
+            <xi:include href="./d01-nimsum.xml" />   
+            <xi:include href="./d01-subtraction.xml" />      
     </part> 
 
     </book>
