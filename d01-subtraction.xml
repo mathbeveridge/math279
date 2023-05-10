@@ -68,6 +68,19 @@ n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4&amp; 5 &amp; 6 &amp; 7 &amp; 8&amp; 9&
 </me>
 
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4&amp; 5 &amp; 6 &amp; 7 &amp; 8&amp; 9&amp; 10  &amp; 11 &amp; 12 \\
+\hline
+\hline
+\cP \mbox{ or } \cN?  &amp;\cP&amp;\cN&amp;\cN&amp;\cN&amp;\cN&amp;\cP&amp;\cN&amp;\cN&amp;\cN&amp;\cN&amp;\cP&amp;\cN&amp;\cN
+\end{array}
+</me>
+The <m>\cP</m>-positions are the multiples of 5.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -85,12 +98,30 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 </me>
 
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4&amp; 5 &amp; 6 &amp; 7 &amp; 8&amp; 9&amp; 10  &amp; 11 &amp; 12 \\
+\hline
+\hline
+g(\pile{n}) &amp;0&amp;1&amp;2&amp;3&amp;4&amp;0&amp;1&amp;2&amp;3&amp;4&amp;0&amp;1&amp;2
+\end{array}
+</me>
+</p>
+</solution>
+
 					</p>
 				</li>
 				<li>
 					<p>
  Compare your answers to (a) and (b). What do you observe? Make a conjecture about the relationship of the Sprague-Grundy value to the winner of the game.
 
+<solution>
+<p>
+It looks like the <m>\cP</m>-positions correspond to <m>g(\pile{n})=0</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -124,6 +155,19 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 \end{array}
 </me>
 
+<solution>
+<p>
+<me>
+S(1,2,4): \qquad
+\begin{array}{c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4&amp; 5 &amp; 6 &amp; 7 &amp; 8&amp; 9&amp; 10  &amp; 11 &amp; 12 \\
+\hline
+\hline
+g(\pile{n}) &amp;0&amp;1&amp;2&amp;0&amp;1&amp;2&amp;0&amp;1&amp;2&amp;0&amp;1&amp;2&amp;0
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -131,6 +175,11 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 					<p>
  Is <m>\pile{8}</m> an <m>\cN</m>-position or a <m>\cP</m>-position  in <m>S(1,2,4)</m>? If it is an <m>\cN</m>-position, list every winning move.
 
+<solution>
+<p>
+<m>\pile{8}</m> an <m>\cN</m>-position. The winning move is to subtract 2 to reach <m>\pile{6}</m>.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -138,6 +187,11 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 					<p>
  Is <m>\pile{9}</m> an <m>\cN</m>-position or a <m>\cP</m>-position  in <m>S(1,2,4)</m>? If it is an <m>\cN</m>-position, list every winning move.
 
+<solution>
+<p>
+<m>\pile{9}</m> a <m>\cP</m>-position. The Sprague-Grundy value is 0.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -168,6 +222,19 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 \end{array}
 </me>
 
+<solution>
+<p>
+<me>
+S(3,4): \qquad
+\begin{array}{c|c|c|c|c|c|c|c|c|c|c|c|c|c}
+n &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4&amp; 5 &amp; 6 &amp; 7 &amp; 8&amp; 9&amp; 10  &amp; 11 &amp; 12 \\
+\hline
+\hline
+g(\pile{n}) &amp;0&amp;0&amp;0&amp;1&amp;1&amp;1&amp;2&amp;0&amp;0&amp;0&amp;1&amp;1&amp;1
+\end{array}
+</me>
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -175,6 +242,11 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 					<p>
  Is <m>\pile{8}</m> an <m>\cN</m>-position or a <m>\cP</m>-position  in <m>S(3,4)</m>? If it is an <m>\cN</m>-position, list every winning move.
 
+<solution>
+<p>
+<m>\pile{8}</m> a <m>\cP</m>-position. The Sprague-Grundy value is 0.
+</p>
+</solution>
 
 					</p>
 				</li>
@@ -182,6 +254,11 @@ g(\pile{n}) &amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;&amp;
 					<p>
  Is <m>\pile{10}</m> an <m>\cN</m>-position or a <m>\cP</m>-position  in <m>S(3,4)</m>? If it is an <m>\cN</m>-position, list every winning move.
 
+<solution>
+<p>
+<m>\pile{10}</m> a <m>\cN</m>-position. The Sprague-Grundy value is 1. The winning move is to subtract 3 to reach <m>\pile{7}</m>.
+</p>
+</solution>
 
 
 
@@ -234,6 +311,32 @@ Who wins the following games of <m>S(3,5)</m>?
 				</li>
 			</ol>
 
+<solution>
+<p>
+			<ol>
+				<li>
+					<p>
+ <m>\pile{4}</m> is an <m>\cN</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\pile{10}</m> is a <m>\cP</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\pile{14}</m> is an <m>\cN</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>\pile{20}</m> is an <m>\cN</m>-position
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 
 			</p><p>
@@ -281,6 +384,32 @@ Now let's play 2-heap <m>S(3,5)</m>. Just like 2-heap nim, you choose one pile a
 				</li>
 			</ol>
 
+<solution>
+<p>
+			<ol>
+				<li>
+					<p>
+ <m>( \pile{4} , \pile{4})</m> is a <m>\cP</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>(\pile{4} , \pile{5})</m> is a <m>\cP</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>(\pile{5} , \pile{6})</m>  is an <m>\cN</m>-position
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>( \pile{6} , \pile{7})</m> is a <m>\cP</m>-position
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 
 
@@ -317,6 +446,32 @@ Now let's play 2-heap <m>S(3,5)</m>. Just like 2-heap nim, you choose one pile a
 				</li>
 			</ol>
 
+<solution>
+<p>
+			<ol>
+				<li>
+					<p>
+ <m>g(\pile{4}) \oplus, g(\pile{4}) = 1 \oplus 1 = 0</m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{4}) \oplus, g(\pile{5}) = 1 \oplus 1 = 0</m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{5}) \oplus, g(\pile{6}) = 1 \oplus 2 = 3</m>
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{6}) \oplus, g(\pile{7}) = 2 \oplus 2 = 0</m>
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 
 
@@ -355,6 +510,32 @@ Now let's play 2-heap <m>S(3,5)</m>. Just like 2-heap nim, you choose one pile a
 				</li>
 			</ol>
 
+<solution>
+<p>
+			<ol>
+				<li>
+					<p>
+ <m>g(\pile{4}) \oplus, g(\pile{11}) = 1 \oplus 1 = 0</m> so this is a <m>\cP</m>-position.
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{7}) \oplus, g(\pile{13}) = 2 \oplus 1 = 3</m> so this is an <m>\cN</m>-position.
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{7}) \oplus, g(\pile{14}) = 2 \oplus 2 = 0</m> so this is a <m>\cP</m>-position.
+					</p>
+				</li>
+				<li>
+					<p>
+ <m>g(\pile{13}) \oplus, g(\pile{18}) = 1 \oplus 0 = 1</m> so this is an <m>\cN</m>-position.
+					</p>
+				</li>
+			</ol>
+</p>
+</solution>
 
 
 
@@ -381,6 +562,20 @@ Recall that we use <m>*n</m> to denote a heap of <m>n</m> beans in nim.
 					<p>
  What is <m>g(*n)</m>, the Sprague-Grundy value of a nim heap of size <m>n</m>? Start with <m>n=0,1,2,3,\ldots</m> until you see the pattern.
 
+<solution>
+<p>
+<me>
+\begin{array}{rcl}
+g(*0) &amp;=&amp; \mex \{ \} = 0 \\
+g(*1) &amp;=&amp; \mex \{ g(*0) \} = \mex \{ 0 \}= 1 \\
+g(*2) &amp;=&amp; \mex \{ g(*0), g(*1) \} = \mex \{ 0,1 \}= 2 \\
+g(*3) &amp;=&amp; \mex \{ g(*0), g(*1), g(*2) \} = \mex \{ 0,1,2 \}= 3 \\
+\\
+g(*n) &amp;=&amp; \mex \{ g(*0), g(*1), \ldots , g(*(n-1)) \} = \mex \{ 0,1, \ldots , n-1 \}= n \\
+\end{array}
+</me>
+</p>
+</solution>
 
 
 					</p>
@@ -409,6 +604,27 @@ g(*n \oplus *m) &amp; *0 &amp; *1 &amp; *2 &amp; *3 &amp; *4 \\
 \end{array}
 </me>
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c|c|c|c|c}
+g(*n \oplus *m) &amp; *0 &amp; *1 &amp; *2 &amp; *3 &amp; *4 \\
+\hline
+\hline
+*0 &amp;0&amp;1&amp;2&amp; 3 &amp; 4\\
+\hline
+*1 &amp;1&amp;0&amp;3&amp;2 &amp; 5 \\
+\hline
+*2 &amp;2&amp;3&amp;0&amp;1 &amp; 6 \\
+\hline
+*3 &amp;3&amp;2&amp;1&amp;0&amp;7 \\
+\hline
+*4 &amp;4&amp;5&amp;6&amp;7&amp;0 \\
+
+\end{array}
+</me>
+</p>
+</solution>
 
 
 
@@ -438,6 +654,27 @@ n \oplus m &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
 </me>
 
 
+<solution>
+<p>
+<me>
+\begin{array}{c|c|c|c|c|c}
+n \oplus m &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
+\hline
+\hline
+0 &amp;0&amp;1&amp;2&amp; 3 &amp; 4\\
+\hline
+1 &amp;1&amp;0&amp;3&amp;2 &amp; 5 \\
+\hline
+2 &amp;2&amp;3&amp;0&amp;1 &amp; 6 \\
+\hline
+3 &amp;3&amp;2&amp;1&amp;0&amp;7 \\
+\hline
+4 &amp;4&amp;5&amp;6&amp;7&amp;0 \\
+
+\end{array}
+</me>
+</p>
+</solution>
 
 
 
@@ -447,6 +684,16 @@ n \oplus m &amp; 0 &amp; 1 &amp; 2 &amp; 3 &amp; 4 \\
 					<p>
  Compare your answers to problems 2 and 3. What do you observe?
 
+<solution>
+<p>
+
+They are the same. It looks like the Sprague-Grundy value satisfies:
+<me>
+g(*n \oplus *m) = g(*n) \oplus g(*m).
+</me>
+
+</p>
+</solution>
 
 					</p>
 				</li>
