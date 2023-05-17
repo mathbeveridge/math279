@@ -57,7 +57,8 @@ X \in \cN \Longleftrightarrow \exists Y \in \cF(X) \mbox{ such that } Y \in \cP.
 
 			</p><p>
 
-AFSOC that  <m>X</m> does not have a follower <m>Y</m> such that <m>Y \in \cP</m>. Let Alice be the "next player" and Bob be the "previous player." Since every follower is an <m>\cN</m>-position, Alice must move to a <m>\cN</m>-position. However, now Bob becomes is the "next player" and therefore Bob has a winning strategy, no matter what Alice's first move was. Therefore Alice does not have a winning strategy, a contradiction.
+AFSOC that  <m>X</m> does not have a follower <m>Y</m> such that <m>Y \in \cP</m>. 
+Let Alice be the "next player" and Bob be the "previous player." Since every follower is an <m>\cN</m>-position, Alice must move to a <m>\cN</m>-position. However, now Bob becomes is the "next player" and therefore Bob has a winning strategy, no matter what Alice's first move was. Therefore Alice does not have a winning strategy, a contradiction.
 </p>
 </solution>
 
@@ -67,9 +68,6 @@ AFSOC that  <m>X</m> does not have a follower <m>Y</m> such that <m>Y \in \cP</m
 				<li>
 					<p>
  Rule #2 says that "every follower of a <m>\cP</m>-position must be an <m>\cN</m>-position." Restate this rule incorporating "for all" and/or "there exists" quantifiers. Then prove Rule # 2 by contradiction.
-					</p>
-				</li>
-			</ol>
 
 <solution>
 <p>
@@ -81,9 +79,19 @@ or equivalently
 <me>
 X \in \cP \Longleftrightarrow  \cF(X) \subset \cN.
 </me>
-
+</p>
+<p>
+ASFOC that <m>X</m> has a follower <m>Y</m> that is a <m>\cP</m> position. 
+Let Alice be the "next player" and Bob be the "previous player." Then Alice can move from <m>X</m> to <m>Y</m>.
+It is now Bob's turn, so he becomes the "next" player, and he is a losing postion. So this move from <m>X</m> to <m>Y</m> 
+was a winning move for Alice, a contradiction.
 </p>
 </solution>
+					</p>
+				</li>
+			</ol>
+
+
 
 
 				</p>
