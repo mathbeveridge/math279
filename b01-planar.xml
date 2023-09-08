@@ -36,7 +36,7 @@ Here is a graph with <m>v=8</m> and <m>e=9</m> and <m>f=3</m>. The  regions are 
 
 \begin{scope}[shift={(-1.72,0)}]
 
-\draw[thick, fill=red!25](1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
+\draw[thick, fill=red!25](1,0) z-z-z (0,1) z-z-z (-1,0) z-z-z (0,-1) z-z-z cycle;
 
 \draw[fill] (1,0) circle (2pt);
 \draw[fill] (0,1) circle (2pt);
@@ -49,7 +49,7 @@ Here is a graph with <m>v=8</m> and <m>e=9</m> and <m>f=3</m>. The  regions are 
 
 \begin{scope}[shift={(1.72,0)}]
 
-\draw[thick, fill=blue!25] (1,0) -- (0,1) -- (-1,0) -- (0,-1) -- cycle;
+\draw[thick, fill=blue!25] (1,0) z-z-z (0,1) z-z-z (-1,0) z-z-z (0,-1) z-z-z cycle;
 
 \draw[fill] (1,0) circle (2pt);
 \draw[fill] (0,1) circle (2pt);
@@ -62,7 +62,7 @@ Here is a graph with <m>v=8</m> and <m>e=9</m> and <m>f=3</m>. The  regions are 
 
 
 
-\draw[thick] (-.72,0) -- (.72,0);
+\draw[thick] (-.72,0) z-z-z (.72,0);
 
 \end{tikzpicture}
 				</latex-image>
@@ -95,7 +95,7 @@ Fill in the following table for the given connected and planar graphs. Then make
 \foreach \i in {0,60,120, 180,240, 300} {
 
 \draw[fill] (\i:.75) circle (2pt);
-\draw (\i:.75) -- (\i + 60: .75);
+\draw (\i:.75) z-z-z (\i + 60: .75);
 \node at (0, -1.2) {$C_6$};
 
 }
@@ -110,8 +110,8 @@ Fill in the following table for the given connected and planar graphs. Then make
 \draw[fill] (1,0) circle (2pt);
 \draw[fill] (.5,1.5) circle (2pt);
 
-\draw (0,0) -- (0,1) -- (1,1) -- (1,0) -- cycle;
-\draw (1,1) -- (.5, 1.5) -- (0,1);
+\draw (0,0) z-z-z (0,1) z-z-z (1,1) z-z-z (1,0) z-z-z cycle;
+\draw (1,1) z-z-z (.5, 1.5) z-z-z (0,1);
 
 \node at (.5, -.5) {$G$};
 
@@ -126,8 +126,8 @@ Fill in the following table for the given connected and planar graphs. Then make
 \draw[fill] (1,0) circle (2pt);
 
 
-\draw (0,0) -- (0,1) -- (1,1) -- (1,0) -- cycle;
-\draw (0,0) -- (1,1);
+\draw (0,0) z-z-z (0,1) z-z-z (1,1) z-z-z (1,0) z-z-z cycle;
+\draw (0,0) z-z-z (1,1);
 
 \draw (1,0) .. controls (1.75,1.75) ..  (0,1);
 
@@ -148,13 +148,13 @@ Fill in the following table for the given connected and planar graphs. Then make
 \draw[fill] (1.5,0) circle (2pt);
 
 
-\draw (0,0) -- (0,1.5) -- (1.5,1.5) -- (1.5,0) -- cycle;
-\draw (.5,.5) -- (.5,1) -- (1,1) -- (1,.5) -- cycle;
+\draw (0,0) z-z-z (0,1.5) z-z-z (1.5,1.5) z-z-z (1.5,0) z-z-z cycle;
+\draw (.5,.5) z-z-z (.5,1) z-z-z (1,1) z-z-z (1,.5) z-z-z cycle;
 
-\draw (0,0) -- (.5,.5);
-\draw (1.5,0) -- (1,.5);
-\draw (1.5,1.5) -- (1,1);
-\draw (0,1.5) -- (.5,1);
+\draw (0,0) z-z-z (.5,.5);
+\draw (1.5,0) z-z-z (1,.5);
+\draw (1.5,1.5) z-z-z (1,1);
+\draw (0,1.5) z-z-z (.5,1);
 
 
 \node at (.75, -.5) {$Q$};
@@ -177,9 +177,9 @@ Fill in the following table for the given connected and planar graphs. Then make
 \draw[fill] (1.9,1.8) circle (2pt);
 
 
-\draw (0,0) -- (.6,.6) -- (0,.75);
-\draw (.75,0) -- (.6,.6) -- (1.2, 1.2) -- (1.5, .6) -- (2,0);
-\draw (.5, 1.8) -- (1.2, 1.2) -- (1.9, 1.8);
+\draw (0,0) z-z-z (.6,.6) z-z-z (0,.75);
+\draw (.75,0) z-z-z (.6,.6) z-z-z (1.2, 1.2) z-z-z (1.5, .6) z-z-z (2,0);
+\draw (.5, 1.8) z-z-z (1.2, 1.2) z-z-z (1.9, 1.8);
 
 
 \node at (1, -.5) {$T$};
@@ -202,11 +202,11 @@ Fill in the following table for the given connected and planar graphs. Then make
 
 
 
-\draw (0,.5) -- (0,1.5) -- (2,1.5) -- (2,.5) -- cycle;
+\draw (0,.5) z-z-z (0,1.5) z-z-z (2,1.5) z-z-z (2,.5) z-z-z cycle;
 
-\draw (1,.5) -- (1,2.2);
-\draw (-.5,0) -- (0,.5);
-\draw (2.5,0) -- (2,.5);
+\draw (1,.5) z-z-z (1,2.2);
+\draw (-.5,0) z-z-z (0,.5);
+\draw (2.5,0) z-z-z (2,.5);
 
 
 \node at (.75, -.5) {$H$};
@@ -232,7 +232,7 @@ H &amp;&amp;&amp;&amp;\\
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 
 
@@ -255,7 +255,7 @@ H &amp; 9 &amp; 10 &amp; 3 &amp; 9-10+3=2\\
 We conjecture that <m>v - e + f =2</m>.
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -280,14 +280,14 @@ v_G -e_G +f_G = 2.
  <em> Base Case: <m>k=0</m></em>. A connected graph with no cycles is a tree. We know that a tree on <m>v_G</m> vertices has <m>v_G-1</m> edges. Explain why <m>v_G -e_G +f_G = 2.</m>
 
 
-<solution>
+<!--solution>
 <p>
 A tree on <m>n_G</m> vertices has <m>v_G-1</m> edges and 1 region. We have
 <me>
 v_G - (v_G  -1) + 1 = 2.
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -333,14 +333,14 @@ v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
 </me>
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 v_H = v_G \qquad \qquad e_H =  e_G-1 \qquad \qquad f_H =  f_G - 1\qquad \phantom{,}
 </me>
 because when we remove the edge <m>e</m>, two of the regions merge into one region.
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -350,7 +350,7 @@ because when we remove the edge <m>e</m>, two of the regions merge into one regi
 					<p>
  Now complete the inductive step.
 
-<solution>
+<!--solution>
 <p>
 
 By induction <m>(\star)</m>, we know that
@@ -370,7 +370,7 @@ v_G - e_G + f_G &amp;= 2.
 
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -398,11 +398,11 @@ Let <m>G</m> be a planar graph whose plane drawing has regions <m>A_1, A_2, \ldo
 </me>
 Start by looking at a small example planar graph to understand what this combinatorial identity is saying.
 
-<solution>
+<!--solution>
 <p>
 If edge <m>e</m> is in a cycle, then it is on the boundary of two regions. If <m>e</m> is not in a cycle, then it is one one region. But when we walk around the boundary of that region, we traverse the edge <m>e</m> twice! So when we add up all the lengths of the regions, we count every edge twice.
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -419,14 +419,14 @@ Let <m>G</m> be a simple  (no loops, no multiple edges), connected plane graph o
 </me>
 Hint: what is a <em>lower bound</em> on the number of edges in the boundary of each region?
 
-<solution>
+<!--solution>
 <p>
 Every region is bounded by at least 3 edges. So
 <me>
 3f \leq  \sum_{i=1}^f \mbox{len}(A_i) = 2 e.
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -445,7 +445,7 @@ e \leq 3v -6.
 In other words, if <m>G</m> is planar it cannot have "too many" edges.
 
 
-<solution>
+<!--solution>
 <p>
 
 We have
@@ -463,7 +463,7 @@ v - 2 &amp; \geq&amp; \frac{1}{3}e \\
 </me>
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -476,11 +476,11 @@ v - 2 &amp; \geq&amp; \frac{1}{3}e \\
 In the previous problem, we  showed that for any planar graph, we have <m>e \leq 3v-6</m>. Use this inequality to prove that <m>K_5</m> is not planar.
 
 
-<solution>
+<!--solution>
 <p>
 <m>K_5</m> has <m>v=5</m> vertices and <m>e=10</m> edges. But <m>e = 10 &gt; 9 = 3 \cdot 5 -6</m>. So <m>K_5</m> is not planar.
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -504,11 +504,11 @@ e \leq 2v -4.
 					<p>
  Use this inequality to prove that <m>K_{3,3}</m> is not planar.
 
-<solution>
+<!--solution>
 <p>
 <m>K_{3,3}</m> has <m>v=6</m> vertices and <m>e=9</m> edges. But <m>e = 9 &gt; 8 = 2 \cdot 6 -4</m>. So <m>K_{3,3}</m> is not planar.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -520,7 +520,7 @@ e \leq 2v -4.
 
 Let <m>G</m> be a simple connected planar graph with <m>v</m> vertices, <m>e</m> edges and <m>f</m> facecs where every face is bounded by at least 4 edges. Prove that <m>e \leq 2v -4</m>.
 
-<solution>
+<!--solution>
 <p>
 Since <m>G</m> has no 3-cycles, every region is bounded by at least 4 edges. This means that
 <me>
@@ -548,7 +548,7 @@ v - 2 &amp; \geq \frac{1}{2}e
 </md>
 <p>
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -578,10 +578,10 @@ For example, we can draw the 4-cycle <m>C_4</m> using a square with opposite sid
 \begin{tikzpicture} %mathbook width=30%
 
 
-\draw[gray, thick] (2,1.5) -- (1.67,2.5);
-\draw[gray, thick] (1,.5) -- (1.67,-1.5);
+\draw[gray, thick] (2,1.5) z-z-z (1.67,2.5);
+\draw[gray, thick] (1,.5) z-z-z (1.67,-1.5);
 
-\draw[gray, thick] (2,1.5) -- (3,.5) -- (2, -.5) -- (1, .5);
+\draw[gray, thick] (2,1.5) z-z-z (3,.5) z-z-z (2, -.5) z-z-z (1, .5);
 
 \begin{scope}[shift={(2,.5)}]
 
@@ -597,11 +597,11 @@ For example, we can draw the 4-cycle <m>C_4</m> using a square with opposite sid
 \end{scope}
 
 
-\draw[very thick, -latex] (0,2.5) -- (4, 2.5);
-\draw[very thick, -latex] (0,-1.5) -- (4, -1.5);
+\draw[very thick, -latex] (0,2.5) z-z-z (4, 2.5);
+\draw[very thick, -latex] (0,-1.5) z-z-z (4, -1.5);
 
-\draw[very thick, color=red, -latex] (0,-1.5) -- (0, 2.5);
-\draw[very thick, color=red, -latex] (4,-1.5) -- (4, 2.5);
+\draw[very thick, color=red, -latex] (0,-1.5) z-z-z (0, 2.5);
+\draw[very thick, color=red, -latex] (4,-1.5) z-z-z (4, 2.5);
 
 \node at (2,-2.5) {$C_{4}$ on a torus};
 
@@ -638,11 +638,11 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 \end{scope}
 
 
-\draw[very thick, -latex] (0,2.5) -- (4, 2.5);
-\draw[very thick, -latex] (0,-1.5) -- (4, -1.5);
+\draw[very thick, -latex] (0,2.5) z-z-z (4, 2.5);
+\draw[very thick, -latex] (0,-1.5) z-z-z (4, -1.5);
 
-\draw[very thick, color=red, -latex] (0,-1.5) -- (0, 2.5);
-\draw[very thick, color=red, -latex] (4,-1.5) -- (4, 2.5);
+\draw[very thick, color=red, -latex] (0,-1.5) z-z-z (0, 2.5);
+\draw[very thick, color=red, -latex] (4,-1.5) z-z-z (4, 2.5);
 
 \node at (2,-2.5) {$K_{5}$ on a torus};
 
@@ -661,11 +661,11 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 }
 
 
-\draw[very thick, -latex] (0,2.5) -- (4, 2.5);
-\draw[very thick, -latex] (0,-1.5) -- (4, -1.5);
+\draw[very thick, -latex] (0,2.5) z-z-z (4, 2.5);
+\draw[very thick, -latex] (0,-1.5) z-z-z (4, -1.5);
 
-\draw[very thick, color=red, -latex] (0,-1.5) -- (0, 2.5);
-\draw[very thick, color=red, -latex] (4,-1.5) -- (4, 2.5);
+\draw[very thick, color=red, -latex] (0,-1.5) z-z-z (0, 2.5);
+\draw[very thick, color=red, -latex] (4,-1.5) z-z-z (4, 2.5);
 
 \node at (2,-2.5) {$K_{3,3}$ on a torus};
 
@@ -677,7 +677,7 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 			</image>
 
 
-<solution>
+<!--solution>
 <p>
 
 			<image width="90%" xml:id="fig-img-planar5">
@@ -689,23 +689,23 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 \begin{scope}[shift={(2,.5)}]
 
 
-\draw[thick, gray]  (90:1) -- (90+144:1);
-\draw[thick, gray]  (90:1) -- (90-144:1);
-\draw[thick, gray] (162:1) -- (-2, .4);
-\draw[thick, gray] (18:1) -- (2, .4);
+\draw[thick, gray]  (90:1) z-z-z (90+144:1);
+\draw[thick, gray]  (90:1) z-z-z (90-144:1);
+\draw[thick, gray] (162:1) z-z-z (-2, .4);
+\draw[thick, gray] (18:1) z-z-z (2, .4);
 
 
-\draw[thick, gray] (162:1)  --  (-2,-.2);
-\draw[thick, gray] (2,-.2)  --  (-54:1);
+\draw[thick, gray] (162:1)  z-z-z  (-2,-.2);
+\draw[thick, gray] (2,-.2)  z-z-z  (-54:1);
 
-\draw[thick, gray] (18:1)  --  (0,2);
-\draw[thick, gray] (234:1)  --  (0,-2);
+\draw[thick, gray] (18:1)  z-z-z  (0,2);
+\draw[thick, gray] (234:1)  z-z-z  (0,-2);
 
 
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw[thick, gray] (\x*72+18:1)  -- (\x*72+90:1);
+\draw[thick, gray] (\x*72+18:1)  z-z-z (\x*72+90:1);
 \draw[fill] (\x*72+18:1) circle (3pt);
 
 
@@ -714,11 +714,11 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 \end{scope}
 
 
-\draw[very thick, -latex] (0,2.5) -- (4, 2.5);
-\draw[very thick, -latex] (0,-1.5) -- (4, -1.5);
+\draw[very thick, -latex] (0,2.5) z-z-z (4, 2.5);
+\draw[very thick, -latex] (0,-1.5) z-z-z (4, -1.5);
 
-\draw[very thick, color=red, -latex] (0,-1.5) -- (0, 2.5);
-\draw[very thick, color=red, -latex] (4,-1.5) -- (4, 2.5);
+\draw[very thick, color=red, -latex] (0,-1.5) z-z-z (0, 2.5);
+\draw[very thick, color=red, -latex] (4,-1.5) z-z-z (4, 2.5);
 
 \node at (2,-2.5) {$K_{5}$ on a torus};
 
@@ -726,37 +726,37 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 \begin{scope}[shift={(8,0)}]
 
 
-\draw[thick, gray] (2,0) -- (1,1);
-\draw[thick, gray] (2,0) -- (3,1);
+\draw[thick, gray] (2,0) z-z-z (1,1);
+\draw[thick, gray] (2,0) z-z-z (3,1);
 
-\draw[thick, gray] (1,0) -- (1.5,-1.5);
-\draw[thick, gray] (2,1) -- (1.5,2.5);
+\draw[thick, gray] (1,0) z-z-z (1.5,-1.5);
+\draw[thick, gray] (2,1) z-z-z (1.5,2.5);
 
-\draw[thick, gray] (3,0) -- (2.5,-1.5);
-\draw[thick, gray] (2,1) -- (2.5,2.5);
+\draw[thick, gray] (3,0) z-z-z (2.5,-1.5);
+\draw[thick, gray] (2,1) z-z-z (2.5,2.5);
 
-\draw[thick, gray] (1,0) -- (0,.5);
-\draw[thick, gray] (3,1) -- (4,.5);
+\draw[thick, gray] (1,0) z-z-z (0,.5);
+\draw[thick, gray] (3,1) z-z-z (4,.5);
 
 
-\draw[thick, gray] (3,0) -- (4,-1.5);
-\draw[thick, gray] (1,1) -- (0,2.5);
+\draw[thick, gray] (3,0) z-z-z (4,-1.5);
+\draw[thick, gray] (1,1) z-z-z (0,2.5);
 
 
 \foreach \x in {1,2,3}
 {
 
-\draw[thick, gray] (\x,0) -- (\x,1);
+\draw[thick, gray] (\x,0) z-z-z (\x,1);
 \draw[thick, fill=gray!50] (\x,0) circle (3pt);
 \draw[fill] (\x,1) circle (3pt);
 }
 
 
-\draw[very thick, -latex] (0,2.5) -- (4, 2.5);
-\draw[very thick, -latex] (0,-1.5) -- (4, -1.5);
+\draw[very thick, -latex] (0,2.5) z-z-z (4, 2.5);
+\draw[very thick, -latex] (0,-1.5) z-z-z (4, -1.5);
 
-\draw[very thick, color=red, -latex] (0,-1.5) -- (0, 2.5);
-\draw[very thick, color=red, -latex] (4,-1.5) -- (4, 2.5);
+\draw[very thick, color=red, -latex] (0,-1.5) z-z-z (0, 2.5);
+\draw[very thick, color=red, -latex] (4,-1.5) z-z-z (4, 2.5);
 
 \node at (2,-2.5) {$K_{3,3}$ on a torus};
 
@@ -768,7 +768,7 @@ Using a square with opposite sides identified, show that you can draw both <m>K_
 			</image>
 
 </p>
-</solution>
+</solution-->
 
 
 

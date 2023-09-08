@@ -130,7 +130,7 @@ with repetition
 <p>
 
 
-<solution>
+<!--solution>
 <p>
 
 
@@ -195,7 +195,7 @@ Some more details: the number <m>S(k,n)</m> counts the number of ways to put <m>
 
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -240,13 +240,13 @@ Then write down the formula for the size of the set of functions.
  <m>\mathcal{A} = \{ </m> all possible functions from <m>[r]</m> to <m>[s] \}</m>.
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 | \mathcal{A}| =  s^r
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -259,13 +259,13 @@ Then write down the formula for the size of the set of functions.
 
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 | \mathcal{B}| =  (s)_r
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -277,13 +277,13 @@ Then write down the formula for the size of the set of functions.
  <m>\mathcal{C} = \{ </m> all surjective functions from <m>[r]</m> to <m>[s] \}</m>.
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 | \mathcal{C}| =  r! S(s,r)
 </me>
 </p>
-</solution>
+</solution-->
 
 
 
@@ -295,13 +295,13 @@ Then write down the formula for the size of the set of functions.
  <m>\mathcal{D} = \{ </m> all bijective functions from <m>[r]</m> to <m>[s] \}</m>.
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 | \mathcal{D}| = s!=r!
 </me>
 </p>
-</solution>
+</solution-->
 
 
 					</p>

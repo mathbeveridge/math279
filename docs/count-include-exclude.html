@@ -217,88 +217,28 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-include-exclude"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">17</span> <span class="title">Inclusion/Exclusion</span>
 </h2>
-<section class="introduction" id="introduction-17"><p id="p-637"></p></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-17"><p id="p-319"></p></section><section class="exercises" id="exercises-17"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-87"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Rolling 10 Dice.</span>
 </h6>
-<p id="p-638">We roll 6-sided die 10 times, and then list the outcomes in order as \((x_1, x_2, \ldots , x_{10} )\text{.}\) We are interested in counting the total number outcomes in which 1 or 2 appears at least once.  We break this process into multiple steps.</p>
+<p id="p-320">We roll 6-sided die 10 times, and then list the outcomes in order as \((x_1, x_2, \ldots , x_{10} )\text{.}\) We are interested in counting the total number outcomes in which 1 or 2 appears at least once.  We break this process into multiple steps.</p>
 <ol class="lower-alpha">
-<li id="li-295"><p id="p-639">Let \(X\) be the set of all possible outcomes \((x_1, x_2, \ldots , x_{10} )\text{.}\) What is \(|X|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-182" id="solution-182"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-182"><div class="solution solution-like">
-<p id="p-640">For each \(x_i\text{,}\) we have 6 possible rolls. By the product principle, the answer is</p>
-<div class="displaymath">
-\begin{equation*}
-|X| = 6^{10}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-296"><p id="p-641">Let \(X_1\) be the set of outcomes that <em class="emphasis">do not</em> contain any 1's. I would call \(X_1\) the set of "bad outcomes for 1." What is \(|X_1|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-183" id="solution-183"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-183"><div class="solution solution-like">
-<p id="p-642">For each \(x_i\text{,}\) we have 5 possible rolls since rolling a 1 is forbidden. By the product principle, the answer is</p>
-<div class="displaymath">
-\begin{equation*}
-|X_1| = 5^{10}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-297"><p id="p-643">Define \(X_2\) in the same way as in part (b), where \(X_2\) is the set of "bad outcomes for 2." What is \(|X_2|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-184" id="solution-184"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-184"><div class="solution solution-like">
-<p id="p-644">As in the previous problem the answer is</p>
-<div class="displaymath">
-\begin{equation*}
-|X_2| = 5^{10}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-298"><p id="p-645">How many outcomes are there in which neither 1 or 2 appears? How would you describe this set using the symbols \(X_1\) and \(X_2\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-185" id="solution-185"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-185"><div class="solution solution-like">
-<p id="p-646">The set described is \(X_1 \cap X_2\text{.}\) This time, there are 4 numbers allowed for each role, so</p>
-<div class="displaymath">
-\begin{equation*}
-|X_1 \cap X_2| = 4^{10}
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-299"><p id="p-647">Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes." <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-186" id="solution-186"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-186"><div class="solution solution-like"><div class="displaymath" id="p-648">
-\begin{equation*}
-|X_1 \cup X_2 | = |X_1| + | X_2| - |X_1 \cap X_2| = 5^{10} + 5^{10}  - 4^{10}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-300"><p id="p-649">Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-187" id="solution-187"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-187"><div class="solution solution-like"><div class="displaymath" id="p-650">
-\begin{equation*}
-6^{10} - \left( 5^{10} + 5^{10}  - 4^{10}  \right) = 6^{10} - 2 \cdot 5^{10} + 4^{10}
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-184"><p id="p-321">Let \(X\) be the set of all possible outcomes \((x_1, x_2, \ldots , x_{10} )\text{.}\) What is \(|X|\text{?}\) </p></li>
+<li id="li-185"><p id="p-322">Let \(X_1\) be the set of outcomes that <em class="emphasis">do not</em> contain any 1's. I would call \(X_1\) the set of "bad outcomes for 1." What is \(|X_1|\text{?}\) </p></li>
+<li id="li-186"><p id="p-323">Define \(X_2\) in the same way as in part (b), where \(X_2\) is the set of "bad outcomes for 2." What is \(|X_2|\text{?}\) </p></li>
+<li id="li-187"><p id="p-324">How many outcomes are there in which neither 1 or 2 appears? How would you describe this set using the symbols \(X_1\) and \(X_2\text{?}\) </p></li>
+<li id="li-188"><p id="p-325">Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes." </p></li>
+<li id="li-189"><p id="p-326">Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-88"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">I Hate 2, 5, and 7.</span>
 </h6>
-<p id="p-651">In this question, you will determine how many numbers between 1 and 140 are <em class="emphasis">not</em> divisible by any of 2, 5 or 7. As in the previous question, we  start by counting the complement of the set we are interested in (because it is easier to count).</p>
+<p id="p-327">In this question, you will determine how many numbers between 1 and 140 are <em class="emphasis">not</em> divisible by any of 2, 5 or 7. As in the previous question, we  start by counting the complement of the set we are interested in (because it is easier to count).</p>
 <ol class="lower-alpha">
-<li id="li-301"><p id="p-652">Negate the statement "\(n\) is not divisible by any of 2, 5 and 7." <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-188" id="solution-188"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-188"><div class="solution solution-like"><p id="p-653">\(n\) is divisible by at least one of 2, 5 or 7</p></div></div></p></li>
-<li id="li-302"><p id="p-654">The set of numbers that you described in part (a) can be found using inclusion-exclusion. Do so. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-189" id="solution-189"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-189"><div class="solution solution-like">
-<p id="p-655">Let \(A_2\text{,}\) \(A_5\) and \(A_7\) be the set of numbers divisible by 2, 5, and 7, respectively. We have</p>
-<div class="displaymath">
-\begin{equation*}
-\begin{array}{ccc}
-|A_2| = 70 &amp; |A_5| = 28 &amp; |A_7| = 20 \\
-|A_2 \cap A_5| = 14 &amp; |A_2 \cap A_7| = 10 &amp; |A_5 \cap A_7| = 4 \\
-&amp;|A_2 \cap A_5 \cap A_7| = 2 \\
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">By inclusion-exclusion the answer is</p>
-<div class="displaymath">
-\begin{equation*}
-70+28+20 - 14 - 10 - 4 + 2 = 92
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-303"><p id="p-656">Use your answer to (b) to find how many numbers in [140] are <em class="emphasis">not</em> divisible by any of 2, 5 and 7. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-190" id="solution-190"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-190"><div class="solution solution-like">
-<p id="p-657">We use the useful theorem "good = all - bad" to find that</p>
-<div class="displaymath">
-\begin{equation*}
-140 -92 = 48
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-190"><p id="p-328">Negate the statement "\(n\) is not divisible by any of 2, 5 and 7." </p></li>
+<li id="li-191"><p id="p-329">The set of numbers that you described in part (a) can be found using inclusion-exclusion. Do so. </p></li>
+<li id="li-192"><p id="p-330">Use your answer to (b) to find how many numbers in [140] are <em class="emphasis">not</em> divisible by any of 2, 5 and 7. </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

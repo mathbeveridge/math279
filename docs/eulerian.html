@@ -217,83 +217,55 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="eulerian"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">14</span> <span class="title">Eulerian Graphs</span>
 </h2>
-<section class="introduction" id="introduction-14"><p id="p-546">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
+<section class="introduction" id="introduction-14"><p id="p-270">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
 <ul class="disc">
-<li id="li-253"><p id="p-547">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
-<li id="li-254"><p id="p-548">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
-<li id="li-255"><p id="p-549">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
-<li id="li-256"><p id="p-550">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
-<li id="li-257"><p id="p-551">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-157"><p id="p-271">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
+<li id="li-158"><p id="p-272">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
+<li id="li-159"><p id="p-273">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-160"><p id="p-274">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
+<li id="li-161"><p id="p-275">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
 </ul>
 <p class="continuation">And here are the definitions that we need for today.</p>
 <ul class="disc">
-<li id="li-258"><p id="p-552">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
-<li id="li-259"><p id="p-553">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
-<li id="li-260"><p id="p-554">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
+<li id="li-162"><p id="p-276">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
+<li id="li-163"><p id="p-277">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
+<li id="li-164"><p id="p-278">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
 </ul></section><section class="exercises" id="exercises-14"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-72"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Examples and Non-Examples.</span>
 </h6>
-<p id="p-555">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-158" id="solution-158"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-158"><div class="solution solution-like"><ol id="p-556" class="lower-alpha">
-<li id="li-261"><p id="p-557">Neither</p></li>
-<li id="li-262"><p id="p-558">Eulerian Trail</p></li>
-<li id="li-263"><p id="p-559">Eulerian Circuit</p></li>
-<li id="li-264"><p id="p-560">Eulerian Trail</p></li>
-<li id="li-265"><p id="p-561">Eulerian Circuit</p></li>
-<li id="li-266"><p id="p-562">Neither</p></li>
-</ol></div></div></p></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading">
+<p id="p-279">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">DIY Eulerian Properties.</span>
 </h6>
-<p id="p-563">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-159" id="solution-159"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-159"><div class="solution solution-like">
-<p id="p-564">Here are the conclusions that we seems to draw from these examples:</p>
-<ul class="disc">
-<li id="li-267"><p id="p-565">\(G\) has an Eulerian Cycle \(\longleftrightarrow\) all vertices have even degree</p></li>
-<li id="li-268"><p id="p-566">\(G\) has an Eulerian Trail \(\longleftrightarrow\) exactly two vertices of odd degree</p></li>
-</ul>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading">
+<p id="p-280">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? </p></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Circuit.</span>
 </h6>
-<p id="p-567">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-160" id="solution-160"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-160"><div class="solution solution-like"><p id="p-568">Property EC = every vertex has even degree</p></div></div></p></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading">
+<p id="p-281">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. </p></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Trail.</span>
 </h6>
-<p id="p-569">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-161" id="solution-161"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-161"><div class="solution solution-like"><p id="p-570">Property ET = exactly two vertices have odd degree</p></div></div></p></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading">
+<p id="p-282">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. </p></article><article class="exercise exercise-like" id="exercise-76"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Using EC condition to prove ET condition.</span>
 </h6>
-<p id="p-571">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
-<p id="p-572">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
-<p id="p-573"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-162" id="solution-162"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-162"><div class="solution solution-like"><p id="p-574">Let \(G\) be a graph with exactly two vertices with odd degree. Add an edge \(e\) between these two vertices. Then \(G+e\) has an Eulerian circuit (by Property EC). Removing the edge \(e\) once more gives us an Eulerian trail in the original graph \(G\text{.}\)</p></div></div></p></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
+<p id="p-283">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
+<p id="p-284">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
+<p id="p-285"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? </p></article><article class="exercise exercise-like" id="exercise-77"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Circuit Implies EC condition holds.</span>
 </h6>
-<p id="p-575">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-163" id="solution-163"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-163"><div class="solution solution-like"><p id="p-576">As we travel along the Eulerian circuit, every entrance is paired with an exit. So all vertices have even degree.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
+<p id="p-286">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. </p></article><article class="exercise exercise-like" id="exercise-78"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">EC condition implies \(G\) has an Eulerian Circuit.</span>
 </h6>
-<p id="p-577">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-164" id="solution-164"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-164"><div class="solution solution-like">
-<p id="p-578">Let \(G\) be a connected graph vertices where every degree is even.</p>
-<ul class="disc">
-<li id="li-269"><p id="p-579"><em class="emphasis">Base Case:</em> \(G\) is a cycle, so \(m=n\text{.}\) Clearly a cycle is an Eulerian circuit.</p></li>
-<li id="li-270"><p id="p-580"><em class="emphasis">Inductive Hypothesis:</em> Assume that a connected graph \(G\) where every degree is even and \(|E| &lt; m\) has an Eulerian cycle.</p></li>
-<li id="li-271"><p id="p-581"><em class="emphasis">Inductive Step:</em> Consider a graph \(G\) where every degree is even and \(|E|=m\text{.}\) Start at any vertex \(v\) and walk without repeating edges until you return to \(v\text{.}\) You cannot get stuck along the way since every vertex has even degree: if you enter a vertex then there must be an edge available to leave the vertex. Call this resulting circuit \(W\text{.}\) Now look at \(H=G-W\text{.}\) Every vertex of graph \(H\) has even degree, but it may have multiple components. Each component has fewer than \(m\) edges, so these components each have an Eulerian Circuit. We can splice these together along with the circuit \(W\) to create an Eulerian Circuit for \(G\text{.}\)</p></li>
-</ul>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading">
+<p id="p-287">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. </p></article><article class="exercise exercise-like" id="exercise-79"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Guan's Postman Problem.</span>
 </h6>
-<p id="p-582">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
-<p id="p-583"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
-<p id="p-584">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
+<p id="p-288">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
+<p id="p-289"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
+<p id="p-290">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
 <ol class="lower-alpha">
-<li id="li-272"><p id="p-585">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-165" id="solution-165"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-165"><div class="solution solution-like"><p id="p-586"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-eulerian2.svg" role="img" class="contained"></div></p></div></div></p></li>
-<li id="li-273"><p id="p-587">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-166" id="solution-166"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-166"><div class="solution solution-like"><ul id="p-588" class="disc">
-<li id="li-274"><p id="p-589">Find all of the vertices of odd degree. There must be an even number of them</p></li>
-<li id="li-275"><p id="p-590">Calculate the distances between each pair of odd degree vertices.</p></li>
-<li id="li-276"><p id="p-591">Find a perfect matching of these odd degree vertices that minimizes the total distance.</p></li>
-<li id="li-277"><p id="p-592">Double the edges in the graph that correspond to the paths connecting these pairs of odd degree vertices.</p></li>
-</ul></div></div></p></li>
-<li id="li-278"><p id="p-593">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like">
-<p id="p-594">The states with odd degrees are (from left to right): CA, NV, UT, ND, TX, MO, LA, IL, KY, OH, WV, GA, MD, NC, VT, NY, NJ, DE, NH, MA, CT, ME. Observe that ND is at least 3 steps away from all the other odd degree vertices. We can pair it up with UT at a cost of 3, and we cannot do any better. So we can double the edges (ND, MT), (MT, ID), (ID, UT) (or we can pick another path of length 3 between ND and UT).</p>
-<p id="p-595">We can pair the remaining odd states with an odd neighboring state as follows: (CA, NV) (UT,  ND) (MO, IL) (TX, LA) (VT, NY) (NJ, DE) (MA, CT) (NH, ME) (KY, OH) (WV, MD) (GA,  NC) We must double a total of 14 edges to solve the Postman Problem.</p>
-</div></div></p></li>
+<li id="li-165"><p id="p-291">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
+<li id="li-166"><p id="p-292">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
+<li id="li-167"><p id="p-293">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

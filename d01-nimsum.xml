@@ -61,7 +61,7 @@ Write each of the following numbers in binary by first writing them as a sum of 
 			</ol>
 
 
-<solution>
+<!--solution>
 <p>
 
 			<ol>
@@ -98,7 +98,7 @@ Write each of the following numbers in binary by first writing them as a sum of 
 				</li>
 			</ol>
 </p>
-</solution>
+</solution-->
 
 
 			</p><p>
@@ -131,7 +131,7 @@ Calculate the following nim sums
 				</li>
 			</ol>
 
-<solution>
+<!--solution>
 <p>
 
 			<ol>
@@ -186,7 +186,7 @@ which is 8.
 			</ol>
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -354,7 +354,7 @@ You have analyzed the following Nim positions in a previous exercise. For each p
 			</image>
 
 
-<solution>
+<!--solution>
 <p>
 
 			<ol>
@@ -393,7 +393,7 @@ You have analyzed the following Nim positions in a previous exercise. For each p
 The <m>\cP</m>-positions have nim sum 0 and the <m>\cN</m>-postions have nonzero nim sum.
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -449,7 +449,7 @@ Use nim sums to determine whether each of these nim positions  is an <m>\cN</m>-
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{r}
@@ -463,7 +463,7 @@ Use nim sums to determine whether each of these nim positions  is an <m>\cN</m>-
 
 The winning move is <m>(2,3,1)</m>.
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -507,7 +507,7 @@ The winning move is <m>(2,3,1)</m>.
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{r}
@@ -522,7 +522,7 @@ The winning move is <m>(2,3,1)</m>.
 
 There are three winning moves: <m>(0,2,6,4)</m> and <m>(2,0,6,4)</m> and <m>(2,2,4,4)</m>.
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -570,7 +570,7 @@ There are three winning moves: <m>(0,2,6,4)</m> and <m>(2,0,6,4)</m> and <m>(2,2
 				</latex-image>
 			</image>
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{r}
@@ -585,7 +585,7 @@ There are three winning moves: <m>(0,2,6,4)</m> and <m>(2,0,6,4)</m> and <m>(2,2
 
 There is one  winning move: <m>(1,0,4,5)</m>.
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 

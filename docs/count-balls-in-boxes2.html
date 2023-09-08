@@ -217,13 +217,13 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-balls-in-boxes2"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">22</span> <span class="title">Balls in Boxes Part 2</span>
 </h2>
-<section class="introduction" id="introduction-22"><p id="p-768"></p></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-22"><p id="p-391"></p></section><section class="exercises" id="exercises-22"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-113"><h6 class="heading"><span class="codenumber">1<span class="period">.</span></span></h6>
-<p id="p-769">Last class, we filled in the following table:</p>
-<p id="p-770"><em class="emphasis">\(n\) distinct boxes, \(k\) balls, boxes <em class="emphasis">CAN</em> be empty</em></p>
-<p id="p-771"></p>
+<p id="p-392">Last class, we filled in the following table:</p>
+<p id="p-393"><em class="emphasis">\(n\) distinct boxes, \(k\) balls, boxes <em class="emphasis">CAN</em> be empty</em></p>
+<p id="p-394"></p>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r1 l1 t1 lines"></td>
@@ -244,10 +244,10 @@
 <td class="l m b1 r1 l0 t0 lines">none</td>
 </tr>
 </table></div>
-<p id="p-772"></p>
-<p id="p-773">We consider another variation on this problem: now the boxes cannot be empty. Try to fill in the following table. You will be able to determine 3 out of 4 of the answers. We will talk about the last one as a group.</p>
-<p id="p-774"><em class="emphasis">\(n\) distinct boxes, \(k\) balls, boxes CANNOT be empty</em></p>
-<p id="p-775"></p>
+<p id="p-395"></p>
+<p id="p-396">We consider another variation on this problem: now the boxes cannot be empty. Try to fill in the following table. You will be able to determine 3 out of 4 of the answers. We will talk about the last one as a group.</p>
+<p id="p-397"><em class="emphasis">\(n\) distinct boxes, \(k\) balls, boxes CANNOT be empty</em></p>
+<p id="p-398"></p>
 <div class="tabular-box natural-width"><table class="tabular">
 <tr>
 <td class="l m b1 r1 l1 t1 lines"></td>
@@ -268,62 +268,21 @@
 <td class="l m b1 r1 l0 t0 lines">\(\phantom{\displaystyle{{a+b+c \choose d}}}\)</td>
 </tr>
 </table></div>
-<p id="p-776"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like">
-<p id="p-777"></p>
-<div class="tabular-box natural-width"><table class="tabular">
-<tr>
-<td class="l m b1 r1 l1 t1 lines"></td>
-<td class="l m b1 r1 l0 t1 lines">balls identical</td>
-<td class="l m b1 r1 l0 t1 lines">balls distinct</td>
-<td class="l m b1 r1 l0 t1 lines">conditions?</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">no repetition</td>
-<td class="l m b1 r1 l0 t0 lines">\(\displaystyle{\phantom{{ a \choose b}}}\)  \(1\) \(\displaystyle{\phantom{{ a \choose b}}}\)</td>
-<td class="l m b1 r1 l0 t0 lines">\(n!=k!\)</td>
-<td class="l m b1 r1 l0 t0 lines">\(n=k\)</td>
-</tr>
-<tr>
-<td class="l m b1 r1 l1 t0 lines">with repetition</td>
-<td class="l m b1 r1 l0 t0 lines">\(\displaystyle{{ k -1 \choose n-1}}\)</td>
-<td class="l m b1 r1 l0 t0 lines">\(n! S(k,n)\)</td>
-<td class="l m b1 r1 l0 t0 lines">\(k \geq n\)</td>
-</tr>
-</table></div>
-<p id="p-778">The formula \(n! S(k,n)\) uses the number \(S(k,n)\) which is called the <em class="emphasis">Stirling Number of the Second Kind</em>. It turns out that we've asked a very hard problem!</p>
-<p id="p-779">We do have the tools at our disposal to give and understand the formula for \(S(k,n)\text{.}\) However, the argument is a little more abstract than I usually like to cover in MATH 279. So you can just write down "\(n! S(k,n)\)" as the answer to this question (when it comes up) without knowing the particular formula for \(S(k,n)\text{.}\)</p>
-<p id="p-780">Some more details: the number \(S(k,n)\) counts the number of ways to put \(n\) <em class="emphasis">distinct balls</em> into \(k\) <em class="emphasis">identical boxes</em> where <em class="emphasis">boxes cannot be empty</em> and <em class="emphasis">repetition is allowed</em>. Can you explain why we must multiply by \(n!\) in order to get the number of ways to use \(\) instead?</p>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-781">In this problem, you will count sets of functions from \([r]\) to \([s]\text{.}\) You will map each one  to a balls-in-boxes problem. Decide each of the following questions (and write down your answers):</p>
+<p id="p-399"></p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-400">In this problem, you will count sets of functions from \([r]\) to \([s]\text{.}\) You will map each one  to a balls-in-boxes problem. Decide each of the following questions (and write down your answers):</p>
 <ul class="disc">
-<li id="li-341"><p id="p-782">Are the balls distinct?</p></li>
-<li id="li-342"><p id="p-783">Are the boxes distinct?</p></li>
-<li id="li-343"><p id="p-784">Can boxes be empty?</p></li>
-<li id="li-344"><p id="p-785">Is repetition allowed?</p></li>
-<li id="li-345"><p id="p-786">What is the constraint on \(r\) and \(s\text{?}\)</p></li>
+<li id="li-224"><p id="p-401">Are the balls distinct?</p></li>
+<li id="li-225"><p id="p-402">Are the boxes distinct?</p></li>
+<li id="li-226"><p id="p-403">Can boxes be empty?</p></li>
+<li id="li-227"><p id="p-404">Is repetition allowed?</p></li>
+<li id="li-228"><p id="p-405">What is the constraint on \(r\) and \(s\text{?}\)</p></li>
 </ul>
 <p class="continuation">Then write down the formula for the size of the set of functions.</p>
 <ol class="lower-alpha">
-<li id="li-346"><p id="p-787">\(\mathcal{A} = \{ \) all possible functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-232" id="solution-232"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-232"><div class="solution solution-like"><div class="displaymath" id="p-788">
-\begin{equation*}
-| \mathcal{A}| =  s^r
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-347"><p id="p-789">\(\mathcal{B} = \{ \) all injective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-233" id="solution-233"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-233"><div class="solution solution-like"><div class="displaymath" id="p-790">
-\begin{equation*}
-| \mathcal{B}| =  (s)_r
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-348"><p id="p-791">\(\mathcal{C} = \{ \) all surjective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-234" id="solution-234"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-234"><div class="solution solution-like"><div class="displaymath" id="p-792">
-\begin{equation*}
-| \mathcal{C}| =  r! S(s,r)
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-349"><p id="p-793">\(\mathcal{D} = \{ \) all bijective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-235" id="solution-235"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-235"><div class="solution solution-like"><div class="displaymath" id="p-794">
-\begin{equation*}
-| \mathcal{D}| = s!=r!
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-229"><p id="p-406">\(\mathcal{A} = \{ \) all possible functions from \([r]\) to \([s] \}\text{.}\) </p></li>
+<li id="li-230"><p id="p-407">\(\mathcal{B} = \{ \) all injective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
+<li id="li-231"><p id="p-408">\(\mathcal{C} = \{ \) all surjective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
+<li id="li-232"><p id="p-409">\(\mathcal{D} = \{ \) all bijective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
