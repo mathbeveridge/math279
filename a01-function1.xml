@@ -12,6 +12,104 @@
 		<title>Practice Problems</title>
 
 		<exercise>
+			<title>Listing all functions</title>
+			<idx><h>Listing all functions</h></idx>
+			<statement>
+				<p>
+List all the functions from <m>\{a,b,c \}</m> to <m>\{ x,y \}</m>. For example, one function <m>f_1</m> is given by <m>f_1(a)=x</m> and <m>f_1(b)=y</m> and <m>f_1(c)=y</m>.
+
+<!--solution>
+<p>
+There are 8 such functions. Here they are, where each row corresponds to one function.
+<me>
+\begin{array}{c|c|c}
+a  &amp; b &amp; c \\
+\hline
+x &amp; x &amp; x  \\
+x &amp; x &amp;  y \\
+x  &amp; y  &amp; x  \\
+y &amp; x &amp; x  \\
+x &amp;  y &amp; y \\
+y  &amp;  x &amp; y \\
+y &amp; y &amp; x \\
+y &amp; y &amp; y
+\end{array}
+</me>
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Counting  functions</title>
+			<idx><h>Counting  functions</h></idx>
+			<statement>
+				<p>
+How many functions are there from <m>\{a,b,c,d \}</m> to <m>\{x,y,z \}</m>? This time, justify your answer with an argument rather than listing all possible functions.
+
+<!--solution>
+<p>
+There are <m>3^4</m> functions. Each of the four elements in the domain can map to any of the three elements in the target. The result follows from the product principle.
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>More counting functions</title>
+			<idx><h>More counting functions</h></idx>
+			<statement>
+				<p>
+Without making lists or drawing pictures, how many functions are there <m>\ldots</m>
+
+			<ol>
+				<li>
+					<p>
+ from a four-element set to a ten-element set?
+
+<!--solution>
+<p>
+<m>10^4</m>
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+ 	from a ten-element set to a four-element set?
+
+<!--solution>
+<p>
+<m>4^{10}</m>
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+  from an <m>r</m>-element set to an <m>s</m>-element set?
+
+<!--solution>
+<p>
+<m>s^r</m>
+</p>
+</solution-->
+
+					</p>
+				</li>
+			</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
 			<title>Different Kinds of Functions</title>
 			<idx><h>Different Kinds of Functions</h></idx>
 			<statement>
@@ -227,103 +325,7 @@ Required Relationship: none
 				</p>
 			</statement>
 		</exercise>
-		<exercise>
-			<title>Listing all functions</title>
-			<idx><h>Listing all functions</h></idx>
-			<statement>
-				<p>
-List all the functions from <m>\{a,b,c \}</m> to <m>\{ x,y \}</m>. For example, one function <m>f_1</m> is given by <m>f_1(a)=x</m> and <m>f_1(b)=y</m> and <m>f_1(c)=y</m>.
 
-<!--solution>
-<p>
-There are 8 such functions. Here they are, where each row corresponds to one function.
-<me>
-\begin{array}{c|c|c}
-a  &amp; b &amp; c \\
-\hline
-x &amp; x &amp; x  \\
-x &amp; x &amp;  y \\
-x  &amp; y  &amp; x  \\
-y &amp; x &amp; x  \\
-x &amp;  y &amp; y \\
-y  &amp;  x &amp; y \\
-y &amp; y &amp; x \\
-y &amp; y &amp; y
-\end{array}
-</me>
-</p>
-</solution-->
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Counting  functions</title>
-			<idx><h>Counting  functions</h></idx>
-			<statement>
-				<p>
-How many functions are there from <m>\{a,b,c,d \}</m> to <m>\{x,y,z \}</m>? This time, justify your answer with an argument rather than listing all possible functions.
-
-<!--solution>
-<p>
-There are <m>3^4</m> functions. Each of the four elements in the domain can map to any of the three elements in the target. The result follows from the product principle.
-</p>
-</solution-->
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>More counting functions</title>
-			<idx><h>More counting functions</h></idx>
-			<statement>
-				<p>
-Without making lists or drawing pictures, how many functions are there <m>\ldots</m>
-
-			<ol>
-				<li>
-					<p>
- from a four-element set to a ten-element set?
-
-<!--solution>
-<p>
-<m>10^4</m>
-</p>
-</solution-->
-
-					</p>
-				</li>
-				<li>
-					<p>
- 	from a ten-element set to a four-element set?
-
-<!--solution>
-<p>
-<m>4^{10}</m>
-</p>
-</solution-->
-
-					</p>
-				</li>
-				<li>
-					<p>
-  from an <m>r</m>-element set to an <m>s</m>-element set?
-
-<!--solution>
-<p>
-<m>s^r</m>
-</p>
-</solution-->
-
-					</p>
-				</li>
-			</ol>
-
-
-
-				</p>
-			</statement>
-		</exercise>
 		<exercise>
 			<title>Injective? Surjective?</title>
 			<idx><h>Injective? Surjective?</h></idx>

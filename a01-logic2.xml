@@ -22,7 +22,7 @@
 				<p>
 Write down the contrapositive, converse and inverse of the implication: "if <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>." Which of these four statements are <em> true</em>? Which ones are <em> false</em>?
 
-<!--solution>
+<solution>
 <p>
 		<ul>
 			<li>
@@ -47,7 +47,7 @@ Write down the contrapositive, converse and inverse of the implication: "if <m>x
 			</li>
 		</ul>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -73,7 +73,7 @@ Let <m>X</m> be the set of people. Let <m>P(x,y)</m> be the statement "<m>x</m> 
 				</li>
 			</ol>
 
-<!--solution>
+<solution>
 <p>
 Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x</m> loves <m>y</m>."
 
@@ -91,7 +91,7 @@ Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x<
 				</li>
 			</ol>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -103,7 +103,7 @@ Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x<
 				<p>
 Negate the formal statements you made in the previous problem, then translate them into everyday English. Do these negations make sense, when compared to the original statements?
 
-<!--solution>
+<solution>
 <p>
 			<ol>
 				<li>
@@ -118,7 +118,7 @@ Negate the formal statements you made in the previous problem, then translate th
 				</li>
 			</ol>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -130,7 +130,7 @@ Negate the formal statements you made in the previous problem, then translate th
 				<p>
 Negate the statement "You can fool all of the people all of the time" by first creating a formal statement using quantifiers. Hint: you are considering two sets: <em>people</em> and <em>times</em>.
 
-<!--solution>
+<solution>
 <p>
 Let <m>X</m> be the set of people and let <m>T</m> be the set of times. Let <m>P(x,t)</m> be the statement "you can fool person <m>x</m> at time <m>t</m>. The original statement is
 <me>
@@ -142,7 +142,7 @@ The simple negation of the statement leads to the adage "You can't fool all of t
 </me>
 which means there is a person and a time where you fail to fool them.
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -169,7 +169,7 @@ F &amp; F &amp;  &amp; &amp;  &amp;\\
 \end{array}
 </me>
 
-<!--solution>
+<solution>
 <p>
 <me>
 \begin{array}{c|c||c|c|c|c}
@@ -183,7 +183,7 @@ F &amp; F &amp; T &amp;F &amp; T &amp;F\\
 </me>
 The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are identical. So these statements are equivalent.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -191,7 +191,7 @@ The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are ide
 					<p>
  Negate the statement "For all <m>x \in \R</m>, if <m>x</m> is an integer then <m>x</m> is positive." Use part (a) to find an equivalent statement, and then explain why providing one counterexample is enough to disprove that <m>P \Rightarrow Q</m>
 
-<!--solution>
+<solution>
 <p>
 The negation is "There exists an integer that is not positive." Note that "not positive" isn't the same as "negative" because 0 is neither positive nor negative.
 
@@ -200,7 +200,7 @@ The negation is "There exists an integer that is not positive." Note that "not p
 This uses the existential quantifiers (at least one), so we just need one example of a non-positive integer.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -224,7 +224,7 @@ Determine the validity of the following arguments. Include a truth table to just
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am tired this morning. Therefore, I stayed up late last night.
 
-<!--solution>
+<solution>
 <p>
 Let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
 
@@ -240,7 +240,7 @@ F &amp; F &amp; T &amp; F &amp;  T \\
 </me>
 The third line of the final column is <em> false</em>. Therefore the argument is not valid. This is because there are other reasons that I might be tired (perhaps I ran a marathon yesterday).
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -249,7 +249,7 @@ The third line of the final column is <em> false</em>. Therefore the argument is
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am not tired this morning. Therefore, I did not stay up late last night.
 
-<!--solution>
+<solution>
 <p>
 Once again, let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
 
@@ -266,7 +266,7 @@ F &amp; F &amp; T &amp; T &amp; F &amp; T &amp; T \\
 
 The final column only contains <em> true</em> values. Therefore the argument is valid.
 </p>
-</solution-->
+</solution>
 
 
 
@@ -295,7 +295,7 @@ Determine the validity of the following argument. Include a truth table to justi
 If I work hard, then I earn lots of money. If I earn lots of money, then I pay high taxes. Therefore, if I pay high taxes, then I have worked hard.
 
 
-<!--solution>
+<solution>
 <p>
 
 
@@ -324,7 +324,7 @@ The fifth and seven lines in the final column are <em> false</em>, so the argume
 
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
