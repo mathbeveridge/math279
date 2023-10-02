@@ -217,11 +217,11 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="planar"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">13</span> <span class="title">Planar Graphs</span>
 </h2>
-<section class="introduction" id="introduction-13"><p id="p-325">A <em class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
+<section class="introduction" id="introduction-13"><p id="p-344">A <em class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
 <ul class="disc">
-<li id="li-165"><p id="p-326">\(v\) = number of vertices of \(G\)</p></li>
-<li id="li-166"><p id="p-327">\(e\) = number of edges of \(G\)</p></li>
-<li id="li-167"><p id="p-328">\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em class="emphasis">including the outer face</em>.</p></li>
+<li id="li-171"><p id="p-345">\(v\) = number of vertices of \(G\)</p></li>
+<li id="li-172"><p id="p-346">\(e\) = number of edges of \(G\)</p></li>
+<li id="li-173"><p id="p-347">\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em class="emphasis">including the outer face</em>.</p></li>
 </ul>
 <p class="continuation">Here is a graph with \(v=8\) and \(e=9\) and \(f=3\text{.}\) The  regions are colored yellow, red and blue. <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-planar0.svg" role="img" class="contained"></div></p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
@@ -229,7 +229,7 @@
 <article class="exercise exercise-like" id="exercise-64"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Planar Graph Examples.</span>
 </h6>
-<p id="p-329">Fill in the following table for the given connected and planar graphs. Then make a conjecture! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar1.svg" role="img" class="contained"></div></p>
+<p id="p-348">Fill in the following table for the given connected and planar graphs. Then make a conjecture! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar1.svg" role="img" class="contained"></div></p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{c|c|c|c|c}
@@ -244,24 +244,24 @@ H &amp;&amp;&amp;&amp;\\
 \end{array}
 \end{equation*}
 </div></article><article class="exercise exercise-like" id="exercise-65"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-330">Let \(G\) be a connected planar graph with \(v_G\) vertices and \(e_G\) edges and \(f_G\) faces. You will use <em class="emphasis">strong induction</em> on the number of cycles \(k \geq 0\)  to prove that any plane drawing of \(G\) satisfies</p>
+<p id="p-349">Let \(G\) be a connected planar graph with \(v_G\) vertices and \(e_G\) edges and \(f_G\) faces. You will use <em class="emphasis">strong induction</em> on the number of cycles \(k \geq 0\)  to prove that any plane drawing of \(G\) satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_G -e_G +f_G = 2.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-168"><p id="p-331"><em class="emphasis">Base Case: \(k=0\)</em>. A connected graph with no cycles is a tree. We know that a tree on \(v_G\) vertices has \(v_G-1\) edges. Explain why \(v_G -e_G +f_G = 2.\) </p></li>
-<li id="li-169">
-<p id="p-332"><em class="emphasis">Strong Inductive Hypothesis:</em> Assume that a plane drawing of a connected planar graph \(H\) with fewer than \(k\) cycles satisfies</p>
+<li id="li-174"><p id="p-350"><em class="emphasis">Base Case: \(k=0\)</em>. A connected graph with no cycles is a tree. We know that a tree on \(v_G\) vertices has \(v_G-1\) edges. Explain why \(v_G -e_G +f_G = 2.\) </p></li>
+<li id="li-175">
+<p id="p-351"><em class="emphasis">Strong Inductive Hypothesis:</em> Assume that a plane drawing of a connected planar graph \(H\) with fewer than \(k\) cycles satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_H - e_H + f_H = 2. \qquad \qquad {(\star)}
 \end{equation*}
 </div>
 </li>
-<li id="li-170">
-<p id="p-333"><em class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
+<li id="li-176">
+<p id="p-352"><em class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_G - e_G + f_G = 2.
@@ -269,26 +269,26 @@ v_G - e_G + f_G = 2.
 </div>
 <p class="continuation">Start with a plane drawing of \(G\text{.}\) Pick any edge \(e\) that is in a cycle of \(G\text{.}\) Let \(H=G-e\) be the graph you obtain by removing the edge \(e\) (but keeping the vertices).</p>
 <ol class="lower-roman">
-<li id="li-171">
-<p id="p-334">What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
-<p id="p-335">We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
+<li id="li-177">
+<p id="p-353">What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
+<p id="p-354">We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
 </li>
-<li id="li-172">
-<p id="p-336">What are the following values:</p>
+<li id="li-178">
+<p id="p-355">What are the following values:</p>
 <div class="displaymath">
 \begin{equation*}
 v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
 \end{equation*}
 </div>
-<p id="p-337"></p>
+<p id="p-356"></p>
 </li>
-<li id="li-173"><p id="p-338">Now complete the inductive step. </p></li>
+<li id="li-179"><p id="p-357">Now complete the inductive step. </p></li>
 </ol>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-66"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Adding the lengths of all cycles.</span>
 </h6>
-<p id="p-339">Let \(G\) be a planar graph whose plane drawing has regions \(A_1, A_2, \ldots, A_r\text{.}\) Let \(\mbox{len}(A_i)\) denote the <em class="emphasis">number of steps you take</em> when you walk around the boundary of region \(A_i\text{.}\) Explain why</p>
+<p id="p-358">Let \(G\) be a planar graph whose plane drawing has regions \(A_1, A_2, \ldots, A_r\text{.}\) Let \(\mbox{len}(A_i)\) denote the <em class="emphasis">number of steps you take</em> when you walk around the boundary of region \(A_i\text{.}\) Explain why</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{i=1}^f \mbox{len}(A_i) = 2 e.
@@ -297,7 +297,7 @@ v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
 <p class="continuation">Start by looking at a small example planar graph to understand what this combinatorial identity is saying. </p></article><article class="exercise exercise-like" id="exercise-67"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">An upper bound on the number of faces.</span>
 </h6>
-<p id="p-340">Let \(G\) be a simple  (no loops, no multiple edges), connected plane graph on \(v \geq 3\) vertices. Use Problem 3 to  prove that</p>
+<p id="p-359">Let \(G\) be a simple  (no loops, no multiple edges), connected plane graph on \(v \geq 3\) vertices. Use Problem 3 to  prove that</p>
 <div class="displaymath">
 \begin{equation*}
 3f \leq 2e.
@@ -306,7 +306,7 @@ v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
 <p class="continuation">Hint: what is a <em class="emphasis">lower bound</em> on the number of edges in the boundary of each region? </p></article><article class="exercise exercise-like" id="exercise-68"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">An upper bound on the number of edges.</span>
 </h6>
-<p id="p-341">Use the fact that \(v-e+f=2\) and \(3f \leq 2e\) to prove that if \(G\) is a planar graph then</p>
+<p id="p-360">Use the fact that \(v-e+f=2\) and \(3f \leq 2e\) to prove that if \(G\) is a planar graph then</p>
 <div class="displaymath">
 \begin{equation*}
 e \leq 3v -6.
@@ -315,25 +315,25 @@ e \leq 3v -6.
 <p class="continuation">In other words, if \(G\) is planar it cannot have "too many" edges. </p></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">\(K_5\) is not planar.</span>
 </h6>
-<p id="p-342">In the previous problem, we  showed that for any planar graph, we have \(e \leq 3v-6\text{.}\) Use this inequality to prove that \(K_5\) is not planar. </p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
+<p id="p-361">In the previous problem, we  showed that for any planar graph, we have \(e \leq 3v-6\text{.}\) Use this inequality to prove that \(K_5\) is not planar. </p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">\(K_{3,3}\) is not planar.</span>
 </h6>
-<p id="p-343">The argument from Problem 5 can be generalized when we know that the planar graph \(G\) does not have any triangles (3-cycles). In this case, we must have</p>
+<p id="p-362">The argument from Problem 5 can be generalized when we know that the planar graph \(G\) does not have any triangles (3-cycles). In this case, we must have</p>
 <div class="displaymath">
 \begin{equation*}
 e \leq 2v -4.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-174"><p id="p-344">Use this inequality to prove that \(K_{3,3}\) is not planar. </p></li>
-<li id="li-175">
-<p id="p-345">Adapt your argument from Problem 5 to prove the following statement.</p>
-<p id="p-346">Let \(G\) be a simple connected planar graph with \(v\) vertices, \(e\) edges and \(f\) facecs where every face is bounded by at least 4 edges. Prove that \(e \leq 2v -4\text{.}\) </p>
+<li id="li-180"><p id="p-363">Use this inequality to prove that \(K_{3,3}\) is not planar. </p></li>
+<li id="li-181">
+<p id="p-364">Adapt your argument from Problem 5 to prove the following statement.</p>
+<p id="p-365">Let \(G\) be a simple connected planar graph with \(v\) vertices, \(e\) edges and \(f\) facecs where every face is bounded by at least 4 edges. Prove that \(e \leq 2v -4\text{.}\) </p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Drawing \(K_5\) and \(K_{3,3}\) on a Torus.</span>
 </h6>
-<p id="p-347">If you start with a square and we glue the opposite sides to one another, we get a <em class="emphasis">torus</em> (a surface in the shape of a donut). So we can think of this square as a torus, if we identify points on opposite sides. (For example, in some classic video games, walking off the right side of the screen makes you appear at the same height on the left side of the screen.) <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/quotient_torus.png" class="contained"></div> For example, we can draw the 4-cycle \(C_4\) using a square with opposite sides identified like so: <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-planar3.svg" role="img" class="contained"></div> Using a square with opposite sides identified, show that you can draw both \(K_5\) and \(K_{3,3}\) on a torus without any crossing edges! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar4.svg" role="img" class="contained"></div> </p></article></section></section></div></main>
+<p id="p-366">If you start with a square and we glue the opposite sides to one another, we get a <em class="emphasis">torus</em> (a surface in the shape of a donut). So we can think of this square as a torus, if we identify points on opposite sides. (For example, in some classic video games, walking off the right side of the screen makes you appear at the same height on the left side of the screen.) <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/quotient_torus.png" class="contained"></div> For example, we can draw the 4-cycle \(C_4\) using a square with opposite sides identified like so: <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-planar3.svg" role="img" class="contained"></div> Using a square with opposite sides identified, show that you can draw both \(K_5\) and \(K_{3,3}\) on a torus without any crossing edges! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar4.svg" role="img" class="contained"></div> </p></article></section></section></div></main>
 </div>
 </body>
 </html>
