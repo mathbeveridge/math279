@@ -35,7 +35,7 @@ for all <m>n \geq 0</m>.
 					<p>
  <em> Base Case:</em> Check for <m>n=0,1,2</m> to make sure you believe it. You actually only need to check for <m>n=0</m>.
 
-<!--solution>
+<solution>
 <p>
 
 		<ul>
@@ -64,7 +64,7 @@ for all <m>n \geq 0</m>.
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -73,12 +73,12 @@ for all <m>n \geq 0</m>.
 					<p>
  <em> Inductive Hypothesis:</em> Write down your inductive hypothesis for <m>n</m>.
 
-<!--solution>
+<solution>
 <p>
 Assume that
 <m>\sum_{k=0}^{n} 2^k = 2^{n+1} -1</m>   <m>(\star)</m>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -86,7 +86,7 @@ Assume that
 					<p>
  <em> Inductive Step:</em> Write down what you want to SHOW for <m>n+1</m>. Then try to find "a copy of the size <m>n</m> problem" in the size <m>n+1</m> problem. Rearrange and use your inductive hypothesis to prove the result!
 
-<!--solution>
+<solution>
 <p>
 
 We must show that  <m>\sum_{k=0}^{n+1} 2^k = 2^{n+2} -1</m>.
@@ -105,7 +105,7 @@ Starting with the left hand side, we have
 
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -132,7 +132,7 @@ Use induction to prove that the complete graph <m>K_n</m> has
  <em> Base Case:</em> (Check for <m>n=1,2,3</m> to make sure you believe it. You actually only need to check for <m>n=1</m>.)
 
 
-<!--solution>
+<solution>
 <p>
 
 		<ul>
@@ -158,7 +158,7 @@ Use induction to prove that the complete graph <m>K_n</m> has
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -168,12 +168,12 @@ Use induction to prove that the complete graph <m>K_n</m> has
 					<p>
  <em> Inductive Hypothesis:</em> Write down your inductive hypothesis for <m>n</m>.
 
-<!--solution>
+<solution>
 <p>
 Assume that
 <m>K_n</m> has <m>n(n-1)/2</m> edges.  <m>(\star)</m>
 </p>
-</solution-->
+</solution>
 
 
 
@@ -187,7 +187,7 @@ Rearrange and use your inductive hypothesis to prove the result!
 			</p><p>
 Hint: You have a <m>K_{n+1}</m>, so start by looking at a subgraph on <m>n</m> of the vertices.
 
-<!--solution>
+<solution>
 <p>
 We have a <m>K_{n+1}</m>, so pick any vertex <m>v</m> and separate it from the rest of the vertices. This results in a <m>K_n</m> with vertex <m>v</m> adjacent to all <m>n</m> vertices.
 
@@ -197,7 +197,7 @@ By induction <m>(\star)</m>, there are <m>n(n-1)/2</m> edges in the <m>K_n</m> a
 </me>
 edges in the <m>K_{n+1}</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -224,7 +224,7 @@ Use induction to prove that
 					<p>
  <em> Base Case:</em> (Check for <m>n=1,2,3</m> to make sure you believe it. You actually only need to check for <m>n=1</m>.)
 
-<!--solution>
+<solution>
 <p>
 		<ul>
 			<li>
@@ -244,7 +244,7 @@ Use induction to prove that
 			</li>
 		</ul>
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -257,11 +257,11 @@ Use induction to prove that
 
 Pro Tip: A nice way to write "4 divides <m>(5^n-1)</m>" is the statement "<m>5^n-1 = 4k</m> for some <m>k</m>."
 
-<!--solution>
+<solution>
 <p>
 Assume that <m>5^n-1= 4k</m> for some integer <m>k</m>.
 </p>
-</solution-->
+</solution>
 
 
 
@@ -276,7 +276,7 @@ Rearrange and use your inductive hypothesis to prove the result!
 Hint: For this problem, the easiest thing to do is "add 0 in a smart way." Namely, add <m>(5^n - 5^n)</m> and then rearrange.
 
 
-<!--solution>
+<solution>
 <p>
 Use <m>(\star)</m> to show that <m>5^{n+1}-1= 4\ell</m> for some integer <m>\ell</m>.
 
@@ -295,7 +295,7 @@ Using the hint, we have
 and so <m>5^{n+1}-1</m> is divisible by 4. (Namely: <m>5^{n+1}-1 = 4 \ell</m> where <m>\ell = 5^n + k</m>.)
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -320,8 +320,8 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 			<image width="20%" xml:id="fig-img-induction10">
 				<latex-image>
 \begin{tikzpicture}[scale=.25] %mathbook width=20%
-\draw (0,0) z-z-z (0,2) z-z-z (2,2) z-z-z (2,1)z-z-z  (0,1) z-z-z cycle;
-\draw (0,0) z-z-z (1,0) z-z-z (1,2);
+\draw (0,0) -- (0,2) -- (2,2) -- (2,1)--  (0,1) -- cycle;
+\draw (0,0) -- (1,0) -- (1,2);
 \end{tikzpicture}
 				</latex-image>
 			</image>
@@ -341,11 +341,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (0,0) z-z-z (0,1) z-z-z (1,1) z-z-z (1,0) z-z-z cycle;
+\fill (0,0) -- (0,1) -- (1,1) -- (1,0) -- cycle;
 
 \end{scope}
 
@@ -354,11 +354,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (2,2) z-z-z (3,2) z-z-z (3,3) z-z-z (2,3) z-z-z cycle;
+\fill (2,2) -- (3,2) -- (3,3) -- (2,3) -- cycle;
 
 \end{scope}
 
@@ -368,11 +368,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (1,3) z-z-z (1,4) z-z-z (2,4) z-z-z (2,3) z-z-z cycle;
+\fill (1,3) -- (1,4) -- (2,4) -- (2,3) -- cycle;
 
 \end{scope}
 
@@ -384,7 +384,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-<!--solution>
+<solution>
 <p>
 
 
@@ -395,17 +395,17 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (0,0) z-z-z (0,1) z-z-z (1,1) z-z-z (1,0) z-z-z cycle;
+\fill (0,0) -- (0,1) -- (1,1) -- (1,0) -- cycle;
 
-\draw[ultra thick,blue] (.5,1.5) z-z-z (1.5,1.5) z-z-z (1.5,.5);
-\draw[ultra thick,blue] (1.5,2.5) z-z-z (2.5,2.5) z-z-z (2.5,1.5);
-\draw[ultra thick,blue] (.5,2.5) z-z-z (.5,3.5) z-z-z (1.5,3.5);
-\draw[ultra thick,blue] (2.5,3.5) z-z-z (3.5,3.5) z-z-z (3.5,2.5);
-\draw[ultra thick,blue] (2.5,.5) z-z-z (3.5,.5) z-z-z (3.5,1.5);
+\draw[ultra thick,blue] (.5,1.5) -- (1.5,1.5) -- (1.5,.5);
+\draw[ultra thick,blue] (1.5,2.5) -- (2.5,2.5) -- (2.5,1.5);
+\draw[ultra thick,blue] (.5,2.5) -- (.5,3.5) -- (1.5,3.5);
+\draw[ultra thick,blue] (2.5,3.5) -- (3.5,3.5) -- (3.5,2.5);
+\draw[ultra thick,blue] (2.5,.5) -- (3.5,.5) -- (3.5,1.5);
 
 
 
@@ -417,17 +417,17 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (2,2) z-z-z (3,2) z-z-z (3,3) z-z-z (2,3) z-z-z cycle;
+\fill (2,2) -- (3,2) -- (3,3) -- (2,3) -- cycle;
 
-\draw[ultra thick,blue] (.5,1.5) z-z-z (.5,.5) z-z-z (1.5,.5);
-\draw[ultra thick,blue] (1.5,2.5) z-z-z (1.5,1.5) z-z-z (2.5,1.5);
-\draw[ultra thick,blue] (.5,2.5) z-z-z (.5,3.5) z-z-z (1.5,3.5);
-\draw[ultra thick,blue] (2.5,3.5) z-z-z (3.5,3.5) z-z-z (3.5,2.5);
-\draw[ultra thick,blue] (2.5,.5) z-z-z (3.5,.5) z-z-z (3.5,1.5);
+\draw[ultra thick,blue] (.5,1.5) -- (.5,.5) -- (1.5,.5);
+\draw[ultra thick,blue] (1.5,2.5) -- (1.5,1.5) -- (2.5,1.5);
+\draw[ultra thick,blue] (.5,2.5) -- (.5,3.5) -- (1.5,3.5);
+\draw[ultra thick,blue] (2.5,3.5) -- (3.5,3.5) -- (3.5,2.5);
+\draw[ultra thick,blue] (2.5,.5) -- (3.5,.5) -- (3.5,1.5);
 
 
 \end{scope}
@@ -438,17 +438,17 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (1,3) z-z-z (1,4) z-z-z (2,4) z-z-z (2,3) z-z-z cycle;
+\fill (1,3) -- (1,4) -- (2,4) -- (2,3) -- cycle;
 
-\draw[ultra thick,blue] (.5,1.5) z-z-z (.5,.5) z-z-z (1.5,.5);
-\draw[ultra thick,blue] (1.5,1.5) z-z-z (2.5,1.5) z-z-z (2.5,2.5);
-\draw[ultra thick,blue] (.5,3.5) z-z-z (.5,2.5) z-z-z (1.5,2.5);
-\draw[ultra thick,blue] (2.5,3.5) z-z-z (3.5,3.5) z-z-z (3.5,2.5);
-\draw[ultra thick,blue] (2.5,.5) z-z-z (3.5,.5) z-z-z (3.5,1.5);
+\draw[ultra thick,blue] (.5,1.5) -- (.5,.5) -- (1.5,.5);
+\draw[ultra thick,blue] (1.5,1.5) -- (2.5,1.5) -- (2.5,2.5);
+\draw[ultra thick,blue] (.5,3.5) -- (.5,2.5) -- (1.5,2.5);
+\draw[ultra thick,blue] (2.5,3.5) -- (3.5,3.5) -- (3.5,2.5);
+\draw[ultra thick,blue] (2.5,.5) -- (3.5,.5) -- (3.5,1.5);
 
 
 \end{scope}
@@ -460,7 +460,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -482,11 +482,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4,5,6,7,8}
 {
-\draw (0,\x) z-z-z (8,\x);
-\draw (\x,0) z-z-z (\x,8);
+\draw (0,\x) -- (8,\x);
+\draw (\x,0) -- (\x,8);
 }
 
-\fill (6,2) z-z-z (6,3) z-z-z (7,3) z-z-z (7,2) z-z-z cycle;
+\fill (6,2) -- (6,3) -- (7,3) -- (7,2) -- cycle;
 
 \end{scope}
 
@@ -495,18 +495,18 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 \begin{scope}[shift={(12,0)}]
 
 
-\fill[gray] (3,3) z-z-z (4,3) z-z-z (4,4) z-z-z (5,4) z-z-z (5,5) z-z-z (3,5) z-z-z cycle;
+\fill[gray] (3,3) -- (4,3) -- (4,4) -- (5,4) -- (5,5) -- (3,5) -- cycle;
 
 \foreach \x in {0,1,2,3,4,5,6,7,8}
 {
-\draw (0,\x) z-z-z (8,\x);
-\draw (\x,0) z-z-z (\x,8);
+\draw (0,\x) -- (8,\x);
+\draw (\x,0) -- (\x,8);
 }
 
-\fill (6,2) z-z-z (6,3) z-z-z (7,3) z-z-z (7,2) z-z-z cycle;
+\fill (6,2) -- (6,3) -- (7,3) -- (7,2) -- cycle;
 
-\draw [very thick] (4,0) z-z-z (4,8);
-\draw [very thick] (0,4) z-z-z (8,4);
+\draw [very thick] (4,0) -- (4,8);
+\draw [very thick] (0,4) -- (8,4);
 
 \end{scope}
 
@@ -516,7 +516,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-<!--solution>
+<solution>
 <p>
 
 
@@ -528,18 +528,18 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-\fill[gray] (3,3) z-z-z (4,3) z-z-z (4,4) z-z-z (5,4) z-z-z (5,5) z-z-z (3,5) z-z-z cycle;
+\fill[gray] (3,3) -- (4,3) -- (4,4) -- (5,4) -- (5,5) -- (3,5) -- cycle;
 
 \foreach \x in {0,1,2,3,4,5,6,7,8}
 {
-\draw (0,\x) z-z-z (8,\x);
-\draw (\x,0) z-z-z (\x,8);
+\draw (0,\x) -- (8,\x);
+\draw (\x,0) -- (\x,8);
 }
 
-\fill (6,2) z-z-z (6,3) z-z-z (7,3) z-z-z (7,2) z-z-z cycle;
+\fill (6,2) -- (6,3) -- (7,3) -- (7,2) -- cycle;
 
-\draw [very thick] (4,0) z-z-z (4,8);
-\draw [very thick] (0,4) z-z-z (8,4);
+\draw [very thick] (4,0) -- (4,8);
+\draw [very thick] (0,4) -- (8,4);
 
 
 
@@ -549,11 +549,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-\draw[ultra thick, blue] (.5,1.5) z-z-z (1.5, 1.5) z-z-z (1.5, .5);
-\draw[ultra thick, blue] (1.5,2.5) z-z-z (2.5, 2.5) z-z-z (2.5, 1.5);
-\draw[ultra thick, blue] (.5,2.5) z-z-z (.5, 3.5) z-z-z (1.5, 3.5);
-\draw[ultra thick, blue] (2.5,3.5) z-z-z (3.5, 3.5) z-z-z (3.5, 2.5);
-\draw[ultra thick, blue] (2.5,.5) z-z-z (3.5, .5) z-z-z (3.5, 1.5);
+\draw[ultra thick, blue] (.5,1.5) -- (1.5, 1.5) -- (1.5, .5);
+\draw[ultra thick, blue] (1.5,2.5) -- (2.5, 2.5) -- (2.5, 1.5);
+\draw[ultra thick, blue] (.5,2.5) -- (.5, 3.5) -- (1.5, 3.5);
+\draw[ultra thick, blue] (2.5,3.5) -- (3.5, 3.5) -- (3.5, 2.5);
+\draw[ultra thick, blue] (2.5,.5) -- (3.5, .5) -- (3.5, 1.5);
 
 
 
@@ -565,11 +565,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-\draw[ultra thick, blue] (.5,1.5) z-z-z (1.5, 1.5) z-z-z (1.5, .5);
-\draw[ultra thick, blue] (1.5,2.5) z-z-z (2.5, 2.5) z-z-z (2.5, 1.5);
-\draw[ultra thick, blue] (.5,2.5) z-z-z (.5, 3.5) z-z-z (1.5, 3.5);
-\draw[ultra thick, blue] (2.5,3.5) z-z-z (3.5, 3.5) z-z-z (3.5, 2.5);
-\draw[ultra thick, blue] (2.5,.5) z-z-z (3.5, .5) z-z-z (3.5, 1.5);
+\draw[ultra thick, blue] (.5,1.5) -- (1.5, 1.5) -- (1.5, .5);
+\draw[ultra thick, blue] (1.5,2.5) -- (2.5, 2.5) -- (2.5, 1.5);
+\draw[ultra thick, blue] (.5,2.5) -- (.5, 3.5) -- (1.5, 3.5);
+\draw[ultra thick, blue] (2.5,3.5) -- (3.5, 3.5) -- (3.5, 2.5);
+\draw[ultra thick, blue] (2.5,.5) -- (3.5, .5) -- (3.5, 1.5);
 
 
 \end{scope}
@@ -580,11 +580,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 
-\draw[ultra thick, blue] (.5,1.5) z-z-z (1.5, 1.5) z-z-z (1.5, .5);
-\draw[ultra thick, blue] (1.5,2.5) z-z-z (2.5, 2.5) z-z-z (2.5, 1.5);
-\draw[ultra thick, blue] (.5,2.5) z-z-z (.5, 3.5) z-z-z (1.5, 3.5);
-\draw[ultra thick, blue] (2.5,3.5) z-z-z (3.5, 3.5) z-z-z (3.5, 2.5);
-\draw[ultra thick, blue] (2.5,.5) z-z-z (3.5, .5) z-z-z (3.5, 1.5);
+\draw[ultra thick, blue] (.5,1.5) -- (1.5, 1.5) -- (1.5, .5);
+\draw[ultra thick, blue] (1.5,2.5) -- (2.5, 2.5) -- (2.5, 1.5);
+\draw[ultra thick, blue] (.5,2.5) -- (.5, 3.5) -- (1.5, 3.5);
+\draw[ultra thick, blue] (2.5,3.5) -- (3.5, 3.5) -- (3.5, 2.5);
+\draw[ultra thick, blue] (2.5,.5) -- (3.5, .5) -- (3.5, 1.5);
 
 
 \end{scope}
@@ -594,18 +594,18 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 \foreach \x in {0,1,2,3,4}
 {
-\draw (0,\x) z-z-z (4,\x);
-\draw (\x,0) z-z-z (\x,4);
+\draw (0,\x) -- (4,\x);
+\draw (\x,0) -- (\x,4);
 }
 
-\fill (2,2) z-z-z (3,2) z-z-z (3,3) z-z-z (2,3) z-z-z cycle;
+\fill (2,2) -- (3,2) -- (3,3) -- (2,3) -- cycle;
 
 
-\draw[ultra thick, blue] (.5,1.5) z-z-z (.5, .5) z-z-z (1.5, .5);
-\draw[ultra thick, blue] (1.5,2.5) z-z-z (1.5, 1.5) z-z-z (2.5, 1.5);
-\draw[ultra thick, blue] (.5,2.5) z-z-z (.5, 3.5) z-z-z (1.5, 3.5);
-\draw[ultra thick, blue] (2.5,3.5) z-z-z (3.5, 3.5) z-z-z (3.5, 2.5);
-\draw[ultra thick, blue] (2.5,.5) z-z-z (3.5, .5) z-z-z (3.5, 1.5);
+\draw[ultra thick, blue] (.5,1.5) -- (.5, .5) -- (1.5, .5);
+\draw[ultra thick, blue] (1.5,2.5) -- (1.5, 1.5) -- (2.5, 1.5);
+\draw[ultra thick, blue] (.5,2.5) -- (.5, 3.5) -- (1.5, 3.5);
+\draw[ultra thick, blue] (2.5,3.5) -- (3.5, 3.5) -- (3.5, 2.5);
+\draw[ultra thick, blue] (2.5,.5) -- (3.5, .5) -- (3.5, 1.5);
 
 
 \end{scope}
@@ -619,7 +619,7 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -627,11 +627,11 @@ An <m>L</m>-shaped triomino is a <m>2 \times 2</m> tile with one square missing.
 					<p>
  Reflect on how you solved the <m>8 \times 8</m> problem by  turning it into four instances of <m>4 \times 4</m> problems. Then go back to your answers in part (a) and show how you solved each <m>4 \times 4</m> problem by turning it into four instances of <m>2 \times 2</m> problems.
 
-<!--solution>
+<solution>
 <p>
 By splitting the board down the middle (both horizontally and vertically), we now have the option to think of this one board as four independent boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  one missing square, then we end up with 4 independent instances of <m>4 \times 4</m> boards.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -640,13 +640,13 @@ By splitting the board down the middle (both horizontally and vertically), we no
  If I gave you a <m>16 \times 16</m> checkerboard with one square missing, could you cover the rest with <m>L</m>-shaped triominoes? How would you do it?
 
 
-<!--solution>
+<solution>
 <p>
 Draw horizontal and vertical lines that split the <m>16 \times 16</m> boards into 4 separate <m>8 \times 8</m> board. Now place a triomino in the middle so that it has one square in each of the three boards that are not missing a  square.
 
 Now we have 4 independent <m>8 \times 8</m> boards, all missing one square. We can cover each of those by triominos, as decribed in the previous section.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -666,11 +666,11 @@ For <m>n \geq 1</m>, any <m>2^n \times 2^n</m> checkerboard with one square miss
 					<p>
  <em>Base Case:</em> What is your base case?
 
-<!--solution>
+<solution>
 <p>
 A <m>2 \times 2</m> board missing a square is a trionimo. So of course we can cover it with one triomino.
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -679,11 +679,11 @@ A <m>2 \times 2</m> board missing a square is a trionimo. So of course we can co
 					<p>
  <em>Inductive Hypothesis:</em> State your inductive hypothesis for <m>n</m>.
 
-<!--solution>
+<solution>
 <p>
 Assume that any <m>2^n \times 2^n</m> board that is missing one square can be covered by triominoes. <m>(\star)</m>
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -694,7 +694,7 @@ Assume that any <m>2^n \times 2^n</m> board that is missing one square can be co
 Rearrange and use your inductive hypothesis to prove the result!
 
 
-<!--solution>
+<solution>
 <p>
 Use <m>(\star)</m> to prove that any <m>2^{n+1} \times 2^{n+1}</m> board that is missing one square can be covered by triominoes.
 
@@ -706,7 +706,7 @@ By splitting the board down the middle (both horizontally and vertically), we no
 
 By <m>(\star)</m>, we can cover each of these four boards using triominoes. When we put them all together, we get a covering of the <m>2^{n+1} \times 2^{n+1}</m> board that is missing one square.
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -737,11 +737,11 @@ Consider a pie fight between an odd number of people in which everyone throws a 
   <em> Base Case:</em> (Check for <m>k=1</m>.) Hint: Start by considering the two people who are the smallest distance from one another.
 
 
-<!--solution>
+<solution>
 <p>
 Consider a pie fight between <m>2 \cdot 1 + 1=3</m> people. Let Alice and Bob be the two people separated by the minimum distance. Alice and Bob throw pies at each other. This means that the third person is not hit by a pie.
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -750,11 +750,11 @@ Consider a pie fight between <m>2 \cdot 1 + 1=3</m> people. Let Alice and Bob be
 					<p>
  <em> Inductive Hypothesis:</em> Write down your inductive hypothesis for <m>n</m>.
 
-<!--solution>
+<solution>
 <p>
 Assume true for <m>k</m>. That is, assume that in a pie fight between <m>2k+1</m> people, there is at least one person who is not hit by a pie.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -790,7 +790,7 @@ As in your base case,  start by considering the two people (Alice and Bob) who a
 		</ul>
 
 
-<!--solution>
+<solution>
 <p>
 Show that in a pie fight between <m>2(k+1)+1=2k+3</m> people, then there is at least one person who is not hit by a pie.
 
@@ -812,7 +812,7 @@ Consider a pie fight between <m>2(k+1)+1 =2k+3</m> people. Again, let Alice and 
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 
