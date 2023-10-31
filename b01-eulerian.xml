@@ -85,9 +85,9 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw[fill] (0,2) circle (2pt);
 \draw[fill] (0,1) circle (2pt);
 
-\draw (0,0) z-z-z (2,0) z-z-z (2,2) z-z-z (0,2) z-z-z cycle;
-\draw (0,1) z-z-z (1,0);
-\draw (1,2) z-z-z (2,1);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+\draw (0,1) -- (1,0);
+\draw (1,2) -- (2,1);
 
 \node at (1,-1) {(a)};
 
@@ -105,8 +105,8 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw[fill] (0,2) circle (2pt);
 \draw[fill] (0,1) circle (2pt);
 
-\draw (0,0) z-z-z (2,0) z-z-z (2,2) z-z-z (0,2) z-z-z cycle;
-\draw (1,0) z-z-z (1,2);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+\draw (1,0) -- (1,2);
 
 \node at (1,-1) {(b)};
 
@@ -124,8 +124,8 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw[fill] (0,2) circle (2pt);
 \draw[fill] (0,1) circle (2pt);
 
-\draw (0,0) z-z-z (2,0) z-z-z (2,2) z-z-z (0,2) z-z-z cycle;
-\draw (0,1) z-z-z (1,0) z-z-z (2,1) z-z-z (1,2) z-z-zcycle;
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+\draw (0,1) -- (1,0) -- (2,1) -- (1,2) --cycle;
 
 
 \node at (1,-1) {(c)};
@@ -149,9 +149,9 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw (1,1) circle (1.417);
 
 
-\draw (0,0) z-z-z (2,0) z-z-z (0,2) z-z-z (2,2);
-\draw (0,1) z-z-z (1,0) z-z-z (2,1) z-z-z (1,2) z-z-zcycle;
-\draw (1,2) z-z-z (2,1);
+\draw (0,0) -- (2,0) -- (0,2) -- (2,2);
+\draw (0,1) -- (1,0) -- (2,1) -- (1,2) --cycle;
+\draw (1,2) -- (2,1);
 
 
 \node at (1,-1) {(d)};
@@ -172,11 +172,11 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw (1,1) circle (1.417);
 
 
-\draw (0,0) z-z-z (2,0) z-z-z (2,2) z-z-z (0,2);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2);
 
-\draw (0,0) z-z-z (1,2) z-z-z (2,1);
+\draw (0,0) -- (1,2) -- (2,1);
 
-\draw (0,2) z-z-z (0,0) z-z-z  (2,1);
+\draw (0,2) -- (0,0) --  (2,1);
 
 \node at (1,-1) {(e)};
 
@@ -197,9 +197,9 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 \draw (1,1) circle (1.417);
 
 
-\draw (0,0) z-z-z (2,0) z-z-z (2,2) z-z-z (0,2) z-z-z cycle;
-\draw (2,0) z-z-z (0,2);
-\draw (0,0) z-z-z (2,2);
+\draw (0,0) -- (2,0) -- (2,2) -- (0,2) -- cycle;
+\draw (2,0) -- (0,2);
+\draw (0,0) -- (2,2);
 
 
 
@@ -217,7 +217,7 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 				</latex-image>
 			</image>
 
-<!--solution>
+<solution>
 <p>
 
 			<ol>
@@ -254,7 +254,7 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 			</ol>
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -267,7 +267,7 @@ Which if these graph have  an Eulerian circuit? An Eulerian trail?
 Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail?
 
 
-<!--solution>
+<solution>
 <p>
 
 Here are the conclusions that we seems to draw from these examples:
@@ -285,7 +285,7 @@ Here are the conclusions that we seems to draw from these examples:
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 				</p>
@@ -298,13 +298,13 @@ Here are the conclusions that we seems to draw from these examples:
 				<p>
 Make a conjecture about what structural property guarantees that <m>G</m> has an Eulerian circuit.   We will call this <em>Property EC</em>.
 
-<!--solution>
+<solution>
 <p>
 
 Property EC = every vertex has even degree
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -318,13 +318,13 @@ Property EC = every vertex has even degree
 				<p>
 Make a conjecture about what structural property guarantees that <m>G</m> has an Eulerian trail. We will call this <em>Property ET</em>.
 
-<!--solution>
+<solution>
 <p>
 
 Property ET = exactly two vertices have odd degree
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -349,13 +349,13 @@ Assume that your <em>Property EC</em> guarantees that a graph has an Eulerian ci
 
 <em>Hint:</em> What small change could you make to a graph <m>G</m> with the ET property so that it becomes a graph <m>H</m> with the EC property?
 
-<!--solution>
+<solution>
 <p>
 
 Let <m>G</m> be a graph with exactly two vertices with odd degree. Add an edge <m>e</m> between these two vertices. Then <m>G+e</m> has an Eulerian circuit (by Property EC). Removing the edge <m>e</m> once more gives us an Eulerian trail in the original graph <m>G</m>.
 
 </p>
-</solution-->
+</solution>
 
 
 				</p>
@@ -369,12 +369,12 @@ Let <m>G</m> be a graph with exactly two vertices with odd degree. Add an edge <
 Prove that if <m>G</m> has an Eulerian circuit then <m>G</m> has Property EC.
 
 
-<!--solution>
+<solution>
 <p>
 As we travel along the Eulerian circuit, every entrance is paired with an exit. So all vertices have even degree.
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -386,7 +386,7 @@ As we travel along the Eulerian circuit, every entrance is paired with an exit. 
 				<p>
 We need strong induction on <m>m=|E|</m> to give a rigorous proof that if   <m>G</m> has Property EC then <m>G</m> has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy.
 
-<!--solution>
+<solution>
 <p>
 
 Let <m>G</m> be a connected graph vertices where every degree is even.
@@ -412,7 +412,7 @@ Now look at <m>H=G-W</m>. Every vertex of graph <m>H</m> has even degree, but it
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -453,9 +453,9 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 \begin{scope}[shift={(0,0)}]
 
 
-\draw (0,0) z-z-z (0,2) z-z-z (2,2) z-z-z (2,0) z-z-z cycle;
-\draw (0,1) z-z-z (2,1);
-\draw (1,0) z-z-z (2,1);
+\draw (0,0) -- (0,2) -- (2,2) -- (2,0) -- cycle;
+\draw (0,1) -- (2,1);
+\draw (1,0) -- (2,1);
 
 \foreach \i in {0,1,2}
 {
@@ -479,9 +479,9 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 \draw[fill] (2.5,2) circle (3pt);
 \draw[fill] (3,-.5) circle (3pt);
 
-\draw (0,1) z-z-z (4,1) z-z-z (2.5,2) z-z-z (3, -.5) z-z-z cycle;
-\draw (4,1) z-z-z  (3, -.5);
-\draw (0,1) z-z-z (2.5,2);
+\draw (0,1) -- (4,1) -- (2.5,2) -- (3, -.5) -- cycle;
+\draw (4,1) --  (3, -.5);
+\draw (0,1) -- (2.5,2);
 
 
 
@@ -502,15 +502,15 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 \begin{scope}[shift={(1,-3)}]
 
 
-\draw (-1,0) z-z-z (-1,2) z-z-z (3,2) z-z-z (3,0) z-z-z cycle;
-\draw (0,2) z-z-z (1,1) z-z-z (3,1) z-z-z (2,0);
+\draw (-1,0) -- (-1,2) -- (3,2) -- (3,0) -- cycle;
+\draw (0,2) -- (1,1) -- (3,1) -- (2,0);
 
-\draw (0,1) z-z-z (-1,1);
+\draw (0,1) -- (-1,1);
 
-\draw (2,1) z-z-z (3,2);
+\draw (2,1) -- (3,2);
 
-\draw (1,1) z-z-z (0,1);
-\draw (2,0) z-z-z (2,1);
+\draw (1,1) -- (0,1);
+\draw (2,0) -- (2,1);
 
 \foreach \i in {-1,0,1,2,3}
 {
@@ -539,18 +539,18 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 
 \node at (-1,0) {(d)};
 
-\draw (0,0) z-z-z (1.5, 1.5) z-z-z  (4, 1.5) z-z-z (5,0) z-z-z (2, -1.5) z-z-z cycle;
+\draw (0,0) -- (1.5, 1.5) --  (4, 1.5) -- (5,0) -- (2, -1.5) -- cycle;
 
-\draw (0,0) z-z-z (5,0) z-z-z (3,0.75) z-z-z (2.5, 0);
+\draw (0,0) -- (5,0) -- (3,0.75) -- (2.5, 0);
 
 
-\draw (0,0) z-z-z (1.5, -.5) z-z-z (2.5,0) z-z-z (2,-1.5) z-z-z (1.5, -.5);
+\draw (0,0) -- (1.5, -.5) -- (2.5,0) -- (2,-1.5) -- (1.5, -.5);
 
-\draw (1.5,1.5) z-z-z (2.5,0);
+\draw (1.5,1.5) -- (2.5,0);
 
-\draw (3, .75) z-z-z (4, 1.5);
+\draw (3, .75) -- (4, 1.5);
 
-\draw (3.5, 0) z-z-z (3, 0.75);
+\draw (3.5, 0) -- (3, 0.75);
 
 \draw[fill] (0,0) circle (3pt);
 
@@ -604,7 +604,7 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 
 
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="50%" xml:id="fig-img-eulerian2">
@@ -614,11 +614,11 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 
 \begin{scope}[shift={(0,0)}]
 
-\draw[ultra thick, red] (0,1) z-z-z (0,0) z-z-z (1,0);
+\draw[ultra thick, red] (0,1) -- (0,0) -- (1,0);
 
-\draw (0,0) z-z-z (0,2) z-z-z (2,2) z-z-z (2,0) z-z-z cycle;
-\draw (0,1) z-z-z (2,1);
-\draw (1,0) z-z-z (2,1);
+\draw (0,0) -- (0,2) -- (2,2) -- (2,0) -- cycle;
+\draw (0,1) -- (2,1);
+\draw (1,0) -- (2,1);
 
 \foreach \i in {0,1,2}
 {
@@ -636,17 +636,17 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 \begin{scope}[shift={(0,-6)}]
 
 
-\draw[ultra thick, red] (0,1) z-z-z (3, -.5);
-\draw[ultra thick, red] (4,1) z-z-z (2.5, 2);
+\draw[ultra thick, red] (0,1) -- (3, -.5);
+\draw[ultra thick, red] (4,1) -- (2.5, 2);
 
 \draw[fill] (0,1) circle (3pt);
 \draw[fill] (4,1) circle (3pt);
 \draw[fill] (2.5,2) circle (3pt);
 \draw[fill] (3,-.5) circle (3pt);
 
-\draw (0,1) z-z-z (4,1) z-z-z (2.5,2) z-z-z (3, -.5) z-z-z cycle;
-\draw (4,1) z-z-z  (3, -.5);
-\draw (0,1) z-z-z (2.5,2);
+\draw (0,1) -- (4,1) -- (2.5,2) -- (3, -.5) -- cycle;
+\draw (4,1) --  (3, -.5);
+\draw (0,1) -- (2.5,2);
 
 
 
@@ -666,18 +666,18 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 
 \begin{scope}[shift={(1,-3)}]
 
-\draw[ultra thick, red] (0,2) z-z-z (-1, 2) z-z-z (-1,1);
-\draw[ultra thick, red] (3,2) z-z-z (2, 1) z-z-z (1,1);
+\draw[ultra thick, red] (0,2) -- (-1, 2) -- (-1,1);
+\draw[ultra thick, red] (3,2) -- (2, 1) -- (1,1);
 
-\draw (-1,0) z-z-z (-1,2) z-z-z (3,2) z-z-z (3,0) z-z-z cycle;
-\draw (0,2) z-z-z (1,1) z-z-z (3,1) z-z-z (2,0);
+\draw (-1,0) -- (-1,2) -- (3,2) -- (3,0) -- cycle;
+\draw (0,2) -- (1,1) -- (3,1) -- (2,0);
 
-\draw (0,1) z-z-z (-1,1);
+\draw (0,1) -- (-1,1);
 
-\draw (2,1) z-z-z (3,2);
+\draw (2,1) -- (3,2);
 
-\draw (1,1) z-z-z (0,1);
-\draw (2,0) z-z-z (2,1);
+\draw (1,1) -- (0,1);
+\draw (2,0) -- (2,1);
 
 \foreach \i in {-1,0,1,2,3}
 {
@@ -697,23 +697,23 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 \begin{scope}[shift={(0,-9)}]
 
 
-\draw[ultra thick, red] (1.5,1.5) z-z-z (2.5,0) z-z-z (1.5,-.5);
-\draw[ultra thick, red] (4,1.5) z-z-z (3, .75) z-z-z (3.5,0);
+\draw[ultra thick, red] (1.5,1.5) -- (2.5,0) -- (1.5,-.5);
+\draw[ultra thick, red] (4,1.5) -- (3, .75) -- (3.5,0);
 
 \node at (-1,0) {(d)};
 
-\draw (0,0) z-z-z (1.5, 1.5) z-z-z  (4, 1.5) z-z-z (5,0) z-z-z (2, -1.5) z-z-z cycle;
+\draw (0,0) -- (1.5, 1.5) --  (4, 1.5) -- (5,0) -- (2, -1.5) -- cycle;
 
-\draw (0,0) z-z-z (5,0) z-z-z (3,0.75) z-z-z (2.5, 0);
+\draw (0,0) -- (5,0) -- (3,0.75) -- (2.5, 0);
 
 
-\draw (0,0) z-z-z (1.5, -.5) z-z-z (2.5,0) z-z-z (2,-1.5) z-z-z (1.5, -.5);
+\draw (0,0) -- (1.5, -.5) -- (2.5,0) -- (2,-1.5) -- (1.5, -.5);
 
-\draw (1.5,1.5) z-z-z (2.5,0);
+\draw (1.5,1.5) -- (2.5,0);
 
-\draw (3, .75) z-z-z (4, 1.5);
+\draw (3, .75) -- (4, 1.5);
 
-\draw (3.5, 0) z-z-z (3, 0.75);
+\draw (3.5, 0) -- (3, 0.75);
 
 \draw[fill] (0,0) circle (3pt);
 
@@ -765,7 +765,7 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -773,7 +773,7 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 					<p>
  Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them?
 
-<!--solution>
+<solution>
 <p>
 
 		<ul>
@@ -800,7 +800,7 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 		</ul>
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -812,7 +812,7 @@ In other words, you want to repeat the fewest number of (weighted) edges in a ci
 			<image width="100%" xml:id="fig-img-eulerian3" source="images/ContiguousUSAGraph.png" />
 
 
-<!--solution>
+<solution>
 <p>
 
 The states with odd degrees are (from left to right):
@@ -841,7 +841,7 @@ We must double a total of 14 edges to solve the Postman Problem.
 
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>

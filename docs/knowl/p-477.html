@@ -12,13 +12,14 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
 <ul class="disc">
-<li><p>\(v\) = number of vertices of \(G\)</p></li>
-<li><p>\(e\) = number of edges of \(G\)</p></li>
-<li><p>\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">including the outer face</em>.</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> \(n=1\text{.}\) We have \(1 = 2^0 \cdot 1\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that for \(1 \leq k &lt; n\text{,}\) the positive integer \(k \geq 1\) can be written as \(k=2^s \ell\) where \(\ell\) is an odd integer (possibly \(\ell=1\)) and \(s \geq 0\text{.}\)</p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that  \(n \geq 1\) can be written as \(n=2^r m\) where \(m\) is an odd integer (possibly \(m=1\)) and \(r \geq 0\text{.}\)</p>
+<p>There are two cases. If \(n\) is odd then \(n=2^0 \cdot n\text{,}\) and we are done (taking \(r=0\) and \(m=n\)). If \(n\) is even then \(n=2k\text{.}\) By induction, \(k=2^s \ell\) where \(\ell\) is an odd integer (possibly \(\ell=1\)) and \(s \geq 0\text{.}\) Therefore \(n=2^{s+1} \ell\text{.}\) Taking \(r=s+1\) and \(m=\ell\text{,}\) we are done.</p>
+</li>
 </ul>
-<p class="continuation">Here is a graph with \(v=8\) and \(e=9\) and \(f=3\text{.}\) The  regions are colored yellow, red and blue. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-planar0.svg" role="img" class="contained"></div></p>
-<span class="incontext"><a href="planar.html#p-477">in-context</a></span>
+<span class="incontext"><a href="exercises-12.html#p-477">in-context</a></span>
 </body>
 </html>
