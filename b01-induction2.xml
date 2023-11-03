@@ -342,7 +342,7 @@ Use <em>strong induction</em> to prove that the sum of the angles in an <m>n</m>
 
 			<li>
 			<p>
- <em> Base Case:</em> A <m>3-gon</m> is  a triangle, whose angles sum to <m>180 = (3-1) \cdot 180</m> degrees.
+ <em> Base Case:</em> A <m>3-gon</m> is  a triangle, whose angles sum to <m>180 = (3-2) \cdot 180</m> degrees.
 
 			</p>
 			</li>
