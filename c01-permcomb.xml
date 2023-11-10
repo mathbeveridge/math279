@@ -26,7 +26,7 @@ P(n,k) = (n)_k = n (n-1) \cdots (n-k+1) = \frac{n!}{(n-k)!}.
 			</li>
 			<li>
 			<p>
- A <m>k</m><em>-set</em> of <m>[n]</m> (also called a <m>k</m>{\bf-combination}) is a subset containing <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-sets of <m>[n]</m> is
+ A <m>k</m><em>-set</em> of <m>[n]</m> (also called a <m>k</m><em>-combination</em>) is a subset containing <m>k</m> elements of <m>[n]</m>. The number of <m>k</m>-sets of <m>[n]</m> is
 <me>
 C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
 </me>
