@@ -15,7 +15,7 @@
 			<idx><h>Rolling 10 Dice</h></idx>
 			<statement>
 				<p>
-We roll 6-sided die 10 times, and then list the outcomes in order as <m>(x_1, x_2, \ldots , x_{10} )</m>. We are interested in counting the total number outcomes in which 1 or 2 appears at least once.  We break this process into multiple steps.
+We roll 6-sided die 10 times, and then list the outcomes in order as <m>(x_1, x_2, \ldots , x_{10} )</m>. We are interested in counting the total number outcomes in which both  1 appears and 2 appears.  We break this process into multiple steps.
 
 			<ol>
 				<li>
@@ -94,7 +94,7 @@ The set described is <m>X_1 \cap X_2</m>. This time, there are 4 numbers allowed
 				</li>
 				<li>
 					<p>
- Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain either 1 or 2 or both?
+ Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain both 1 and 2?
 
 <!--solution>
 <p>
