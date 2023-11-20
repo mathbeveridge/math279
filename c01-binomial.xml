@@ -26,14 +26,14 @@ In this problem, you will prove the following identity in two different ways
 					<p>
  Prove this equation using the binomial theorem.
 
-<!--solution>
+<solution>
 <p>
 Take <m>x=2</m> and <m>y=1</m> to get
 <me>
 (2+1)^n = \sum_{k=0}^n { n \choose k} 2^k
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -48,13 +48,13 @@ Take <m>x=2</m> and <m>y=1</m> to get
 					<p>
  The left hand side is <m>3^n</m>. Explain why there are three choices for where to place every element of <m>[n]</m>.
 
-<!--solution>
+<solution>
 <p>
 
 For each of the <m>n</m> elements, there are three possible places it can go:  <m>A</m>, <m>B \backslash A</m> or <m>\overline{B}</m>. We must make this choice a total on <m>n</m> times, so the number of ways to do this is <m>3^n</m> by the product principle.
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -64,7 +64,7 @@ For each of the <m>n</m> elements, there are three possible places it can go:  <
  The right hand is <m>\sum_{k=0}^n 2^k { n \choose k}.</m> This time, we create the sets <m>A \subseteq B</m> in a different way. Namely, first we decide what the size of <m>B</m> will be, and use <m>k</m> to denote this size. With this in mind, interpret the right hand side of this equation.
 
 
-<!--solution>
+<solution>
 <p>
 Here is the recipe.
 		<ul>
@@ -89,7 +89,7 @@ Here is the recipe.
 The summation sign (addition principle) considers all possible choices for the size <m>k</m>. Once we have determined <m>k</m>, there are <m>{n \choose k}</m> ways to pick the subset <m>B</m>. Then there are <m>2^k</m> ways to choose the subset <m>A \subset B</m>.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -120,9 +120,9 @@ The summation sign (addition principle) considers all possible choices for the s
 				<latex-image>
 \begin{tikzpicture}[scale=.8] %mathbook width=25%
 
-\draw[very thick] (0,0) z-z-z (2,0) z-z-z (2,1) z-z-z (0,1) z-z-z (0,2) z-z-z (2,2) z-z-z (2,1);
-\draw[very thick] (1,2) z-z-z (1,0);
-\draw[very thick] (0,0) z-z-z (0,1);
+\draw[very thick] (0,0) -- (2,0) -- (2,1) -- (0,1) -- (0,2) -- (2,2) -- (2,1);
+\draw[very thick] (1,2) -- (1,0);
+\draw[very thick] (0,0) -- (0,1);
 
 
 
@@ -133,55 +133,55 @@ The summation sign (addition principle) considers all possible choices for the s
 
 
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="90%" xml:id="fig-img-count-binomial1">
 				<latex-image>
 \begin{tikzpicture}[scale=.8] %mathbook width=90%
 
-\draw[very thick] (0,0) z-z-z (2,0) z-z-z (2,1) z-z-z (0,1) z-z-z (0,2) z-z-z (2,2) z-z-z (2,1);
-\draw[very thick] (1,2) z-z-z (1,0);
-\draw[very thick] (0,0) z-z-z (0,1);
+\draw[very thick] (0,0) -- (2,0) -- (2,1) -- (0,1) -- (0,2) -- (2,2) -- (2,1);
+\draw[very thick] (1,2) -- (1,0);
+\draw[very thick] (0,0) -- (0,1);
 
 \begin{scope}[shift={(4,0)}]
-\draw[very thick] (0,0) z-z-z (2,0) z-z-z  (2,2) z-z-z (0,2) z-z-z (0,0);
+\draw[very thick] (0,0) -- (2,0) --  (2,2) -- (0,2) -- (0,0);
 \end{scope}
 
 
 \begin{scope}[shift={(7,-.1)}]
-\draw[very thick] (0,0) z-z-z (2,0) z-z-z  (2,1) z-z-z (0,1) z-z-z (0,0);
+\draw[very thick] (0,0) -- (2,0) --  (2,1) -- (0,1) -- (0,0);
 \end{scope}
 
 
 
 \begin{scope}[shift={(7,.1)}]
-\draw[very thick] (0,2) z-z-z (2,2) z-z-z  (2,1) z-z-z (0,1) z-z-z (0,2);
+\draw[very thick] (0,2) -- (2,2) --  (2,1) -- (0,1) -- (0,2);
 \end{scope}
 
 
 \begin{scope}[shift={(9.9,0)}]
-\draw[very thick] (0,0) z-z-z (0,2) z-z-z  (1,2) z-z-z (1,0) z-z-z (0,0);
+\draw[very thick] (0,0) -- (0,2) --  (1,2) -- (1,0) -- (0,0);
 \end{scope}
 
 \begin{scope}[shift={(10.1,0)}]
-\draw[very thick] (2,0) z-z-z (2,2) z-z-z  (1,2) z-z-z (1,0) z-z-z (2,0);
+\draw[very thick] (2,0) -- (2,2) --  (1,2) -- (1,0) -- (2,0);
 \end{scope}
 
 \begin{scope}[shift={(13,-.1)}]
-\draw[very thick] (0,0) z-z-z (1,0) z-z-z  (1,1) z-z-z (0,1) z-z-z (0,0);
+\draw[very thick] (0,0) -- (1,0) --  (1,1) -- (0,1) -- (0,0);
 \end{scope}
 
 \begin{scope}[shift={(13,.1)}]
-\draw[very thick] (0,2) z-z-z (1,2) z-z-z  (1,1) z-z-z (0,1) z-z-z (0,2);
+\draw[very thick] (0,2) -- (1,2) --  (1,1) -- (0,1) -- (0,2);
 \end{scope}
 
 \begin{scope}[shift={(14.2,-.1)}]
-\draw[very thick] (0,0) z-z-z (1,0) z-z-z  (1,1) z-z-z (0,1) z-z-z (0,0);
+\draw[very thick] (0,0) -- (1,0) --  (1,1) -- (0,1) -- (0,0);
 \end{scope}
 
 \begin{scope}[shift={(14.2,.1)}]
-\draw[very thick] (0,2) z-z-z (1,2) z-z-z  (1,1) z-z-z (0,1) z-z-z (0,2);
+\draw[very thick] (0,2) -- (1,2) --  (1,1) -- (0,1) -- (0,2);
 \end{scope}
 
 \end{tikzpicture}
@@ -189,7 +189,7 @@ The summation sign (addition principle) considers all possible choices for the s
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -199,11 +199,11 @@ The summation sign (addition principle) considers all possible choices for the s
 					<p>
  Prove that  an <m>m \times n</m> grid contains <m>{m+1 \choose 2}{n+1 \choose 2}</m> rectangles.
 
-<!--solution>
+<solution>
 <p>
 Creating a rectangle requires choosing two vertical lines (to be the left and right boundaries) and two horizontal lines (to be the upper and lower boundaries). There are a total of <m>n+1</m> vertical lines and <m>m+1</m> horizontal lines. Therefore the total number of rectangles is    <m>{m+1 \choose 2}{n+1 \choose 2}</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -225,7 +225,7 @@ Consider a convex <m>n</m>-gon with its vertices labeled by the elements of <m>[
 					<p>
  How many distinct diagonals are are there?
 
-<!--solution>
+<solution>
 <p>
 
 In order to create a diagonal, we must chose two vertices that are not adjacent. We have <m>n</m> choices for our first vertex, and then <m>n-3</m> choices for our second vertex (since we cannot re-pick our vertex, or choose one of its two neighbors. The order that we pick these vertices does not matter, so we must divide by 2. The answer is
@@ -233,7 +233,7 @@ In order to create a diagonal, we must chose two vertices that are not adjacent.
 \frac{n(n-3)}{2}.
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -242,7 +242,7 @@ In order to create a diagonal, we must chose two vertices that are not adjacent.
  How may pairs of crossing diagonals are there?
 
 
-<!--solution>
+<solution>
 <p>
 
 The answer is
@@ -252,7 +252,7 @@ The answer is
 Once you have picked 4 vertices, there is a unique way to draw a pair of crossing diagonals between them.
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>

@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Prove that  an \(m \times n\) grid contains \({m+1 \choose 2}{n+1 \choose 2}\) rectangles. </p>
+<p>Here is the recipe.</p>
+<ul class="disc">
+<li><p>First, choose a value for \(k\) where \(0 \leq k \leq n\text{.}\)</p></li>
+<li><p>Next, choose the \(k\) elements in \(B\text{.}\)</p></li>
+<li><p>Finally, choose a subset \(A\) of the \(k\)-set \(B\)</p></li>
+</ul>
+<p class="continuation">The summation sign (addition principle) considers all possible choices for the size \(k\text{.}\) Once we have determined \(k\text{,}\) there are \({n \choose k}\) ways to pick the subset \(B\text{.}\) Then there are \(2^k\) ways to choose the subset \(A \subset B\text{.}\)</p>
 <span class="incontext"><a href="exercises-20.html#p-725">in-context</a></span>
 </body>
 </html>
