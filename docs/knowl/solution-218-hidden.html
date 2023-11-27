@@ -11,12 +11,13 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Here is the recipe.</p>
-<ul class="disc">
-<li><p>First, choose a value for \(k\) where \(0 \leq k \leq n\text{.}\)</p></li>
-<li><p>Next, choose the \(k\) elements in \(B\text{.}\)</p></li>
-<li><p>Finally, choose a subset \(A\) of the \(k\)-set \(B\)</p></li>
-</ul>
-<p class="continuation">The summation sign (addition principle) considers all possible choices for the size \(k\text{.}\) Once we have determined \(k\text{,}\) there are \({n \choose k}\) ways to pick the subset \(B\text{.}\) Then there are \(2^k\) ways to choose the subset \(A \subset B\text{.}\)</p>
+<p>There are two cases, depending on which type of pie is left over: pumpkin or apple.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+{9 \choose 4} + {9 \choose 6}
+\end{equation*}
+</div>
+<p class="continuation">In the first term, we pick the 4 people who will get apple pie. The remaining 5 get pumpkin pie. The left over slice is apple</p>
+<p>In the second term, we pick the 6 people who will get apple pie. The remaining 3 get pumpkin pie. The left over slice is pumpkin.</p>
 </div></body>
 </html>
