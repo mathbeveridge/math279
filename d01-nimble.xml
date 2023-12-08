@@ -126,7 +126,7 @@
 			</image>
 
 
-<!--solution>
+<solution>
 <p>
 
 			<ol>
@@ -163,7 +163,7 @@
 			</ol>
 
 </p>
-</solution-->
+</solution>
 
 			</p><p>
 
@@ -187,7 +187,7 @@
 			</li>
 		</ul>
 
-<!--solution>
+<solution>
 <p>
 
 
@@ -285,7 +285,7 @@ child { node (G1b2a1) { $\emptyset$ }}
 
 
 </p>
-</solution-->
+</solution>
 
 
 				</p>
@@ -297,7 +297,7 @@ child { node (G1b2a1) { $\emptyset$ }}
  Create the complete game tree for  position (c) above, as you did in problem 2. Mark each position with an <m>\cN</m> or a <m>\cP</m>.
 Once you are done, compare your answer to this problem with the trees in problem 2. Make any useful observations that you can.
 
-<!--solution>
+<solution>
 <p>
 			<image width="100%" xml:id="fig-img-games-nimble3">
 				<latex-image>
@@ -378,7 +378,7 @@ child { node (G1b2a1) { $\emptyset$ }}
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 

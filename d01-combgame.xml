@@ -49,7 +49,7 @@ Finally, note that we are partitioning  the set <m>\cX</m> of game positions int
  Rule #1 says that "an <m>\cN</m>-position must have at least one follower that is a <m>\cP</m>-position."
 Restate this rule incorporating "for all" and/or "there exists" quantifiers. Then prove Rule #1 by contradiction.
 
-<!--solution>
+<solution>
 <p>
 <me>
 X \in \cN \Longleftrightarrow \exists Y \in \cF(X) \mbox{ such that } Y \in \cP.
@@ -60,7 +60,7 @@ X \in \cN \Longleftrightarrow \exists Y \in \cF(X) \mbox{ such that } Y \in \cP.
 AFSOC that  <m>X</m> does not have a follower <m>Y</m> such that <m>Y \in \cP</m>. 
 Let Alice be the "next player" and Bob be the "previous player." Since every follower is an <m>\cN</m>-position, Alice must move to a <m>\cN</m>-position. However, now Bob becomes is the "next player" and therefore Bob has a winning strategy, no matter what Alice's first move was. Therefore Alice does not have a winning strategy, a contradiction.
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -69,7 +69,7 @@ Let Alice be the "next player" and Bob be the "previous player." Since every fol
 					<p>
  Rule #2 says that "every follower of a <m>\cP</m>-position must be an <m>\cN</m>-position." Restate this rule incorporating "for all" and/or "there exists" quantifiers. Then prove Rule # 2 by contradiction.
 
-<!--solution>
+<solution>
 <p>
 We have
 <me>
@@ -86,7 +86,7 @@ Let Alice be the "next player" and Bob be the "previous player." Then Alice can 
 It is now Bob's turn, so he becomes the "next" player, and he is a losing postion. So this move from <m>X</m> to <m>Y</m> 
 was a winning move for Alice, a contradiction.
 </p>
-</solution-->
+</solution>
 					</p>
 				</li>
 			</ol>
@@ -121,14 +121,14 @@ Consider a one coin game of nimble, where you are only allowed to move an <em>od
 
 Find sets <m>\cA</m> and <m>\cB</m> that satisfy the properties above.
 
-<!--solution>
+<solution>
 <p>
 
 
 Let <m>\cA</m> be all of the even squares and <m>\emptyset</m> and let <m>\cB</m> be all of the odd squares. Note that <m>\cA</m> satisfies Rule 2 and <m>\cB</m> satisfies Rule 1.
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -294,7 +294,7 @@ Let <m>\cA</m> be all of the even squares and <m>\emptyset</m> and let <m>\cB</m
 			</image>
 
 
-<!--solution>
+<solution>
 <p>
 
 			<ol>
@@ -330,7 +330,7 @@ Let <m>\cA</m> be all of the even squares and <m>\emptyset</m> and let <m>\cB</m
 				</li>
 			</ol>
 </p>
-</solution-->
+</solution>
 
 
 
@@ -346,14 +346,14 @@ Let <m>\cA</m> be all of the even squares and <m>\emptyset</m> and let <m>\cB</m
  There is an exact correspondence between games of Nim and games of Nimble (the game we played last time). Can you figure out what the relationship is? Draw the corresponding Nimble games for each of the size Nim games above.
 
 
-<!--solution>
+<solution>
 <p>
 
 A nim heap of size <m>k</m> corresponds to a coin on square <m>k</m>.
 
 
 </p>
-</solution-->
+</solution>
 
 
 
