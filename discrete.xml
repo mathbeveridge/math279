@@ -58,10 +58,11 @@ pull the name of the problem from the first line  of  the \item
 
     <part xml:id="part-slf">
         <title>Sets, Logic and Functions</title>
+            <xi:include href="./a01-logic1.xml" />   
+            <xi:include href="./a01-logic2.xml" />         
             <xi:include href="./a01-sets1.xml" />   
             <xi:include href="./a01-sets2.xml" />
-            <xi:include href="./a01-logic1.xml" />   
-            <xi:include href="./a01-logic2.xml" />  
+            <xi:include href="./a01-quantifiers.xml" />
             <xi:include href="./a01-function1.xml" /> 
             <xi:include href="./a01-function2.xml" />     
             <xi:include href="./a01-function3.xml" />                                 
@@ -89,13 +90,13 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c01-balls-in-boxes2.xml" />              
     </part> 
 
-    <part xml:id="part-games">
+    <!--part xml:id="part-games">
         <title>Games</title>         
             <xi:include href="./d01-nimble.xml" />    
             <xi:include href="./d01-combgame.xml" />    
             <xi:include href="./d01-nimsum.xml" />   
             <xi:include href="./d01-subtraction.xml" />      
-    </part> 
+    </part--> 
 
     </book>
 

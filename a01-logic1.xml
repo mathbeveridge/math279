@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <chapter xml:id="logic1" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Logical Connectors and Quantifiers</title>
+	<title>Logical Connectors</title>
 	<introduction>
 		<p>
 
@@ -13,6 +13,118 @@
 	</introduction>
 	<exercises>
 		<title>Practice Problems</title>
+
+
+		<exercise>
+			<title>Statements</title>
+			<idx><h>Statements</h></idx>
+			<statement>
+				<p>
+Consider the following two statements:
+<ul>
+<li>
+<m>P = </m> The rent increases.
+</li>
+<li>
+<m>Q = </m> I will renew my lease.
+</li>
+</ul>
+Express the following statements in words.
+				</p>
+				<p>
+<ol>
+	<li>
+		<p>
+		<m>P \vee Q</m>
+		</p>		
+	</li>
+	<li>
+		<p>
+		<m>(\neg P) \wedge Q</m>
+		</p>		
+	</li>	
+	<li>
+		<p>
+		<m>(\neg P) \Rightarrow Q</m>
+		</p>		
+	</li>
+	<li>
+		<p>
+		<m>P \Rightarrow (\neg Q)</m>
+		</p>		
+	</li>
+</ol>
+				
+
+<!--solution>
+<p>
+Under negation, AND becomes OR, while OR becomes AND.
+</p>
+</solution-->
+
+
+
+				</p>
+			</statement>
+		</exercise>
+
+
+
+		<exercise>
+			<title>Implications</title>
+			<idx><h>Implications</h></idx>
+			<statement>
+				<p>
+Each of the following statements is an implication <m>P \Rightarrow Q</m>. For each statement,
+indicate what <m>P</m> and <m>Q</m> are, then rephrase the statment as "if <m>P</m> then <m>Q</m>."
+				</p>
+				<p>
+(Hint: an implication <m>P \Rightarrow Q</m> is only false when <m>P</m> is true and <m>Q</m> is false. Thus, it
+may help you to imagine what it would mean for each of these statements to be false.)
+
+
+<ol>
+	<li>
+		<p>
+		I think, therefore I am.
+		</p>		
+	</li>
+	<li>
+		<p>
+		You can drive from Minneapolis to Madison if your car has a full tank of gas.
+		</p>		
+	</li>	
+	<li>
+		<p>
+		I’m only going to my class reunion if I get a promotion at work.
+		</p>		
+	</li>
+	<li>
+		<p>
+		I will take you to the pool as long as you do your afternoon chores.
+		</p>		
+	</li>
+	<li>
+		<p>
+		Passing Linear Algebra is necessary to register for Algebraic Structures.
+		</p>		
+	</li>
+</ol>
+				
+
+<!--solution>
+<p>
+Under negation, AND becomes OR, while OR becomes AND.
+</p>
+</solution-->
+
+
+
+				</p>
+			</statement>
+		</exercise>
+
+
 		<exercise>
 			<title>Two Truth Tables</title>
 			<idx><h>Two Truth Tables</h></idx>
@@ -35,7 +147,7 @@ F &amp; F &amp;  &amp; \\
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 
 <me>
@@ -50,7 +162,7 @@ F &amp; F &amp; F &amp; T\\
 </me>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -70,7 +182,7 @@ F &amp; F &amp; &amp; &amp;  \\
 </me>
 
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{c|c|c|c|c}
@@ -85,7 +197,7 @@ F &amp; F &amp; T &amp;  T &amp; T \\
 
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -94,7 +206,7 @@ F &amp; F &amp; T &amp;  T &amp; T \\
 					<p>
  Look at the last column of each of the two tables above. What do you conclude? Write a mathematical statement (using symbols) that summarizes your observation.
 
-<solution>
+<!--solution>
 <p>
 
 These two statements are equivalent. In other words,
@@ -103,7 +215,7 @@ These two statements are equivalent. In other words,
 \]
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -132,7 +244,7 @@ F &amp; F &amp;  &amp;   \\
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 
 <me>
@@ -147,7 +259,7 @@ F &amp; F &amp; F &amp; T &amp; T &amp; T &amp; T \\
 </me>
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -161,18 +273,18 @@ F &amp; F &amp; F &amp; T &amp; T &amp; T &amp; T \\
 				<p>
 Look back at the last two problems. What is the effect of <em>negation</em> on the AND operator? The OR operator?
 
-<solution>
+<!--solution>
 <p>
 Under negation, AND becomes OR, while OR becomes AND.
 </p>
-</solution>
+</solution-->
 
 
 
 				</p>
 			</statement>
 		</exercise>
-		<exercise>
+		<!--exercise>
 			<title>16 Compound Statements using <m>P</m> and <m>Q</m></title>
 			<idx><h>16 Compound Statements using <m>P</m> and <m>Q</m></h></idx>
 			<statement>
@@ -196,7 +308,7 @@ F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&
 \end{array}
 </me>
 
-<solution>
+<xsolution>
 <p>
 
 I'll split this into two tables for readability. We have
@@ -225,162 +337,12 @@ F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F
 Hopefully, you noticed that there is an "anti-symmetry" to this table. The first column is the negation of the last column. The second column is the negation of the second-to-last column, and so on! So you can negate the  <m>k</m>th statement <m>k</m> to find the <m>(17-k)</m>th statement.
 
 </p>
-</solution>
-
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Sets and Logic</title>
-			<idx><h>Sets and Logic</h></idx>
-			<statement>
-				<p>
-For <m>x \in \mathbb Z</m>, consider the statements
-
-<me>
-P(x) = \mbox{"<m>x</m> is even"}  \qquad \qquad
-Q(x) = \mbox{"<m>x</m> is positive"}
-</me>
-
-and let <m>A</m> and <m>B</m>  be the sets
-
-<me>
-A = \{ x \in \mathbb{Z} \mid P(x) \mbox{ is true} \} \qquad \qquad
-B = \{ x \in \mathbb{Z} \mid Q(x) \mbox{ is true} \}
-</me>
-
-Fill in the blanks using the symbols <m>A</m>, <m>B</m>, <m>\cup</m> and <m>\cap</m>.
-
-<me>
-\begin{array}{rcl}
-\underline{\phantom{asdasdasd}} = \{ x \in \mathbb{Z} \mid P(x) \wedge Q(x)  \mbox{ is true} \} \\
-\underline{\phantom{asdasdasd}} = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
-\end{array}
-</me>
-
-You have just  turned an expression about mathematical statements into an expression about sets!
-
-<solution>
-<p>
-
-
-<me>
-\begin{array}{rcl}
-A \cap B  = \{ x \in \mathbb{Z} \mid P(x) \wedge Q(x)  \mbox{ is true} \} \\
-A \cup B   = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
-\end{array}
-</me>
-
-</p>
-</solution>
+</xsolution>
 
 				</p>
 			</statement>
-		</exercise>
-		<exercise>
-			<title>Order of Quantifiers</title>
-			<idx><h>Order of Quantifiers</h></idx>
-			<statement>
-				<p>
-In this problem, we will see that the <em>order</em> of our quantifiers matters
+		</exercise-->
 
-			<ol>
-				<li>
-					<p>
- Consider the statement
-
-<me>
-\exists y \in \mathbb{R},  \forall x \in \mathbb{R},  x = y^3.
-</me>
-
-Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
-
-
-<solution>
-<p>
-
-The statement is: "There exists a <m>y \in \R</m>, such that for all <m>x \in \R</m>, we have <m>x=y^3</m>."
-
-This is <em> false</em> since this statement says that there is a single number <m>y</m> that works for every <m>x</m> simultaneously.
-
-</p>
-</solution>
-
-					</p>
-				</li>
-				<li>
-					<p>
- Now consider the statement
-
-<me>
-\forall y \in \mathbb{R},   \exists x \in \mathbb{R},  x = y^3.
-</me>
-
-Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
-
-<solution>
-<p>
-The statement is: "For each <m>y \in \R</m>, there exists an <m>x \in \R</m>, such that <m>x=y^3</m>."
-
-This statement is <em> true</em>. This time, the choice of <m>x</m> depends on the given <m>y</m>. In particular, we take <m>x = \sqrt[3]{y}</m>.
-</p>
-</solution>
-
-					</p>
-				</li>
-			</ol>
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Bounded and Unbounded</title>
-			<idx><h>Bounded and Unbounded</h></idx>
-			<statement>
-				<p>
-Here is a mathematical definition for a <em>bounded</em> set.
-
-			</p><p>
-
-"A set <m>S \subset \mathbb{R}</m> is <em>bounded</em> if there is an <m>M \in \mathbb{R}</m> such that <m>|x| \leq M</m> for all <m>x \in S</m>. A set is <em>unbounded</em> if no such <m>M</m> exists."
-
-			<ol>
-				<li>
-					<p>
- Rewrite the definition of <em>bounded</em> only using mathematical symbols and quantifiers.
-
-<solution>
-<p>
-\[
-\exists M \in \R,  \forall x \in S,  |x| \leq M.
-\]
-</p>
-</solution>
-
-					</p>
-				</li>
-				<li>
-					<p>
- The definition of <em>unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English.
-
-<solution>
-<p>
-\[
-\forall M \in \R,  \exists x \in S,  |x| &gt; M.
-\]
-For every <m>M \in \R</m>, there exists an <m>x \in S</m> such that <m>|x| &gt; M</m>.
-</p>
-</solution>
-
-					</p>
-				</li>
-			</ol>
-
-
-				</p>
-			</statement>
-		</exercise>
 	</exercises>
 
 

@@ -27,12 +27,12 @@ We have a <m>r \times s</m> chocolate bar that has <m>n=rs</m> squares of chocol
 
 \foreach \y in {0,1,2,3,4}
 {
-\draw (0,\y) -- (9,\y);
+\draw (0,\y) -!- (9,\y);
 }
 
 \foreach \x in {0,1,2,3,4,5,6,7,8,9}
 {
-\draw (\x,0) -- (\x,4);
+\draw (\x,0) -!- (\x,4);
 }
 
 \end{tikzpicture}
@@ -53,19 +53,19 @@ I can <em>break</em> a chocolate bar by splitting it along between any adjacent 
 
 \foreach \y in {0,1,2,3,4}
 {
-\draw (0,\y) -- (3,\y);
-\draw (4,\y) -- (10,\y);
+\draw (0,\y) -!- (3,\y);
+\draw (4,\y) -!- (10,\y);
 }
 
 \foreach \x in {0,1,2,3}
 {
-\draw (\x,0) -- (\x,4);
+\draw (\x,0) -!- (\x,4);
 }
 
 
 \foreach \x in {4,5,6,7,8,9,10}
 {
-\draw (\x,0) -- (\x,4);
+\draw (\x,0) -!- (\x,4);
 }
 
 \end{scope}
@@ -76,19 +76,19 @@ I can <em>break</em> a chocolate bar by splitting it along between any adjacent 
 
 \foreach \y in {0,1}
 {
-\draw (0,\y-.5) -- (9,\y-.5);
+\draw (0,\y-.5) -!- (9,\y-.5);
 }
 
 \foreach \x in {0,1,2,3,4,5,6,7,8,9}
 {
-\draw (\x,-.5) -- (\x,.5);
-\draw (\x,1.5) -- (\x,4.5);
+\draw (\x,-.5) -!- (\x,.5);
+\draw (\x,1.5) -!- (\x,4.5);
 }
 
 
 \foreach \y in {2,3,4,5}
 {
-\draw (0,\y-.5) -- (9,\y-.5);
+\draw (0,\y-.5) -!- (9,\y-.5);
 }
 
 \end{scope}
@@ -124,13 +124,13 @@ a rectangular chocolate bar with <m>n</m> squares requires <m>n-1</m> breaks to 
 					<p>
  <em> Base Case:</em>  <m>n=1</m>. The base case is a chocolate bar with <m>n=1</m> squares. (So it must be <m>1 \times 1</m>.)
 
-<solution>
+<!--solution>
 <p>
 
 The chocolate bar is already "split" into squares. It takes <m>0 = 1-1</m> moves.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -138,13 +138,13 @@ The chocolate bar is already "split" into squares. It takes <m>0 = 1-1</m> moves
 					<p>
  <em> Inductive Hypothesis:</em> Assume the statement is true for <m>1 \leq k &lt; n</m>. Explicitly  write down this statement.
 
-<solution>
+<!--solution>
 <p>
 
 Assume: <m>(\star)</m> For <m>1 \leq k &lt; n</m>, splitting  a rectangular chocolate bar with <m>k</m> squares requires exactly <m>k-1</m> breaks.
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -157,7 +157,7 @@ Assume: <m>(\star)</m> For <m>1 \leq k &lt; n</m>, splitting  a rectangular choc
 					<p>
  <em> Inductive Step:</em> Use <m>(\star)</m> to prove true for <m>n</m>.
 
-<solution>
+<!--solution>
 <p>
 
 Prove: Use <m>(\star)</m> to prove that splitting  a rectangular chocolate bar with <m>n</m> squares requires exactly <m>n</m> breaks.
@@ -171,7 +171,7 @@ Break the chocolate bar along the <m>k</m>th column to get two chocolate bars: o
 </me>
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -203,12 +203,12 @@ For example, by cutting along the lines below, you will divide a square into 6 s
 				<latex-image>
 \begin{tikzpicture}[scale=.85] %mathbook width=33%
 
-\draw(0,0) --(3,0) -- (3,3) -- (0,3) -- cycle;
-\draw (2,0) -- (2,3);
-\draw (2,1) -- (3,1);
-\draw (2,2) -- (3,2);
-\draw (1,2) -- (1,3);
-\draw (0,2) -- (2,2);
+\draw(0,0) -!-(3,0) -!- (3,3) -!- (0,3) -!- cycle;
+\draw (2,0) -!- (2,3);
+\draw (2,1) -!- (3,1);
+\draw (2,2) -!- (3,2);
+\draw (1,2) -!- (1,3);
+\draw (0,2) -!- (2,2);
 \end{tikzpicture}
 				</latex-image>
 			</image>
@@ -220,7 +220,7 @@ Using strong induction to prove that you can  cut a square into <m>n</m> smaller
 <m>P(n)</m>  is true, you would want to use the fact that
 <m>P(n-3)</m> is true. So somehow you need to increase the number of squares by 3.
 
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -236,23 +236,23 @@ Using strong induction to prove that you can  cut a square into <m>n</m> smaller
 
 \begin{scope}
 
-\draw(0,0) --(3,0) -- (3,3) -- (0,3) -- cycle;
-\draw (2,0) -- (2,3);
-\draw (2,1) -- (3,1);
-\draw (2,2) -- (3,2);
-\draw (1,2) -- (1,3);
-\draw (0,2) -- (2,2);
+\draw(0,0) -!-(3,0) -!- (3,3) -!- (0,3) -!- cycle;
+\draw (2,0) -!- (2,3);
+\draw (2,1) -!- (3,1);
+\draw (2,2) -!- (3,2);
+\draw (1,2) -!- (1,3);
+\draw (0,2) -!- (2,2);
 
 \end{scope}
 
 
 \begin{scope}[shift={(5,0)}]
 
-\draw(0,0) --(3,0) -- (3,3) -- (0,3) -- cycle;
-\draw (1.5,0) -- (1.5,3);
-\draw (0,1.5) -- (3,1.5);
-\draw (.75,0) -- (.75,1.5);
-\draw (0,.75) -- (1.5,.75);
+\draw(0,0) -!-(3,0) -!- (3,3) -!- (0,3) -!- cycle;
+\draw (1.5,0) -!- (1.5,3);
+\draw (0,1.5) -!- (3,1.5);
+\draw (.75,0) -!- (.75,1.5);
+\draw (0,.75) -!- (1.5,.75);
 
 
 \end{scope}
@@ -260,14 +260,14 @@ Using strong induction to prove that you can  cut a square into <m>n</m> smaller
 
 \begin{scope}[shift={(10,0)}]
 
-\draw(0,0) --(3,0) -- (3,3) -- (0,3) -- cycle;
-\draw (9/4,0) -- (9/4,3);
-\draw (9/4,3/4) -- (3,3/4);
-\draw (9/4,6/4) -- (3,6/4);
+\draw(0,0) -!-(3,0) -!- (3,3) -!- (0,3) -!- cycle;
+\draw (9/4,0) -!- (9/4,3);
+\draw (9/4,3/4) -!- (3,3/4);
+\draw (9/4,6/4) -!- (3,6/4);
 
-\draw (0,9/4) -- (3,9/4);
-\draw (3/4,9/4) -- (3/4,3);
-\draw (6/4,9/4) -- (6/4,3);
+\draw (0,9/4) -!- (3,9/4);
+\draw (3/4,9/4) -!- (3/4,3);
+\draw (6/4,9/4) -!- (6/4,3);
 
 \end{scope}
 
@@ -294,7 +294,7 @@ We want to split the square into <m>n</m> smaller squares. First, we split it in
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 
 				</p>
@@ -335,7 +335,7 @@ Use <em>strong induction</em> to prove that the sum of the angles in an <m>n</m>
 			</li>
 		</ul>
 
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -372,7 +372,7 @@ When we add these angles, we get the sum of the angles in the original polygon.
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -387,7 +387,7 @@ When we add these angles, we get the sum of the angles in the original polygon.
 Use <em>strong induction</em> to prove that any integer <m>n \geq 1</m> can be written as <m>n=2^r m</m> where <m>m</m> is an odd integer (possibly <m>m=1</m>) and <m>r \geq 0</m>. Your inductive step will have two cases, depending on whether <m>n</m> is odd or even.
 
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 
@@ -426,7 +426,7 @@ If <m>n</m> is even then <m>n=2k</m>. By induction, <m>k=2^s \ell</m> where <m>\
 
 
 </p>
-</solution>
+</solution-->
 
 
 
@@ -466,9 +466,9 @@ This diagram shows all three valid moves from this starting postion:
 \node[draw,circle] (a4) at (3,0) {H};
 \node[draw,circle] (a5) at (4,0) {T};
 
-\draw[-latex] (-.5, -.5)  -- (-2.5,-1.5);
-\draw[-latex] (2, -.55)  -- (2,-1.45);
-\draw[-latex] (4.5, -.5)  -- (6.5,-1.5);
+\draw[-latex] (-.5, -.5)  -!- (-2.5,-1.5);
+\draw[-latex] (2, -.55)  -!- (2,-1.45);
+\draw[-latex] (4.5, -.5)  -!- (6.5,-1.5);
 
 
 \begin{scope}[shift={(-7,-2)}]
@@ -520,7 +520,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
  Play the coin removal game with <m>n</m> coins for <m>n=1,2,3</m>. For each <m>n</m>, list the starting configurations that are winning and losing. Can you see the pattern?
 
 
-<solution>
+<!--solution>
 <p>
 
 <me>
@@ -534,7 +534,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 </me>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -542,7 +542,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 					<p>
  Now play some games on <m>n=4,5,6</m> coins. Make a conjecture about which starting positions are winning and which ones are losing.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -557,7 +557,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -584,7 +584,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 					<p>
  <em>Case 1:</em> You start with an odd number of heads. Remove the leftmost heads up coin and flip its neighbors. This leaves two smaller lists of coins, <m>L</m> and <m>R</m>, which are to the left and right of the coin you removed. One of these sets could be empty; why? What can you say about the configuration of coins in each of <m>L</m> and <m>R</m>? Explain why this proves that the original configuration was winning/losing.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -610,7 +610,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -618,7 +618,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 					<p>
  <em>Case 2:</em> You start with an even number of heads. Pick any heads-up coin, remove it and flip its neighbors. Once again, this leaves two smaller lists of coins, <m>L</m> and <m>R</m>. Explain why one of these sets must contain an even number of heads-up coins. Explain why this proves that the original configuration was winning/losing.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -649,7 +649,7 @@ Note that <em>removing a coin leaves an empty space</em>. So that coin is now mi
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>

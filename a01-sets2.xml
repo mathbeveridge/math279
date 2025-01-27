@@ -19,7 +19,7 @@
 				<p>
 The concepts of union and intersection naturally correspond to the concepts of "or" and "and." Explain why using words and/or pictures.
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{rcl}
@@ -28,7 +28,7 @@ A \cap B &amp;=&amp; \{ x \mid x \in A \mbox{ AND } x \in B \}
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -45,11 +45,11 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 					<p>
  List all of the subsets of <m>\{ 1 \}</m>.
 
-<solution>
+<!--solution>
 <p>
 <m>\emptyset, \{ 1 \}</m>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -57,11 +57,11 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 					<p>
  List all of the subsets of <m>\{ 1,2 \}</m>.
 
-<solution>
+<!--solution>
 <p>
 <m>\emptyset, \{ 1 \}, \{ 2 \} , \{ 1,2 \}</m>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -69,11 +69,11 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 					<p>
  List all of the subsets of <m>\{ 1,2,3 \}</m>.
 
-<solution>
+<!--solution>
 <p>
 <m>\emptyset, \{ 1 \}, \{ 2 \}, \{ 3 \}, \{ 1,2 \}, \{ 1,3 \} , \{ 2,3 \}, \{ 1,2,3 \}</m>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -81,11 +81,11 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 					<p>
  Look at the pattern you see so far. Guess how many subsets are there of the set <m>\{ 1,2,3,4 \}</m>. How about the set <m>\{ 1,2,3, \ldots , 10 \}</m>?
 
-<solution>
+<!--solution>
 <p>
 <m>\{ 1,2,3,4 \}</m> has <m>2^4</m> subsets and <m>\{ 1,2,3, \ldots , 10 \}</m> has <m>2^{10}</m> subsets.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -93,11 +93,11 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 					<p>
  Your answers in part (d) are  very simple expressions. This is one reason why mathematicians defined "subset" to include the cases <m>\emptyset \subset A</m> and <m>A \subset A</m>.  The <em>power set</em> of a set <m>A</m> is the set of all subsets of <m>A</m>. This power set is denoted <m>\mathcal{P}(A)</m>. If <m>|A|=n</m>, what is  <m>| \mathcal{P}(A)|</m>? (You do not have to prove your answer.)
 
-<solution>
+<!--solution>
 <p>
 If <m>|A|=n</m> then  <m>| \mathcal{P}(A)|=2^n</m>
 </p>
-</solution>
+</solution-->
 					</p>
 				</li>
 			</ol>
@@ -119,7 +119,7 @@ Prove the following <em>distributive laws</em> in two ways. First, using a Venn 
 					<p>
  <m>A \cap (B \cup C) = (A \cap B) \cup (A \cap C)</m>
 
-<solution>
+<!--solution>
 <p>
 This argument works backwards and forward. So this proves the double inclusion of these sets.
 
@@ -135,7 +135,7 @@ x \in (A \cap B) \cup ( A \cap C)  \\
 \end{array}
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -143,7 +143,7 @@ x \in (A \cap B) \cup ( A \cap C)  \\
 					<p>
  <m>A \cup (B \cap C) = (A \cup B) \cap (A \cup C)</m>
 
-<solution>
+<!--solution>
 <p>
 Once again, this argument works backwards and forward. So this proves the double inclusion of these sets.
 
@@ -161,7 +161,7 @@ x \in (A \cup B) \cap (A \cup C)
 
 This argument does work, but it does have one subtlety. If <m>x \notin A</m> then each condition forces <m>x</m> to be an element of both <m>B</m> and <m>C</m>.
 </p>
-</solution>
+</solution-->
 
 
 					</p>

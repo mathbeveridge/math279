@@ -12,15 +12,22 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Use induction to prove that the complete graph \(K_n\) has \(\displaystyle{\frac{n(n-1)}{2}}\) edges.</p>
+<p>In this problem, you will prove the following identity in two different ways</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+3^n = \sum_{k=0}^n 2^k { n \choose k}
+\end{equation*}
+</div>
 <ol class="lower-alpha">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> (Check for \(n=1,2,3\) to make sure you believe it. You actually only need to check for \(n=1\text{.}\)) <a class="solution-knowl original" data-knowl="./knowl/solution-121-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Write down your inductive hypothesis for \(n\text{.}\) <a class="solution-knowl original" data-knowl="./knowl/solution-122-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>Prove this equation using the binomial theorem. </p></li>
 <li>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Write down what you want to SHOW for \(n+1\text{.}\) Then try to find "a copy of the size \(n\) problem" in the size \(n+1\) problem. Rearrange and use your inductive hypothesis to prove the result!</p>
-<p>Hint: You have a \(K_{n+1}\text{,}\) so start by looking at a subgraph on \(n\) of the vertices. <a class="solution-knowl original" data-knowl="./knowl/solution-123-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p>Give a combinatorial proof of this equation by showing that each side counts the number of ways to choose sets \(A,B\) where \(\emptyset \subseteq A \subseteq B \subseteq [n]\text{.}\)</p>
+<ol class="lower-roman">
+<li><p>The left hand side is \(3^n\text{.}\) Explain why there are three choices for where to place every element of \([n]\text{.}\) </p></li>
+<li><p>The right hand is \(\sum_{k=0}^n 2^k { n \choose k}.\) This time, we create the sets \(A \subseteq B\) in a different way. Namely, first we decide what the size of \(B\) will be, and use \(k\) to denote this size. With this in mind, interpret the right hand side of this equation. </p></li>
+</ol>
 </li>
 </ol>
-<span class="incontext"><a href="exercises-11.html#p-393">in-context</a></span>
+<span class="incontext"><a href="exercises-21.html#p-393">in-context</a></span>
 </body>
 </html>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="quantifiers" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Quantifiers</title>
+	<introduction>
+		<p>
+
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+		<exercise>
+			<title>Sets and Logic</title>
+			<idx><h>Sets and Logic</h></idx>
+			<statement>
+				<p>
+For <m>x \in \mathbb Z</m>, consider the statements
+
+<me>
+P(x) = \mbox{"<m>x</m> is even"}  \qquad \qquad
+Q(x) = \mbox{"<m>x</m> is positive"}
+</me>
+
+and let <m>A</m> and <m>B</m>  be the sets
+
+<me>
+A = \{ x \in \mathbb{Z} \mid P(x) \mbox{ is true} \} \qquad \qquad
+B = \{ x \in \mathbb{Z} \mid Q(x) \mbox{ is true} \}
+</me>
+
+Fill in the blanks using the symbols <m>A</m>, <m>B</m>, <m>\cup</m> and <m>\cap</m>.
+
+<me>
+\begin{array}{rcl}
+\underline{\phantom{asdasdasd}} = \{ x \in \mathbb{Z} \mid P(x) \wedge Q(x)  \mbox{ is true} \} \\
+\underline{\phantom{asdasdasd}} = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
+\end{array}
+</me>
+
+You have just  turned an expression about mathematical statements into an expression about sets!
+
+<!--solution>
+<p>
+
+
+<me>
+\begin{array}{rcl}
+A \cap B  = \{ x \in \mathbb{Z} \mid P(x) \wedge Q(x)  \mbox{ is true} \} \\
+A \cup B   = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
+\end{array}
+</me>
+
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Order of Quantifiers</title>
+			<idx><h>Order of Quantifiers</h></idx>
+			<statement>
+				<p>
+In this problem, we will see that the <em>order</em> of our quantifiers matters
+
+			<ol>
+				<li>
+					<p>
+ Consider the statement
+
+<me>
+\exists y \in \mathbb{R},  \forall x \in \mathbb{R},  x = y^3.
+</me>
+
+Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
+
+
+<!--solution>
+<p>
+
+The statement is: "There exists a <m>y \in \R</m>, such that for all <m>x \in \R</m>, we have <m>x=y^3</m>."
+
+This is <em> false</em> since this statement says that there is a single number <m>y</m> that works for every <m>x</m> simultaneously.
+
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Now consider the statement
+
+<me>
+\forall y \in \mathbb{R},   \exists x \in \mathbb{R},  x = y^3.
+</me>
+
+Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
+
+<!--solution>
+<p>
+The statement is: "For each <m>y \in \R</m>, there exists an <m>x \in \R</m>, such that <m>x=y^3</m>."
+
+This statement is <em> true</em>. This time, the choice of <m>x</m> depends on the given <m>y</m>. In particular, we take <m>x = \sqrt[3]{y}</m>.
+</p>
+</solution-->
+
+					</p>
+				</li>
+			</ol>
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Bounded and Unbounded</title>
+			<idx><h>Bounded and Unbounded</h></idx>
+			<statement>
+				<p>
+Here is a mathematical definition for a <em>bounded</em> set.
+
+			</p><p>
+
+"A set <m>S \subset \mathbb{R}</m> is <em>bounded</em> if there is an <m>M \in \mathbb{R}</m> such that <m>|x| \leq M</m> for all <m>x \in S</m>. A set is <em>unbounded</em> if no such <m>M</m> exists."
+
+			<ol>
+				<li>
+					<p>
+ Rewrite the definition of <em>bounded</em> only using mathematical symbols and quantifiers.
+
+<!--solution>
+<p>
+\[
+\exists M \in \R,  \forall x \in S,  |x| \leq M.
+\]
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+ The definition of <em>unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English.
+
+<!--solution>
+<p>
+\[
+\forall M \in \R,  \exists x \in S,  |x| &gt; M.
+\]
+For every <m>M \in \R</m>, there exists an <m>x \in S</m> such that <m>|x| &gt; M</m>.
+</p>
+</solution-->
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+	</exercises>
+
+
+
+
+</chapter>
