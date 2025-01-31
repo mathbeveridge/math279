@@ -150,7 +150,7 @@ Mark each of the following statements as <em> true</em> or <em> false</em>
 				</li>
 				<li>
 					<p>
-  <m>\{ 3 \} \subset B</m>
+  <m>\{ 3 \} \subseteq B</m>
 <!--solution>
 <p>
 <em> true</em>
@@ -182,7 +182,7 @@ Mark each of the following statements as <em> true</em> or <em> false</em>
 				</li>
 				<li>
 					<p>
-  <m>\emptyset \subset C </m>
+  <m>\emptyset \subseteq C </m>
 <!--solution>
 <p>
 <em> true</em>
@@ -226,7 +226,7 @@ Mark each of the following statements as <em> true</em> or <em> false</em>
 				</li>
 				<li>
 					<p>
- <m>\{ 1, 2 \} \subset D </m>
+ <m>\{ 1, 2 \} \subseteq D </m>
 <!--solution>
 <p>
 <em> false</em>
@@ -270,7 +270,7 @@ Mark each of the following statements as <em> true</em> or <em> false</em>
 				</li>
 				<li>
 					<p>
-  <m> \{ \{ \emptyset \} \}  \subset E </m>
+  <m> \{ \{ \emptyset \} \}  \subseteq E </m>
 <!--solution>
 <p>
 <em> true</em>
@@ -606,13 +606,13 @@ So the barber shaves himself, and that fact is logically consistent with the sta
 				<p>
 Let <m>S</m> be the set of sets that do not contain themselves. Consider the following two statements:
 \[
-S \in S  \mbox{ and }  S \subset S.
+S \in S  \mbox{ and }  S \subseteq S.
 \]
 Which of these statements is true, and which of these statements is a paradox?
 
 <!--solution>
 <p>
-For any set <m>A</m>, we always have <m>A \subset A</m>. Therefore in this case <m>S \subset S</m>. However, if we try to resolve <m>S \in S</m>, we end up in a paradox.
+For any set <m>A</m>, we always have <m>A \subseteq A</m>. Therefore in this case <m>S \subseteq S</m>. However, if we try to resolve <m>S \in S</m>, we end up in a paradox.
 
 		<ul>
 			<li>

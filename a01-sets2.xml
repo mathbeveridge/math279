@@ -38,7 +38,7 @@ A \cap B &amp;=&amp; \{ x \mid x \in A \mbox{ AND } x \in B \}
 			<idx><h>Counting Subsets</h></idx>
 			<statement>
 				<p>
-Let <m>A</m> be any set. In this problem, we will see why mathematicians decided that is it "right" to say that <m>\emptyset \subset A</m> and <m>A \subset A</m>.
+Let <m>A</m> be any set. In this problem, we will see why mathematicians decided that is it "right" to say that <m>\emptyset \subseteq A</m> and <m>A \subseteq A</m>.
 
 			<ol>
 				<li>
@@ -91,7 +91,7 @@ Let <m>A</m> be any set. In this problem, we will see why mathematicians decided
 				</li>
 				<li>
 					<p>
- Your answers in part (d) are  very simple expressions. This is one reason why mathematicians defined "subset" to include the cases <m>\emptyset \subset A</m> and <m>A \subset A</m>.  The <em>power set</em> of a set <m>A</m> is the set of all subsets of <m>A</m>. This power set is denoted <m>\mathcal{P}(A)</m>. If <m>|A|=n</m>, what is  <m>| \mathcal{P}(A)|</m>? (You do not have to prove your answer.)
+ Your answers in part (d) are  very simple expressions. This is one reason why mathematicians defined "subset" to include the cases <m>\emptyset \subseteq A</m> and <m>A \subseteq A</m>.  The <em>power set</em> of a set <m>A</m> is the set of all subsets of <m>A</m>. This power set is denoted <m>\mathcal{P}(A)</m>. If <m>|A|=n</m>, what is  <m>| \mathcal{P}(A)|</m>? (You do not have to prove your answer.)
 
 <!--solution>
 <p>
