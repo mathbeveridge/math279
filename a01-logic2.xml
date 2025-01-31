@@ -169,6 +169,121 @@ The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are ide
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Two Logic Puzzles</title>
+			<idx><h>Two Logic Puzzles</h></idx>
+			<statement>
+				<p>
+
+			<ol>
+				<li>
+					<p>
+ Each of the four cards below has a digit printed on one side and a letter printed on the other side.
+
+
+			<image width="50%" xml:id="fig-img-count-pigeonhole0">
+				<latex-image>
+\begin{tikzpicture}
+
+
+\draw (0,0) node [draw] {E};
+\draw (2,0) node [draw] {D};
+\draw (4,0) node [draw] {2};
+\draw (6,0) node [draw] {3};
+
+
+
+\end{tikzpicture}
+				</latex-image>
+			</image>
+
+
+A classmate makes the following claim:
+"If there is a vowel on one side of a card then there is an odd number  on the other side."
+Which cards must be turned over to check whether this statement is true?
+
+<!--solution>
+<p>
+You must turn over the "E" card to ensure that there is an odd number, and you must turn over the "2" card to ensure that there is not a vowel on the other side.
+</p>
+</solution-->
+
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Suppose that four women are drinking in a bar. The owner  wants to enforce the rule that no one under twenty-one is allowed to drink alcohol. The owner asks each person to tell him either (1) what she is drinking, or (2) how old they are. Here are their truthful answers:
+
+</p>
+<table>
+<tabular top="minor" left="minor" bottom="minor" right="minor">
+<row>
+<cell>
+Alice
+</cell>
+<cell>
+Barbara
+</cell>
+<cell>
+Clarice
+</cell>
+<cell>
+Daria
+</cell>
+</row>
+<row>
+<cell>
+"I am drinking Coke."
+</cell>
+<cell>
+"I am sixteen."
+</cell>
+<cell>
+"I am drinking beer."
+</cell>
+<cell>
+"I am twenty-five."
+</cell>
+</row>
+</tabular>
+</table>
+<p>
+
+
+Which of the people have to answer the second question in order for the owners to ensure that the law is being observed?
+
+
+<!--solution>
+<p>
+The owner must find out what Barbara is drinking, and the owner must find out the age of Clarice.
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+ Which of the previous questions was easier, (a) or (b)? Why?
+
+<!--solution>
+<p>
+Most people will find question (b) to be easier because it matches a context that we are already familiar with: the drinking age in the United States is 21. Meanwhile, the rule in part (a) is unfamiliar and we don't really know why the rule exists.
+
+			</p><p>
+But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form <m>P \rightarrow Q</m>. That also means that we have to check situations where <m>\neg Q \rightarrow \neg P</m> would apply.
+
+</p>
+</solution-->
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>		
+		<exercise>
 			<title>Evaluating an Argument</title>
 			<idx><h>Evaluating an Argument</h></idx>
 			<statement>
