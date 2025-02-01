@@ -12,12 +12,25 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>\(D = \{ \{1, 2 \}, \{ 3, 4, 5 \} \}\)</p>
-<ol class="lower-roman">
-<li><p>\(\displaystyle |D|=5 \) </p></li>
-<li><p>\(\displaystyle \{ 1, 2 \} \subseteq D \) </p></li>
-<li><p>\(\displaystyle 4 \in D\) </p></li>
-</ol>
-<span class="incontext"><a href="exercises-3.html#p-66">in-context</a></span>
+<p>Let \(P = \) "I work hard" and \(Q = \) "I earn lots of money" and  \(R = \) "I pay high taxes."</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{c|c|c|c|c|c|c|c}
+P &amp; Q &amp; R &amp; P \rightarrow Q &amp; Q \rightarrow R  &amp; (P \rightarrow Q) \wedge (Q \rightarrow R) &amp;R \rightarrow P &amp;
+\big( (P \rightarrow Q) \wedge (Q \rightarrow R) \big) \rightarrow (R \rightarrow P)\\
+\hline
+T &amp; T &amp; T &amp; T &amp; T &amp; T &amp; T  &amp; T\\
+T &amp; T &amp; F &amp; T &amp; F &amp; F &amp; T &amp; T\\
+T &amp; F &amp; T &amp; F &amp; T &amp; F &amp;  T &amp; T\\
+T &amp; F &amp; F &amp; F &amp; T &amp; F &amp; T &amp; T\\
+F &amp; T &amp; T &amp; T &amp; T &amp; T &amp; F  &amp; F\\
+F &amp; T &amp; F &amp; T &amp; F &amp; F &amp; T  &amp; T\\
+F &amp; F &amp; T &amp; T &amp; T &amp; T &amp;  F &amp; F\\
+F &amp; F &amp; F &amp; T &amp; T &amp; T &amp; T &amp; T\\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">The fifth and seven lines in the final column are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">false</em>, so the argument is invalid. This line captures the fact that there are other reasons (besides working hard) that I can pay high taxes. For example, I could win the lottery.</p>
+<span class="incontext"><a href="exercises-2.html#p-66">in-context</a></span>
 </body>
 </html>
