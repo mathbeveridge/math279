@@ -17,7 +17,7 @@
 			<idx><h>Making Sets From Other Sets</h></idx>
 			<statement>
 				<p>
-Let <m>A= \{ x \mid 1 &lt; x &lt; 3 \}</m>, <m>B = \{ x \mid 5 \leq x \leq 7 \}</m> and <m>C= \{ x \mid 2 &lt; x &lt; 6 \}</m>, where <m>x</m> represents a real number. Write the following sets in "set builder" notation.
+Let <m>A= \{ x \mid 1 &lt; x &lt; 5 \}</m>, <m>B = \{ x \mid 5 \leq x \leq 7 \}</m> and <m>C= \{ x \mid 2 &lt; x &lt; 8 \}</m>, where <m>x</m> represents a real number. Write the following sets in "set builder" notation.
 
 			<ol>
 
@@ -28,13 +28,27 @@ Let <m>A= \{ x \mid 1 &lt; x &lt; 3 \}</m>, <m>B = \{ x \mid 5 \leq x \leq 7 \}<
 <!--solution>
 <p>
 \[
-A \cup C = \{ x \mid 1 &lt; x &lt; 6 \}
+A \cup C = \{ x \mid 1 &lt; x &lt; 8 \}
 \]
 </p>
 </solution-->
 
 					</p>
 				</li>
+				<li>
+					<p>
+ <m>A \cap B</m>.
+
+<!--solution>
+<p>
+\[
+A \cap B = \emptyset \
+\]
+</p>
+</solution-->
+
+					</p>
+				</li>				
 				<li>
 					<p>
  <m>(A \cup B ) \cap C</m>.
@@ -42,7 +56,7 @@ A \cup C = \{ x \mid 1 &lt; x &lt; 6 \}
 <!--solution>
 <p>
 \[
-(A \cup B) \cap C = \{ x \mid 2 &lt; x &lt; 3 \} \cup \{ x \mid 5 \leq x &lt; 6 \}
+(A \cup B) \cap C = \{ x \mid 2 &lt; x &lt; 7 \} 
 \]
 </p>
 </solution-->
@@ -51,12 +65,12 @@ A \cup C = \{ x \mid 1 &lt; x &lt; 6 \}
 				</li>
 				<li>
 					<p>
- <m>B \cap \overline{C}</m>.
+ <m>A \cap \overline{C}</m>.
 
 <!--solution>
 <p>
 \[
-B \cap \overline{C} = \{ x \mid 6 \leq  x  \leq 7 \} \
+A \cap \overline{C} = \{ x \mid 1 &lt;  x  \leq 2 \} \
 \]
 </p>
 </solution-->
