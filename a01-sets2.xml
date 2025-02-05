@@ -90,14 +90,18 @@ A \cap \overline{C} = \{ x \mid 1 &lt;  x  \leq 2 \} \
 			<idx><h>Union and Intersection</h></idx>
 			<statement>
 				<p>
-The concepts of union and intersection naturally correspond to the concepts of "or" and "and." Explain why using words and/or pictures.
-
+The concepts of union and intersection naturally correspond to the concepts of "or" and "and." 
+Let's make this more concrete. Let <m>P(x)</m> and <m>Q(x)</m> be statements, and define
+<m>A = \{ x \mid P(x) \mbox{ is true} \}</m> and <m>B = \{ x \mid Q(x) \mbox{ is true} \}</m>.
+Find a simple way to write each of  <m>A \cup B</m> and <m>A \cap B</m> using set builder notation.
+Next, how would you write <m>A \backslash B</m>?
 <!--solution>
 <p>
 <me>
 \begin{array}{rcl}
-A \cup B &amp;=&amp; \{ x \mid x \in A \mbox{ OR } x \in B \} \\
-A \cap B &amp;=&amp; \{ x \mid x \in A \mbox{ AND } x \in B \}
+A \cup B &amp;=&amp; \{ x \mid P(x) \wedge Q(x) \, \mbox{ is true}  \} \\
+A \cap B &amp;=&amp; \{ x \mid P(x) \vee Q(x) \, \mbox{ is true} \} \\
+A \cap B &amp;=&amp; \{ x \mid P(x) \vee  \neg Q(x) \, \mbox{ is true} \} \\
 \end{array}
 </me>
 </p>
