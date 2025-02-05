@@ -15,33 +15,8 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>I'll split this into two tables for readability. We have</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{c|c||c|c|c|c|c|c|c|c}
-P &amp; Q &amp; P \vee \neg P &amp; P \vee Q  &amp; P \vee \neg Q  &amp; P &amp;  \neg P \vee Q &amp; Q  &amp;  P \Leftrightarrow Q  &amp; P \wedge \neg Q \\
-\hline
-T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T&amp;T\\
-T&amp;F&amp;T&amp;T&amp;T&amp;T&amp;F&amp;F&amp;F&amp;F\\
-F&amp;T&amp;T&amp;T&amp;F&amp;F&amp;T&amp;T&amp;F&amp;F\\
-F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">and</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\begin{array}{c|c||c|c|c|c|c|c|c|c}
-P &amp; Q &amp; P \wedge \neg P &amp; P \oplus Q  &amp; \neg Q  &amp; P \wedge \neg Q  &amp; \neg P  &amp; \neg P \wedge  Q  &amp; \neg P \wedge \neg Q  &amp; P \wedge \neg P \\
-\hline
-T&amp;T&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F&amp;F\\
-T&amp;F&amp;T&amp;T&amp;T&amp;T&amp;F&amp;F&amp;F&amp;F\\
-F&amp;T&amp;T&amp;T&amp;F&amp;F&amp;T&amp;T&amp;F&amp;F\\
-F&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F&amp;T&amp;F
-\end{array}
-\end{equation*}
-</div>
-<p class="continuation">Hopefully, you noticed that there is an "anti-symmetry" to this table. The first column is the negation of the last column. The second column is the negation of the second-to-last column, and so on! So you can negate the  \(k\)th statement \(k\) to find the \((17-k)\)th statement.</p>
+<p>If you think of an empty set as a "nothing" then she is right. (But it's really a something that has nothing inside it.)</p>
+<p>We have constructed sets of sizes 0,1,2,3,4 and 5. We can keep going and get a set of size \(n \in \N\text{.}\) However, the elements are just sets of sets, and the ultimate sets are empty. All we have is a bunch of nested empty set.</p>
 </div>
 <span class="incontext"><a href="exercises-3.html#solution-40">in-context</a></span>
 </body>
