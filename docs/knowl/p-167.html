@@ -12,13 +12,21 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider the statement</p>
+<p>Once again, this argument works backwards and forward. So this proves the double inclusion of these sets.</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\exists y \in \mathbb{R},  \forall x \in \mathbb{R},  x = y^3.
+\begin{array}{rcl}
+x \in A \cup (B \cap C)
+&amp;\Longleftrightarrow&amp;
+x \in A \mbox{ OR }   ( x \in B \mbox{ AND } x \in C)  \\
+&amp;\Longleftrightarrow&amp;
+(x \in  A \mbox{ OR }    x \in B) \mbox{ AND }  (x \in  A \mbox{ OR }   x \in C)  \\
+&amp;\Longleftrightarrow&amp;
+x \in (A \cup B) \cap (A \cup C)
+\end{array}
 \end{equation*}
 </div>
-<p class="continuation">Restate the above in plain English (as well as you can). Is this statement <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">true</em> or <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">false</em>? </p>
-<span class="incontext"><a href="exercises-5.html#p-167">in-context</a></span>
+<p class="continuation">This argument does work, but it does have one subtlety. If \(x \notin A\) then each condition forces \(x\) to be an element of both \(B\) and \(C\text{.}\)</p>
+<span class="incontext"><a href="exercises-4.html#p-167">in-context</a></span>
 </body>
 </html>

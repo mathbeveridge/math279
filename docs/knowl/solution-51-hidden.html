@@ -11,7 +11,19 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>The negation is "There exists an integer that is not positive." Note that "not positive" isn't the same as "negative" because 0 is neither positive nor negative.</p>
-<p>This uses the existential quantifiers (at least one), so we just need one example of a non-positive integer.</p>
+<p>This argument works backwards and forward. So this proves the double inclusion of these sets.</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+x \in A \cap (B \cup C)
+&amp;\Longleftrightarrow&amp;
+x \in A \mbox{ AND } (x \in B \mbox{ OR } x \in C)  \\
+&amp;\Longleftrightarrow&amp;
+x \in A \cap B  \mbox{ OR } x \in A \cap C  \\
+&amp;\Longleftrightarrow&amp;
+x \in (A \cap B) \cup ( A \cap C)  \\
+\end{array}
+\end{equation*}
+</div>
 </div></body>
 </html>
