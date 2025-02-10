@@ -63,6 +63,7 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a01-sets1.xml" />   
             <xi:include href="./a01-sets2.xml" />
             <xi:include href="./a01-quantifiers.xml" />
+            <xi:include href="./a01-proof1.xml" />
             <xi:include href="./a01-function1.xml" /> 
             <xi:include href="./a01-function2.xml" />     
             <xi:include href="./a01-function3.xml" />                                 

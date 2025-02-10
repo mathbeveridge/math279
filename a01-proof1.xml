@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="proof1" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Direct Proof</title>
+	<introduction>
+		<p>
+
+
+
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+
+
+
+
+		<exercise>
+			<title>Odd to Even</title>
+			<idx><h>Odd to Even</h></idx>
+			<statement>
+				<p>
+Prove that for all integers <m>n \in \mathbb{Z}</m>, if <m>n</m> is odd, then <m>5n + 3 </m> is even.
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Any to Odd</title>
+			<idx><h>Any to Odd</h></idx>
+			<statement>
+				<p>
+Prove that if <m>n \in \mathbb{Z}</m>, then <m>5n^2+3n+7</m> is odd.
+
+
+
+				</p>
+			</statement>
+		</exercise>
+		<exercise>
+			<title>Even/Odd Combo</title>
+			<idx><h>Even/Odd Combo</h></idx>
+			<statement>
+				<p>
+Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then <m>2a+3b</m> is an even integer.
+
+
+
+				</p>
+			</statement>
+		</exercise>  
+
+        <exercise>
+			<title>Summing Squares </title>
+			<idx><h>Summing Squares </h></idx>
+			<statement>
+				<p>
+Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then <m>a^2+b^2</m> is an odd integer.
+
+
+
+				</p>
+			</statement>
+		</exercise> 
+
+	</exercises>
+
+
+
+
+
+</chapter>
