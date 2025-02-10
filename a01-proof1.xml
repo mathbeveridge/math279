@@ -4,10 +4,16 @@
 	<title>Direct Proof</title>
 	<introduction>
 		<p>
-
-
-
-
+ Here are the mathematical definitions of even and odd.
+<ul>
+<li>
+An integer <m>n \in \mathbb{Z}</m> is even when there exists <m>k \in \mathbb{Z}</m> such that <m>n = 2k</m>.
+</li>
+<li>
+An integer <m>n \in \mathbb{Z}</m> is odd when there exists <m>k \in \mathbb{Z}</m> such that <m>n = 2k+1</m>.
+</li>
+</ul>
+Use these definitions to prove the following statements.
 	</p>
 	</introduction>
 	<exercises>
@@ -66,6 +72,19 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 				</p>
 			</statement>
 		</exercise> 
+
+        <exercise>
+			<title>Even and Odd </title>
+			<idx><h>SEven and Odd </h></idx>
+			<statement>
+				<p>
+Use a proof by contradiction to prove that no integer is both even and odd.
+
+
+				</p>
+			</statement>
+		</exercise> 
+
 
 	</exercises>
 
