@@ -8,7 +8,7 @@
 <html lang="en-US">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>dm Direct Proof</title>
+<title>dm Proofs</title>
 <meta name="Keywords" content="Authored in PreTeXt">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>window.MathJax = {
@@ -188,7 +188,7 @@
 <li class="link"><a href="sets1.html" data-scroll="sets1"><span class="codenumber">3</span> <span class="title">Sets</span></a></li>
 <li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">4</span> <span class="title">Unions and Intersections</span></a></li>
 <li class="link"><a href="quantifiers.html" data-scroll="quantifiers"><span class="codenumber">5</span> <span class="title">Quantifiers</span></a></li>
-<li class="link active"><a href="proof1.html" data-scroll="proof1"><span class="codenumber">6</span> <span class="title">Direct Proof</span></a></li>
+<li class="link active"><a href="proof1.html" data-scroll="proof1"><span class="codenumber">6</span> <span class="title">Proofs</span></a></li>
 <li class="link"><a href="function1.html" data-scroll="function1"><span class="codenumber">7</span> <span class="title">Functions</span></a></li>
 <li class="link"><a href="function2.html" data-scroll="function2"><span class="codenumber">8</span> <span class="title">Injections and Surjections</span></a></li>
 <li class="link"><a href="function3.html" data-scroll="function3"><span class="codenumber">9</span> <span class="title">Fun with Functions</span></a></li>
@@ -212,32 +212,44 @@
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="proof1"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Direct Proof</span>
+<span class="type">Chapter</span> <span class="codenumber">6</span> <span class="title">Proofs</span>
 </h2>
-<section class="introduction" id="introduction-6"><p id="p-179">Here are the mathematical definitions of even and odd.</p>
+<section class="introduction" id="introduction-6"><p id="p-179">Here are the  definitions of even and odd.</p>
 <ul class="disc">
 <li id="li-90"><p id="p-derived-li-90">An integer \(n \in \mathbb{Z}\) is even when there exists \(k \in \mathbb{Z}\) such that \(n = 2k\text{.}\)</p></li>
 <li id="li-91"><p id="p-derived-li-91">An integer \(n \in \mathbb{Z}\) is odd when there exists \(k \in \mathbb{Z}\) such that \(n = 2k+1\text{.}\)</p></li>
 </ul>
-<p class="continuation">Use these definitions to prove the following statements.</p></section><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
+<p id="p-180">Here are the definitions of divisible and not divisisble. Let \(n,d \in \mathbb{Z}\) be  integers.</p>
+<ul class="disc">
+<li id="li-92"><p id="p-derived-li-92">We say that \(d \mid n\) when there exists \(k \in \mathbb{Z}\) such that \(n=dk\text{.}\)</p></li>
+<li id="li-93"><p id="p-derived-li-93">Otherwise, we say that \(d \nmid n\text{.}\) This means that \(n \neq dk\) for all \(k \in \mathbb{Z}\text{.}\) }</p></li>
+</ul>
+<p id="p-181">Use these definitions to prove the following statements.</p></section><section class="exercises" id="exercises-6"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-26"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Odd to Even.</span>
 </h6>
-<p id="p-180">Prove that for all integers \(n \in \mathbb{Z}\text{,}\) if \(n\) is odd, then \(5n + 3 \) is even.</p></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
+<p id="p-182">Prove that for all integers \(n \in \mathbb{Z}\text{,}\) if \(n\) is odd, then \(5n + 3 \) is even.</p></article><article class="exercise exercise-like" id="exercise-27"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Any to Odd.</span>
 </h6>
-<p id="p-181">Prove that if \(n \in \mathbb{Z}\text{,}\) then \(5n^2+3n+7\) is odd.</p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
+<p id="p-183">Prove that if \(n \in \mathbb{Z}\text{,}\) then \(5n^2+3n+7\) is odd.</p></article><article class="exercise exercise-like" id="exercise-28"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Even/Odd Combo.</span>
 </h6>
-<p id="p-182">Prove that if \(a\) is any odd integer and \(b\) is any even integer, then \(2a+3b\) is an even integer.</p></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading">
+<p id="p-184">Prove that if \(a\) is any odd integer and \(b\) is any even integer, then \(2a+3b\) is an even integer.</p></article><article class="exercise exercise-like" id="exercise-29"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Summing Squares.</span>
 </h6>
-<p id="p-183">Prove that if \(a\) is any odd integer and \(b\) is any even integer, then \(a^2+b^2\) is an odd integer.</p></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading">
-<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Even and Odd.</span>
+<p id="p-185">Prove that if \(a\) is any odd integer and \(b\) is any even integer, then \(a^2+b^2\) is an odd integer.</p></article><article class="exercise exercise-like" id="exercise-30"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Proof by Contrapositive.</span>
 </h6>
-<p id="p-184">Use a proof by contradiction to prove that no integer is both even and odd.</p></article></section></section></div></main>
+<p id="p-186">Use a proof by contrapositive to show that for all integers \(m,n \in \mathbb{Z}\text{,}\) if  \(mn\) is even then \(m\) is even or \(n\) is even.</p></article><article class="exercise exercise-like" id="exercise-31"><h6 class="heading">
+<span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Proof by Contradiction.</span>
+</h6>
+<p id="p-187">Use a proof by contradiction to show that for any integer \(n \in \mathbb{Z}\text{,}\) we have \(4 \nmid n^2-2.\)</p></article><article class="exercise exercise-like" id="exercise-32"><h6 class="heading">
+<span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">Your Choice.</span>
+</h6>
+<p id="p-188">Prove the following statement using either proof by contrapositive, or proof by contradiction.</p>
+<p id="p-189">For integers \(a,b,n \in \mathbb{Z}\text{,}\) if \(ab = n\text{,}\) then either \(a \geq \sqrt{n}\) or \(b \geq \sqrt{n}\text{.}\)</p></article></section></section></div></main>
 </div>
 </body>
 </html>

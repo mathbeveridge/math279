@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
 <chapter xml:id="proof1" xmlns:xi="http://www.w3.org/2001/XInclude">
-	<title>Direct Proof</title>
+	<title>Proofs</title>
 	<introduction>
 		<p>
- Here are the mathematical definitions of even and odd.
+ Here are the  definitions of even and odd.
 <ul>
 <li>
 An integer <m>n \in \mathbb{Z}</m> is even when there exists <m>k \in \mathbb{Z}</m> such that <m>n = 2k</m>.
@@ -13,6 +13,23 @@ An integer <m>n \in \mathbb{Z}</m> is even when there exists <m>k \in \mathbb{Z}
 An integer <m>n \in \mathbb{Z}</m> is odd when there exists <m>k \in \mathbb{Z}</m> such that <m>n = 2k+1</m>.
 </li>
 </ul>
+</p>
+<p>
+Here are the definitions of divisible and not divisisble.
+Let <m>n,d \in \mathbb{Z}</m> be  integers.
+<ul>
+<li>
+ We say that
+<m>d \mid n</m> when there exists <m>k \in \mathbb{Z}</m> such that <m>n=dk</m>. 
+</li>
+<li>
+Otherwise, we say that <m>d \nmid n</m>. This means that
+<m>n \neq dk</m> for all <m>k \in \mathbb{Z}</m>.
+}
+</li>
+</ul>
+</p>
+<p>
 Use these definitions to prove the following statements.
 	</p>
 	</introduction>
@@ -74,17 +91,41 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 		</exercise> 
 
         <exercise>
-			<title>Even and Odd </title>
-			<idx><h>SEven and Odd </h></idx>
+			<title>Proof by Contrapositive</title>
+			<idx><h>Proof by Contrapositive</h></idx>
 			<statement>
 				<p>
-Use a proof by contradiction to prove that no integer is both even and odd.
-
+Use a proof by contrapositive to show that for all integers <m>m,n \in \mathbb{Z}</m>, 
+if  <m>mn</m> is even then <m>m</m> is even or <m>n</m> is even.
 
 				</p>
 			</statement>
 		</exercise> 
 
+        <exercise>
+			<title>Proof by Contradiction</title>
+			<idx><h>Proof by Contradiction</h></idx>
+			<statement>
+				<p>
+Use a proof by contradiction to show that for any integer <m>n \in \mathbb{Z}</m>, we have <m>4 \nmid n^2-2.</m>
+
+				</p>
+			</statement>
+		</exercise> 
+
+        <exercise>
+			<title>Your Choice</title>
+			<idx><h>Your Choice</h></idx>
+			<statement>
+				<p>
+Prove the following statement using either proof by contrapositive, or proof by contradiction.
+				</p>
+                <p>
+                For integers <m>a,b,n \in \mathbb{Z}</m>, if <m>ab = n</m>, then either 
+                <m>a \geq \sqrt{n}</m> or <m>b \geq \sqrt{n}</m>.
+                </p>
+			</statement>
+		</exercise> 
 
 	</exercises>
 
