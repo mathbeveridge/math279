@@ -12,13 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
+<p>Let's play a coin flipping game. Start with \(n\) coins arranged in a row. Some show heads and some show tails. On each move, you must:</p>
 <ul class="disc">
-<li><p>\(v\) = number of vertices of \(G\)</p></li>
-<li><p>\(e\) = number of edges of \(G\)</p></li>
-<li><p>\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">including the outer face</em>.</p></li>
+<li><p>Pick a heads-up coin and remove it.</p></li>
+<li><p>Then flip the coins still present in the (at most) two neighbor spots surrounding it.</p></li>
 </ul>
-<p class="continuation">Here is a graph with \(v=8\) and \(e=9\) and \(f=3\text{.}\) The  regions are colored yellow, red and blue. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-planar0.svg" role="img" class="contained"></div></p>
-<span class="incontext"><a href="planar.html#p-354">in-context</a></span>
+<p class="continuation">This diagram shows all three valid moves from this starting postion: <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-induction24.svg" role="img" class="contained"></div> Note that <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">removing a coin leaves an empty space</em>. So that coin is now missing, so the coins you flipped are now missing a neighbor.</p>
+<span class="incontext"><a href="exercises-14.html#p-354">in-context</a></span>
 </body>
 </html>
