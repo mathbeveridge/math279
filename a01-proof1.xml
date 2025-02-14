@@ -150,7 +150,7 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 			a^2 + b^2 = (2r+1)^2 + (2s)^2 = 4r^2 +  4r + 4s^2 + 1
 			= 2(2r^2+ 2r+2s^2) +1
 			</me>
-			Taking <m>t=2r^2+ 2r+2s^2</m>, we have <m>a^2+b^2=2t</m>, 
+			Taking <m>t=2r^2+ 2r+2s^2</m>, we have <m>a^2+b^2=2t+1</m>, 
 			which proves that <m>5n^2+3n+7</m> is odd.
 			</p>	
 			</solution>
