@@ -139,6 +139,37 @@ f(x) = x^2
 			</statement>
 		</exercise>
 		<exercise>
+			<title>Even and Odd Subsets</title>
+			<idx><h>Even and Odd Subsets</h></idx>
+			<statement>
+				<p>
+Let <m>\mathcal{E} = \{S \subseteq [7] : |S| \text{ is even}\}</m> and let 
+<m>\mathcal{O} = \{S \subseteq [7] : |S| \text{ is odd}\}</m>. 
+Consider the function <m>\mathcal{C}:\mathcal{E} \to \mathcal{O}</m> defined by the rule 
+<m>\mathcal{C}(S) = \overline{S}</m>, the complement of <m>S</m>.
+<ol>
+<li>
+Give an example of an element <m>S</m> of the domain of this function, then compute <m>\mathcal{C}(S)</m>.
+</li>
+<li>
+How do we know that <m>\mathcal{C}</m> is well-defined; that is, given <m>S \in \mathcal{E}</m>, 
+how do we know <m>\mathcal{C}(S) \in \mathcal{O}</m>? Is there anything special about the 
+choice of the number <m>7</m> in this problem?
+</li>
+<li>
+What are the steps to prove that <m>\mathcal{C}</m> is injective?
+</li>
+<li>
+What are the steps to prove that <m>\mathcal{C}</m> is surjective? 
+</li>
+</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>		
+		<exercise>
 			<title>The Image of a Subset</title>
 			<idx><h>The Image of a Subset</h></idx>
 			<statement>
@@ -376,7 +407,7 @@ In other words, <m>y \in f(B)</m>.
 				</p>
 			</statement>
 		</exercise>
-		<exercise>
+		<!--exercise>
 			<title>The Identity Function</title>
 			<idx><h>The Identity Function</h></idx>
 			<statement>
@@ -390,7 +421,7 @@ Let <m>f : X \rightarrow Y</m> and <m>g: Y \rightarrow X</m> be  functions so th
 					<p>
  Give an example where <m>g \circ f = \mbox{Id}_X</m> but <m>f \circ g \neq \mbox{Id}_Y</m>.
 
-<!--solution>
+<!-x-solution>
 <p>
 			<image width="50%" xml:id="fig-img-function32">
 				<latex-image>
@@ -441,7 +472,7 @@ Let <m>f : X \rightarrow Y</m> and <m>g: Y \rightarrow X</m> be  functions so th
 				</latex-image>
 			</image>
 </p>
-</solution-->
+</solution-x->
 
 					</p>
 				</li>
@@ -449,7 +480,7 @@ Let <m>f : X \rightarrow Y</m> and <m>g: Y \rightarrow X</m> be  functions so th
 					<p>
  Prove that if <m>g \circ f = \mbox{Id}_X</m> then  <m>f</m> is injective.
 
-<!--solution>
+<!-x-solution>
 <p>
 
 <em>First Proof:</em> Let's prove the contrapositive:
@@ -477,7 +508,7 @@ g ( f(x_1) )&amp; \neq  &amp; g ( f(x_2)).
 Because <m>g</m> is a well-defined function, we must have <m>f(x_1) \neq f(x_2)</m> because these elements (which are in <m>Y</m>) map to different  elements in <m>Z</m>.
 
 </p>
-</solution-->
+</solution-x->
 
 					</p>
 				</li>
@@ -485,7 +516,7 @@ Because <m>g</m> is a well-defined function, we must have <m>f(x_1) \neq f(x_2)<
 					<p>
  Prove that if <m>g \circ f = \mbox{Id}_X</m> then  <m>g</m> is surjective.
 
-<!--solution>
+<!-x-solution>
 <p>
 Given <m>x \in X</m> we must find a <m>y \in Y</m> such that <m>g(y)=x</m>.
 
@@ -496,7 +527,7 @@ x = \mbox{Id}_X(x) = g \circ f (x) = g(f(x)).
 This says that the element <m>y = f(x)</m> (which is in <m>Y</m>) satisfies <m>g(y)=x</m>.
 
 </p>
-</solution-->
+</solution-x->
 
 					</p>
 				</li>
@@ -507,7 +538,7 @@ This says that the element <m>y = f(x)</m> (which is in <m>Y</m>) satisfies <m>g
 
 				</p>
 			</statement>
-		</exercise>
+		</exercise-->
 		<exercise>
 			<title>Clock Math</title>
 			<idx><h>Clock Math</h></idx>
