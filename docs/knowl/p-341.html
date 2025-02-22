@@ -12,12 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>We will focus on (d) \(\Rightarrow\) (a) and the equivalence (a) \(\Leftrightarrow\) (e).</p>
+<p>Let \(G = (V,E)\) be a graph on \(n\) vertices with \(m\) edges.</p>
 <ol class="lower-alpha">
-<li><p>Prove that (d) \(\Rightarrow\) (a) using a proof by contradiction. Assuming that (d) holds, why must \(G\) be connected? Why must \(G\) be acyclic? </p></li>
-<li><p>Prove that (a) \(\Rightarrow\) (e) using a proof by contradiction. Assume that (a) holds, but there is an edge \(e\) such that the graph \(G-e\) obtained by removing \(e\) is connected. Why does this lead to a contradiction? </p></li>
-<li><p>Prove that (e) \(\Rightarrow\) (a) by proving the contrapositive statement "not (a) \(\Rightarrow\) not (e)." </p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">The Handshaking Lemma.</em> Prove that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\sum_{v \in V} \deg(v) = 2|E|.
+\end{equation*}
+</div>
+<p class="continuation">This is our first example of a "combinatorial identity": you are counting the same set in two different ways. This equality is known as "the handshaking lemma." </p>
+</li>
+<li><p>Prove that the number of vertices of odd degree is even. First, partition \(V\) into two sets: the vertices of odd degree and the vertices of even degree. Then use the handshaking lemma (from the previous problem). </p></li>
+<li><p>Prove that if \(G\) is a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">connected</em> graph on \(n\) vertices then \(G\) contains two vertices that have the same degree. Hint: what are the possible values for \(\deg(v)\) for \(v \in V(G)\text{?}\) </p></li>
 </ol>
-<span class="incontext"><a href="exercises-12.html#p-341">in-context</a></span>
+<span class="incontext"><a href="exercises-10.html#p-341">in-context</a></span>
 </body>
 </html>
