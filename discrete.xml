@@ -67,20 +67,11 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./a01-function1.xml" /> 
             <xi:include href="./a01-function2.xml" />     
             <xi:include href="./a01-function3.xml" />                                 
-    </part>
-    <part xml:id="part-gi">
-        <title>Graphs, Trees, Induction</title>
-            <xi:include href="./b01-graph1.xml" />
-            <xi:include href="./b01-graph2.xml" />  
-            <xi:include href="./b01-tree1.xml" />  
-            <xi:include href="./b01-induction1.xml" />  
-            <xi:include href="./b01-induction2.xml" />   
-            <xi:include href="./b01-planar.xml" />  
-            <xi:include href="./b01-eulerian.xml" />              
-            <!--xi:include href="./ex01-counting.xml" /-->                       
-    </part>  
+    </part> 
     <part xml:id="part-count">
-        <title>Counting</title>         
+        <title>Induction and Counting</title>
+            <xi:include href="./b01-induction1.xml" />  
+            <xi:include href="./b01-induction2.xml" />      
             <xi:include href="./c01-warmup.xml" />    
             <xi:include href="./c01-add-mult.xml" />    
             <xi:include href="./c01-inclusion-exclusion.xml" />      
@@ -90,6 +81,15 @@ pull the name of the problem from the first line  of  the \item
             <xi:include href="./c01-balls-in-boxes1.xml" />      
             <xi:include href="./c01-balls-in-boxes2.xml" />              
     </part> 
+    <part xml:id="part-gi">
+        <title>Graphs, and Trees</title>
+            <xi:include href="./b01-graph1.xml" />
+            <xi:include href="./b01-graph2.xml" />  
+            <xi:include href="./b01-tree1.xml" />    
+            <xi:include href="./b01-planar.xml" />  
+            <xi:include href="./b01-eulerian.xml" />              
+            <!--xi:include href="./ex01-counting.xml" /-->                       
+    </part>     
 
     <!--part xml:id="part-games">
         <title>Games</title>         
