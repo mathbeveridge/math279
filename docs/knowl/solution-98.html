@@ -15,10 +15,19 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>For any vertex \(v \in V\text{,}\) we have \(1 \leq \deg(v) \leq n-1\text{.}\) Why? The graph is connected, so \(deg(v) \geq 1\) for each vertex. Meanwhile, the largest possible degree is \(n-1\text{,}\) which means that the vertex is adjacent to every  other vertex.</p>
-<p>Now we have  \(n\) vertices. There are only \(n-1\) possible values for the degrees, so there must be at least two vertices that have the same degree.</p>
-<p>This argument (\(n\) things with \(n-1\) different types) is an example of the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">pigeonhole principle</em>. We'll see this kind of argument again!</p>
+<p>We must show that  \(\sum_{i=0}^{k+1} 2^i = 2^{k+2} -1\text{.}\)</p>
+<p>Starting with the left hand side, we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+\sum_{i=0}^{k+1} 2^i &amp;=&amp; \sum_{i=0}^{k} 2^i + 2^{k+1} \\
+&amp;=&amp; \left( 2^{k+1}  -1 \right) + 2^{k+1}   \mbox{by} \,  (\star)\\
+&amp;=&amp; 2 \cdot 2^{k+1} - 1 \\
+&amp;=&amp; 2^{k+2} -1.
+\end{array}
+\end{equation*}
 </div>
-<span class="incontext"><a href="exercises-8.html#solution-98">in-context</a></span>
+</div>
+<span class="incontext"><a href="exercises-10.html#solution-98">in-context</a></span>
 </body>
 </html>
