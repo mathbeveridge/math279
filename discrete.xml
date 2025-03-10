@@ -71,7 +71,8 @@ pull the name of the problem from the first line  of  the \item
     <part xml:id="part-count">
         <title>Induction and Counting</title>
             <xi:include href="./b01-induction1.xml" />  
-            <xi:include href="./b01-induction2.xml" />      
+            <xi:include href="./b01-induction2.xml" />     
+            <xi:include href="./b01-recursive.xml" />   
             <xi:include href="./c01-warmup.xml" />    
             <xi:include href="./c01-add-mult.xml" />    
             <xi:include href="./c01-inclusion-exclusion.xml" />      

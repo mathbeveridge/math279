@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<chapter xml:id="recursive" xmlns:xi="http://www.w3.org/2001/XInclude">
+	<title>Recursive Sequences</title>
+	<introduction>
+		<p>
+
+
+
+
+
+
+			</p><p>
+
+	</p>
+	</introduction>
+	<exercises>
+		<title>Practice Problems</title>
+
+		<exercise>
+			<title>Towers of Hanoi</title>
+			<idx><h>Towers of Hanoi</h></idx>
+			<statement>
+
+                <p>
+The Towers of Hanoi puzzle has three rods (<m>A</m>, <m>B</m>, and <m>C</m>) and <m>n</m> disks. 
+The disks are stacked in decreasing value of diameter on rod A. 
+The objective of the puzzle is to move the entire stack to rod <m>C</m>, 
+obeying the  rules:
+<ul>
+<li>Only one disk can be moved at a time.</li>
+<li>Each move consists of taking the upper disk from one of the stacks and
+ placing it on top of another stack.</li>
+<li>No disk may be placed on top of a smaller disk.</li>
+</ul>
+Use induction to prove that you can solve the Towers of Hanoi puzzle with <m>n</m> disks in <m>2^n-1</m> moves.
+
+                </p>
+
+				<p>
+                			<image width="100%" xml:id="fig-img-haoi" source="images/hanoi-bw.png" />
+                </p>
+
+
+			</statement>
+<!--solution>
+<me>
+\sum_{i=1}^n \frac{1}{i \cdot (i+1)} = \frac{n}{n+1}
+</me>
+</solution-->	
+
+		</exercise>
+
+		<exercise>
+			<title>An Oddly Recursive Sequence</title>
+			<idx><h>An Oddly Recursive Sequence</h></idx>
+			<statement>
+
+                <p>
+Define a number sequence as follows: let <m>a_0=1</m>, <m>a_1=3</m>, 
+and let <m>a_n=2a_{n-1}-a_{n-2}</m> for all <m>n \geq 2</m>. 
+Prove, using strong induction, that <m>a_n=2n+1</m> for all <m>n \in \mathbb{N}.</m>
+
+              </p>
+
+		</statement>
+<!--solution>
+<me>
+\sum_{i=1}^n \frac{1}{i \cdot (i+1)} = \frac{n}{n+1}
+</me>
+</solution-->	
+
+	
+		</exercise>
+
+		<exercise>
+			<title>Fibonacci Fun</title>
+			<idx><h>Fibonacci Fun</h></idx>
+			<statement>
+
+                <p>
+ The Fibonacci numbers are defined by <m>F_1=1, F_2=2</m>, and <m>F_n=F_{n-1}+F_{n-2}</m> 
+ for all <m>n \geq 3</m>.
+<ol>
+<li>Prove that <m>F_1 + F_2 + F_3 + \ldots + F_n = F_{n+2}-2</m> for all <m>n \geq 1</m>.</li>
+<li>Prove that <m>F_1 + F_3 + F_5 + \ldots + F_{2n-1} = F_{2n} - 1</m> for all <m>n \geq 1</m>.</li>
+<li>Prove that 
+    <me> \frac{F_1}{F_2F_3} + \frac{F_2}{F_3F_4} + \ldots + \frac{F_{n-2}}{F_{n-1}F_n} = 1 - \frac{1}{F_n} </me> 
+for all <m>n \geq 3</m>.
+</li>
+</ol>
+
+
+              </p>
+
+		</statement>
+<!--solution>
+<me>
+\sum_{i=1}^n \frac{1}{i \cdot (i+1)} = \frac{n}{n+1}
+</me>
+</solution-->	
+
+	
+		</exercise>
+
+	</exercises>
+
+
+
+</chapter>
