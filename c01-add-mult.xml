@@ -158,14 +158,14 @@ Next, we must choose our entree (7 choices), so the total number of meals that w
 			<idx><h>Subtraction Principle</h></idx>
 			<statement>
 				<p>
-Recall that  <em>subset</em> <m>B</m> of a set <m>A</m> is a subcollection of the elements of <m>A</m>. For example, the the set <m>B= \{ 1, 3, 5 \}</m> is a subset of <m>A = \{ 1, 2, 3,4,5\}</m>. Meanwhile, <m>C = \{ 2, 4, 6 \}</m> is not a subset of <m>A</m> since <m>6 \notin A</m>. We write <m>B \subset A</m> when <m>B</m> is a subset of <m>A</m>.
+Recall that  <em>subset</em> <m>B</m> of a set <m>A</m> is a subcollection of the elements of <m>A</m>. For example, the the set <m>B= \{ 1, 3, 5 \}</m> is a subset of <m>A = \{ 1, 2, 3,4,5\}</m>. Meanwhile, <m>C = \{ 2, 4, 6 \}</m> is not a subset of <m>A</m> since <m>6 \notin A</m>. We write <m>B \subseteq A</m> when <m>B</m> is a subset of <m>A</m>.
 
-Suppose that <m>B \subset A</m>. Formulate a natural <em>subtraction principle</em> for the size of <m>A \backslash B</m>.
+Suppose that <m>B \subseteq A</m>. Formulate a natural <em>subtraction principle</em> for the size of <m>A \backslash B</m>.
 
 <!--solution>
 <p>
 
-<em>The Subtraction Principle:</em> Suppose that <m>B \subset A</m>. Then <m>| A \backslash B| = |A| - |B|</m>.
+<em>The Subtraction Principle:</em> Suppose that <m>B \subseteq A</m>. Then <m>| A \backslash B| = |A| - |B|</m>.
 
 </p>
 </solution-->
