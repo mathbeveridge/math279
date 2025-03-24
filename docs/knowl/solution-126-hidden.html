@@ -11,20 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Use \((\star)\) to show that \(5^{n+1}-1= 4\ell\) for some integer \(\ell\text{.}\)</p>
-<p>Using the hint, we have</p>
+<p>There are 5 ways choose the the first quart, and then 4 ways to choose the last quart. So there are \(5 \times 4 = 20\) ways. To do this.</p>
+<p>However, the order that we choose the flavors doesn't matter: "peppermint  and strawberry" is the same as "strawberry and peppermint." So we have to divide by 2 because we just counted each option twice! So the answer is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-5^{n+1}-1 &amp;=&amp; 5^{n+1}-1 + 5^n - 5^n \\
-&amp;=&amp; (5^{n+1} - 5^n) + (5^n-1) \\
-&amp;=&amp; 5^n(5-1) + (5^n-1) \\
-&amp;=&amp; 5^n \cdot  4 + (5^n-1) \\
-&amp;=&amp; 5^n \cdot 4 + 4k  \mbox{by } (\star) \\
-&amp;=&amp; 4 (5^n + k)
-\end{array}
+\frac{5 \cdot 4}{2} = 10.
 \end{equation*}
 </div>
-<p class="continuation">and so \(5^{n+1}-1\) is divisible by 4. (Namely: \(5^{n+1}-1 = 4 \ell\) where \(\ell = 5^n + k\text{.}\))</p>
 </div></body>
 </html>
