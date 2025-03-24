@@ -12,11 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>The ice cream store also sells quarts of ice cream. When you buy quarts of ice cream, the order that you buy the quarts does not matter: they just go into your shopping bag anyway! How many ways can you buy two quarts of ice cream when ...</p>
-<ol class="lower-roman">
-<li><p>Both quarts are the same flavor? <a class="solution-knowl original" data-knowl="./knowl/solution-125-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-<li><p>The quarts are different flavors? (Remember that the order of the flavors doesn't matter!) <a class="solution-knowl original" data-knowl="./knowl/solution-126-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
-</ol>
-<span class="incontext"><a href="exercises-13.html#p-459">in-context</a></span>
+<p>We have, by strong induction,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{gather*}
+a_{k+1} = 2 a_{k} - a_{k-1} = 2(2k+1) - (2(k-1)+1) = 4k + 2 - 2k +2 - 1 \\
+=  2k+3 = 2(k+1)+1.
+\end{gather*}
+</div>
+<span class="incontext"><a href="exercises-12.html#p-459">in-context</a></span>
 </body>
 </html>

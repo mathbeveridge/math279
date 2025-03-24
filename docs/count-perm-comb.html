@@ -215,26 +215,26 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-perm-comb"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">15</span> <span class="title">Permutations and Combinations</span>
 </h2>
-<section class="introduction" id="introduction-15"><p id="p-492">Here are the formulas to count  sublists and subsets of the set \([n] = \{1,2,\ldots, n\}\text{.}\)</p>
+<section class="introduction" id="introduction-15"><p id="p-512">Here are the formulas to count  sublists and subsets of the set \([n] = \{1,2,\ldots, n\}\text{.}\)</p>
 <ul class="disc">
-<li id="li-253">
-<p id="p-493">A <em class="emphasis">permutation</em> of \([n]\) is an ordered list of its elements. The number of permutations of \([n]\) is</p>
+<li id="li-264">
+<p id="p-513">A <em class="emphasis">permutation</em> of \([n]\) is an ordered list of its elements. The number of permutations of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 n! = n (n-1) (n-2) \cdots 2 \cdot 1.
 \end{equation*}
 </div>
 </li>
-<li id="li-254">
-<p id="p-494">A  \(k\)-<em class="emphasis">list</em> of \([n]\) (also called a \(k\)<em class="emphasis">-permutation</em>) is an ordered list of \(k\) elements of \([n]\text{.}\) The number of \(k\)-lists of \([n]\) is</p>
+<li id="li-265">
+<p id="p-514">A  \(k\)-<em class="emphasis">list</em> of \([n]\) (also called a \(k\)<em class="emphasis">-permutation</em>) is an ordered list of \(k\) elements of \([n]\text{.}\) The number of \(k\)-lists of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 P(n,k) = (n)_k = n (n-1) \cdots (n-k+1) = \frac{n!}{(n-k)!}.
 \end{equation*}
 </div>
 </li>
-<li id="li-255">
-<p id="p-495">A \(k\)<em class="emphasis">-set</em> of \([n]\) (also called a \(k\)<em class="emphasis">-combination</em>) is a subset containing \(k\) elements of \([n]\text{.}\) The number of \(k\)-sets of \([n]\) is</p>
+<li id="li-266">
+<p id="p-515">A \(k\)<em class="emphasis">-set</em> of \([n]\) (also called a \(k\)<em class="emphasis">-combination</em>) is a subset containing \(k\) elements of \([n]\text{.}\) The number of \(k\)-sets of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
@@ -247,50 +247,50 @@ C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
 <article class="exercise exercise-like" id="exercise-68"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Bus Stop.</span>
 </h6>
-<p id="p-496">Four adults and seven children are waiting at a bus stop.</p>
+<p id="p-516">Four adults and seven children are waiting at a bus stop.</p>
 <ol class="lower-alpha">
-<li id="li-256"><p id="p-497">How many ways can they sit in a row? </p></li>
-<li id="li-257"><p id="p-498">How many ways can they sit in a row if the adults must sit together and the children must sit together? </p></li>
-<li id="li-258"><p id="p-499">How many ways can they sit in a row if the the children must sit together? </p></li>
-<li id="li-259"><p id="p-500">How many ways can they sit in a row if <em class="emphasis">just</em> the children are sitting together (and the adults must not sit together)? </p></li>
+<li id="li-267"><p id="p-517">How many ways can they sit in a row? </p></li>
+<li id="li-268"><p id="p-518">How many ways can they sit in a row if the adults must sit together and the children must sit together? </p></li>
+<li id="li-269"><p id="p-519">How many ways can they sit in a row if the the children must sit together? </p></li>
+<li id="li-270"><p id="p-520">How many ways can they sit in a row if <em class="emphasis">just</em> the children are sitting together (and the adults must not sit together)? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">In the Queue.</span>
 </h6>
-<p id="p-501">How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.) </p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
+<p id="p-521">How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.) </p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Forming a Circle.</span>
 </h6>
-<p id="p-502">In how many ways can \(n\) people stand in a circle? (How is this problem different from standing in a line?) </p></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading">
+<p id="p-522">In how many ways can \(n\) people stand in a circle? (How is this problem different from standing in a line?) </p></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Five Digits, No Zeros.</span>
 </h6>
-<ol id="p-503" class="lower-alpha">
-<li id="li-260"><p id="p-504">How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear? </p></li>
-<li id="li-261"><p id="p-505">Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.") </p></li>
+<ol id="p-523" class="lower-alpha">
+<li id="li-271"><p id="p-524">How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear? </p></li>
+<li id="li-272"><p id="p-525">Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.") </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Coin Toss.</span>
 </h6>
-<p id="p-506">A coin is tossed 10 times and a sequence of heads and tails is observed.</p>
+<p id="p-526">A coin is tossed 10 times and a sequence of heads and tails is observed.</p>
 <ol class="lower-alpha">
-<li id="li-262"><p id="p-507">How many different sequences are possible? </p></li>
-<li id="li-263"><p id="p-508">In how how many of these sequences are there exactly 4 heads? </p></li>
+<li id="li-273"><p id="p-527">How many different sequences are possible? </p></li>
+<li id="li-274"><p id="p-528">In how how many of these sequences are there exactly 4 heads? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Dinner Party.</span>
 </h6>
-<p id="p-509">A woman has 9 close friends.</p>
+<p id="p-529">A woman has 9 close friends.</p>
 <ol class="lower-alpha">
-<li id="li-264"><p id="p-510">In how many ways can she invite 6 of them to dinner? </p></li>
-<li id="li-265"><p id="p-511">Repeat (a) if two of her friends don't get along and will not attend together. </p></li>
-<li id="li-266"><p id="p-512">Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them. </p></li>
+<li id="li-275"><p id="p-530">In how many ways can she invite 6 of them to dinner? </p></li>
+<li id="li-276"><p id="p-531">Repeat (a) if two of her friends don't get along and will not attend together. </p></li>
+<li id="li-277"><p id="p-532">Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">10 Points.</span>
 </h6>
-<p id="p-513">Ten points in a plane, no three colinear, are given.</p>
+<p id="p-533">Ten points in a plane, no three colinear, are given.</p>
 <ol class="lower-alpha">
-<li id="li-267"><p id="p-514">Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points? </p></li>
-<li id="li-268"><p id="p-515">Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles are at points other than the original 10 points!) </p></li>
+<li id="li-278"><p id="p-534">Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points? </p></li>
+<li id="li-279"><p id="p-535">Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles are at points other than the original 10 points!) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Executive Board.</span>
 </h6>
-<p id="p-516">How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members? </p></article></section></section></div></main>
+<p id="p-536">How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members? </p></article></section></section></div></main>
 </div>
 </body>
 </html>

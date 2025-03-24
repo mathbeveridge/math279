@@ -13,17 +13,22 @@
 <body>
 <div class="solution solution-like">
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
+<span class="type">Solution</span><span class="space"> </span><span class="codenumber">12.1.1</span><span class="period">.</span>
 </h6>
-<p>We are making three independent decisions. We need to multiply the number of options for each decision.</p>
+<ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> A Tower of Hanoi with 1 disk can be solved in \(1 = 2^1 -1\) moves.</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that a Tower of Hanoi with \(k\) disks can be solved in \(2^k -1\) moves.</p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that a Tower of Hanoi with \(k+1\) disks can be solved in \(2^{k+1} -1\) moves.</p>
+<p>By induction, we can move \(k\) disks from \(A\) to \(B\) in \(2^k-1\) moves. We then move the largest disk to \(C\) in 1 move. Finally, we move \(k\) disks from \(B\) to \(C\) in \(2^k-1\) moves. The total number of moves is</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\underbrace{5}_{\mbox{fruit}} \times
-\underbrace{3}_{\mbox{tea}} \times
-\underbrace{6}_{\mbox{sandwich}}  = 90
+(2^k-1) + 1 + (2^k -1) = 2^{k+1} -1.
 \end{equation*}
 </div>
+</li>
+</ul>
 </div>
-<span class="incontext"><a href="exercises-13.html#solution-122">in-context</a></span>
+<span class="incontext"><a href="exercises-12.html#solution-122">in-context</a></span>
 </body>
 </html>

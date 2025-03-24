@@ -10,9 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\underbrace{3}_{\mbox{cone}} \times \underbrace{5}_{\mbox{scoop}}
-\end{equation*}
-</div></div></body>
+<body><div class="solution solution-like"><ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> We have \(a_0=1\) and \(a_1=3\) and \(a_2 = 2a_1-a_0=6-1=5= 2 \cdot 2 + 1\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that \(a_k = 2k+1\text{.}\)</p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that \(a_{k+1} = 2(k+1)+1=2k+3\text{.}\)</p>
+<p>We have, by strong induction,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{gather*}
+a_{k+1} = 2 a_{k} - a_{k-1} = 2(2k+1) - (2(k-1)+1) = 4k + 2 - 2k +2 - 1 \\
+=  2k+3 = 2(k+1)+1.
+\end{gather*}
+</div>
+</li>
+</ul></div></body>
 </html>

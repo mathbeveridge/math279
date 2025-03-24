@@ -10,5 +10,19 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>There are 5 ways to do this.</p></div></body>
+<body><div class="solution solution-like"><ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> We have \(F_1=1\) and \(F_2-1=2-1=1\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that \(F_1 + F_3 + F_5 + \ldots + F_{2k-1} = F_{2k}-1\text{.}\)</p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that \(F_1 + F_3 + F_5 + \ldots + F_{2k+1} = F_{2k+2}-1\text{..}\)</p>
+<p>We have, by strong induction,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{gather*}
+F_1 + F_3 + F_5 + \ldots + F_{2k-1} +  F_{2k+1}
+=
+F_{2k}-1 + F_{2k+1} = F_{2k+2} -1.
+\end{gather*}
+</div>
+</li>
+</ul></div></body>
 </html>
