@@ -198,12 +198,12 @@
 <li class="link"><a href="recursive.html" data-scroll="recursive"><span class="codenumber">12</span> <span class="title">Recursive Sequences</span></a></li>
 <li class="link"><a href="count-warmup.html" data-scroll="count-warmup"><span class="codenumber">13</span> <span class="title">Basic Counting Problems</span></a></li>
 <li class="link"><a href="add-mult.html" data-scroll="add-mult"><span class="codenumber">14</span> <span class="title">Addition Principle and Multiplication Principle</span></a></li>
-<li class="link"><a href="count-include-exclude.html" data-scroll="count-include-exclude"><span class="codenumber">15</span> <span class="title">Inclusion/Exclusion</span></a></li>
-<li class="link"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">16</span> <span class="title">Pigeonhole Principle</span></a></li>
-<li class="link"><a href="count-perm-comb.html" data-scroll="count-perm-comb"><span class="codenumber">17</span> <span class="title">Permutations and Combinations</span></a></li>
-<li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">18</span> <span class="title">Binomial Theorem</span></a></li>
-<li class="link"><a href="count-balls-in-boxes1.html" data-scroll="count-balls-in-boxes1"><span class="codenumber">19</span> <span class="title">Balls in Boxes Part 1</span></a></li>
-<li class="link"><a href="count-balls-in-boxes2.html" data-scroll="count-balls-in-boxes2"><span class="codenumber">20</span> <span class="title">Balls in Boxes Part 2</span></a></li>
+<li class="link"><a href="count-perm-comb.html" data-scroll="count-perm-comb"><span class="codenumber">15</span> <span class="title">Permutations and Combinations</span></a></li>
+<li class="link"><a href="count-balls-in-boxes1.html" data-scroll="count-balls-in-boxes1"><span class="codenumber">16</span> <span class="title">Balls in Boxes Part 1</span></a></li>
+<li class="link"><a href="count-balls-in-boxes2.html" data-scroll="count-balls-in-boxes2"><span class="codenumber">17</span> <span class="title">Balls in Boxes Part 2</span></a></li>
+<li class="link"><a href="count-include-exclude.html" data-scroll="count-include-exclude"><span class="codenumber">18</span> <span class="title">Inclusion/Exclusion</span></a></li>
+<li class="link"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">19</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">20</span> <span class="title">Binomial Theorem</span></a></li>
 <li class="link part"><a href="part-gi.html" data-scroll="part-gi"><span class="codenumber">III</span> <span class="title">Graphs, and Trees</span></a></li>
 <li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">21</span> <span class="title">Graphs</span></a></li>
 <li class="link"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">22</span> <span class="title">Graph Isomorphisms</span></a></li>
@@ -215,55 +215,55 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="eulerian"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">25</span> <span class="title">Eulerian Graphs</span>
 </h2>
-<section class="introduction" id="introduction-25"><p id="p-608">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
+<section class="introduction" id="introduction-25"><p id="p-640">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
 <ul class="disc">
-<li id="li-320"><p id="p-609">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
-<li id="li-321"><p id="p-610">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
-<li id="li-322"><p id="p-611">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
-<li id="li-323"><p id="p-612">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
-<li id="li-324"><p id="p-613">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-340"><p id="p-641">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
+<li id="li-341"><p id="p-642">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
+<li id="li-342"><p id="p-643">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-343"><p id="p-644">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
+<li id="li-344"><p id="p-645">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
 </ul>
 <p class="continuation">And here are the definitions that we need for today.</p>
 <ul class="disc">
-<li id="li-325"><p id="p-614">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
-<li id="li-326"><p id="p-615">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
-<li id="li-327"><p id="p-616">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
+<li id="li-345"><p id="p-646">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
+<li id="li-346"><p id="p-647">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
+<li id="li-347"><p id="p-648">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
 </ul></section><section class="exercises" id="exercises-25"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-118"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Examples and Non-Examples.</span>
 </h6>
-<p id="p-617">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-119"><h6 class="heading">
+<p id="p-649">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-119"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">DIY Eulerian Properties.</span>
 </h6>
-<p id="p-618">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? </p></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading">
+<p id="p-650">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? </p></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Circuit.</span>
 </h6>
-<p id="p-619">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. </p></article><article class="exercise exercise-like" id="exercise-121"><h6 class="heading">
+<p id="p-651">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. </p></article><article class="exercise exercise-like" id="exercise-121"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Trail.</span>
 </h6>
-<p id="p-620">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. </p></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading">
+<p id="p-652">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. </p></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Using EC condition to prove ET condition.</span>
 </h6>
-<p id="p-621">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
-<p id="p-622">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
-<p id="p-623"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? </p></article><article class="exercise exercise-like" id="exercise-123"><h6 class="heading">
+<p id="p-653">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
+<p id="p-654">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
+<p id="p-655"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? </p></article><article class="exercise exercise-like" id="exercise-123"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Circuit Implies EC condition holds.</span>
 </h6>
-<p id="p-624">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. </p></article><article class="exercise exercise-like" id="exercise-124"><h6 class="heading">
+<p id="p-656">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. </p></article><article class="exercise exercise-like" id="exercise-124"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">EC condition implies \(G\) has an Eulerian Circuit.</span>
 </h6>
-<p id="p-625">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. </p></article><article class="exercise exercise-like" id="exercise-125"><h6 class="heading">
+<p id="p-657">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. </p></article><article class="exercise exercise-like" id="exercise-125"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Guan's Postman Problem.</span>
 </h6>
-<p id="p-626">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
-<p id="p-627"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
-<p id="p-628">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
+<p id="p-658">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
+<p id="p-659"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
+<p id="p-660">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
 <ol class="lower-alpha">
-<li id="li-328"><p id="p-629">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
-<li id="li-329"><p id="p-630">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
-<li id="li-330"><p id="p-631">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
+<li id="li-348"><p id="p-661">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
+<li id="li-349"><p id="p-662">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
+<li id="li-350"><p id="p-663">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

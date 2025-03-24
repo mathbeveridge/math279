@@ -15,8 +15,15 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>Let \(G\) be a connected graph. We prove that if \(G\) contains a cycle then there exists an edge \(e\) such that \(G-e\) is connected. Pick a cycle \(C\) in the graph and let \(e=(u,v)\) be an edge in \(C\text{.}\) Then \(P=C-e\) is a path in \(G-e\text{.}\) We now show that \(G-e\) is connected. Intuitively, any \((x,y)\)-path that uses \(e\) can be "re-rerouted" to use the other part of the cycle instead. Let \(x,y\) be any two vertices. Since \(G\) is connected, there is a walk \(Q\) from \(x\) to \(y\text{.}\) If \(e \notin Q\) then \(Q\) is a walk in \(G-e\text{.}\) If \(e \in Q\text{,}\) then we can split \(Q\) into \(Q_1 \cup e \cup Q_2\) where \(Q_1\) and \(Q_2\) are walks. But then \(Q_1 + P + Q_2\) is an \((x,y)\)-walk in \(G-e\text{.}\) Therefore, \(G-e\) is connected.</p>
+<ul class="disc">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> \(n=1\text{.}\) We have \(1 = 2^0 \cdot 1\text{.}\)</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that for \(1 \leq k &lt; n\text{,}\) the positive integer \(k \geq 1\) can be written as \(k=2^s \ell\) where \(\ell\) is an odd integer (possibly \(\ell=1\)) and \(s \geq 0\text{.}\)</p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that  \(n \geq 1\) can be written as \(n=2^r m\) where \(m\) is an odd integer (possibly \(m=1\)) and \(r \geq 0\text{.}\)</p>
+<p>There are two cases. If \(n\) is odd then \(n=2^0 \cdot n\text{,}\) and we are done (taking \(r=0\) and \(m=n\)). If \(n\) is even then \(n=2k\text{.}\) By induction, \(k=2^s \ell\) where \(\ell\) is an odd integer (possibly \(\ell=1\)) and \(s \geq 0\text{.}\) Therefore \(n=2^{s+1} \ell\text{.}\) Taking \(r=s+1\) and \(m=\ell\text{,}\) we are done.</p>
+</li>
+</ul>
 </div>
-<span class="incontext"><a href="exercises-10.html#solution-117">in-context</a></span>
+<span class="incontext"><a href="exercises-11.html#solution-117">in-context</a></span>
 </body>
 </html>
