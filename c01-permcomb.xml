@@ -175,17 +175,17 @@ When standing in the circle, we have a rotational symmetry that does not appear 
 				</li>
 				<li>
 					<p>
- Use inclusion-exclusion to determine how many numbers in part (a) contain a 3 and a 6. (Hint: you will need to use "good = all - bad.")
+ How many numbers in part (a) contain a 3 or a 6 (or both)? (Hint: you will need to use "good = all - bad.")
 
 <!--solution>
 <p>
-The bad numbers are the ones that don't contain both a 3 and a 6. Using inclusion-exclusion, there are
-<me>
-(8)_5 + (8)_5 - (7)_5 = P(8,5) + P(8,5) - P(7,5)
-</me>
+The bad numbers are the ones that don't contain a 3 or a 6. There are
+<m>
+(7)_5 = P(7,5) 
+</m>
 bad numbers. Therefore we have
 <me>
-(9)_5 - 2 (8)_5 + (7)_5 = p(9,5) - 2 P(8,5) + P(7,5)
+(9)_5 -  (7)_5 = p(9,5) -  P(7,5)
 </me>
 good numbers.
 </p>
