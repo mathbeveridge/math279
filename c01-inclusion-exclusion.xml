@@ -193,8 +193,10 @@ are there for them to share the fries, assuming nobody gets more than 15 fries?
 among 4 distinct friends?</p>
 </li>
 <li>
-<p>Let <m>A</m> be the set of outcomes in which Anna gets 16 or more fries. What is <m>|A|</m>?
-Define similar sets <m>B,C,D</m> for Boris, Clyde and Denise. Find <m>|A|+|B|+|C|+|D|</m>
+<p>Let <m>A</m> be the set of outcomes in which Anna gets 16 or more fries. What is <m>|A|</m>? 
+(Hint: first give away 16 fries to Anna, 
+then distribute the rest freely among the 4 friends.)
+Define similar sets <m>B,C,D</m> for Boris, Clyde and Denise. Find <m>|A|+|B|+|C|+|D|</m>.
 </p> 
 </li>
 <li>
