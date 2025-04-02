@@ -180,6 +180,54 @@ We use the useful theorem "good = all - bad" to find that
 				</p>
 			</statement>
 		</exercise>
+<exercise>
+			<title>Sharing French Fries</title>
+			<idx><h>Sharing French Fries</h></idx>
+			<statement>
+				<p>
+Anna, Boris, Clyde and Denise are sharing a basket of 50 french fries. How many ways
+are there for them to share the fries, assuming nobody gets more than 15 fries?
+<ol>
+<li>
+<p>How many ways are there, with no restrictions, to distribute 50 identical french fries
+among 4 distinct friends?</p>
+</li>
+<li>
+<p>Let <m>A</m> be the set of outcomes in which Anna gets 16 or more fries. What is <m>|A|</m>?
+Define similar sets <m>B,C,D</m> for Boris, Clyde and Denise. Find <m>|A|+|B|+|C|+|D|</m>
+</p> 
+</li>
+<li>
+<p>What is <m>|A \cap B|</m>? (Hint: first give away 16 fries to Anna and 16 more to Boris, 
+then distribute the rest freely.) What is <m>| A \cap B| + | A \cap C| + | A \cap D| +
+| B \cap C| + | B \cap D| + | C \cap D|</m>?
+</p> 
+</li>
+<li>
+<p>Use similar reasoning to part (c) to find the sum of the sizes of all intersections involving 3 of
+the sets <m>A,B,C,D</m>.
+</p> 
+</li>
+<li>
+<p>Find <m>|A \cap B \cap C \cap D|</m>.
+</p> 
+</li>
+<li>
+<p>Use inclusion-exclusion to find the total number of ways for the friends to share 50 fries where
+no one gets more than 15 fries. 
+</p> 
+</li>
+</ol>
+<!--solution>
+<p>
+Coming soon
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+
 	</exercises>
 
 
