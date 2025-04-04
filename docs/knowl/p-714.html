@@ -12,29 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-v_G - e_G + f_G = 2.
-\end{equation*}
-</div>
-<p class="continuation">Start with a plane drawing of \(G\text{.}\) Pick any edge \(e\) that is in a cycle of \(G\text{.}\) Let \(H=G-e\) be the graph you obtain by removing the edge \(e\) (but keeping the vertices).</p>
-<ol class="lower-roman">
-<li>
-<p>What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
-<p>We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
-</li>
-<li>
-<p>What are the following values:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
-\end{equation*}
-</div>
-<p></p>
-</li>
-<li><p>Now complete the inductive step. </p></li>
-</ol>
-<span class="incontext"><a href="exercises-24.html#p-714">in-context</a></span>
+<p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
+<ul class="disc">
+<li><p>\(v\) = number of vertices of \(G\)</p></li>
+<li><p>\(e\) = number of edges of \(G\)</p></li>
+<li><p>\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">including the outer face</em>.</p></li>
+</ul>
+<p class="continuation">Here is a graph with \(v=8\) and \(e=9\) and \(f=3\text{.}\) The  regions are colored yellow, red and blue. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-planar0.svg" role="img" class="contained"></div></p>
+<span class="incontext"><a href="planar.html#p-714">in-context</a></span>
 </body>
 </html>

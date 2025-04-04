@@ -233,7 +233,7 @@ The same argument holds for any pair of friends, so
 <p>Use similar reasoning to part (c) to find the sum of the sizes of all intersections involving 3 of
 the sets <m>A,B,C,D</m>.
 <solution>
-After reserving 16 fries for Anna, and 16 fries for Boris, and 16 fries for Clyde, 2 fries left over, 
+After reserving 16 fries for Anna, and 16 fries for Boris, and 16 fries for Clyde, we have 2 fries left over, 
 to distribute any way we like.
 The number of ways is <m>{2+4-1 \choose 18} = {5 \choose 2}</m>. 
 The same argument holds for any triple of friends, so 
