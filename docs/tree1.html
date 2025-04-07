@@ -203,51 +203,52 @@
 <li class="link"><a href="count-balls-in-boxes2.html" data-scroll="count-balls-in-boxes2"><span class="codenumber">17</span> <span class="title">Balls in Boxes Part 2</span></a></li>
 <li class="link"><a href="count-include-exclude.html" data-scroll="count-include-exclude"><span class="codenumber">18</span> <span class="title">Inclusion/Exclusion</span></a></li>
 <li class="link"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">19</span> <span class="title">Pigeonhole Principle</span></a></li>
-<li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">20</span> <span class="title">Binomial Theorem</span></a></li>
+<li class="link"><a href="combproof.html" data-scroll="combproof"><span class="codenumber">20</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">21</span> <span class="title">Binomial Theorem</span></a></li>
 <li class="link part"><a href="part-gi.html" data-scroll="part-gi"><span class="codenumber">III</span> <span class="title">Graphs, and Trees</span></a></li>
-<li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">21</span> <span class="title">Graphs</span></a></li>
-<li class="link"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">22</span> <span class="title">Graph Isomorphisms</span></a></li>
-<li class="link active"><a href="tree1.html" data-scroll="tree1"><span class="codenumber">23</span> <span class="title">Trees</span></a></li>
-<li class="link"><a href="planar.html" data-scroll="planar"><span class="codenumber">24</span> <span class="title">Planar Graphs</span></a></li>
-<li class="link"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">25</span> <span class="title">Eulerian Graphs</span></a></li>
+<li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">22</span> <span class="title">Graphs</span></a></li>
+<li class="link"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">23</span> <span class="title">Graph Isomorphisms</span></a></li>
+<li class="link active"><a href="tree1.html" data-scroll="tree1"><span class="codenumber">24</span> <span class="title">Trees</span></a></li>
+<li class="link"><a href="planar.html" data-scroll="planar"><span class="codenumber">25</span> <span class="title">Planar Graphs</span></a></li>
+<li class="link"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">26</span> <span class="title">Eulerian Graphs</span></a></li>
 </ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
 </div></div>
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="tree1"><h2 class="heading">
-<span class="type">Chapter</span> <span class="codenumber">23</span> <span class="title">Trees</span>
+<span class="type">Chapter</span> <span class="codenumber">24</span> <span class="title">Trees</span>
 </h2>
-<section class="introduction" id="introduction-23"><p id="p-697"></p></section><section class="exercises" id="exercises-23"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-24"><p id="p-702"></p></section><section class="exercises" id="exercises-24"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
-<article class="exercise exercise-like" id="exercise-106"><h6 class="heading">
+<article class="exercise exercise-like" id="exercise-110"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Trees on 4 Vertices.</span>
 </h6>
-<p id="p-698">Draw all non-isomorphic trees on 4 vertices </p></article><article class="exercise exercise-like" id="exercise-107"><h6 class="heading">
+<p id="p-703">Draw all non-isomorphic trees on 4 vertices </p></article><article class="exercise exercise-like" id="exercise-111"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Trees on 5 Vertices.</span>
 </h6>
-<p id="p-699">Draw all non-isomorphic trees on 5 vertices </p></article><article class="exercise exercise-like" id="exercise-108"><h6 class="heading">
+<p id="p-704">Draw all non-isomorphic trees on 5 vertices </p></article><article class="exercise exercise-like" id="exercise-112"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Leaves on Trees.</span>
 </h6>
-<p id="p-700">More generally, consider the set of trees on \(n \geq 3\) vertices. Which tree has the fewest leaves? Which tree has the most leaves? Draw these trees and state how many leaves each has. </p></article><article class="exercise exercise-like" id="exercise-109"><h6 class="heading">
+<p id="p-705">More generally, consider the set of trees on \(n \geq 3\) vertices. Which tree has the fewest leaves? Which tree has the most leaves? Draw these trees and state how many leaves each has. </p></article><article class="exercise exercise-like" id="exercise-113"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Tree Has At Least 2 Leaves.</span>
 </h6>
-<p id="p-701">In this problem, you will give <em class="emphasis">another proof</em> that a tree on \(n \geq 3\) has at least two leaves (recall that a leaf is a vertex with degree equal 1). Let \(G\) be a tree on \(n\geq 3\) vertices. Let \(S\) be the set of all paths from one vertex to another on \(G\text{.}\) Among all the paths in \(S\text{,}\) let \(P\) be a path with the most edges.</p>
-<p id="p-702">How does this path \(P\) help us to find two leaves? </p></article><article class="exercise exercise-like" id="exercise-110"><h6 class="heading">
+<p id="p-706">In this problem, you will give <em class="emphasis">another proof</em> that a tree on \(n \geq 3\) has at least two leaves (recall that a leaf is a vertex with degree equal 1). Let \(G\) be a tree on \(n\geq 3\) vertices. Let \(S\) be the set of all paths from one vertex to another on \(G\text{.}\) Among all the paths in \(S\text{,}\) let \(P\) be a path with the most edges.</p>
+<p id="p-707">How does this path \(P\) help us to find two leaves? </p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Definitions for a Tree.</span>
 </h6>
-<p id="p-703">Here is a theorem that gives four different ways to describe a tree.</p>
-<p id="p-704"><em class="emphasis">Theorem:</em> The following statements are equivalent for a graph \(G=(V,E)\) on \(n\) vertices</p>
+<p id="p-708">Here is a theorem that gives four different ways to describe a tree.</p>
+<p id="p-709"><em class="emphasis">Theorem:</em> The following statements are equivalent for a graph \(G=(V,E)\) on \(n\) vertices</p>
 <ol class="lower-alpha">
-<li id="li-341"><p id="p-705">\(G\) is connected and acyclic</p></li>
-<li id="li-342"><p id="p-706">\(G\) is connected and \(|E|=n-1\)</p></li>
-<li id="li-343"><p id="p-707">\(G\) is acyclic  and \(|E|=n-1\)</p></li>
-<li id="li-344"><p id="p-708">There is a unique path between each pair of vertices in \(G\)</p></li>
-<li id="li-345"><p id="p-709">\(G\) is connected but deleting any edge disconnects the graph.</p></li>
+<li id="li-341"><p id="p-710">\(G\) is connected and acyclic</p></li>
+<li id="li-342"><p id="p-711">\(G\) is connected and \(|E|=n-1\)</p></li>
+<li id="li-343"><p id="p-712">\(G\) is acyclic  and \(|E|=n-1\)</p></li>
+<li id="li-344"><p id="p-713">There is a unique path between each pair of vertices in \(G\)</p></li>
+<li id="li-345"><p id="p-714">\(G\) is connected but deleting any edge disconnects the graph.</p></li>
 </ol>
-<p id="p-710">We will focus on (d) \(\Rightarrow\) (a) and the equivalence (a) \(\Leftrightarrow\) (e).</p>
+<p id="p-715">We will focus on (d) \(\Rightarrow\) (a) and the equivalence (a) \(\Leftrightarrow\) (e).</p>
 <ol class="lower-alpha">
-<li id="li-346"><p id="p-711">Prove that (d) \(\Rightarrow\) (a) using a proof by contradiction. Assuming that (d) holds, why must \(G\) be connected? Why must \(G\) be acyclic? </p></li>
-<li id="li-347"><p id="p-712">Prove that (a) \(\Rightarrow\) (e) using a proof by contradiction. Assume that (a) holds, but there is an edge \(e\) such that the graph \(G-e\) obtained by removing \(e\) is connected. Why does this lead to a contradiction? </p></li>
-<li id="li-348"><p id="p-713">Prove that (e) \(\Rightarrow\) (a) by proving the contrapositive statement "not (a) \(\Rightarrow\) not (e)." </p></li>
+<li id="li-346"><p id="p-716">Prove that (d) \(\Rightarrow\) (a) using a proof by contradiction. Assuming that (d) holds, why must \(G\) be connected? Why must \(G\) be acyclic? </p></li>
+<li id="li-347"><p id="p-717">Prove that (a) \(\Rightarrow\) (e) using a proof by contradiction. Assume that (a) holds, but there is an edge \(e\) such that the graph \(G-e\) obtained by removing \(e\) is connected. Why does this lead to a contradiction? </p></li>
+<li id="li-348"><p id="p-718">Prove that (e) \(\Rightarrow\) (a) by proving the contrapositive statement "not (a) \(\Rightarrow\) not (e)." </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
