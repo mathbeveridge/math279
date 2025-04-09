@@ -11,11 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>When standing in the circle, we have a rotational symmetry that does not appear when standing a line. For \(0 \leq k \leq n-1\text{,}\) everyone can move counterclockwise by \(k\) spots, and we still have the same configuration. Therefore the total number of circular configurations is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\frac{n!}{n} = (n-1)!
-\end{equation*}
-</div>
+<p>Here is the recipe.</p>
+<ul class="disc">
+<li><p>First, choose a value for \(k\) where \(0 \leq k \leq n\text{.}\)</p></li>
+<li><p>Next, choose the \(k\) elements in \(B\text{.}\)</p></li>
+<li><p>Finally, choose a subset \(A\) of the \(k\)-set \(B\)</p></li>
+</ul>
+<p class="continuation">The summation sign (addition principle) considers all possible choices for the size \(k\text{.}\) Once we have determined \(k\text{,}\) there are \({n \choose k}\) ways to pick the subset \(B\text{.}\) Then there are \(2^k\) ways to choose the subset \(A \subset B\text{.}\)</p>
 </div></body>
 </html>

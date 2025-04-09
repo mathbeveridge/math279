@@ -19,7 +19,7 @@
 </me>
 
 			</p>
-<!--solution>
+<solution>
 		<ul>
 			<li>
 			<p>
@@ -49,7 +49,7 @@
 			</p>
 			</li>
 		</ul>
-</solution-->	
+</solution>	
 			</statement>
 		</exercise>	
 		<exercise>
@@ -60,7 +60,7 @@
 \sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
 </me> 
 Hint: you will need the identity <m>{r \choose s} = {r \choose r-s}</m>.
-<!--solution>
+<solution>
 We rewrite this as
 <me>
 \sum_{k=0}^n  {n \choose k}  {n \choose n-k}  = { 2n \choose n}.
@@ -79,7 +79,7 @@ We rewrite this as
 			</p>
 			</li>
 		</ul>
-</solution-->
+</solution>
 			</p>
 			</statement>
 		</exercise>	
@@ -92,7 +92,7 @@ Give a combinatorial proof for the identity
 \sum_{i=0}^r  {n \choose i} {m \choose r-i}.
 </me>
 
-<!--solution>
+<solution>
 
 
 This is a more general version of the previous problem.
@@ -111,7 +111,7 @@ This is a more general version of the previous problem.
 			</li>
 		</ul>
 
-</solution-->
+</solution>
 </p>
 
 			</statement>
@@ -121,12 +121,36 @@ This is a more general version of the previous problem.
 			<p>
 Give a combinatorial proof for the identity
 <me>
-{k \choose k} + {k+1 \choose k} + {k+2 \choose k} + \cdots {n \choose k} = {n+1 \choose k+1}.
+{k \choose k} + {k+1 \choose k} + {k+2 \choose k} + \cdots + {n \choose k} = {n+1 \choose k+1}.
 </me>
 Hint: For the LHS, we have split into cases according to the LARGEST ELEMENT in our <m>(k+1)</m>-set of 
 <m>[n+1]</m>.
 </p>
+<solution>
+Both sides count the number of ways to choose <m>k+1</m> numbers from the set <m>n+1</m>
 
+		<ul>
+			<li>
+			<p>
+ RHS: the number of ways to choose a <m>k+1</m>-set from <m>[n]</m>.
+			</p>
+			</li>
+			<li>
+			<p>
+ LHS: We partition the subsets according to the largest element in the subset <m>A \subseteq [n+1]</m>.
+ If the largest element of <m>A</m> is <m>k+1</m>, then we still must choose <m>k</m> elements from <m>[k]</m>, 
+ and there are <m>{k \choose k}</m> ways to do this. 
+ If the largest element of <m>A</m> is <m>k+2</m>, then we still must choose <m>k</m> elements from <m>[k+1]</m>, 
+ and there are <m>{k+1 \choose k}</m> ways to do this. 
+  If the largest element of <m>A</m> is <m>k+3</m>, then we still must choose <m>k</m> elements from <m>[k+2]</m>, 
+ and there are <m>{k+2 \choose k}</m> ways to do this. 
+ This same argument holds for each case. The largest possible maximum element in <m>n+1</m>. In this case, 
+ we still must choose <m>k</m> elements from <m>[n]</m>, 
+ and there are <m>{n \choose k}</m> ways to do this. 
+			</p>
+			</li>
+		</ul>
+</solution>
 			</statement>
 		</exercise>
 

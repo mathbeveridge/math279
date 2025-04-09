@@ -225,28 +225,58 @@
 \begin{equation*}
 {3n \choose 3} = 3 {n \choose 3} + 6n {n \choose 2} + n^3.
 \end{equation*}
-</div></article><article class="exercise exercise-like" id="exercise-94"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-649">Give a combinatorial proof for the identity</p>
+</div>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-190" id="solution-190"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-190"><div class="solution solution-like"><ul class="disc">
+<li id="li-311"><p id="p-649">LHS:\({3n \choose 3}\) counts the number of ways to choose a 3-set from \([3n]\)</p></li>
+<li id="li-312">
+<p id="p-650">RHS: Split \([3n]\) into 3 sets of size \(n\text{.}\) There are 3 different cases (addition principle)</p>
+<ul class="circle">
+<li id="li-313"><p id="p-651">\(3 {n \choose 3}\text{:}\)  Choose one of the \(n\)-sets and pick all 3 elements from that set.</p></li>
+<li id="li-314"><p id="p-652">\(6n {n \choose 2}\text{:}\) Pick one of the three \(n\)-sets and take 2 elements from that set (number of ways is \(3{n \choose 2}\text{.}\) Next, pick one of the remaining two \(n\)-sets and take 1 element from that set (number of ways is \(2 n\text{.}\)</p></li>
+<li id="li-315"><p id="p-653">\(n^3\text{:}\) Choose one element from each of the three \(n\)-sets.</p></li>
+</ul>
+</li>
+</ul></div></div></article><article class="exercise exercise-like" id="exercise-94"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-654">Give a combinatorial proof for the identity</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
 \end{equation*}
 </div>
-<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s}\text{.}\) </p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
-<p id="p-650">Give a combinatorial proof for the identity</p>
+<p class="continuation">Hint: you will need the identity \({r \choose s} = {r \choose r-s}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-191" id="solution-191"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-191"><div class="solution solution-like">We rewrite this as<div class="displaymath">
+\begin{equation*}
+\sum_{k=0}^n  {n \choose k}  {n \choose n-k}  = { 2n \choose n}.
+\end{equation*}
+</div>
+<ul class="disc">
+<li id="li-316"><p id="p-655">RHS: the number of ways to choose an \(n\)-set from \([2n]\text{.}\)</p></li>
+<li id="li-317"><p id="p-656">LHS: Split \([2n]\) into two sets of size \(n\text{.}\)  We then consider \(n+1\) cases, depending on how many elements we pick from the first set. We can choose \(0 \leq k \leq n\) elements from the first set and then pick the remaining \(n-k\) from the second set. For a fixed \(k\text{,}\) the number of ways to do this is \({ n \choose k} {n \choose n-k}\text{.}\) We then sum over all possible \(k\text{.}\)</p></li>
+</ul>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-95"><h6 class="heading"><span class="codenumber">3<span class="period">.</span></span></h6>
+<p id="p-657">Give a combinatorial proof for the identity</p>
 <div class="displaymath">
 \begin{equation*}
 {n + m \choose r} =
 \sum_{i=0}^r  {n \choose i} {m \choose r-i}.
 \end{equation*}
-</div></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
-<p id="p-651">Give a combinatorial proof for the identity</p>
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-192" id="solution-192"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-192"><div class="solution solution-like">This is a more general version of the previous problem. <ul class="disc">
+<li id="li-318"><p id="p-658">RHS: the number of ways to choose an \(r\)-set from \([n+m]\text{.}\)</p></li>
+<li id="li-319"><p id="p-659">LHS: Split \([n+m]\) into two sets, one of size \(n\) and the other of size \(m\text{.}\)  We then consider \(r+1\) cases, depending on how many elements we pick from the first set. We can choose \(0 \leq i \leq r\) elements from the first set and then pick the remaining \(r-i\) from the second set. For a fixed \(i\text{,}\) the number of ways to do this is \({n \choose i} {m \choose n-i}\text{.}\) We then sum over all possible \(i\text{.}\)</p></li>
+</ul>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-96"><h6 class="heading"><span class="codenumber">4<span class="period">.</span></span></h6>
+<p id="p-660">Give a combinatorial proof for the identity</p>
 <div class="displaymath">
 \begin{equation*}
-{k \choose k} + {k+1 \choose k} + {k+2 \choose k} + \cdots {n \choose k} = {n+1 \choose k+1}.
+{k \choose k} + {k+1 \choose k} + {k+2 \choose k} + \cdots + {n \choose k} = {n+1 \choose k+1}.
 \end{equation*}
 </div>
-<p class="continuation">Hint: For the LHS, we have split into cases according to the LARGEST ELEMENT in our \((k+1)\)-set of \([n+1]\text{.}\)</p></article></section></section></div></main>
+<p class="continuation">Hint: For the LHS, we have split into cases according to the LARGEST ELEMENT in our \((k+1)\)-set of \([n+1]\text{.}\)</p>
+<a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-193" id="solution-193"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-193"><div class="solution solution-like">Both sides count the number of ways to choose \(k+1\) numbers from the set \(n+1\)<ul class="disc">
+<li id="li-320"><p id="p-661">RHS: the number of ways to choose a \(k+1\)-set from \([n]\text{.}\)</p></li>
+<li id="li-321"><p id="p-662">LHS: We partition the subsets according to the largest element in the subset \(A \subseteq [n+1]\text{.}\) If the largest element of \(A\) is \(k+1\text{,}\) then we still must choose \(k\) elements from \([k]\text{,}\) and there are \({k \choose k}\) ways to do this. If the largest element of \(A\) is \(k+2\text{,}\) then we still must choose \(k\) elements from \([k+1]\text{,}\) and there are \({k+1 \choose k}\) ways to do this. If the largest element of \(A\) is \(k+3\text{,}\) then we still must choose \(k\) elements from \([k+2]\text{,}\) and there are \({k+2 \choose k}\) ways to do this. This same argument holds for each case. The largest possible maximum element in \(n+1\text{.}\) In this case, we still must choose \(k\) elements from \([n]\text{,}\) and there are \({n \choose k}\) ways to do this.</p></li>
+</ul>
+</div></div></article></section></section></div></main>
 </div>
 </body>
 </html>

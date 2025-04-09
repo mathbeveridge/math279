@@ -216,40 +216,70 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-binomial"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">21</span> <span class="title">Binomial Theorem</span>
 </h2>
-<section class="introduction" id="introduction-21"><p id="p-652"></p></section><section class="exercises" id="exercises-21"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-21"><p id="p-663"></p></section><section class="exercises" id="exercises-21"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-97"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Nested Sets.</span>
 </h6>
-<p id="p-653">In this problem, you will prove the following identity in two different ways</p>
+<p id="p-664">In this problem, you will prove the following identity in two different ways</p>
 <div class="displaymath">
 \begin{equation*}
 3^n = \sum_{k=0}^n 2^k { n \choose k}
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-311"><p id="p-654">Prove this equation using the binomial theorem. </p></li>
-<li id="li-312">
-<p id="p-655">Give a combinatorial proof of this equation by showing that each side counts the number of ways to choose sets \(A,B\) where \(\emptyset \subseteq A \subseteq B \subseteq [n]\text{.}\)</p>
+<li id="li-322"><p id="p-665">Prove this equation using the binomial theorem. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-194" id="solution-194"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-194"><div class="solution solution-like">
+<p id="p-666">Take \(x=2\) and \(y=1\) to get</p>
+<div class="displaymath">
+\begin{equation*}
+(2+1)^n = \sum_{k=0}^n { n \choose k} 2^k
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-323">
+<p id="p-667">Give a combinatorial proof of this equation by showing that each side counts the number of ways to choose sets \(A,B\) where \(\emptyset \subseteq A \subseteq B \subseteq [n]\text{.}\)</p>
 <ol class="lower-roman">
-<li id="li-313"><p id="p-656">The left hand side is \(3^n\text{.}\) Explain why there are three choices for where to place every element of \([n]\text{.}\) </p></li>
-<li id="li-314"><p id="p-657">The right hand is \(\sum_{k=0}^n 2^k { n \choose k}.\) This time, we create the sets \(A \subseteq B\) in a different way. Namely, first we decide what the size of \(B\) will be, and use \(k\) to denote this size. With this in mind, interpret the right hand side of this equation. </p></li>
+<li id="li-324"><p id="p-668">The left hand side is \(3^n\text{.}\) Explain why there are three choices for where to place every element of \([n]\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-195" id="solution-195"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-195"><div class="solution solution-like"><p id="p-669">For each of the \(n\) elements, there are three possible places it can go:  \(A\text{,}\) \(B \backslash A\) or \(\overline{B}\text{.}\) We must make this choice a total on \(n\) times, so the number of ways to do this is \(3^n\) by the product principle.</p></div></div></p></li>
+<li id="li-325"><p id="p-670">The right hand is \(\sum_{k=0}^n 2^k { n \choose k}.\) This time, we create the sets \(A \subseteq B\) in a different way. Namely, first we decide what the size of \(B\) will be, and use \(k\) to denote this size. With this in mind, interpret the right hand side of this equation. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-196" id="solution-196"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-196"><div class="solution solution-like">
+<p id="p-671">Here is the recipe.</p>
+<ul class="disc">
+<li id="li-326"><p id="p-672">First, choose a value for \(k\) where \(0 \leq k \leq n\text{.}\)</p></li>
+<li id="li-327"><p id="p-673">Next, choose the \(k\) elements in \(B\text{.}\)</p></li>
+<li id="li-328"><p id="p-674">Finally, choose a subset \(A\) of the \(k\)-set \(B\)</p></li>
+</ul>
+<p class="continuation">The summation sign (addition principle) considers all possible choices for the size \(k\text{.}\) Once we have determined \(k\text{,}\) there are \({n \choose k}\) ways to pick the subset \(B\text{.}\) Then there are \(2^k\) ways to choose the subset \(A \subset B\text{.}\)</p>
+</div></div></p></li>
 </ol>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-98"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Rectangles Galore.</span>
 </h6>
-<ol id="p-658" class="lower-alpha">
-<li id="li-315"><p id="p-659">The following  \(2 \times 2\) grid contains 9 rectangles (many of them are squares). Draw them all. <div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="images/fig-img-count-binomial0.svg" role="img" class="contained"></div> </p></li>
-<li id="li-316"><p id="p-660">Prove that  an \(m \times n\) grid contains \({m+1 \choose 2}{n+1 \choose 2}\) rectangles. </p></li>
+<ol id="p-675" class="lower-alpha">
+<li id="li-329"><p id="p-676">The following  \(2 \times 2\) grid contains 9 rectangles (many of them are squares). Draw them all. <div class="image-box" style="width: 25%; margin-left: 37.5%; margin-right: 37.5%;"><img src="images/fig-img-count-binomial0.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-197" id="solution-197"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-197"><div class="solution solution-like"><p id="p-677"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-count-binomial1.svg" role="img" class="contained"></div></p></div></div></p></li>
+<li id="li-330"><p id="p-678">Prove that  an \(m \times n\) grid contains \({m+1 \choose 2}{n+1 \choose 2}\) rectangles. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-198" id="solution-198"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-198"><div class="solution solution-like"><p id="p-679">Creating a rectangle requires choosing two vertical lines (to be the left and right boundaries) and two horizontal lines (to be the upper and lower boundaries). There are a total of \(n+1\) vertical lines and \(m+1\) horizontal lines. Therefore the total number of rectangles is    \({m+1 \choose 2}{n+1 \choose 2}\text{.}\)</p></div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-99"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Diagonals in an \(n\)-gon.</span>
 </h6>
-<p id="p-661">Consider a convex \(n\)-gon with its vertices labeled by the elements of \([n]\text{.}\)</p>
+<p id="p-680">Consider a convex \(n\)-gon with its vertices labeled by the elements of \([n]\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-317"><p id="p-662">How many distinct diagonals are are there? </p></li>
-<li id="li-318"><p id="p-663">How may pairs of crossing diagonals are there? </p></li>
+<li id="li-331"><p id="p-681">How many distinct diagonals are are there? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-199" id="solution-199"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-199"><div class="solution solution-like">
+<p id="p-682">In order to create a diagonal, we must chose two vertices that are not adjacent. We have \(n\) choices for our first vertex, and then \(n-3\) choices for our second vertex (since we cannot re-pick our vertex, or choose one of its two neighbors. The order that we pick these vertices does not matter, so we must divide by 2. The answer is</p>
+<div class="displaymath">
+\begin{equation*}
+\frac{n(n-3)}{2}.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-332"><p id="p-683">How may pairs of crossing diagonals are there? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-200" id="solution-200"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-200"><div class="solution solution-like">
+<p id="p-684">The answer is</p>
+<div class="displaymath">
+\begin{equation*}
+{ n \choose 4}.
+\end{equation*}
+</div>
+<p class="continuation">Once you have picked 4 vertices, there is a unique way to draw a pair of crossing diagonals between them.</p>
+</div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
