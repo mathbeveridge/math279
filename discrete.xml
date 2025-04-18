@@ -88,9 +88,11 @@ pull the name of the problem from the first line  of  the \item
         <title>Graphs, and Trees</title>
             <xi:include href="./b01-graph1.xml" />
             <xi:include href="./b01-graph2.xml" />  
+             <xi:include href="./b01-eulerian.xml" /> 
+            <xi:include href="./b01-planar.xml" />               
             <xi:include href="./b01-tree1.xml" />    
-            <xi:include href="./b01-planar.xml" />  
-            <xi:include href="./b01-eulerian.xml" />              
+
+             
             <!--xi:include href="./ex01-counting.xml" /-->                       
     </part>     
 
