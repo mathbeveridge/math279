@@ -12,8 +12,21 @@
 </head>
 <body>
 <article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">26.5.b</span><span class="period">.</span>
+<span class="type">Item</span><span class="space"> </span><span class="codenumber">25.3.c</span><span class="period">.</span>
 </h6>
-<p>\(G\) is connected and \(|E|=n-1\)</p></article><span class="incontext"><a href="exercises-26.html#li-378">in-context</a></span>
+<p>Let \(G\) be a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{.}\)  Use (regular) induction on \(d \geq 1\) to prove that a \(d\)-regular bipartite graph  has \(d\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">disjoint</em> perfect matchings. This means that we can color the edges of \(G\) using \(d\) colors so that every vertex is incident with exactly one edge from each of the \(d\) colors.</p>
+<ul class="disc">
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> \(d=1\text{.}\)</p>
+<p>A 1-regular graph is a perfect matching!</p>
+<p></p>
+</li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that if \(G\) is a \((d-1)\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d-1\) disjoint perfect matchings. \((\star)\)</p>
+<p></p>
+</li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Use  \((\star)\) to prove that if \(G\) is a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d\) disjoint perfect matchings.</p></li>
+</ul>
+<p>By problem 5, The \(d\)-regular bipartite graph \(G\) has a perfect matching \(M\text{.}\) Let's remove these edges. The graph \(G-M\) is \((d-1)\)-regular. By \((\star)\text{,}\) \(G-M\) has \(d-1\) disjoint perfect matchings. So we have found \(d\) disjoint perfect matchings.</p></article><span class="incontext"><a href="exercises-25.html#li-378">in-context</a></span>
 </body>
 </html>

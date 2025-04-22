@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<!--********************************************-->
+<!--*       Generated from PreTeXt source      *-->
+<!--*                                          *-->
+<!--*         https://pretextbook.org          *-->
+<!--*                                          *-->
+<!--********************************************-->
+<html lang="en-US">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>dm Bipartite Matchings</title>
+<meta name="Keywords" content="Authored in PreTeXt">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>window.MathJax = {
+  tex: {
+    inlineMath: [['\\(','\\)']],
+    tags: "none",
+    useLabelIds: true,
+    tagSide: "right",
+    tagIndent: ".8em",
+    packages: {'[+]': ['base', 'extpfeil', 'ams', 'amscd', 'newcommand', 'knowl']}
+  },
+  options: {
+    ignoreHtmlClass: "tex2jax_ignore",
+    processHtmlClass: "has_am",
+  },
+  chtml: {
+    scale: 0.88,
+    mtextInheritFont: true
+  },
+  loader: {
+    load: ['input/asciimath', '[tex]/extpfeil', '[tex]/amscd', '[tex]/newcommand', '[pretext]/mathjaxknowl3.js'],
+    paths: {pretext: "https://pretextbook.org/js/lib"},
+  },
+};
+</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.sticky.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/jquery.espy.min.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/0.13/pretext_add_on.js"></script><script xmlns:svg="http://www.w3.org/2000/svg" src="https://pretextbook.org/js/lib/knowl.js"></script><!--knowl.js code controls Sage Cells within knowls--><script xmlns:svg="http://www.w3.org/2000/svg">sagecellEvalName='Evaluate (Sage)';
+</script><link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400italic,600,600italic" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/pretext_add_on.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/banner_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/toc_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/knowls_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/style_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/colors_default.css" rel="stylesheet" type="text/css">
+<link xmlns:svg="http://www.w3.org/2000/svg" href="https://pretextbook.org/css/0.31/setcolors.css" rel="stylesheet" type="text/css">
+<!-- 2019-10-12: Temporary - CSS file for experiments with styling --><link xmlns:svg="http://www.w3.org/2000/svg" href="developer.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pretext-book has-toc has-sidebar-left">
+<a class="assistive" href="#content">Skip to main content</a><div xmlns:svg="http://www.w3.org/2000/svg" id="latex-macros" class="hidden-content" style="display:none">\(    \newcommand{\identity}{\mathrm{id}}
+    \newcommand{\notdivide}{{\not{\mid}}}
+    \newcommand{\notsubset}{\not\subset}
+    \newcommand{\lcm}{\operatorname{lcm}}
+    \newcommand{\gf}{\operatorname{GF}}
+    \newcommand{\inn}{\operatorname{Inn}}
+    \newcommand{\aut}{\operatorname{Aut}}
+    \newcommand{\Hom}{\operatorname{Hom}}
+    \newcommand{\cis}{\operatorname{cis}}
+    \newcommand{\chr}{\operatorname{char}}
+    \newcommand{\Null}{\operatorname{Null}}
+
+
+    \def\Z{\mathbb Z}
+    \def\R{\mathbb R}
+    \def\Q{\mathbb Q}
+    \def\N{\mathbb N}
+    \def\C{\mathbb C}
+    \def\W{\mathbb W}
+
+    \def\ba{{\mathbf{a}}}
+    \def\bb{\mathbf{b}}
+    \def\bh{{\mathbf{h}}}
+    \def\bu{{\mathbf{u}}}
+    \def\bv{{\mathbf{v}}}
+    \def\bw{{\mathbf{w}}}   
+    \def\bx{{\mathbf{x}}}
+    \def\by{\mathbf{y}}    
+    \def\bone{{\mathbf{1}}}
+    \def\bzero{\mathbf{0}}
+
+    \def\var{{\mbox{var}}}
+    \def\P{{\mathbb{P}}}
+    \def\E{{\mathbb{E}}}
+
+    \def\cA{{\mathcal{A}}}
+    \def\cB{{\mathcal{B}}}
+    \def\cC{{\mathcal{C}}}
+    \def\cP{\mathcal P}
+    \def\cN{\mathcal N}
+    \def\cE{\mathcal E}
+    \def\cO{\mathcal O}
+    \def\cF{\mathcal F}
+    \def\cX{\mathcal X}
+
+    \def\nimsum{\, \oplus \,}
+    \def\mex{{\mathrm{mex}}}
+    \newcommand{\pile}[1]{\bullet{#1}}
+    \def\g{g}
+
+
+   
+
+    \def\kin{k^{\mathrm{in}}}
+    \def\kout{k^{\mathrm{out}}}
+
+    \newcommand{\indeg}[1]{k^{\mathrm{in}}_{#1}}
+    \newcommand{\outdeg}[1]{k^{\mathrm{out}}_{#1}}
+
+    \tikzset{-&gt;-/.style={decoration={
+     markings,
+     mark=at position .5 with {\arrow{latex}}},postaction={decorate}}}
+  
+
+     
+
+\newcommand{\nimbleboard}[1]{
+
+\begin{scope}[shift={(.25, .4)}]
+\draw (0,-.3) -- (#1,-.3) -- (#1+.45, .7) -- (#1+.45, 1);
+\draw (0,0) -- (#1,0);
+\draw (.45,1) -- (#1+.45,1);
+
+\foreach \i in {0, ..., #1} {
+  \draw (\i, -.3) -- (\i, 0) -- (\i+.45,1);
+}
+
+\foreach \i in {1, ..., #1} {
+  \node[style={font=\sffamily\scriptsize}] at (\i - .5, -.15) {\i};
+}
+
+\end{scope}
+
+}
+\newcommand{\coin}[1]{
+\begin{scope}[shift={#1}]
+
+\draw[color=white, fill=white] (-.4, 0) -- (-.4, -.1) -- (.4,-.1) --  (.4,0) -- cycle;
+\draw[thick, fill=white] (0,0) ellipse (0.4 and 0.10);
+\draw[thick, fill=white] (.4,-.1) arc (0:-180:0.4 and 0.10);
+\draw[thick] (0.4,0) -- (0.4, -.1);
+\draw[thick] (-0.4,0) -- (-0.4, -.1);
+
+\end{scope}
+
+}
+
+\newcommand{\bean}[2]{
+\begin{scope}[shift={#1}, rotate={#2}]
+
+\draw [very thick, fill=gray!50] plot [smooth cycle] coordinates {(-.2,0) (-.175, .07) (-.1,.1) (0,.075) (.1,.1) (.175, .07) (.2,0) (.15, -.07) (0,-.1) (-.15, -.07)};
+
+\end{scope}
+
+}
+
+\newcommand{\heap}[2]{
+\begin{scope}[shift={#1}]
+
+\draw[very thick] (0,0) circle ({#2});
+
+\end{scope}
+
+}
+\newcommand{\lt}{&lt;}
+\newcommand{\gt}{&gt;}
+\newcommand{\amp}{&amp;}
+\)</div>
+<header id="masthead" class="smallbuttons"><div class="banner"><div class="container">
+<a id="logo-link" href=""></a><div class="title-container">
+<h1 class="heading"><a href="dm.html"><span class="title">Discrete Mathematics:</span> <span class="subtitle">Activities and Exercises</span></a></h1>
+<p class="byline">Andrew Beveridge</p>
+</div>
+</div></div>
+<nav xmlns:svg="http://www.w3.org/2000/svg" id="primary-navbar" class="navbar"><div class="container">
+<div class="navbar-top-buttons">
+<button class="sidebar-left-toggle-button button active" aria-label="Show or hide table of contents sidebar">Contents</button><div class="tree-nav toolbar toolbar-divisor-3"><span class="threebuttons"><a id="previousbutton" class="previous-button toolbar-item button" href="eulerian.html" title="Previous">Prev</a><a id="upbutton" class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a id="nextbutton" class="next-button button toolbar-item" href="planar.html" title="Next">Next</a></span></div>
+</div>
+<div class="navbar-bottom-buttons toolbar toolbar-divisor-4">
+<button class="sidebar-left-toggle-button button toolbar-item active">Contents</button><a class="previous-button toolbar-item button" href="eulerian.html" title="Previous">Prev</a><a class="up-button button toolbar-item" href="part-gi.html" title="Up">Up</a><a class="next-button button toolbar-item" href="planar.html" title="Next">Next</a>
+</div>
+</div></nav></header><div class="page">
+<div xmlns:svg="http://www.w3.org/2000/svg" id="sidebar-left" class="sidebar" role="navigation"><div class="sidebar-content">
+<nav id="toc"><ul>
+<li class="link frontmatter"><a href="frontmatter.html" data-scroll="frontmatter"><span class="title">Front Matter</span></a></li>
+<li class="link part"><a href="part-slf.html" data-scroll="part-slf"><span class="codenumber">I</span> <span class="title">Sets, Logic and Functions</span></a></li>
+<li class="link"><a href="logic1.html" data-scroll="logic1"><span class="codenumber">1</span> <span class="title">Logical Connectors</span></a></li>
+<li class="link"><a href="logic2.html" data-scroll="logic2"><span class="codenumber">2</span> <span class="title">Logical Arguments</span></a></li>
+<li class="link"><a href="sets1.html" data-scroll="sets1"><span class="codenumber">3</span> <span class="title">Sets</span></a></li>
+<li class="link"><a href="sets2.html" data-scroll="sets2"><span class="codenumber">4</span> <span class="title">Unions and Intersections</span></a></li>
+<li class="link"><a href="quantifiers.html" data-scroll="quantifiers"><span class="codenumber">5</span> <span class="title">Quantifiers</span></a></li>
+<li class="link"><a href="proof1.html" data-scroll="proof1"><span class="codenumber">6</span> <span class="title">Proofs</span></a></li>
+<li class="link"><a href="function1.html" data-scroll="function1"><span class="codenumber">7</span> <span class="title">Functions</span></a></li>
+<li class="link"><a href="function2.html" data-scroll="function2"><span class="codenumber">8</span> <span class="title">Injections and Surjections</span></a></li>
+<li class="link"><a href="function3.html" data-scroll="function3"><span class="codenumber">9</span> <span class="title">Fun with Functions</span></a></li>
+<li class="link part"><a href="part-count.html" data-scroll="part-count"><span class="codenumber">II</span> <span class="title">Induction and Counting</span></a></li>
+<li class="link"><a href="induction1.html" data-scroll="induction1"><span class="codenumber">10</span> <span class="title">Induction</span></a></li>
+<li class="link"><a href="induction2.html" data-scroll="induction2"><span class="codenumber">11</span> <span class="title">Strong Induction</span></a></li>
+<li class="link"><a href="recursive.html" data-scroll="recursive"><span class="codenumber">12</span> <span class="title">Recursive Sequences</span></a></li>
+<li class="link"><a href="count-warmup.html" data-scroll="count-warmup"><span class="codenumber">13</span> <span class="title">Basic Counting Problems</span></a></li>
+<li class="link"><a href="add-mult.html" data-scroll="add-mult"><span class="codenumber">14</span> <span class="title">Addition Principle and Multiplication Principle</span></a></li>
+<li class="link"><a href="count-perm-comb.html" data-scroll="count-perm-comb"><span class="codenumber">15</span> <span class="title">Permutations and Combinations</span></a></li>
+<li class="link"><a href="count-balls-in-boxes1.html" data-scroll="count-balls-in-boxes1"><span class="codenumber">16</span> <span class="title">Balls in Boxes Part 1</span></a></li>
+<li class="link"><a href="count-balls-in-boxes2.html" data-scroll="count-balls-in-boxes2"><span class="codenumber">17</span> <span class="title">Balls in Boxes Part 2</span></a></li>
+<li class="link"><a href="count-include-exclude.html" data-scroll="count-include-exclude"><span class="codenumber">18</span> <span class="title">Inclusion/Exclusion</span></a></li>
+<li class="link"><a href="count-pigeonhole.html" data-scroll="count-pigeonhole"><span class="codenumber">19</span> <span class="title">Pigeonhole Principle</span></a></li>
+<li class="link"><a href="combproof.html" data-scroll="combproof"><span class="codenumber">20</span> <span class="title">Combinatorial Proof</span></a></li>
+<li class="link"><a href="count-binomial.html" data-scroll="count-binomial"><span class="codenumber">21</span> <span class="title">Binomial Theorem</span></a></li>
+<li class="link part"><a href="part-gi.html" data-scroll="part-gi"><span class="codenumber">III</span> <span class="title">Graphs, and Trees</span></a></li>
+<li class="link"><a href="graph1.html" data-scroll="graph1"><span class="codenumber">22</span> <span class="title">Graphs</span></a></li>
+<li class="link"><a href="graph2.html" data-scroll="graph2"><span class="codenumber">23</span> <span class="title">Graph Isomorphisms</span></a></li>
+<li class="link"><a href="eulerian.html" data-scroll="eulerian"><span class="codenumber">24</span> <span class="title">Eulerian Graphs</span></a></li>
+<li class="link active"><a href="matching.html" data-scroll="matching"><span class="codenumber">25</span> <span class="title">Bipartite Matchings</span></a></li>
+<li class="link"><a href="planar.html" data-scroll="planar"><span class="codenumber">26</span> <span class="title">Planar Graphs</span></a></li>
+<li class="link"><a href="tree1.html" data-scroll="tree1"><span class="codenumber">27</span> <span class="title">Trees</span></a></li>
+</ul></nav><div class="extras"><nav><a class="pretext-link" href="https://pretextbook.org">Authored in PreTeXt</a><a href="https://www.mathjax.org"><img title="Powered by MathJax" src="https://www.mathjax.org/badge/badge.gif" alt="Powered by MathJax"></a></nav></div>
+</div></div>
+<main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="matching"><h2 class="heading">
+<span class="type">Chapter</span> <span class="codenumber">25</span> <span class="title">Bipartite Matchings</span>
+</h2>
+<section class="introduction" id="introduction-25"><p id="p-772"></p></section><section class="exercises" id="exercises-25"><h3 class="heading hide-type">
+<span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
+</h3>
+<article class="exercise exercise-like" id="exercise-118"><h6 class="heading">
+<span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Bipartite Graphs and Neighborhoods.</span>
+</h6>
+<p id="p-773">A graph \(G = (V,E)\) is bipartite if \(V= A \cup B\) where \(A \cap B = \emptyset\) and every edge \(e \in E\)  runs between these two sets. Equivalently: we can color the vertices  with two colors, (red and blue) so that adjacent vertices receive different colors.</p>
+<ol class="lower-alpha">
+<li id="li-366">
+<p id="p-774">Let \(G\) be any bipartite graph on vertices \(V = A \cup B\text{.}\) Explain why</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{v \in A} \deg (v) = \sum_{w \in B} \deg(w).
+\end{equation*}
+</div>
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-224" id="solution-224"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-224"><div class="solution solution-like">
+<p id="p-775">Since the edges run between \(A\) and \(B\text{,}\) each of these sums counts every edge once. That is,</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{v \in A} \deg (v) = |E| = \sum_{w \in B} \deg(w).
+\end{equation*}
+</div>
+</div></div></p>
+</li>
+<li id="li-367"><p id="p-776">Recall that a graph is <em class="emphasis">\(d\)-regular</em> when every vertex has degree \(d\text{.}\) Let \(G\) be a \(d\)-regular bipartite graph on partite sets \(A,B\text{.}\) Prove that  \(|A|=|B|\text{.}\) (Hint: use Problem 1.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-225" id="solution-225"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-225"><div class="solution solution-like"><p id="p-777">Since every vertex has degree equal to \(d\text{,}\) Problem 1 means that \(\)d |A| = \sum_{v \in A} \deg (v) = |E| = \sum_{w \in B} \deg(w) =  d |B|\(\) and therefore \(|A|=|B|\text{.}\)</p></div></div></p></li>
+<li id="li-368">
+<p id="p-778">Let \(G=(V,E)\) be a bipartite graph on vertices \(V=A \cup B\text{.}\) Given a set of vertices \(S \subset A\text{,}\) we define the <em class="emphasis">neighborhood</em> \(N(S) \subset B\) to be the set of vertices that are adjacent to some vertex in \(A\text{.}\) That is,</p>
+<div class="displaymath">
+\begin{equation*}
+\mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in A, (a,b) \in E \} .
+\end{equation*}
+</div>
+<p class="continuation">For each  of the examples  below, find the neighborhood \(N(S) \subset B\text{:}\) <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching0.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-226" id="solution-226"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-226"><div class="solution solution-like"><p id="p-779"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching1.svg" role="img" class="contained"></div></p></div></div></p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-119"><h6 class="heading">
+<span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Perfect Matchings.</span>
+</h6>
+<p id="p-780">Given a bipartite graph \(G= (V,E)\) where \(V=A \cup B\) and \(|A|=|B|\text{,}\) a <em class="emphasis">perfect matching</em> \(M\)  is a disjoint set of edges that uses every vertex.</p>
+<ol class="lower-alpha"><li id="li-369"><p id="p-781">For each of the graphs below, find a perfect matching or explain why no such matching exists. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching2.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-227" id="solution-227"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-227"><div class="solution solution-like"><p id="p-782"><div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching3.svg" role="img" class="contained"></div></p></div></div></p></li></ol></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading">
+<span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Hall's Matching Theorem for a \(d\)-regular graph.</span>
+</h6>
+<p id="p-783">Here is <em class="emphasis">Hall's Matching Theorem:</em> Given a bipartite graph with \(V = A \cup B\) and  \(|A|=|B|\text{.}\) Then \(G\) has a perfect matching \(\Longleftrightarrow\) for every \(S \subset A\text{,}\) we have \(|S| \leq |N(S)|\text{.}\) The last statement is called <em class="emphasis">Hall's Condition.</em> It means that "\(G\) has no bottlenecks."</p>
+<ol class="lower-alpha">
+<li id="li-370">
+<p id="p-784">Let \(G=(V,E)\) be a \(d\)-regular bipartite graph. By Problem 2, we have \(|A|=|B|\text{.}\) You will  show that Hall's condition holds for \(G\text{.}\) This means that a \(d\)-regular bipartite graph always has a perfect matching.</p>
+<ol class="lower-roman">
+<li id="li-371">
+<p id="p-785">Pick any subset \(S \subset A\text{.}\) What is \(\sum_{v \in S} \deg(v)\text{?}\)</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{v \in S} \deg(v) = d |S|
+\end{equation*}
+</div>
+</li>
+<li id="li-372">
+<p id="p-786">Explain why \(\displaystyle{\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)}\text{.}\)</p>
+<p id="p-787">Every edge from a vertex in set \(S\) ends at a vertex in \(N(S)\text{.}\) This confirms that</p>
+<div class="displaymath">
+\begin{equation*}
+\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v).
+\end{equation*}
+</div>
+<p class="continuation">Note that this inequality can be strict: vertices in \(N(S)\) may have neighbors outside of the set \(S\text{.}\)</p>
+</li>
+<li id="li-373">
+<p id="p-788">Why does part (b) guarantee that \(|S| \leq |N(S)|\text{?}\)</p>
+<div class="displaymath">
+\begin{equation*}
+d |S| = \sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)  =  d|N(S)|
+\end{equation*}
+</div>
+<p class="continuation">and so \(|S| \leq |N(S)|\text{.}\)</p>
+</li>
+</ol>
+</li>
+<li id="li-374">
+<p id="p-789">Here is a 3-regular bipartite graph \(G\) on 6 vertices. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching4.svg" role="img" class="contained"></div></p>
+<ol class="lower-roman">
+<li id="li-375"><p id="p-790">Find a perfect matching \(M\) in the graph \(G\text{.}\)</p></li>
+<li id="li-376"><p id="p-791">Now draw the graph \(H=G-M\) where you remove the edges in your matching \(M\text{.}\) <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching5.svg" role="img" class="contained"></div></p></li>
+<li id="li-377">
+<p id="p-792">Find a perfect matching in  \(H\text{.}\) Why does Problem 5 guarantee that \(H = G-M\) has a perfect matching?</p>
+<p id="p-793">\(G-M\) is a 2-regular graph. So it has a perfect matching.</p>
+</li>
+</ol>
+</li>
+<li id="li-378">
+<p id="p-794">Let \(G\) be a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{.}\)  Use (regular) induction on \(d \geq 1\) to prove that a \(d\)-regular bipartite graph  has \(d\) <em class="emphasis">disjoint</em> perfect matchings. This means that we can color the edges of \(G\) using \(d\) colors so that every vertex is incident with exactly one edge from each of the \(d\) colors.</p>
+<ul class="disc">
+<li id="li-379">
+<p id="p-795"><em class="emphasis">Base Case:</em> \(d=1\text{.}\)</p>
+<p id="p-796">A 1-regular graph is a perfect matching!</p>
+<p id="p-797"></p>
+</li>
+<li id="li-380">
+<p id="p-798"><em class="emphasis">Inductive Hypothesis:</em> Assume that if \(G\) is a \((d-1)\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d-1\) disjoint perfect matchings. \((\star)\)</p>
+<p id="p-799"></p>
+</li>
+<li id="li-381"><p id="p-800"><em class="emphasis">Inductive Step:</em> Use  \((\star)\) to prove that if \(G\) is a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d\) disjoint perfect matchings.</p></li>
+</ul>
+<p id="p-801">By problem 5, The \(d\)-regular bipartite graph \(G\) has a perfect matching \(M\text{.}\) Let's remove these edges. The graph \(G-M\) is \((d-1)\)-regular. By \((\star)\text{,}\) \(G-M\) has \(d-1\) disjoint perfect matchings. So we have found \(d\) disjoint perfect matchings.</p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-121"><h6 class="heading">
+<span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Mathematical Card Trick.</span>
+</h6>
+<p id="p-802">Here is a mathematical card trick whose secret uses a perfect matching in a bipartite graph! In a standard deck of 52 cards, each card has a suit and a value. There are 4 suits (clubs, diamonds, hearts, spades) and 13 values (A, 2, 3, . . . , 10, J, Q, K).</p>
+<p id="p-803">Ask a volunteer (or your worst enemy) to lay out the cards into a grid of 4 rows and 13 columns. Show that you can <em class="emphasis">always</em> pick out 13 cards, one from each column of the grid, so that you end up with a card for every possible value \(A, 2, 3, \ldots , 10 , J, Q, K\text{.}\) Wow!!! Here is an example. The 13 cards I've chosen are highlighted. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching6.svg" role="img" class="contained"></div></p>
+<ol class="lower-alpha">
+<li id="li-382">
+<p id="p-804">You can model this trick using a bipartite graph \(G\)  with \(|A| = |B| = 13\text{.}\)</p>
+<ul class="disc">
+<li id="li-383"><p id="p-805">Let \(A\) be the set of 13 card values \(\{A, 2, 3, \ldots, 10, J, Q, K \}\)</p></li>
+<li id="li-384"><p id="p-806">Let \(B\) be the set of columns \(\{1, 2, 3, \ldots, 13\}\text{.}\)</p></li>
+</ul>
+<p class="continuation">When should a card in set \(A\) have an edge to a column in set \(B\text{?}\) What is the degree of a vertex in \(A\text{?}\) What is the degree of a vertex in \(B\text{?}\)</p>
+<p id="p-807"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-228" id="solution-228"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-228"><div class="solution solution-like"><p id="p-808">Add an edge from a value \(v\) to a column \(c\) whenever a card with  value \(v\) appears in column \(c\text{.}\) Crucially, we will need to create a <em class="emphasis">multigraph</em> where we can have multiple edges between vertices. This results in a 4-regular bipartite multigraph.</p></div></div></p>
+</li>
+<li id="li-385">
+<p id="p-809">Use a  previous problem from this activity to show that your graph \(G\) always has a perfect matching. Then explain why this matching finds 13 cards with distinct values spread among the 13 columns.</p>
+<p id="p-810"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like"><p id="p-811">Problem 2 applies to a \(d\)-regular multigraph. So we can find a perfect matching in our graph. This perfect matching corresponds to the 13 cards that we desire.</p></div></div></p>
+</li>
+<li id="li-386">
+<p id="p-812">Are you guaranteed to be able to do it again? That is, from the remaining 39 cards, can you find \(A, 2, \ldots, K\text{,}\) one card in each column? Why or why not?</p>
+<p id="p-813"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-230" id="solution-230"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-230"><div class="solution solution-like"><p id="p-814">Yes! Removing this matching results in a 3-regular graph. So we can do it again to find a disjoint set of 13 cards with the same property. In fact we can do it a final two times as well! So we can find four disjoint solutions to the magic trick!</p></div></div></p>
+</li>
+</ol></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading">
+<span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Finding a Perfect Matching.</span>
+</h6>
+<p id="p-815">Use this algorithm to find a perfect matching in  a bipartite graph \(G\) with \(V=A \cup B\text{.}\)</p>
+<ul class="disc">
+<li id="li-387"><p id="p-816">Start with \(M = \emptyset\text{.}\)</p></li>
+<li id="li-388">
+<p id="p-817">Greedy Phase</p>
+<ul class="circle">
+<li id="li-389"><p id="p-818">Add disjoint  edges to \(M\) until you get stuck.</p></li>
+<li id="li-390"><p id="p-819">If you have a perfect matching, then  you are done!</p></li>
+<li id="li-391"><p id="p-820">If not, then move onto the Augmenting Phase.</p></li>
+</ul>
+</li>
+<li id="li-392">
+<p id="p-821">Augmenting phase</p>
+<ul class="circle">
+<li id="li-393"><p id="p-822">Pick any unmatched vertex \(a \in A\text{.}\)</p></li>
+<li id="li-394"><p id="p-823">Try to find an <em class="emphasis">alternating path</em> \(P\) to an unmatched vertex \(b \in B\text{.}\) The edges in path \(P\) alternately come from the set \(E \backslash M\) and the set \(M\text{.}\)</p></li>
+<li id="li-395"><p id="p-824">If you cannot find such a path, then you are stuck.  There is no matching.</p></li>
+<li id="li-396"><p id="p-825">If you find such a path, then swap the matching edges of \(P\) and the non-matching edges of \(P\) to get a bigger matching.</p></li>
+<li id="li-397"><p id="p-826">Repeat (a) - (d) until you are either stuck, or all vertices are matched!</p></li>
+</ul>
+</li>
+</ul>
+<p class="continuation">Here is an example. We start with the following bipartite graph <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching7.svg" role="img" class="contained"></div> In the greedy phase, we add edges until we are stuck, meaning that the neighbors of the unmatched vertices are taken. In our case, we pick the four edges shown. We are stuck because all of the neighbors of \(a\) are already matched. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching8.svg" role="img" class="contained"></div> Next we try to find a path from \(a\) to \(b\) that alternates between edges in \(E \backslash M\) and edges in \(M\text{.}\) We can find one, and it edges are alternately colored red and blue. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching9.svg" role="img" class="contained"></div> Swapping red and blue edges gives a perfect matching! If there were more unmatched vertices, we would repeat this process. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching10.svg" role="img" class="contained"></div></p>
+<ol class="lower-alpha"><li id="li-398"><p id="p-827">Use the alternating path algorithm to find a perfect matching for this graph, starting from the 4-edge matching shown in the first graph. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching11.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like">
+<p id="p-828"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching12.svg" role="img" class="contained"></div></p>
+<p id="p-829"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching13.svg" role="img" class="contained"></div></p>
+<p id="p-830"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching14.svg" role="img" class="contained"></div></p>
+<p id="p-831"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching15.svg" role="img" class="contained"></div></p>
+<p id="p-832"><div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching16.svg" role="img" class="contained"></div></p>
+</div></div></p></li></ol></article></section></section></div></main>
+</div>
+</body>
+</html>

@@ -12,7 +12,19 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>If you start with a square and we glue the opposite sides to one another, we get a <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">torus</em> (a surface in the shape of a donut). So we can think of this square as a torus, if we identify points on opposite sides. (For example, in some classic video games, walking off the right side of the screen makes you appear at the same height on the left side of the screen.) <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/quotient_torus.png" class="contained"></div> For example, we can draw the 4-cycle \(C_4\) using a square with opposite sides identified like so: <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-planar3.svg" role="img" class="contained"></div> Using a square with opposite sides identified, show that you can draw both \(K_5\) and \(K_{3,3}\) on a torus without any crossing edges! <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar4.svg" role="img" class="contained"></div> </p>
+<p>Let \(G\) be a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{.}\)  Use (regular) induction on \(d \geq 1\) to prove that a \(d\)-regular bipartite graph  has \(d\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">disjoint</em> perfect matchings. This means that we can color the edges of \(G\) using \(d\) colors so that every vertex is incident with exactly one edge from each of the \(d\) colors.</p>
+<ul class="disc">
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> \(d=1\text{.}\)</p>
+<p>A 1-regular graph is a perfect matching!</p>
+<p></p>
+</li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that if \(G\) is a \((d-1)\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d-1\) disjoint perfect matchings. \((\star)\)</p>
+<p></p>
+</li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Use  \((\star)\) to prove that if \(G\) is a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{,}\) then \(G\) has \(d\) disjoint perfect matchings.</p></li>
+</ul>
 <span class="incontext"><a href="exercises-25.html#p-794">in-context</a></span>
 </body>
 </html>
