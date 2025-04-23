@@ -48,7 +48,7 @@ Since the edges run between <m>A</m> and <m>B</m>, each of these sums counts eve
 
 <solution>
 <p>
-Since every vertex has degree equal to <m>d</m>, Problem 1 means that
+Since every vertex has degree equal to <m>d</m>, Problem 1(b) means that
 <me>d |A| = \sum_{v \in A} \deg (v) = |E| = \sum_{w \in B} \deg(w) =  d |B|</me>
 and therefore <m>|A|=|B|</m>.
 </p>
@@ -714,7 +714,7 @@ The last statement is called <em>Hall's Condition.</em> It means that "<m>G</m> 
 
 				<li>
 					<p>
- Let <m>G=(V,E)</m> be a <m>d</m>-regular bipartite graph. By Problem 1(a), we have <m>|A|=|B|</m>. You will  show that Hall's condition holds for <m>G</m>.
+ Let <m>G=(V,E)</m> be a <m>d</m>-regular bipartite graph. By Problem 1(b), we have <m>|A|=|B|</m>. You will  show that Hall's condition holds for <m>G</m>.
 This means that a <m>d</m>-regular bipartite graph always has a perfect matching.
 
 
@@ -1170,7 +1170,7 @@ Add an edge from a value <m>v</m> to a column <m>c</m> whenever a card with  val
 
 <solution>
 <p>
-Problem 1(a) applies to a <m>d</m>-regular multigraph. So we can find a perfect matching in our graph. This perfect matching corresponds to the 13 cards that we desire.
+Problem 1(b) applies to a <m>d</m>-regular multigraph. So we can find a perfect matching in our graph. This perfect matching corresponds to the 13 cards that we desire.
 
 </p>
 </solution>
