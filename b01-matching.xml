@@ -44,7 +44,7 @@ Since the edges run between <m>A</m> and <m>B</m>, each of these sums counts eve
 				</li>
 				<li>
 					<p>
- Recall that a graph is <em><m>d</m>-regular</em> when every vertex has degree <m>d</m>. Let <m>G</m> be a <m>d</m>-regular bipartite graph on partite sets <m>A,B</m>. Prove that  <m>|A|=|B|</m>. (Hint: use Problem 1.)
+ Recall that a graph is <em><m>d</m>-regular</em> when every vertex has degree <m>d</m>. Let <m>G</m> be a <m>d</m>-regular bipartite graph on partite sets <m>A,B</m>. Prove that  <m>|A|=|B|</m>. (Hint: use part (a).)
 
 <solution>
 <p>
