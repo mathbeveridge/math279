@@ -408,7 +408,6 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 
 			<ol>
 
-\setcounter{enumi}{3}
 
 				<li>
 					<p>
@@ -704,13 +703,17 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 			<statement>
 				<p>
 Here is <em>Hall's Matching Theorem:</em> Given a bipartite graph with <m>V = A \cup B</m> and  <m>|A|=|B|</m>. Then
-<m>G</m> has a perfect matching <m>\Longleftrightarrow</m> for every <m>S \subset A</m>, we have <m>|S| \leq |N(S)|</m>.
-The last statement is called <em>Hall's Condition.</em> It means that "<m>G</m> has no bottlenecks."
-
-
+				</p>
+				<p>
+					<m>G</m> has a perfect matching 
+					<m>\Longleftrightarrow</m> for every <m>S \subset A</m>, we have <m>|S| \leq |N(S)|</m>.	
+				</p>
+				<p>
+					The last statement is called <em>Hall's Condition.</em> It means that "<m>G</m> has no bottlenecks."			
+				</p>
+				<p>
 			<ol>
 
-\setcounter{enumi}{4}
 
 				<li>
 					<p>
@@ -754,7 +757,7 @@ Note that this inequality can be strict: vertices in <m>N(S)</m> may have neighb
 				</li>
 				<li>
 					<p>
- Why does part (b) guarantee that <m>|S| \leq |N(S)|</m>?
+ Why does part (ii) guarantee that <m>|S| \leq |N(S)|</m>?
 
 <solution>
 <p>
@@ -1463,8 +1466,6 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 
 			<ol>
 
-
-\setcounter{enumi}{8}
 
 				<li>
 					<p>
