@@ -518,7 +518,7 @@ e \leq 2v -4.
 
 			</p><p>
 
-Let <m>G</m> be a simple connected planar graph with <m>v</m> vertices, <m>e</m> edges and <m>f</m> facecs where every face is bounded by at least 4 edges. Prove that <m>e \leq 2v -4</m>.
+Let <m>G</m> be a simple connected planar graph with <m>v</m> vertices, <m>e</m> edges and <m>f</m> faces where every face is bounded by at least 4 edges. Prove that <m>e \leq 2v -4</m>.
 
 <!--solution>
 <p>
