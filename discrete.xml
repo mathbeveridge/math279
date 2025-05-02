@@ -91,7 +91,8 @@ pull the name of the problem from the first line  of  the \item
              <xi:include href="./b01-eulerian.xml" /> 
              <xi:include href="./b01-matching.xml" />              
             <xi:include href="./b01-planar.xml" />               
-            <xi:include href="./b01-tree1.xml" />    
+            <xi:include href="./b01-tree1.xml" />   
+            <xi:include href="./b01-mst.xml" />   
 
              
             <!--xi:include href="./ex01-counting.xml" /-->                       
