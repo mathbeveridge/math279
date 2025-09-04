@@ -218,78 +218,37 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-warmup"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">13</span> <span class="title">Basic Counting Problems</span>
 </h2>
-<section class="introduction" id="introduction-13"><p id="p-471"></p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-13"><p id="p-217"></p></section><section class="exercises" id="exercises-13"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-61"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Packing a Lunch.</span>
 </h6>
-<p id="p-472">A healthy lunch box contains a sandwich, a piece of fruit and a drink. There are  six different types of sandwiches,   five kinds of fruit, and three drink flavors. How many different possible lunch boxes are there? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-126" id="solution-126"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-126"><div class="solution solution-like">
-<p id="p-473">We are making three independent decisions. We need to multiply the number of options for each decision.</p>
-<div class="displaymath">
-\begin{equation*}
-\underbrace{5}_{\mbox{fruit}} \times
-\underbrace{3}_{\mbox{tea}} \times
-\underbrace{6}_{\mbox{sandwich}}  = 90
-\end{equation*}
-</div>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-62"><h6 class="heading">
+<p id="p-218">A healthy lunch box contains a sandwich, a piece of fruit and a drink. There are  six different types of sandwiches,   five kinds of fruit, and three drink flavors. How many different possible lunch boxes are there? </p></article><article class="exercise exercise-like" id="exercise-62"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Buying Ice Cream.</span>
 </h6>
-<p id="p-474">An ice cream store has five flavors of ice cream: vanilla, chocolate, strawberry, peppermint and bubble gum. When you order a cone, your options are sugar cone, waffle cone and cake cone.</p>
+<p id="p-219">An ice cream store has five flavors of ice cream: vanilla, chocolate, strawberry, peppermint and bubble gum. When you order a cone, your options are sugar cone, waffle cone and cake cone.</p>
 <ol class="lower-alpha">
-<li id="li-248"><p id="p-475">What is the total number of ways to order a single-scoop ice cream cone? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-127" id="solution-127"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-127"><div class="solution solution-like"><div class="displaymath" id="p-476">
-\begin{equation*}
-\underbrace{3}_{\mbox{cone}} \times \underbrace{5}_{\mbox{scoop}}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-249"><p id="p-477">Suppose that we want to order a triple-scoop cone at this ice cream store. Stacking scoops of ice cream is important: a peppermint-vanilla-vanilla cone tastes different from a vanilla-peppermint-vanilla cone. What is the total number of ways to order a triple-scoop ice cream cone? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-128" id="solution-128"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-128"><div class="solution solution-like"><div class="displaymath" id="p-478">
-\begin{equation*}
-\underbrace{3}_{\mbox{cone}} \times
-\underbrace{5}_{\mbox{first scoop}} \times
-\underbrace{5}_{\mbox{second scoop}} \times
-\underbrace{5}_{\mbox{third scoop}} = 3 \times 5^3
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-250">
-<p id="p-479">The ice cream store also sells quarts of ice cream. When you buy quarts of ice cream, the order that you buy the quarts does not matter: they just go into your shopping bag anyway! How many ways can you buy two quarts of ice cream when ...</p>
+<li id="li-140"><p id="p-220">What is the total number of ways to order a single-scoop ice cream cone? </p></li>
+<li id="li-141"><p id="p-221">Suppose that we want to order a triple-scoop cone at this ice cream store. Stacking scoops of ice cream is important: a peppermint-vanilla-vanilla cone tastes different from a vanilla-peppermint-vanilla cone. What is the total number of ways to order a triple-scoop ice cream cone? </p></li>
+<li id="li-142">
+<p id="p-222">The ice cream store also sells quarts of ice cream. When you buy quarts of ice cream, the order that you buy the quarts does not matter: they just go into your shopping bag anyway! How many ways can you buy two quarts of ice cream when ...</p>
 <ol class="lower-roman">
-<li id="li-251"><p id="p-480">Both quarts are the same flavor? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-129" id="solution-129"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-129"><div class="solution solution-like"><p id="p-481">There are 5 ways to do this.</p></div></div></p></li>
-<li id="li-252"><p id="p-482">The quarts are different flavors? (Remember that the order of the flavors doesn't matter!) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-130" id="solution-130"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-130"><div class="solution solution-like">
-<p id="p-483">There are 5 ways choose the the first quart, and then 4 ways to choose the last quart. So there are \(5 \times 4 = 20\) ways. To do this.</p>
-<p id="p-484">However, the order that we choose the flavors doesn't matter: "peppermint  and strawberry" is the same as "strawberry and peppermint." So we have to divide by 2 because we just counted each option twice! So the answer is</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{5 \cdot 4}{2} = 10.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-143"><p id="p-223">Both quarts are the same flavor? </p></li>
+<li id="li-144"><p id="p-224">The quarts are different flavors? (Remember that the order of the flavors doesn't matter!) </p></li>
 </ol>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-63"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Ultimate Frisbee Tournament.</span>
 </h6>
-<p id="p-485">Four teams attend an Ultimate frisbee tournament.</p>
+<p id="p-225">Four teams attend an Ultimate frisbee tournament.</p>
 <ol class="lower-alpha">
-<li id="li-253"><p id="p-486">If each team plays each other team exactly once, how many games are played? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-131" id="solution-131"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-131"><div class="solution solution-like">
-<p id="p-487">How many ways can we choose two teams to play a game? My recipe for setting up a game will be: "choose the first team and then choose the second team." The total number of ways to do this is</p>
-<div class="displaymath">
-\begin{equation*}
-4 \times 3.
-\end{equation*}
-</div>
-<p class="continuation">However, we <em class="emphasis">double count</em> each game, since choosing (Team A,Team B) is the same as choosing (Team B, Team A). Therefore we must divide our answer above by 2. The final answer is</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{4 \times 3}{2}.
-\end{equation*}
-</div>
-</div></div></p></li>
-<li id="li-254">
-<p id="p-488">These four Ultimate teams decide to play a game for fun by mixing up the teams. They put red, blue, yellow and green armbands into a bag, and each player closes her eyes and grabs an armband to determine her team.</p>
+<li id="li-145"><p id="p-226">If each team plays each other team exactly once, how many games are played? </p></li>
+<li id="li-146">
+<p id="p-227">These four Ultimate teams decide to play a game for fun by mixing up the teams. They put red, blue, yellow and green armbands into a bag, and each player closes her eyes and grabs an armband to determine her team.</p>
 <ol class="lower-roman">
-<li id="li-255"><p id="p-489">How many armbands must be grabbed to ensure that one of the teams has two players? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-132" id="solution-132"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-132"><div class="solution solution-like"><p id="p-490">This must happen on or before the fifth armband. You have three categories (red, blue, yellow and green) and five armbands. So one category must have at least 2. Note that this is the smallest number for which this is true: if we only pull out 4 armbands, then we could possibly have one of each color</p></div></div></p></li>
-<li id="li-256"><p id="p-491">How many armbands must be grabbed to ensure that one of the teams has five players? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-133" id="solution-133"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-133"><div class="solution solution-like"><p id="p-492">This must happen on or before the 17th arm band. Again, you have 4 categories, so one category must have 5 or more arm bands. This is the smallest number for which this is true: if you only have 16 armbands, we could have 4 red and 4 blue and 4 yellow and 4 green.</p></div></div></p></li>
+<li id="li-147"><p id="p-228">How many armbands must be grabbed to ensure that one of the teams has two players? </p></li>
+<li id="li-148"><p id="p-229">How many armbands must be grabbed to ensure that one of the teams has five players? </p></li>
 </ol>
 </li>
 </ol></article></section></section></div></main>

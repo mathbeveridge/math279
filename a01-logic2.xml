@@ -24,7 +24,7 @@
 				<li>
 Write down the contrapositive, converse and inverse of the implication: "if <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>." Which of these four statements are <em> true</em>? Which ones are <em> false</em>?
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -49,12 +49,12 @@ Write down the contrapositive, converse and inverse of the implication: "if <m>x
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 				</li>
 				<li>
 Write down the contrapositive, converse and inverse of the implication: "If it is warm and sunny then I go swimming."
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -79,7 +79,7 @@ Write down the contrapositive, converse and inverse of the implication: "If it i
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 				</li>
 				</ol>
 				</p>
@@ -108,7 +108,7 @@ F &amp; F &amp;  &amp; &amp;  &amp;\\
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{c|c||c|c|c|c}
@@ -122,7 +122,7 @@ F &amp; F &amp; T &amp;F &amp; T &amp;F\\
 </me>
 The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are identical. So these statements are equivalent.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -142,7 +142,7 @@ F &amp; F &amp;  &amp; &amp;  &amp; &amp; &amp; \\
 \end{array}
 </me>
 
-<solution>
+<!--solution>
 <p>
 <me>
 \begin{array}{c|c||c|c|c|c|c}
@@ -157,7 +157,7 @@ F &amp; F &amp; T &amp; T &amp; T &amp; F &amp; T &amp; T\\
 </me>
 The columns for <m>\neg(P \Rightarrow Q) </m> and <m>P \wedge \neg Q</m> are identical. So these statements are equivalent.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -201,11 +201,11 @@ A classmate makes the following claim:
 "If there is a vowel on one side of a card then there is an odd number  on the other side."
 Which cards must be turned over to check whether this statement is true?
 
-<solution>
+<!--solution>
 <p>
 You must turn over the "E" card to ensure that there is an odd number, and you must turn over the "2" card to ensure that there is not a vowel on the other side.
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -253,11 +253,11 @@ Daria
 Which of the people have to answer the additiona question (that they haven't answered yet) in order for the owners to ensure that the law is being observed?
 
 
-<solution>
+<!--solution>
 <p>
 The owner must find out what Barbara is drinking, and the owner must find out the age of Clarice.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -265,7 +265,7 @@ The owner must find out what Barbara is drinking, and the owner must find out th
 					<p>
  Which of the previous questions was easier, (a) or (b)? Why?
 
-<solution>
+<!--solution>
 <p>
 Most people will find question (b) to be easier because it matches a context that we are already familiar with: the drinking age in the United States is 21. Meanwhile, the rule in part (a) is unfamiliar and we don't really know why the rule exists.
 
@@ -273,7 +273,7 @@ Most people will find question (b) to be easier because it matches a context tha
 But in fact, these two questions are variations of the same process: we are checking the validity of a statement of the form <m>P \rightarrow Q</m>. That also means that we have to check situations where <m>\neg Q \rightarrow \neg P</m> would apply.
 
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -296,7 +296,7 @@ Determine the validity of the following arguments. Include a truth table to just
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am tired this morning. Therefore, I stayed up late last night.
 
-<solution>
+<!--solution>
 <p>
 Let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
 
@@ -312,7 +312,7 @@ F &amp; F &amp; T &amp; F &amp;  T \\
 </me>
 The third line of the final column is <em> false</em>. Therefore the argument is not valid. This is because there are other reasons that I might be tired (perhaps I ran a marathon yesterday).
 </p>
-</solution>
+</solution-->
 
 
 					</p>
@@ -321,7 +321,7 @@ The third line of the final column is <em> false</em>. Therefore the argument is
 					<p>
  If I stay up late at night, then I will be tired in the morning. I am not tired this morning. Therefore, I did not stay up late last night.
 
-<solution>
+<!--solution>
 <p>
 Once again, let <m>P = </m> "I stay up late" and let  <m>Q = </m> "I am tired in the morning."
 
@@ -338,7 +338,7 @@ F &amp; F &amp; T &amp; T &amp; F &amp; T &amp; T \\
 
 The final column only contains <em> true</em> values. Therefore the argument is valid.
 </p>
-</solution>
+</solution-->
 
 
 
@@ -367,7 +367,7 @@ Determine the validity of the following argument. Include a truth table to justi
 If I work hard, then I earn lots of money. If I earn lots of money, then I pay high taxes. Therefore, if I pay high taxes, then I have worked hard.
 
 
-<solution>
+<!--solution>
 <p>
 
 
@@ -396,7 +396,7 @@ The fifth and seven lines in the final column are <em> false</em>, so the argume
 
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>

@@ -18,7 +18,7 @@
 				<p>
 Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (2y, x-y)</m>. Is <m>f</m> injective? surjective? Justify your answer with either a proof or a counterexample.
 
-<solution>
+<!--solution>
 <p>
 
 <em>The function <m>f</m> is injective.</em> Suppose that <m>f(x_1, y_1) = f(x_2, y_2)</m>. This means that <m>(2y_1, x_1-y_1) = (2y_2, x_2 - y_2)</m>. We  find that
@@ -46,7 +46,7 @@ f \left(b+ \frac{a}{2},  \frac{a}{2} \right) = \left( 2 \cdot \frac{a}{2}, b+ \f
 </me>
 
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -58,13 +58,13 @@ f \left(b+ \frac{a}{2},  \frac{a}{2} \right) = \left( 2 \cdot \frac{a}{2}, b+ \f
 				<p>
 Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (5x+5y, x+y)</m>. Is <m>f</m> injective? surjective? Justify your answer with either a proof or a counterexample.
 
-<solution>
+<!--solution>
 <p>
 <em>The function <m>f</m> is not injective.</em> We just need to find two different points in the domain that map to the same point in the target. There are lots of choices here. One example is <m>f(1,0) = (5,1)</m> and <m>f(1/2, 1/2) = (5,1)</m>.
 
 <em>The function <m>f</m> is not surjective.</em> We can see that every point in the image is of the form <m>(5b, b)</m> where <m>b \in \R</m>. So there are lots of points in the target <m>\R \times \R</m> that are missed. For example, no point maps to <m>(1,0)</m>.
 </p>
-</solution>
+</solution-->
 
 				</p>
 			</statement>
@@ -79,13 +79,13 @@ Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (5
 					<p>
  Create a function <m>f: \Z \rightarrow \Z</m> that is bijective.
 
-<solution>
+<!--solution>
 <p>
 <me>
 f(x) = x
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -93,13 +93,13 @@ f(x) = x
 					<p>
  Create a function <m>f: \Z \rightarrow \Z</m> that is injective but not surjective.
 
-<solution>
+<!--solution>
 <p>
 <me>
 f(x) = 2x
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -107,13 +107,13 @@ f(x) = 2x
 					<p>
  Create a function <m>f: \Z \rightarrow \Z</m> that is surjective but not injective.
 
-<solution>
+<!--solution>
 <p>
 <me>
 f(x) = \left\lfloor \frac{x}{2} \right\rfloor
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -121,13 +121,13 @@ f(x) = \left\lfloor \frac{x}{2} \right\rfloor
 					<p>
  Create a function <m>f: \Z \rightarrow \Z</m> that is not injective and not surjective.
 
-<solution>
+<!--solution>
 <p>
 <me>
 f(x) = x^2
 </me>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -150,40 +150,40 @@ Consider the function <m>\mathcal{C}:\mathcal{E} \to \mathcal{O}</m> defined by 
 <ol>
 <li>
 Give an example of an element <m>S</m> of the domain of this function, then compute <m>\mathcal{C}(S)</m>.
-<solution>
+<!--solution>
 One example is <m>S = \{ 1,2,3 \}</m> and <m>\mathcal{C}(S) = \{4,5,6,7\}</m>.
-</solution>
+</solution-->
 </li>
 
 <li>
 How do we know that <m>\mathcal{C}</m> is well-defined; that is, given <m>S \in \mathcal{E}</m>, 
 how do we know <m>\mathcal{C}(S) \in \mathcal{O}</m>? Is there anything special about the 
 choice of the number <m>7</m> in this problem?
-<solution>
+<!--solution>
 Since <m>S \in \mathcal{E}</m>, we know that <m>|S|</m> is an even number. 
 So the size of <m>\overline{S} = 7 - |S|</m> is an odd number. This means that the function is well defined.
 What is special about 7 is that it is odd. This mapping from odd subsets to even subsets will work for any
 set <m>[2k+1]</m>.
-</solution>
+</solution-->
 </li>
 <li>
 What are the steps to prove that <m>\mathcal{C}</m> is injective?
-<solution>
+<!--solution>
 Let's prove the contrapositive. Suppose that <m>A,B \in \mathcal{E}</m>, and that 
 <m>A \neq B</m>. Without loss of generality, there exists <m>a \in A</m> such that <m>a \notin B</m>.
 Equivalently, we have <m>a \notin \overline{A}</m> and <m>a \in \overline{B}</m>. Therefore 
 <m>\overline{A} \neq \overline{B}</m>. We can now conclude that when
 <m>A \neq B</m>, we have <m>\mathcal{C}(A) = \overline{A} \neq \overline{B}  = \mathcal{C}(B)</m>.
 This shows that <m>\mathcal{C}</m> is injective.
-</solution>
+</solution-->
 </li>
 <li>
 What are the steps to prove that <m>\mathcal{C}</m> is surjective? 
-<solution>
+<!--solution>
 Pick any set <m>B \in \mathcal{O}</m>, so that <m>|B|</m> is odd. Then <m>|\overline{B}|</m> is even, 
 and therefore <m>\overline{B} \in \mathcal{E}</m>. Finally, we have
 <m>\mathcal{C}(\overline{B}) = B</m>. This proves that  <m>\mathcal{C}</m> is surjective.
-</solution>
+</solution-->
 </li>
 </ol>
 
@@ -208,7 +208,7 @@ f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
 					<p>
  Prove that if <m>A \subset B</m> then <m>f(A) \subset f(B)</m>
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -254,7 +254,7 @@ f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
 
 In other words, <m>y \in f(B)</m>.
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -264,7 +264,7 @@ In other words, <m>y \in f(B)</m>.
 					<p>
  Draw an example for which <m>A \not\subset B</m>, but <m>f(A) \subset f(B)</m>.
 
-<solution>
+<!--solution>
 <p>
 			<image width="50%" xml:id="fig-img-function30">
 				<latex-image>
@@ -306,7 +306,7 @@ In other words, <m>y \in f(B)</m>.
 				</latex-image>
 			</image>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -314,7 +314,7 @@ In other words, <m>y \in f(B)</m>.
 					<p>
  Prove that <m>f(A \cap B) \subset f(A) \cap f(B)</m>.
 
-<solution>
+<!--solution>
 <p>
 		<ul>
 			<li>
@@ -364,7 +364,7 @@ In other words, <m>y \in f(B)</m>.
 			</li>
 		</ul>
 </p>
-</solution>
+</solution-->
 
 			</p><p>
 
@@ -375,7 +375,7 @@ In other words, <m>y \in f(B)</m>.
 					<p>
  Draw an example for which <m>f(A \cap B) \neq f(A) \cap f(B)</m>
 
-<solution>
+<!--solution>
 <p>
 			<image width="50%" xml:id="fig-img-function31">
 				<latex-image>
@@ -417,7 +417,7 @@ In other words, <m>y \in f(B)</m>.
 				</latex-image>
 			</image>
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -577,11 +577,11 @@ For a fixed <m>n</m>, let <m>\Z_n = \{ 0,1,2, \ldots, n-1 \}</m>. We define a fu
 					<p>
  Consider the function <m>f: \Z \rightarrow \Z_{5}</m> given by <m>f(k) = k \mbox{ mod } 5.</m>  Is <m>f</m> injective? Is <m>f</m> surjective? Justify your answers.
 
-<solution>
+<!--solution>
 <p>
 The function <m>f</m> is surjective because <m>f(k)=k</m> for <m>0 \leq k \leq 4.</m> The function is not injective: every multiple of 5 maps to 0.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -589,7 +589,7 @@ The function <m>f</m> is surjective because <m>f(k)=k</m> for <m>0 \leq k \leq 4
 					<p>
  Consider the function <m>g: \Z_{6} \rightarrow \Z_{6}</m> given by <m>g(k) = 2k \mbox{ mod } 6</m>. Is <m>g</m> injective? Is <m>g</m> surjective? Justify your answer.
 
-<solution>
+<!--solution>
 <p>
 The function is:
 <me>
@@ -597,7 +597,7 @@ f(0)=0, \qquad f(1) = 2, \qquad f(2) = 4, \qquad f(3) = 0, \qquad f(4) = 2, \qqu
 </me>
 Clearly, this function is not injective and it is not surjective.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -605,7 +605,7 @@ Clearly, this function is not injective and it is not surjective.
 					<p>
   Consider the function <m>h: \Z_{7} \rightarrow \Z_{7}</m> given by <m>g(k) = 2k \mbox{ mod } 7</m>. Is <m>h</m> injective? Is <m>f</m> surjective? Justify your answer.
 
-<solution>
+<!--solution>
 <p>
 The function is:
 <me>
@@ -613,7 +613,7 @@ f(0)=0, \qquad f(1) = 2, \qquad f(2) = 4, \qquad f(4) = 6, \qquad f(4) = 1, \qqu
 </me>
 Clearly, this function is both injective and  surjective.
 </p>
-</solution>
+</solution-->
 
 					</p>
 				</li>
@@ -621,7 +621,7 @@ Clearly, this function is both injective and  surjective.
 					<p>
   Fix a positive integer <m>n</m>, and consider the function the function <m>g: \Z_{n} \rightarrow \Z_{n}</m> given by <m>g(k) = 2k \mbox{ mod } n</m>. Prove that this function is injective if and only if <m>n</m> is odd. Then prove that this function is surjective if and only if <m>n</m> is odd.
 
-<solution>
+<!--solution>
 <p>
 First, we prove that if <m>n=2k</m> is even then <m>g: \Z_{n} \rightarrow \Z_{n}</m>  is not injective and not surjective
 		<ul>
@@ -662,7 +662,7 @@ But this contradicts the fact that we already know: <m>g</m> is surjective. Ther
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 
 					</p>

@@ -52,7 +52,7 @@ Prove that for all integers <m>n \in \mathbb{Z}</m>, if <m>n</m> is odd, then <m
 				</p>
 			</statement>
 					
-			<solution>
+			<!--solution>
 			<p>
 			We have <m>n=2r+1</m> for some <m>r \in \mathbb{Z}</m>. 
 			Therefore 
@@ -61,7 +61,7 @@ Prove that for all integers <m>n \in \mathbb{Z}</m>, if <m>n</m> is odd, then <m
 			</me>
 			Taking <m>s=5r+4</m>, we have <m>5n+3=2s</m>, which proves that <m>5n+3</m> is even.
 			</p>
-			</solution>
+			</solution-->
 		</exercise>
 		<exercise>
 			<title>Any to Odd</title>
@@ -74,7 +74,7 @@ Prove that if <m>n \in \mathbb{Z}</m>, then <m>5n^2+3n+7</m> is odd.
 
 				</p>
 			</statement>
-			<solution>
+			<!--solution>
 			<p>There are two cases: when <m>n</m> is odd and when <m>n</m> is even.</p>
 			<p>
 			<strong>Case 1:</strong> <m>n</m> is odd. We have <m>n=2r+1</m> for some <m>r \in \mathbb{Z}</m>. 
@@ -103,7 +103,7 @@ Prove that if <m>n \in \mathbb{Z}</m>, then <m>5n^2+3n+7</m> is odd.
 			Taking <m>s=10r^2+3r+3</m>, we have <m>5n^2+3n+7=2s+1</m>, 
 			which proves that <m>5n^2+3n+7</m> is odd.
 			</p>				
-			</solution>
+			</solution-->
 		</exercise>
 		<exercise>
 			<title>Even/Odd Combo</title>
@@ -116,7 +116,7 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 
 				</p>
 			</statement>
-			<solution>
+			<!--solution>
 			<p>
 			We have <m>a=2r+1</m> for some <m>r \in \mathbb{Z}</m>,
 			and <m>b=2s</m> for some <m>s \in \mathbb{Z}</m>.
@@ -127,7 +127,7 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 			Taking <m>t=2r+3s+1</m>, we have <m>2a+3b=2t</m>, 
 			which proves that <m>5n^2+3n+7</m> is even.
 			</p>	
-			</solution>
+			</solution-->
 		</exercise>  
 
         <exercise>
@@ -141,7 +141,7 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 
 				</p>
 			</statement>
-			<solution>
+			<!--solution>
 			<p>
 			We have <m>a=2r+1</m> for some <m>r \in \mathbb{Z}</m>,
 			and <m>b=2s</m> for some <m>s \in \mathbb{Z}</m>.
@@ -153,7 +153,7 @@ Prove that if <m>a</m> is any odd integer and <m>b</m> is any even integer, then
 			Taking <m>t=2r^2+ 2r+2s^2</m>, we have <m>a^2+b^2=2t+1</m>, 
 			which proves that <m>5n^2+3n+7</m> is odd.
 			</p>	
-			</solution>
+			</solution-->
 		</exercise> 
 
         <exercise>
@@ -166,7 +166,7 @@ if  <m>mn</m> is even then <m>m</m> is even or <m>n</m> is even.
 
 				</p>
 			</statement>
-			<solution>
+			<!--solution>
 			<p>
 			The contrapositive of the statement is: if <m>m</m> is odd and <m>n</m> is odd then <m>mn</m> is odd.
 			Let's prove this statment. We have <m>m=2r+1</m> and <m>n=2s+1</m> for some <m>r,s \in \mathbb{Z}</m>.
@@ -178,7 +178,7 @@ if  <m>mn</m> is even then <m>m</m> is even or <m>n</m> is even.
 			We have proved the contrapositive, so the original statement is also true 
 			(because an implication and its contrapositive have the same truth values).
 			</p>
-			</solution>
+			</solution-->
 		</exercise> 
 
         <exercise>
@@ -191,7 +191,7 @@ we have <m>4 \nmid n^2-2.</m>
 
 				</p>
 			</statement>
-			<solution>
+			<!--solution>
 			<p>
 			Assume for the sake of contradiction (AFSOC) that <m>4 \mid n^2-2.</m> This means that 
 			<m>n^2-2 = 4k</m> for some <m>k \in \mathbb{Z}</m>.
@@ -243,7 +243,7 @@ we have <m>4 \nmid n^2-2.</m>
 			which is a contradiction because the left hand size is an integer, while the right hand side is not.
 			Therefore <m>4 \nmid n^2-2</m> when <m>n</m> is even.
 			</p>			
-			</solution>
+			</solution-->
 		</exercise> 
 
         <exercise>
@@ -259,7 +259,7 @@ Prove the following statement using either proof by contrapositive, or proof by 
                 </p>
 			</statement>
 
-			<solution>
+			<!--solution>
 			<p>
 			Here is a proof by contrapositive.
 			We must prove that if <m>a &lt; \sqrt{n}</m> and <m>b &lt; \sqrt{n}</m> then
@@ -273,7 +273,7 @@ Prove the following statement using either proof by contrapositive, or proof by 
 			Now, we have <m>ab &lt; n</m>, so of course <m>ab \neq n</m>. We have proved that the 
 			contrapositive statement is true, so the original implication is true as well.
 			</p>			
-			</solution>
+			</solution-->
 		</exercise> 
 
 	</exercises>

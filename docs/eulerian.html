@@ -218,55 +218,55 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="eulerian"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">24</span> <span class="title">Eulerian Graphs</span>
 </h2>
-<section class="introduction" id="introduction-24"><p id="p-748">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
+<section class="introduction" id="introduction-24"><p id="p-378">Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
 <ul class="disc">
-<li id="li-355"><p id="p-749">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
-<li id="li-356"><p id="p-750">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
-<li id="li-357"><p id="p-751">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
-<li id="li-358"><p id="p-752">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
-<li id="li-359"><p id="p-753">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-230"><p id="p-379">A <em class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
+<li id="li-231"><p id="p-380">A <em class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
+<li id="li-232"><p id="p-381">A <em class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
+<li id="li-233"><p id="p-382">A <em class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
+<li id="li-234"><p id="p-383">A <em class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
 </ul>
 <p class="continuation">And here are the definitions that we need for today.</p>
 <ul class="disc">
-<li id="li-360"><p id="p-754">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
-<li id="li-361"><p id="p-755">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
-<li id="li-362"><p id="p-756">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
+<li id="li-235"><p id="p-384">An <em class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
+<li id="li-236"><p id="p-385">An <em class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
+<li id="li-237"><p id="p-386">An <em class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
 </ul></section><section class="exercises" id="exercises-24"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-110"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Examples and Non-Examples.</span>
 </h6>
-<p id="p-757">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-111"><h6 class="heading">
+<p id="p-387">Which if these graph have  an Eulerian circuit? An Eulerian trail? <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-eulerian0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-111"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">DIY Eulerian Properties.</span>
 </h6>
-<p id="p-758">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? </p></article><article class="exercise exercise-like" id="exercise-112"><h6 class="heading">
+<p id="p-388">Given what you have learned in the previous question, can you draw another graph that has an Eulerian circuit? An Eulerian trail? That has neither an Eulerian circuit or an Eulerian trail? </p></article><article class="exercise exercise-like" id="exercise-112"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Circuit.</span>
 </h6>
-<p id="p-759">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. </p></article><article class="exercise exercise-like" id="exercise-113"><h6 class="heading">
+<p id="p-389">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian circuit.   We will call this <em class="emphasis">Property EC</em>. </p></article><article class="exercise exercise-like" id="exercise-113"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Graphs With an Eulerian Trail.</span>
 </h6>
-<p id="p-760">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. </p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading">
+<p id="p-390">Make a conjecture about what structural property guarantees that \(G\) has an Eulerian trail. We will call this <em class="emphasis">Property ET</em>. </p></article><article class="exercise exercise-like" id="exercise-114"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Using EC condition to prove ET condition.</span>
 </h6>
-<p id="p-761">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
-<p id="p-762">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
-<p id="p-763"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? </p></article><article class="exercise exercise-like" id="exercise-115"><h6 class="heading">
+<p id="p-391">Assume that your <em class="emphasis">Property EC</em> guarantees that a graph has an Eulerian circuit. (We will prove it below). Use that fact to prove that <em class="emphasis">Property ET</em> guarantees that a graph has an Eulerian trail. In other words, prove that</p>
+<p id="p-392">[ Property EC \(\rightarrow\)  Eulerian circuit ] \(\rightarrow\) [ Property ET \(\rightarrow\)  Eulerian trail ].</p>
+<p id="p-393"><em class="emphasis">Hint:</em> What small change could you make to a graph \(G\) with the ET property so that it becomes a graph \(H\) with the EC property? </p></article><article class="exercise exercise-like" id="exercise-115"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Eulerian Circuit Implies EC condition holds.</span>
 </h6>
-<p id="p-764">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. </p></article><article class="exercise exercise-like" id="exercise-116"><h6 class="heading">
+<p id="p-394">Prove that if \(G\) has an Eulerian circuit then \(G\) has Property EC. </p></article><article class="exercise exercise-like" id="exercise-116"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">EC condition implies \(G\) has an Eulerian Circuit.</span>
 </h6>
-<p id="p-765">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. </p></article><article class="exercise exercise-like" id="exercise-117"><h6 class="heading">
+<p id="p-395">We need strong induction on \(m=|E|\) to give a rigorous proof that if   \(G\) has Property EC then \(G\) has an Eulerian circuit. For now, brainstorm about how you might prove this by strong induction. Write down your strategy. </p></article><article class="exercise exercise-like" id="exercise-117"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Guan's Postman Problem.</span>
 </h6>
-<p id="p-766">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
-<p id="p-767"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
-<p id="p-768">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
+<p id="p-396">The Postman Problem  is an example of a <em class="emphasis">combinatorial optimization problem</em>:</p>
+<p id="p-397"><em class="emphasis">The Postman Problem</em>: Given a connected (and possibly weighted) graph, find the shortest closed walk that covers every edge at least once.</p>
+<p id="p-398">In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
 <ol class="lower-alpha">
-<li id="li-363"><p id="p-769">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
-<li id="li-364"><p id="p-770">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
-<li id="li-365"><p id="p-771">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
+<li id="li-238"><p id="p-399">Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
+<li id="li-239"><p id="p-400">Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
+<li id="li-240"><p id="p-401">Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

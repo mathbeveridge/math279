@@ -218,137 +218,61 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="function3"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">9</span> <span class="title">Fun with Functions</span>
 </h2>
-<section class="introduction" id="introduction-9"><p id="p-269"></p></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-9"><p id="p-132"></p></section><section class="exercises" id="exercises-9"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-42"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">A function from \(\R^2\) to \(\R^2\).</span>
 </h6>
-<p id="p-270">Let \(f: \R \times \R \rightarrow \R \times \R\) be defined by \(f(x,y) = (2y, x-y)\text{.}\) Is \(f\) injective? surjective? Justify your answer with either a proof or a counterexample. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-76" id="solution-76"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-76"><div class="solution solution-like">
-<p id="p-271"><em class="emphasis">The function \(f\) is injective.</em> Suppose that \(f(x_1, y_1) = f(x_2, y_2)\text{.}\) This means that \((2y_1, x_1-y_1) = (2y_2, x_2 - y_2)\text{.}\) We  find that \​begin{eqnarray*} 2y_1 &amp;=&amp; 2y_2 \\ y_1 &amp;=&amp; y_2 \end{eqnarray*} and then \​begin{eqnarray*} x_1 - y_1 &amp;=&amp; x_2 - y_2 \\ x_1 - y_1 &amp;=&amp; x_2 - y_1 \\ x_1 &amp;=&amp; x_2 \end{eqnarray*} Therefore \((x_1, y_1) = (x_2, y_2)\text{.}\)</p>
-<p id="p-272"><em class="emphasis">The function \(f\) is surjective.</em> Pick any \((a,b) \in \R \times \R)\text{.}\) We must find \((x,y) \in \R \times \R\) such that \(f(x,y)=(a,b)\text{.}\) In order for this to hold, we need \​begin{eqnarray*} 2y &amp;=&amp; a \\ x-y &amp;=&amp; b \end{eqnarray*} Solving this linear systems gives \(x= b+ \frac{a}{2}\) and \(y=\frac{a}{2}\text{.}\) We can then check that</p>
-<div class="displaymath">
-\begin{equation*}
-f \left(b+ \frac{a}{2},  \frac{a}{2} \right) = \left( 2 \cdot \frac{a}{2}, b+ \frac{a}{2} - \frac{a}{2} \right) = (a,b).
-\end{equation*}
-</div>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-43"><h6 class="heading">
+<p id="p-133">Let \(f: \R \times \R \rightarrow \R \times \R\) be defined by \(f(x,y) = (2y, x-y)\text{.}\) Is \(f\) injective? surjective? Justify your answer with either a proof or a counterexample. </p></article><article class="exercise exercise-like" id="exercise-43"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Another function from \(\R^2\) to \(\R^2\).</span>
 </h6>
-<p id="p-273">Let \(f: \R \times \R \rightarrow \R \times \R\) be defined by \(f(x,y) = (5x+5y, x+y)\text{.}\) Is \(f\) injective? surjective? Justify your answer with either a proof or a counterexample. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-77" id="solution-77"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-77"><div class="solution solution-like"><p id="p-274"><em class="emphasis">The function \(f\) is not injective.</em> We just need to find two different points in the domain that map to the same point in the target. There are lots of choices here. One example is \(f(1,0) = (5,1)\) and \(f(1/2, 1/2) = (5,1)\text{.}\) <em class="emphasis">The function \(f\) is not surjective.</em> We can see that every point in the image is of the form \((5b, b)\) where \(b \in \R\text{.}\) So there are lots of points in the target \(\R \times \R\) that are missed. For example, no point maps to \((1,0)\text{.}\)</p></div></div></p></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading">
+<p id="p-134">Let \(f: \R \times \R \rightarrow \R \times \R\) be defined by \(f(x,y) = (5x+5y, x+y)\text{.}\) Is \(f\) injective? surjective? Justify your answer with either a proof or a counterexample. </p></article><article class="exercise exercise-like" id="exercise-44"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Functions from \(\Z\) to \(\Z\).</span>
 </h6>
-<ol id="p-275" class="lower-alpha">
-<li id="li-132"><p id="p-276">Create a function \(f: \Z \rightarrow \Z\) that is bijective. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-78" id="solution-78"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-78"><div class="solution solution-like"><div class="displaymath" id="p-277">
-\begin{equation*}
-f(x) = x
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-133"><p id="p-278">Create a function \(f: \Z \rightarrow \Z\) that is injective but not surjective. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-79" id="solution-79"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-79"><div class="solution solution-like"><div class="displaymath" id="p-279">
-\begin{equation*}
-f(x) = 2x
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-134"><p id="p-280">Create a function \(f: \Z \rightarrow \Z\) that is surjective but not injective. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-80" id="solution-80"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-80"><div class="solution solution-like"><div class="displaymath" id="p-281">
-\begin{equation*}
-f(x) = \left\lfloor \frac{x}{2} \right\rfloor
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-135"><p id="p-282">Create a function \(f: \Z \rightarrow \Z\) that is not injective and not surjective. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-81" id="solution-81"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-81"><div class="solution solution-like"><div class="displaymath" id="p-283">
-\begin{equation*}
-f(x) = x^2
-\end{equation*}
-</div></div></div></p></li>
+<ol id="p-135" class="lower-alpha">
+<li id="li-82"><p id="p-136">Create a function \(f: \Z \rightarrow \Z\) that is bijective. </p></li>
+<li id="li-83"><p id="p-137">Create a function \(f: \Z \rightarrow \Z\) that is injective but not surjective. </p></li>
+<li id="li-84"><p id="p-138">Create a function \(f: \Z \rightarrow \Z\) that is surjective but not injective. </p></li>
+<li id="li-85"><p id="p-139">Create a function \(f: \Z \rightarrow \Z\) that is not injective and not surjective. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-45"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Even and Odd Subsets.</span>
 </h6>
-<p id="p-284">Let \(\mathcal{E} = \{S \subseteq [7] : |S| \text{ is even}\}\) and let \(\mathcal{O} = \{S \subseteq [7] : |S| \text{ is odd}\}\text{.}\) Consider the function \(\mathcal{C}:\mathcal{E} \to \mathcal{O}\) defined by the rule \(\mathcal{C}(S) = \overline{S}\text{,}\) the complement of \(S\text{.}\)</p>
+<p id="p-140">Let \(\mathcal{E} = \{S \subseteq [7] : |S| \text{ is even}\}\) and let \(\mathcal{O} = \{S \subseteq [7] : |S| \text{ is odd}\}\text{.}\) Consider the function \(\mathcal{C}:\mathcal{E} \to \mathcal{O}\) defined by the rule \(\mathcal{C}(S) = \overline{S}\text{,}\) the complement of \(S\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-136"><p id="p-derived-li-136">Give an example of an element \(S\) of the domain of this function, then compute \(\mathcal{C}(S)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-82" id="solution-82"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-82"><div class="solution solution-like">One example is \(S = \{ 1,2,3 \}\) and \(\mathcal{C}(S) = \{4,5,6,7\}\text{.}\)</div></div></p></li>
-<li id="li-137"><p id="p-derived-li-137">How do we know that \(\mathcal{C}\) is well-defined; that is, given \(S \in \mathcal{E}\text{,}\) how do we know \(\mathcal{C}(S) \in \mathcal{O}\text{?}\) Is there anything special about the choice of the number \(7\) in this problem? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-83" id="solution-83"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-83"><div class="solution solution-like">Since \(S \in \mathcal{E}\text{,}\) we know that \(|S|\) is an even number. So the size of \(\overline{S} = 7 - |S|\) is an odd number. This means that the function is well defined. What is special about 7 is that it is odd. This mapping from odd subsets to even subsets will work for any set \([2k+1]\text{.}\)</div></div></p></li>
-<li id="li-138"><p id="p-derived-li-138">What are the steps to prove that \(\mathcal{C}\) is injective? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-84" id="solution-84"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-84"><div class="solution solution-like">Let's prove the contrapositive. Suppose that \(A,B \in \mathcal{E}\text{,}\) and that \(A \neq B\text{.}\) Without loss of generality, there exists \(a \in A\) such that \(a \notin B\text{.}\) Equivalently, we have \(a \notin \overline{A}\) and \(a \in \overline{B}\text{.}\) Therefore \(\overline{A} \neq \overline{B}\text{.}\) We can now conclude that when \(A \neq B\text{,}\) we have \(\mathcal{C}(A) = \overline{A} \neq \overline{B}  = \mathcal{C}(B)\text{.}\) This shows that \(\mathcal{C}\) is injective.</div></div></p></li>
-<li id="li-139"><p id="p-derived-li-139">What are the steps to prove that \(\mathcal{C}\) is surjective? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-85" id="solution-85"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-85"><div class="solution solution-like">Pick any set \(B \in \mathcal{O}\text{,}\) so that \(|B|\) is odd. Then \(|\overline{B}|\) is even, and therefore \(\overline{B} \in \mathcal{E}\text{.}\) Finally, we have \(\mathcal{C}(\overline{B}) = B\text{.}\) This proves that  \(\mathcal{C}\) is surjective.</div></div></p></li>
+<li id="li-86"><p id="p-derived-li-86">Give an example of an element \(S\) of the domain of this function, then compute \(\mathcal{C}(S)\text{.}\) </p></li>
+<li id="li-87"><p id="p-derived-li-87">How do we know that \(\mathcal{C}\) is well-defined; that is, given \(S \in \mathcal{E}\text{,}\) how do we know \(\mathcal{C}(S) \in \mathcal{O}\text{?}\) Is there anything special about the choice of the number \(7\) in this problem? </p></li>
+<li id="li-88"><p id="p-derived-li-88">What are the steps to prove that \(\mathcal{C}\) is injective? </p></li>
+<li id="li-89"><p id="p-derived-li-89">What are the steps to prove that \(\mathcal{C}\) is surjective? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-46"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">The Image of a Subset.</span>
 </h6>
-<p id="p-285">Let \(f : X \rightarrow Y\) be a function. Let \(A \subset X\) and \(B \subset X\text{.}\) For a subset \(S \subset X\text{,}\) define the subset \(f(S) \subset Y\) by</p>
+<p id="p-141">Let \(f : X \rightarrow Y\) be a function. Let \(A \subset X\) and \(B \subset X\text{.}\) For a subset \(S \subset X\text{,}\) define the subset \(f(S) \subset Y\) by</p>
 <div class="displaymath">
 \begin{equation*}
 f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-140">
-<p id="p-286">Prove that if \(A \subset B\) then \(f(A) \subset f(B)\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-86" id="solution-86"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-86"><div class="solution solution-like">
-<ul id="p-287" class="disc">
-<li id="li-141"><p id="p-288"><em class="emphasis">Know:</em> If \(x \in A\) then \(x \in B\) \qquad \((\star)\)</p></li>
-<li id="li-142"><p id="p-289"><em class="emphasis">Show:</em> If \(y \in f(A)\) then \(y \in f(B)\text{.}\)</p></li>
-</ul>
-<ul id="p-290" class="disc">
-<li id="li-143"><p id="p-291">Given \(y \in f(A)\)</p></li>
-<li id="li-144"><p id="p-292">\(\Longrightarrow\) There exists \(x \in A\) such that \(f(x) = y\text{.}\)</p></li>
-<li id="li-145"><p id="p-293">Note that \(x \in B\) by \((\star)\text{.}\)</p></li>
-<li id="li-146"><p id="p-294">\(\Longrightarrow\) \(f(x) \in f(B)\)</p></li>
-</ul>
-<p id="p-295">In other words, \(y \in f(B)\text{.}\)</p>
-</div></div></p>
-<p id="p-296"></p>
+<li id="li-90">
+<p id="p-142">Prove that if \(A \subset B\) then \(f(A) \subset f(B)\) </p>
+<p id="p-143"></p>
 </li>
-<li id="li-147"><p id="p-297">Draw an example for which \(A \not\subset B\text{,}\) but \(f(A) \subset f(B)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-87" id="solution-87"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-87"><div class="solution solution-like"><p id="p-298"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-function30.svg" role="img" class="contained"></div></p></div></div></p></li>
-<li id="li-148">
-<p id="p-299">Prove that \(f(A \cap B) \subset f(A) \cap f(B)\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-88" id="solution-88"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-88"><div class="solution solution-like">
-<ul id="p-300" class="disc">
-<li id="li-149"><p id="p-301"><em class="emphasis">Know:</em> \(y \in f(A \cap B)\)</p></li>
-<li id="li-150"><p id="p-302"><em class="emphasis">Show:</em> \(y \in f(A) \cap f(B)\)</p></li>
-</ul>
-<ul id="p-303" class="disc">
-<li id="li-151"><p id="p-304">Suppose that \(y \in f(A \cap B)\)</p></li>
-<li id="li-152"><p id="p-305">\(\Longrightarrow\) There exists \(x \in A \cap B\) such that \(y = f(x)\text{.}\)</p></li>
-<li id="li-153"><p id="p-306">\(\Longrightarrow\) \(x \in A\) and \(x \in B\)</p></li>
-<li id="li-154"><p id="p-307">\(\Longrightarrow\) \(f(x) \in f(A)\) and \(f(x) \in f(B)\)</p></li>
-<li id="li-155"><p id="p-308">\(\Longrightarrow\) \(f(x)  \in f(A) \cap f(B)\)</p></li>
-<li id="li-156"><p id="p-309">\(\Longrightarrow\) \(y  \in f(A) \cap f(B)\)</p></li>
-</ul>
-</div></div></p>
-<p id="p-310"></p>
+<li id="li-91"><p id="p-144">Draw an example for which \(A \not\subset B\text{,}\) but \(f(A) \subset f(B)\text{.}\) </p></li>
+<li id="li-92">
+<p id="p-145">Prove that \(f(A \cap B) \subset f(A) \cap f(B)\text{.}\) </p>
+<p id="p-146"></p>
 </li>
-<li id="li-157"><p id="p-311">Draw an example for which \(f(A \cap B) \neq f(A) \cap f(B)\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-89" id="solution-89"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-89"><div class="solution solution-like"><p id="p-312"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-function31.svg" role="img" class="contained"></div></p></div></div></p></li>
+<li id="li-93"><p id="p-147">Draw an example for which \(f(A \cap B) \neq f(A) \cap f(B)\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-47"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Clock Math.</span>
 </h6>
-<p id="p-313">For a fixed \(n\text{,}\) let \(\Z_n = \{ 0,1,2, \ldots, n-1 \}\text{.}\) We define a function \(f: \Z \rightarrow \Z_n\) by \(f(k) = k \mbox{ mod } n\text{,}\) which is the integer remainder when \(k\) is divided by \(n\text{.}\)</p>
+<p id="p-148">For a fixed \(n\text{,}\) let \(\Z_n = \{ 0,1,2, \ldots, n-1 \}\text{.}\) We define a function \(f: \Z \rightarrow \Z_n\) by \(f(k) = k \mbox{ mod } n\text{,}\) which is the integer remainder when \(k\) is divided by \(n\text{.}\)</p>
 <ol class="lower-alpha">
-<li id="li-158"><p id="p-314">Consider the function \(f: \Z \rightarrow \Z_{5}\) given by \(f(k) = k \mbox{ mod } 5.\)  Is \(f\) injective? Is \(f\) surjective? Justify your answers. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-90" id="solution-90"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-90"><div class="solution solution-like"><p id="p-315">The function \(f\) is surjective because \(f(k)=k\) for \(0 \leq k \leq 4.\) The function is not injective: every multiple of 5 maps to 0.</p></div></div></p></li>
-<li id="li-159"><p id="p-316">Consider the function \(g: \Z_{6} \rightarrow \Z_{6}\) given by \(g(k) = 2k \mbox{ mod } 6\text{.}\) Is \(g\) injective? Is \(g\) surjective? Justify your answer. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-91" id="solution-91"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-91"><div class="solution solution-like">
-<p id="p-317">The function is:</p>
-<div class="displaymath">
-\begin{equation*}
-f(0)=0, \qquad f(1) = 2, \qquad f(2) = 4, \qquad f(3) = 0, \qquad f(4) = 2, \qquad f(5)=4.
-\end{equation*}
-</div>
-<p class="continuation">Clearly, this function is not injective and it is not surjective.</p>
-</div></div></p></li>
-<li id="li-160"><p id="p-318">Consider the function \(h: \Z_{7} \rightarrow \Z_{7}\) given by \(g(k) = 2k \mbox{ mod } 7\text{.}\) Is \(h\) injective? Is \(f\) surjective? Justify your answer. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-92" id="solution-92"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-92"><div class="solution solution-like">
-<p id="p-319">The function is:</p>
-<div class="displaymath">
-\begin{equation*}
-f(0)=0, \qquad f(1) = 2, \qquad f(2) = 4, \qquad f(4) = 6, \qquad f(4) = 1, \qquad f(5)=3, \qquad f(6) = 5
-\end{equation*}
-</div>
-<p class="continuation">Clearly, this function is both injective and  surjective.</p>
-</div></div></p></li>
-<li id="li-161"><p id="p-320">Fix a positive integer \(n\text{,}\) and consider the function the function \(g: \Z_{n} \rightarrow \Z_{n}\) given by \(g(k) = 2k \mbox{ mod } n\text{.}\) Prove that this function is injective if and only if \(n\) is odd. Then prove that this function is surjective if and only if \(n\) is odd. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-93" id="solution-93"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-93"><div class="solution solution-like">
-<p id="p-321">First, we prove that if \(n=2k\) is even then \(g: \Z_{n} \rightarrow \Z_{n}\)  is not injective and not surjective</p>
-<ul class="disc">
-<li id="li-162"><p id="p-322">We have \(g(0) = 0\) and \(g(k) = 2k \mbox{ mod } (2k) = 0\text{.}\) Therefore \(g\) is not injective.</p></li>
-<li id="li-163"><p id="p-323">If \(m\) is odd, \(g(i) \neq m\) for all \(i \in \Z_n\) because \(g(i)\) is always even. Therefore \(g\) is not surjective.</p></li>
-</ul>
-<p class="continuation">Next, we prove that if \(n=2k+1\) is odd, then \(g: \Z_{n} \rightarrow \Z_{n}\) is bijective.</p>
-<ul class="disc">
-<li id="li-164"><p id="p-324">First, we show that \(g\) is surjective. If \(m=2r\) is even (where \(0 \leq r \leq k\)), then \(g(r)=2r=m\text{.}\) If \(m=2r+1 \in \Z_n\) is odd (where \(0 \leq r \leq k\)) then \​begin{eqnarray*} g(k+r+1) &amp;=&amp; 2(k+r+1) \mbox{ mod } (2k+1) \\ &amp;=&amp; \left( ( 2k+1) + (2r+1) \right) \mbox{ mod } (2k+1) \\ &amp;=&amp; 2r+1. \end{eqnarray*}</p></li>
-<li id="li-165"><p id="p-325">We now know that \(g\) is surjective. Since both the domain and the target (codomain) have the same size, the function \(g\) must also be bijective. We prove this by contradiction. Suppose that the function is not injective. This means that there are \(k_1 \neq k_2\) such that \(g(k_1)=g(k_2)\text{.}\)  But this would mean that the size of the image \(g([n])\) must be smaller than the size of \([n]\text{.}\) Therefore the function is not surjective. But this contradicts the fact that we already know: \(g\) is surjective. Therefore \(g\) must also be injective.</p></li>
-</ul>
-</div></div></p></li>
+<li id="li-94"><p id="p-149">Consider the function \(f: \Z \rightarrow \Z_{5}\) given by \(f(k) = k \mbox{ mod } 5.\)  Is \(f\) injective? Is \(f\) surjective? Justify your answers. </p></li>
+<li id="li-95"><p id="p-150">Consider the function \(g: \Z_{6} \rightarrow \Z_{6}\) given by \(g(k) = 2k \mbox{ mod } 6\text{.}\) Is \(g\) injective? Is \(g\) surjective? Justify your answer. </p></li>
+<li id="li-96"><p id="p-151">Consider the function \(h: \Z_{7} \rightarrow \Z_{7}\) given by \(g(k) = 2k \mbox{ mod } 7\text{.}\) Is \(h\) injective? Is \(f\) surjective? Justify your answer. </p></li>
+<li id="li-97"><p id="p-152">Fix a positive integer \(n\text{,}\) and consider the function the function \(g: \Z_{n} \rightarrow \Z_{n}\) given by \(g(k) = 2k \mbox{ mod } n\text{.}\) Prove that this function is injective if and only if \(n\) is odd. Then prove that this function is surjective if and only if \(n\) is odd. </p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

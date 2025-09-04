@@ -251,13 +251,13 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  Rewrite the definition of <em>bounded</em> only using mathematical symbols and quantifiers.
 
-<solution>
+<!-!-solution>
 <p>
 \[
 \exists M \in \R,  \forall x \in S,  |x| \leq M.
 \]
 </p>
-</solution>
+</solution-!->
 
 					</p>
 				</li>
@@ -265,14 +265,14 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  The definition of <em>unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English.
 
-<solution>
+<!-!-solution>
 <p>
 \[
 \forall M \in \R,  \exists x \in S,  |x| &gt; M.
 \]
 For every <m>M \in \R</m>, there exists an <m>x \in S</m> such that <m>|x| &gt; M</m>.
 </p>
-</solution>
+</solution-!->
 
 					</p>
 				</li>

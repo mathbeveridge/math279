@@ -218,26 +218,26 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-perm-comb"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">15</span> <span class="title">Permutations and Combinations</span>
 </h2>
-<section class="introduction" id="introduction-15"><p id="p-512">Here are the formulas to count  sublists and subsets of the set \([n] = \{1,2,\ldots, n\}\text{.}\)</p>
+<section class="introduction" id="introduction-15"><p id="p-242">Here are the formulas to count  sublists and subsets of the set \([n] = \{1,2,\ldots, n\}\text{.}\)</p>
 <ul class="disc">
-<li id="li-264">
-<p id="p-513">A <em class="emphasis">permutation</em> of \([n]\) is an ordered list of its elements. The number of permutations of \([n]\) is</p>
+<li id="li-156">
+<p id="p-243">A <em class="emphasis">permutation</em> of \([n]\) is an ordered list of its elements. The number of permutations of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 n! = n (n-1) (n-2) \cdots 2 \cdot 1.
 \end{equation*}
 </div>
 </li>
-<li id="li-265">
-<p id="p-514">A  \(k\)-<em class="emphasis">list</em> of \([n]\) (also called a \(k\)<em class="emphasis">-permutation</em>) is an ordered list of \(k\) elements of \([n]\text{.}\) The number of \(k\)-lists of \([n]\) is</p>
+<li id="li-157">
+<p id="p-244">A  \(k\)-<em class="emphasis">list</em> of \([n]\) (also called a \(k\)<em class="emphasis">-permutation</em>) is an ordered list of \(k\) elements of \([n]\text{.}\) The number of \(k\)-lists of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 P(n,k) = (n)_k = n (n-1) \cdots (n-k+1) = \frac{n!}{(n-k)!}.
 \end{equation*}
 </div>
 </li>
-<li id="li-266">
-<p id="p-515">A \(k\)<em class="emphasis">-set</em> of \([n]\) (also called a \(k\)<em class="emphasis">-combination</em>) is a subset containing \(k\) elements of \([n]\text{.}\) The number of \(k\)-sets of \([n]\) is</p>
+<li id="li-158">
+<p id="p-245">A \(k\)<em class="emphasis">-set</em> of \([n]\) (also called a \(k\)<em class="emphasis">-combination</em>) is a subset containing \(k\) elements of \([n]\text{.}\) The number of \(k\)-sets of \([n]\) is</p>
 <div class="displaymath">
 \begin{equation*}
 C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
@@ -250,169 +250,50 @@ C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
 <article class="exercise exercise-like" id="exercise-68"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Bus Stop.</span>
 </h6>
-<p id="p-516">Four adults and seven children are waiting at a bus stop.</p>
+<p id="p-246">Four adults and seven children are waiting at a bus stop.</p>
 <ol class="lower-alpha">
-<li id="li-267"><p id="p-517">How many ways can they sit in a row? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-140" id="solution-140"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-140"><div class="solution solution-like"><div class="displaymath" id="p-518">
-\begin{equation*}
-11!
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-268"><p id="p-519">How many ways can they sit in a row if the adults must sit together and the children must sit together? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-141" id="solution-141"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-141"><div class="solution solution-like">
-<div class="displaymath" id="p-520">
-\begin{equation*}
-2 \times 4! \times 7!
-\end{equation*}
-</div>
-<p class="continuation">The factor of 2 comes from the fact that the children can be to the left or the right of the adults.</p>
-</div></div></p></li>
-<li id="li-269"><p id="p-521">How many ways can they sit in a row if the the children must sit together? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-142" id="solution-142"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-142"><div class="solution solution-like">
-<div class="displaymath" id="p-522">
-\begin{equation*}
-7! \times 5!
-\end{equation*}
-</div>
-<p class="continuation">We seat the children in \(7!\) ways and them treat them as one "person" who must be seated with the four adults.</p>
-</div></div></p></li>
-<li id="li-270"><p id="p-523">How many ways can they sit in a row if <em class="emphasis">just</em> the children are sitting together (and the adults must not sit together)? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-143" id="solution-143"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-143"><div class="solution solution-like">
-<p id="p-524">Let's use "good = all - bad." We count the ways that the children can sit together and subtract the number of ways that both the children and the adults are sitting together.</p>
-<div class="displaymath">
-\begin{equation*}
-7! \times 5! - 2 \times 4! \times 7!
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-159"><p id="p-247">How many ways can they sit in a row? </p></li>
+<li id="li-160"><p id="p-248">How many ways can they sit in a row if the adults must sit together and the children must sit together? </p></li>
+<li id="li-161"><p id="p-249">How many ways can they sit in a row if the the children must sit together? </p></li>
+<li id="li-162"><p id="p-250">How many ways can they sit in a row if <em class="emphasis">just</em> the children are sitting together (and the adults must not sit together)? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-69"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">In the Queue.</span>
 </h6>
-<p id="p-525">How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-144" id="solution-144"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-144"><div class="solution solution-like">
-<p id="p-526">First we line up the adults, and there are \(10!\) ways to do so. Now there are 11 spots to place the 5 children: at the front of the line, or behind the \(k\)th adult, where \(1 \leq k \leq 10\text{.}\) Therefore there are \((11)_5\) ways to place the children. So the final answer is</p>
-<div class="displaymath">
-\begin{equation*}
-10! \times (11)_5 = 10! \, P(11,5).
-\end{equation*}
-</div>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
+<p id="p-251">How many ways can 10 adults and 5 children stand in a line so that no two children are standing next to each other? (Hint: place the adults first, and then the children.) </p></article><article class="exercise exercise-like" id="exercise-70"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Forming a Circle.</span>
 </h6>
-<p id="p-527">In how many ways can \(n\) people stand in a circle? (How is this problem different from standing in a line?) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-145" id="solution-145"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-145"><div class="solution solution-like">
-<p id="p-528">When standing in the circle, we have a rotational symmetry that does not appear when standing a line. For \(0 \leq k \leq n-1\text{,}\) everyone can move counterclockwise by \(k\) spots, and we still have the same configuration. Therefore the total number of circular configurations is</p>
-<div class="displaymath">
-\begin{equation*}
-\frac{n!}{n} = (n-1)!
-\end{equation*}
-</div>
-</div></div></p></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading">
+<p id="p-252">In how many ways can \(n\) people stand in a circle? (How is this problem different from standing in a line?) </p></article><article class="exercise exercise-like" id="exercise-71"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">Five Digits, No Zeros.</span>
 </h6>
-<ol id="p-529" class="lower-alpha">
-<li id="li-271"><p id="p-530">How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-146" id="solution-146"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-146"><div class="solution solution-like"><div class="displaymath" id="p-531">
-\begin{equation*}
-(9)_5 = P(9,5)
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-272"><p id="p-532">How many numbers in part (a) contain a 3 or a 6 (or both)? (Hint: you will need to use "good = all - bad.") <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-147" id="solution-147"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-147"><div class="solution solution-like">
-<p id="p-533">The bad numbers are the ones that don't contain a 3 or a 6. There are \((7)_5 = P(7,5) \) bad numbers. Therefore we have</p>
-<div class="displaymath">
-\begin{equation*}
-(9)_5 -  (7)_5 = p(9,5) -  P(7,5)
-\end{equation*}
-</div>
-<p class="continuation">good numbers.</p>
-</div></div></p></li>
+<ol id="p-253" class="lower-alpha">
+<li id="li-163"><p id="p-254">How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear? </p></li>
+<li id="li-164"><p id="p-255">How many numbers in part (a) contain a 3 or a 6 (or both)? (Hint: you will need to use "good = all - bad.") </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-72"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Coin Toss.</span>
 </h6>
-<p id="p-534">A coin is tossed 10 times and a sequence of heads and tails is observed.</p>
+<p id="p-256">A coin is tossed 10 times and a sequence of heads and tails is observed.</p>
 <ol class="lower-alpha">
-<li id="li-273"><p id="p-535">How many different sequences are possible? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-148" id="solution-148"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-148"><div class="solution solution-like"><div class="displaymath" id="p-536">
-\begin{equation*}
-2^{10}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-274"><p id="p-537">In how how many of these sequences are there exactly 4 heads? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-149" id="solution-149"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-149"><div class="solution solution-like"><div class="displaymath" id="p-538">
-\begin{equation*}
-{10 \choose 4}
-\end{equation*}
-</div></div></div></p></li>
+<li id="li-165"><p id="p-257">How many different sequences are possible? </p></li>
+<li id="li-166"><p id="p-258">In how how many of these sequences are there exactly 4 heads? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-73"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">Dinner Party.</span>
 </h6>
-<p id="p-539">A woman has 9 close friends.</p>
+<p id="p-259">A woman has 9 close friends.</p>
 <ol class="lower-alpha">
-<li id="li-275"><p id="p-540">In how many ways can she invite 6 of them to dinner? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-150" id="solution-150"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-150"><div class="solution solution-like"><div class="displaymath" id="p-541">
-\begin{equation*}
-{9 \choose 6}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-276"><p id="p-542">Repeat (a) if two of her friends don't get along and will not attend together. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-151" id="solution-151"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-151"><div class="solution solution-like">
-<p id="p-543">We give three solutions.</p>
-<ul class="disc">
-<li id="li-277">
-<p id="p-544">First, we have</p>
-<div class="displaymath">
-\begin{equation*}
-{7 \choose 5} + {7 \choose 5} + {7 \choose 6} = 49
-\end{equation*}
-</div>
-<p class="continuation">corresponding to inviting friend one (and not friend two), inviting friend two (and not friend one), and inviting neither of them.</p>
-</li>
-<li id="li-278">
-<p id="p-545">Second, we have</p>
-<div class="displaymath">
-\begin{equation*}
-{9 \choose 6} - {7 \choose 4} = 49
-\end{equation*}
-</div>
-<p class="continuation">using the classic "good = all - bad" theorem. There are \({9 \choose 6}\) ways to invite any six people, and there are \({7 \choose 4}\) ways to invite the two people who don't get along.</p>
-</li>
-<li id="li-279">
-<p id="p-546">Finally, let's use inclusion-exclusion. We have</p>
-<div class="displaymath">
-\begin{equation*}
-{8 \choose 6} + {8 \choose 6} - {7 \choose 6} = 28 + 28 - 7 =  49
-\end{equation*}
-</div>
-<p class="continuation">corresponding to   \(|A \cup B|  = |A| + |B| - |A \cap B|\) where \(A\) is  the set of the parties with the first friend but not the second and \(B\) is the set of  parties with the second friend but not  the first.</p>
-</li>
-</ul>
-</div></div></p></li>
-<li id="li-280"><p id="p-547">Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-152" id="solution-152"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-152"><div class="solution solution-like">
-<p id="p-548">We must invite two or three couples, which gives:</p>
-<div class="displaymath">
-\begin{equation*}
-{3 \choose 2} {3 \choose 2} + {3 \choose 3} = 3 \times 3 + 1 = 10.
-\end{equation*}
-</div>
-</div></div></p></li>
+<li id="li-167"><p id="p-260">In how many ways can she invite 6 of them to dinner? </p></li>
+<li id="li-168"><p id="p-261">Repeat (a) if two of her friends don't get along and will not attend together. </p></li>
+<li id="li-169"><p id="p-262">Repeat (a) if her friends consist of 3 single people and 3 married couples, so that she must invite both spouses, or neither of them. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-74"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">10 Points.</span>
 </h6>
-<p id="p-549">Ten points in a plane, no three colinear, are given.</p>
+<p id="p-263">Ten points in a plane, no three colinear, are given.</p>
 <ol class="lower-alpha">
-<li id="li-281"><p id="p-550">Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-153" id="solution-153"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-153"><div class="solution solution-like"><div class="displaymath" id="p-551">
-\begin{equation*}
-{10 \choose 2}
-\end{equation*}
-</div></div></div></p></li>
-<li id="li-282"><p id="p-552">Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles are at points other than the original 10 points!) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-154" id="solution-154"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-154"><div class="solution solution-like">
-<div class="displaymath" id="p-553">
-\begin{equation*}
-{{10 \choose 2} \choose 3}
-\end{equation*}
-</div>
-<p class="continuation">We need to choose a 3-set of the lines.</p>
-</div></div></p></li>
+<li id="li-170"><p id="p-264">Every pair of points determines a unique line. So how many different lines are formed by joining pairs of these points? </p></li>
+<li id="li-171"><p id="p-265">Assume that none of the lines in  part (a)  are parallel and no three lines intersect at a single point.  How many different triangles are formed by these lines? (Note that the corners of  many of these triangles are at points other than the original 10 points!) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-75"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Executive Board.</span>
 </h6>
-<p id="p-554">How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-155" id="solution-155"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-155"><div class="solution solution-like">
-<div class="displaymath" id="p-555">
-\begin{equation*}
-{20 \choose 1} {19 \choose 1} {18 \choose 1} {17 \choose 2}
-\end{equation*}
-</div>
-<p class="continuation">corresponding to choosing the president, then the secretary, then the treasurer, and finally the last two members.</p>
-</div></div></p></article></section></section></div></main>
+<p id="p-266">How many ways can a club with 20 members choose an executive board consisting of a president, a secretary, a treasurer, and two other members? </p></article></section></section></div></main>
 </div>
 </body>
 </html>

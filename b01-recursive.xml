@@ -43,7 +43,7 @@ Use induction to prove that you can solve the Towers of Hanoi puzzle with <m>n</
 
 
 			</statement>
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -79,7 +79,7 @@ The total number of moves is
 		</ul>
 
 </p>
-</solution>
+</solution-->
 
 		</exercise>
 
@@ -96,7 +96,7 @@ Prove, using strong induction, that <m>a_n=2n+1</m> for all <m>n \in \mathbb{N}.
               </p>
 
 		</statement>
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -132,7 +132,7 @@ a_{k+1} = 2 a_{k} - a_{k-1} = 2(2k+1) - (2(k-1)+1) = 4k + 2 - 2k +2 - 1
 		</ul>
 
 </p>
-</solution>	
+</solution-->	
 
 	
 		</exercise>
@@ -147,7 +147,7 @@ a_{k+1} = 2 a_{k} - a_{k-1} = 2(2k+1) - (2(k-1)+1) = 4k + 2 - 2k +2 - 1
  for all <m>n \geq 3</m>.
 <ol>
 <li>Prove that <m>F_1 + F_2 + F_3 + \ldots + F_n = F_{n+2}-2</m> for all <m>n \geq 1</m>.
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -183,11 +183,11 @@ F_{k+2}-2 + F_{k+1} = F_{k+3} -2.
 		</ul>
 
 </p>
-</solution>	
+</solution-->	
 
 </li>
 <li>Prove that <m>F_1 + F_3 + F_5 + \ldots + F_{2n-1} = F_{2n} - 1</m> for all <m>n \geq 1</m>.
-<solution>
+<!--solution>
 <p>
 
 		<ul>
@@ -223,7 +223,7 @@ F_{2k}-1 + F_{2k+1} = F_{2k+2} -1.
 		</ul>
 
 </p>
-</solution>	
+</solution-->	
 
 </li>
 <!--li>Prove that 
