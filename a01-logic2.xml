@@ -20,6 +20,7 @@
 			<idx><h>Implications</h></idx>
 			<statement>
 				<p>
+				Let <m>x \in \mathbb{R}</m> be a real number.
 				<ol>
 				<li>
 Write down the contrapositive, converse and inverse of the implication: "if <m>x &lt; 3</m> then <m>x^2 &lt; 9</m>." Which of these four statements are <em> true</em>? Which ones are <em> false</em>?
