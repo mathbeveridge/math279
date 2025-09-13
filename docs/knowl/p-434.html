@@ -12,27 +12,14 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>A graph \(G = (V,E)\) is bipartite if \(V= A \cup B\) where \(A \cap B = \emptyset\) and every edge \(e \in E\)  runs between these two sets. Equivalently: we can color the vertices  with two colors, (red and blue) so that adjacent vertices receive different colors.</p>
+<p>A graph \(G=(V,E)\) is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bipartite</em> if its vertex set can be partitioned into two sets \(A\) and \(B\) such that the only edges in \(G\) run between these two sets. Equivalently: we can color the vertices of a bipartite graph with two colors, red and black, so that adjacent vertices receive different colors. The complete bipartite graph \(K_{n,m}\) is an example of a bipartite graph. Here are some more examples of bipartite graphs. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph19.svg" role="img" class="contained"></div></p>
 <ol class="lower-alpha">
-<li>
-<p>Let \(G\) be any bipartite graph on vertices \(V = A \cup B\text{.}\) Explain why</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\sum_{v \in A} \deg (v) = \sum_{w \in B} \deg(w).
-\end{equation*}
-</div>
-</li>
-<li><p>Recall that a graph is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">\(d\)-regular</em> when every vertex has degree \(d\text{.}\) Let \(G\) be a \(d\)-regular bipartite graph on partite sets \(A,B\text{.}\) Prove that  \(|A|=|B|\text{.}\) (Hint: use part (a).) </p></li>
-<li>
-<p>Let \(G=(V,E)\) be a bipartite graph on vertices \(V=A \cup B\text{.}\) Given a set of vertices \(S \subset A\text{,}\) we define the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">neighborhood</em> \(N(S) \subset B\) to be the set of vertices that are adjacent to some vertex in \(A\text{.}\) That is,</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in A, (a,b) \in E \} .
-\end{equation*}
-</div>
-<p class="continuation">For each  of the examples  below, find the neighborhood \(N(S) \subset B\text{:}\) <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching0.svg" role="img" class="contained"></div> </p>
-</li>
+<li><p>For which values of \(n\) is \(P_{n}\) a bipartite graph? </p></li>
+<li><p>For which values of \(n\) is \(C_{n}\) a bipartite graph? </p></li>
+<li><p>For which values of \(n\) is \(W_{n}\) a bipartite graph? </p></li>
+<li><p>For which values of \(n\) is \(K_{n}\) a bipartite graph? </p></li>
+<li><p>Suppose that \(G\) is a bipartite graph on \(n\) vertices. Find an upper bound on \(|E|\text{.}\) Start by exploring examples for \(n=2,3,4,5\text{.}\) You do not need to prove your answer is correct. </p></li>
 </ol>
-<span class="incontext"><a href="exercises-25.html#p-434">in-context</a></span>
+<span class="incontext"><a href="exercises-22.html#p-434">in-context</a></span>
 </body>
 </html>
