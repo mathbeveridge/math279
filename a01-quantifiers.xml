@@ -43,7 +43,7 @@ Fill in the blanks using the symbols <m>A</m>, <m>B</m>, <m>\cup</m> and <m>\cap
 
 You have just  turned an expression about mathematical statements into an expression about sets!
 
-<!--solution>
+<solution>
 <p>
 
 
@@ -55,7 +55,7 @@ A \cup B   = \{ x \in \mathbb{Z} \mid P(x) \vee Q(x)  \mbox{ is true} \}
 </me>
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -81,7 +81,7 @@ Let <m>X</m> be the set of people. Let <m>P(x,y)</m> be the statement "<m>x</m> 
 				</li>
 			</ol>
 
-<!--solution>
+<solution>
 <p>
 Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x</m> loves <m>y</m>."
 
@@ -99,7 +99,7 @@ Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x<
 				</li>
 			</ol>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -111,7 +111,7 @@ Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x<
 				<p>
 Negate the formal statements you made in the previous problem, then translate them into everyday English. Do these negations make sense, when compared to the original statements?
 
-<!--solution>
+<solution>
 <p>
 			<ol>
 				<li>
@@ -126,7 +126,7 @@ Negate the formal statements you made in the previous problem, then translate th
 				</li>
 			</ol>
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -141,7 +141,7 @@ Negate the formal statements you made in the previous problem, then translate th
  using the fact that <m>P \Rightarrow Q</m> is equivalent to <m>P \vee \neg Q</m>.
  Then explain why providing one counterexample is enough to disprove that <m>\forall x \in \R, P(x) \Rightarrow Q(x)</m>.
 
-<!--solution>
+<solution>
 <p>
 The negation is "There exists an integer that is not positive." Note that "not positive" isn't the same as "negative" because 0 is neither positive nor negative.
 
@@ -150,7 +150,7 @@ The negation is "There exists an integer that is not positive." Note that "not p
 This uses the existential quantifiers (at least one), so we just need one example of a non-positive integer.
 
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -162,7 +162,7 @@ This uses the existential quantifiers (at least one), so we just need one exampl
 				<p>
 Negate the statement "You can fool all of the people all of the time" by first creating a formal statement using quantifiers. Hint: you are considering two sets: <em>people</em> and <em>times</em>.
 
-<!--solution>
+<solution>
 <p>
 Let <m>X</m> be the set of people and let <m>T</m> be the set of times. Let <m>P(x,t)</m> be the statement "you can fool person <m>x</m> at time <m>t</m>. The original statement is
 <me>
@@ -174,7 +174,7 @@ The simple negation of the statement leads to the adage "You can't fool all of t
 </me>
 which means there is a person and a time where you fail to fool them.
 </p>
-</solution-->
+</solution>
 
 				</p>
 			</statement>
@@ -198,7 +198,7 @@ In this problem, we will see that the <em>order</em> of our quantifiers matters
 Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
 
 
-<!--solution>
+<solution>
 <p>
 
 The statement is: "There exists a <m>y \in \R</m>, such that for all <m>x \in \R</m>, we have <m>x=y^3</m>."
@@ -206,7 +206,7 @@ The statement is: "There exists a <m>y \in \R</m>, such that for all <m>x \in \R
 This is <em> false</em> since this statement says that there is a single number <m>y</m> that works for every <m>x</m> simultaneously.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -220,13 +220,13 @@ This is <em> false</em> since this statement says that there is a single number 
 
 Restate the above in plain English (as well as you can). Is this statement <em> true</em> or <em> false</em>?
 
-<!--solution>
+<solution>
 <p>
 The statement is: "For each <m>y \in \R</m>, there exists an <m>x \in \R</m>, such that <m>x=y^3</m>."
 
 This statement is <em> true</em>. This time, the choice of <m>x</m> depends on the given <m>y</m>. In particular, we take <m>x = \sqrt[3]{y}</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -251,13 +251,13 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  Rewrite the definition of <em>bounded</em> only using mathematical symbols and quantifiers.
 
-<!-!-solution>
+<!-x-solution>
 <p>
 \[
 \exists M \in \R,  \forall x \in S,  |x| \leq M.
 \]
 </p>
-</solution-!->
+</solution-x->
 
 					</p>
 				</li>
@@ -265,14 +265,14 @@ Here is a mathematical definition for a <em>bounded</em> set.
 					<p>
  The definition of <em>unbounded</em> is the negation of your statement in part (a). Write an equivalent statement that does not use a negation sign. Then rewrite that statement in plain English.
 
-<!-!-solution>
+<!-x-solution>
 <p>
 \[
 \forall M \in \R,  \exists x \in S,  |x| &gt; M.
 \]
 For every <m>M \in \R</m>, there exists an <m>x \in S</m> such that <m>|x| &gt; M</m>.
 </p>
-</solution-!->
+</solution-x->
 
 					</p>
 				</li>
