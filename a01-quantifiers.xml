@@ -138,7 +138,7 @@ Negate the formal statements you made in the previous problem, then translate th
 				<p>
  Let <m>P(x) =</m> "<m>x</m> is an integer" and let <m>Q(x)</m> = "<m>x</m> is positive".
  Negate the statement "For all <m>x \in \R</m>, if <m>x</m> is an integer then <m>x</m> is positive," 
- using the fact that <m>P \Rightarrow Q</m> is equivalent to <m>P \vee \neg Q</m>.
+ using the fact that <m>P \Rightarrow Q</m> is equivalent to <m> \neg P \vee  Q</m>.
  Then explain why providing one counterexample is enough to disprove that <m>\forall x \in \R, P(x) \Rightarrow Q(x)</m>.
 
 <solution>
