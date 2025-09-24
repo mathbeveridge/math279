@@ -12,12 +12,15 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>You can model this trick using a bipartite graph \(G\)  with \(|A| = |B| = 13\text{.}\)</p>
-<ul class="disc">
-<li><p>Let \(A\) be the set of 13 card values \(\{A, 2, 3, \ldots, 10, J, Q, K \}\)</p></li>
-<li><p>Let \(B\) be the set of columns \(\{1, 2, 3, \ldots, 13\}\text{.}\)</p></li>
-</ul>
-<p class="continuation">When should a card in set \(A\) have an edge to a column in set \(B\text{?}\) What is the degree of a vertex in \(A\text{?}\) What is the degree of a vertex in \(B\text{?}\)</p>
+<p>Let \(G=(V,E)\) be a \(d\)-regular bipartite graph. By Problem 1(b), we have \(|A|=|B|\text{.}\) You will  show that Hall's condition holds for \(G\text{.}\) This means that a \(d\)-regular bipartite graph always has a perfect matching.</p>
+<ol class="lower-roman">
+<li><p>Pick any subset \(S \subset A\text{.}\) What is \(\sum_{v \in S} \deg(v)\text{?}\) </p></li>
+<li>
+<p>Explain why \(\displaystyle{\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)}\text{.}\)</p>
+<p></p>
+</li>
+<li><p>Why does part (ii) guarantee that \(|S| \leq |N(S)|\text{?}\) </p></li>
+</ol>
 <span class="incontext"><a href="exercises-25.html#p-518">in-context</a></span>
 </body>
 </html>
