@@ -12,27 +12,17 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>A graph \(G = (V,E)\) is bipartite if \(V= A \cup B\) where \(A \cap B = \emptyset\) and every edge \(e \in E\)  runs between these two sets. Equivalently: we can color the vertices  with two colors, (red and blue) so that adjacent vertices receive different colors.</p>
+<p>Here is an example. The vertices are points and the edges are lines connecting pairs of points. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-graph10.svg" role="img" class="contained"></div> This graph \(G\) has \(|V|=6\) and \(|E|=8\text{.}\)</p>
+<ul class="disc">
+<li><p>\((u,v)\) is an edge that is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">incident</em> with both \(u\) and \(v\text{.}\) Therefore, \(u\) and \(v\) are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">adjacent</em>.</p></li>
+<li><p>\((x,w)\) is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">not</em> an edge</p></li>
+<li><p>\(w\) is incident with 3 edges, so its <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">degree</em> is \(\deg(w)=3\text{.}\)</p></li>
+</ul>
 <ol class="lower-alpha">
-<li>
-<p>Let \(G\) be any bipartite graph on vertices \(V = A \cup B\text{.}\) Explain why</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\sum_{v \in A} \deg (v) = \sum_{w \in B} \deg(w).
-\end{equation*}
-</div>
-</li>
-<li><p>Recall that a graph is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">\(d\)-regular</em> when every vertex has degree \(d\text{.}\) Let \(G\) be a \(d\)-regular bipartite graph on partite sets \(A,B\text{.}\) Prove that  \(|A|=|B|\text{.}\) (Hint: use part (a).) </p></li>
-<li>
-<p>Let \(G=(V,E)\) be a bipartite graph on vertices \(V=A \cup B\text{.}\) Given a set of vertices \(S \subset A\text{,}\) we define the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">neighborhood</em> \(N(S) \subset B\) to be the set of vertices that are adjacent to some vertex in \(A\text{.}\) That is,</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in A, (a,b) \in E \} .
-\end{equation*}
-</div>
-<p class="continuation">For each  of the examples  below, find the neighborhood \(N(S) \subset B\text{:}\) <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching0.svg" role="img" class="contained"></div> </p>
-</li>
+<li><p>What are the degrees of  the vertices of \(G\text{?}\) </p></li>
+<li><p>The graph \(G\) is drawn so that some of the edges are <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">crossing</em>, meaning that they intersect. For example, edge \(e_1 = (x,v)\) crosses edge \(e_2 = (y,w)\text{.}\) Create another drawing of the graph \(G\) so that none of the edges are crossing. </p></li>
+<li><p>The <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">complement</em> \(\overline{G}\) of graph \(G\) is the "graph of edges missing in \(G\text{.}\)"  It has the same vertices as \(G\text{.}\) But the edge \((u,v) \in E(\overline{G})\) if and only if \((u,v) \notin E(G)\text{.}\) Draw the complement \(\overline{G}\) of the graph \(G\text{.}\)  Can you draw \(\overline{G}\) so that none of its edges are crossing? </p></li>
 </ol>
-<span class="incontext"><a href="exercises-25.html#p-527">in-context</a></span>
+<span class="incontext"><a href="exercises-22.html#p-527">in-context</a></span>
 </body>
 </html>
