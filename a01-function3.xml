@@ -197,7 +197,7 @@ and therefore <m>\overline{B} \in \mathcal{E}</m>. Finally, we have
 			<idx><h>The Image of a Subset</h></idx>
 			<statement>
 				<p>
-Let <m>f : X \rightarrow Y</m> be a function. Let <m>A \subset X</m> and <m>B \subset X</m>. For a subset <m>S \subset X</m>, define the subset <m>f(S) \subset Y</m> by
+Let <m>f : X \rightarrow Y</m> be a function. Let <m>A \subseteq X</m> and <m>B \subseteq X</m>. For a subset <m>S \subseteq X</m>, define the subset <m>f(S) \subseteq Y</m> by
 <me>
 f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
 </me>
@@ -206,7 +206,7 @@ f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
 
 				<li>
 					<p>
- Prove that if <m>A \subset B</m> then <m>f(A) \subset f(B)</m>
+ Prove that if <m>A \subseteq B</m> then <m>f(A) \subseteq f(B)</m>
 
 <solution>
 <p>
@@ -262,7 +262,7 @@ In other words, <m>y \in f(B)</m>.
 				</li>
 				<li>
 					<p>
- Draw an example for which <m>A \not\subset B</m>, but <m>f(A) \subset f(B)</m>.
+ Draw an example for which <m>A \not\subseteq B</m>, but <m>f(A) \subseteq f(B)</m>.
 
 <solution>
 <p>
@@ -312,7 +312,7 @@ In other words, <m>y \in f(B)</m>.
 				</li>
 				<li>
 					<p>
- Prove that <m>f(A \cap B) \subset f(A) \cap f(B)</m>.
+ Prove that <m>f(A \cap B) \subseteq f(A) \cap f(B)</m>.
 
 <solution>
 <p>

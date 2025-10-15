@@ -10,5 +10,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>Draw horizontal and vertical lines that split the \(16 \times 16\) boards into 4 separate \(8 \times 8\) board. Now place a triomino in the middle so that it has one square in each of the three boards that are not missing a  square. Now we have 4 independent \(8 \times 8\) boards, all missing one square. We can cover each of those by triominos, as decribed in the previous section.</p></div></body>
+<body><div class="solution solution-like">
+<p>We must show that  \(\sum_{i=0}^{k+1} 2^i = 2^{k+2} -1\text{.}\)</p>
+<p>Starting with the left hand side, we have</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{rcl}
+\sum_{i=0}^{k+1} 2^i &amp;=&amp; \sum_{i=0}^{k} 2^i + 2^{k+1} \\
+&amp;=&amp; \left( 2^{k+1}  -1 \right) + 2^{k+1}   \mbox{by} \,  (\star)\\
+&amp;=&amp; 2 \cdot 2^{k+1} - 1 \\
+&amp;=&amp; 2^{k+2} -1.
+\end{array}
+\end{equation*}
+</div>
+</div></body>
 </html>
