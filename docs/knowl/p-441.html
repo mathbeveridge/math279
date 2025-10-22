@@ -12,11 +12,12 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>These four Ultimate teams decide to play a game for fun by mixing up the teams. They put red, blue, yellow and green armbands into a bag, and each player closes her eyes and grabs an armband to determine her team.</p>
-<ol class="lower-roman">
-<li><p>How many armbands must be grabbed to ensure that one of the teams has two players? </p></li>
-<li><p>How many armbands must be grabbed to ensure that one of the teams has five players? </p></li>
-</ol>
-<span class="incontext"><a href="exercises-13.html#p-441">in-context</a></span>
+<ul class="disc">
+<li><p>We start with an odd number of \(H\) in our game.</p></li>
+<li><p>Find the leftmost \(H\text{.}\) There are zero heads to the left of this coin, and an even number to the right of it.</p></li>
+<li><p>When you remove this coin, it creates two disjoint games (unless \(H\) is the first or last coin, in which case there is only one game after your move). The left game has a single \(H\) (because the rightmost coin changed from \(T\) to \(H\text{.}\) The right game has an odd number of \(H\) since the leftmost coin changed state.</p></li>
+<li><p>Both of these games are smaller than the original game. By the induction hypothesis, both of these games are winning configurations. Therefore the original game has a winning strategy.</p></li>
+</ul>
+<span class="incontext"><a href="exercises-11.html#p-441">in-context</a></span>
 </body>
 </html>

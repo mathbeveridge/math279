@@ -12,9 +12,15 @@
 </head>
 <body>
 <article class="li"><h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
-<span class="type">Item</span><span class="space"> </span><span class="codenumber">26.7.b</span><span class="period">.</span>
+<span class="type">Item</span><span class="period">.</span>
 </h6>
-<p>Adapt your argument from Problem 5 to prove the following statement.</p>
-<p>Let \(G\) be a simple connected planar graph with \(v\) vertices, \(e\) edges and \(f\) faces where every face is bounded by at least 4 edges. Prove that \(e \leq 2v -4\text{.}\) </p></article><span class="incontext"><a href="exercises-26.html#li-361">in-context</a></span>
+<p>Augmenting phase</p>
+<ul class="circle">
+<li><p>Pick any unmatched vertex \(a \in A\text{.}\)</p></li>
+<li><p>Try to find an <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">alternating path</em> \(P\) to an unmatched vertex \(b \in B\text{.}\) The edges in path \(P\) alternately come from the set \(E \backslash M\) and the set \(M\text{.}\)</p></li>
+<li><p>If you cannot find such a path, then you are stuck.  There is no matching.</p></li>
+<li><p>If you find such a path, then swap the matching edges of \(P\) and the non-matching edges of \(P\) to get a bigger matching.</p></li>
+<li><p>Repeat (a) - (d) until you are either stuck, or all vertices are matched!</p></li>
+</ul></article><span class="incontext"><a href="exercises-25.html#li-361">in-context</a></span>
 </body>
 </html>

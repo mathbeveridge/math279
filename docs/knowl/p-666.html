@@ -12,29 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-v_G - e_G + f_G = 2.
-\end{equation*}
-</div>
-<p class="continuation">Start with a plane drawing of \(G\text{.}\) Pick any edge \(e\) that is in a cycle of \(G\text{.}\) Let \(H=G-e\) be the graph you obtain by removing the edge \(e\) (but keeping the vertices).</p>
-<ol class="lower-roman">
+<p>Ask a volunteer (or your worst enemy) to lay out the cards into a grid of 4 rows and 13 columns. Show that you can <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">always</em> pick out 13 cards, one from each column of the grid, so that you end up with a card for every possible value \(A, 2, 3, \ldots , 10 , J, Q, K\text{.}\) Wow!!! Here is an example. The 13 cards I've chosen are highlighted. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching8.svg" role="img" class="contained"></div></p>
+<ol class="lower-alpha">
 <li>
-<p>What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
-<p>We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
-</li>
-<li>
-<p>What are the following values:</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
-\end{equation*}
-</div>
+<p>You can model this trick using a bipartite graph \(G\)  with \(|A| = |B| = 13\text{.}\)</p>
+<ul class="disc">
+<li><p>Let \(A\) be the set of 13 card values \(\{A, 2, 3, \ldots, 10, J, Q, K \}\)</p></li>
+<li><p>Let \(B\) be the set of columns \(\{1, 2, 3, \ldots, 13\}\text{.}\)</p></li>
+</ul>
+<p class="continuation">When should a card in set \(A\) have an edge to a column in set \(B\text{?}\) What is the degree of a vertex in \(A\text{?}\) What is the degree of a vertex in \(B\text{?}\)</p>
 <p></p>
 </li>
-<li><p>Now complete the inductive step. </p></li>
+<li><p>Use a  previous problem from this activity to show that your graph \(G\) always has a perfect matching. Then explain why this matching finds 13 cards with distinct values spread among the 13 columns. </p></li>
+<li><p>Are you guaranteed to be able to do it again? That is, from the remaining 39 cards, can you find \(A, 2, \ldots, K\text{,}\) one card in each column? Why or why not? </p></li>
 </ol>
-<span class="incontext"><a href="exercises-26.html#p-666">in-context</a></span>
+<span class="incontext"><a href="exercises-25.html#p-666">in-context</a></span>
 </body>
 </html>

@@ -15,12 +15,14 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\underbrace{3}_{\mbox{cone}} \times \underbrace{5}_{\mbox{scoop}}
-\end{equation*}
+<ul class="disc">
+<li><p>We start with an even number of \(H\) in our game.</p></li>
+<li><p>Pick any \(H\text{.}\) Since the total number of \(H\)'s is even, there must be an odd number \(H's\) either to the left or to the right of this coin.</p></li>
+<li><p>When you remove this coin, it creates two disjoint games (unless \(H\) is the first or last coin, in which case there is only one game after your move). One of these two games now has an even number of heads.</p></li>
+<li><p>The game with an even number of heads is smaller than \(n\text{.}\) By induction, this configuration is losing.</p></li>
+<li><p>So no matter what coin we remove, we are sure to lose.</p></li>
+</ul>
 </div>
-</div>
-<span class="incontext"><a href="exercises-13.html#solution-127">in-context</a></span>
+<span class="incontext"><a href="exercises-11.html#solution-127">in-context</a></span>
 </body>
 </html>

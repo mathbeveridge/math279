@@ -11,16 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like"><ul class="disc">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> A Tower of Hanoi with 1 disk can be solved in \(1 = 2^1 -1\) moves.</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Assume that a Tower of Hanoi with \(k\) disks can be solved in \(2^k -1\) moves.</p></li>
-<li>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Prove that a Tower of Hanoi with \(k+1\) disks can be solved in \(2^{k+1} -1\) moves.</p>
-<p>By induction, we can move \(k\) disks from \(A\) to \(B\) in \(2^k-1\) moves. We then move the largest disk to \(C\) in 1 move. Finally, we move \(k\) disks from \(B\) to \(C\) in \(2^k-1\) moves. The total number of moves is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-(2^k-1) + 1 + (2^k -1) = 2^{k+1} -1.
-\end{equation*}
-</div>
-</li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Cases:</em> \(n=6,7,8\) <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-induction23.svg" role="img" class="contained"></div></p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis</em>. For \(6 \leq k &lt; n\text{,}\) a square can be split into \(k\) smaller squares.</p></li>
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> We want to split the square into \(n\) smaller squares. First, we split it into \(n-3\) smaller squares (which works by the inductive hypothesis). Next, pick any square and split it into 4 smaller squares by drawing the horizontal and vertical bisectors.</p></li>
 </ul></div></body>
 </html>
