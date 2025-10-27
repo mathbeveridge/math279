@@ -218,25 +218,25 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="matching"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">25</span> <span class="title">Bipartite Matchings</span>
 </h2>
-<section class="introduction" id="introduction-25"><p id="p-660"></p></section><section class="exercises" id="exercises-25"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-25"><p id="p-679"></p></section><section class="exercises" id="exercises-25"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-118"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Bipartite Graphs and Neighborhoods.</span>
 </h6>
-<p id="p-661">A graph \(G = (V,E)\) is bipartite if \(V= A \cup B\) where \(A \cap B = \emptyset\) and every edge \(e \in E\)  runs between these two sets. Equivalently: we can color the vertices  with two colors, (red and blue) so that adjacent vertices receive different colors.</p>
+<p id="p-680">A graph \(G = (V,E)\) is bipartite if \(V= A \cup B\) where \(A \cap B = \emptyset\) and every edge \(e \in E\)  runs between these two sets. Equivalently: we can color the vertices  with two colors, (red and blue) so that adjacent vertices receive different colors.</p>
 <ol class="lower-alpha">
-<li id="li-338">
-<p id="p-662">Let \(G\) be any bipartite graph on vertices \(V = A \cup B\text{.}\) Explain why</p>
+<li id="li-341">
+<p id="p-681">Let \(G\) be any bipartite graph on vertices \(V = A \cup B\text{.}\) Explain why</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{v \in A} \deg (v) = \sum_{w \in B} \deg(w).
 \end{equation*}
 </div>
 </li>
-<li id="li-339"><p id="p-663">Recall that a graph is <em class="emphasis">\(d\)-regular</em> when every vertex has degree \(d\text{.}\) Let \(G\) be a \(d\)-regular bipartite graph on partite sets \(A,B\text{.}\) Prove that  \(|A|=|B|\text{.}\) (Hint: use part (a).) </p></li>
-<li id="li-340">
-<p id="p-664">Let \(G=(V,E)\) be a bipartite graph on vertices \(V=A \cup B\text{.}\) Given a set of vertices \(S \subset A\text{,}\) we define the <em class="emphasis">neighborhood</em> \(N(S) \subset B\) to be the set of vertices that are adjacent to some vertex in \(A\text{.}\) That is,</p>
+<li id="li-342"><p id="p-682">Recall that a graph is <em class="emphasis">\(d\)-regular</em> when every vertex has degree \(d\text{.}\) Let \(G\) be a \(d\)-regular bipartite graph on partite sets \(A,B\text{.}\) Prove that  \(|A|=|B|\text{.}\) (Hint: use part (a).) </p></li>
+<li id="li-343">
+<p id="p-683">Let \(G=(V,E)\) be a bipartite graph on vertices \(V=A \cup B\text{.}\) Given a set of vertices \(S \subset A\text{,}\) we define the <em class="emphasis">neighborhood</em> \(N(S) \subset B\) to be the set of vertices that are adjacent to some vertex in \(A\text{.}\) That is,</p>
 <div class="displaymath">
 \begin{equation*}
 \mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in A, (a,b) \in E \} .
@@ -247,78 +247,78 @@
 </ol></article><article class="exercise exercise-like" id="exercise-119"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Perfect Matchings.</span>
 </h6>
-<p id="p-665">Given a bipartite graph \(G= (V,E)\) where \(V=A \cup B\) and \(|A|=|B|\text{,}\) a <em class="emphasis">perfect matching</em> \(M\)  is a disjoint set of edges that uses every vertex.</p>
-<ol class="lower-alpha"><li id="li-341"><p id="p-666">For each of the graphs below, find a perfect matching or explain why no such matching exists. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching2.svg" role="img" class="contained"></div> </p></li></ol></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading">
+<p id="p-684">Given a bipartite graph \(G= (V,E)\) where \(V=A \cup B\) and \(|A|=|B|\text{,}\) a <em class="emphasis">perfect matching</em> \(M\)  is a disjoint set of edges that uses every vertex.</p>
+<ol class="lower-alpha"><li id="li-344"><p id="p-685">For each of the graphs below, find a perfect matching or explain why no such matching exists. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching2.svg" role="img" class="contained"></div> </p></li></ol></article><article class="exercise exercise-like" id="exercise-120"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Hall's Matching Theorem for a \(d\)-regular graph.</span>
 </h6>
-<p id="p-667">Here is <em class="emphasis">Hall's Matching Theorem:</em> Given a bipartite graph with \(V = A \cup B\) and  \(|A|=|B|\text{.}\) Then</p>
-<p id="p-668">\(G\) has a perfect matching \(\Longleftrightarrow\) for every \(S \subset A\text{,}\) we have \(|S| \leq |N(S)|\text{.}\)</p>
-<p id="p-669">The last statement is called <em class="emphasis">Hall's Condition.</em> It means that "\(G\) has no bottlenecks."</p>
-<ol id="p-670" class="lower-alpha">
-<li id="li-342">
-<p id="p-671">Let \(G=(V,E)\) be a \(d\)-regular bipartite graph. By Problem 1(b), we have \(|A|=|B|\text{.}\) You will  show that Hall's condition holds for \(G\text{.}\) This means that a \(d\)-regular bipartite graph always has a perfect matching.</p>
+<p id="p-686">Here is <em class="emphasis">Hall's Matching Theorem:</em> Given a bipartite graph with \(V = A \cup B\) and  \(|A|=|B|\text{.}\) Then</p>
+<p id="p-687">\(G\) has a perfect matching \(\Longleftrightarrow\) for every \(S \subset A\text{,}\) we have \(|S| \leq |N(S)|\text{.}\)</p>
+<p id="p-688">The last statement is called <em class="emphasis">Hall's Condition.</em> It means that "\(G\) has no bottlenecks."</p>
+<ol id="p-689" class="lower-alpha">
+<li id="li-345">
+<p id="p-690">Let \(G=(V,E)\) be a \(d\)-regular bipartite graph. By Problem 1(b), we have \(|A|=|B|\text{.}\) You will  show that Hall's condition holds for \(G\text{.}\) This means that a \(d\)-regular bipartite graph always has a perfect matching.</p>
 <ol class="lower-roman">
-<li id="li-343"><p id="p-672">Pick any subset \(S \subset A\text{.}\) What is \(\sum_{v \in S} \deg(v)\text{?}\) </p></li>
-<li id="li-344">
-<p id="p-673">Explain why \(\displaystyle{\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)}\text{.}\)</p>
-<p id="p-674"></p>
+<li id="li-346"><p id="p-691">Pick any subset \(S \subset A\text{.}\) What is \(\sum_{v \in S} \deg(v)\text{?}\) </p></li>
+<li id="li-347">
+<p id="p-692">Explain why \(\displaystyle{\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)}\text{.}\)</p>
+<p id="p-693"></p>
 </li>
-<li id="li-345"><p id="p-675">Why does part (ii) guarantee that \(|S| \leq |N(S)|\text{?}\) </p></li>
+<li id="li-348"><p id="p-694">Why does part (ii) guarantee that \(|S| \leq |N(S)|\text{?}\) </p></li>
 </ol>
 </li>
-<li id="li-346">
-<p id="p-676">Here is a 3-regular bipartite graph \(G\) on 6 vertices. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching4.svg" role="img" class="contained"></div></p>
+<li id="li-349">
+<p id="p-695">Here is a 3-regular bipartite graph \(G\) on 6 vertices. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching4.svg" role="img" class="contained"></div></p>
 <ol class="lower-roman">
-<li id="li-347"><p id="p-677">Find a perfect matching \(M\) in the graph \(G\text{.}\) </p></li>
-<li id="li-348"><p id="p-678">Now draw the graph \(H=G-M\) where you remove the edges in your matching \(M\text{.}\) </p></li>
-<li id="li-349"><p id="p-679">Find a perfect matching in  \(H\text{.}\) Why does part (a) guarantee that \(H = G-M\) has a perfect matching? </p></li>
+<li id="li-350"><p id="p-696">Find a perfect matching \(M\) in the graph \(G\text{.}\) </p></li>
+<li id="li-351"><p id="p-697">Now draw the graph \(H=G-M\) where you remove the edges in your matching \(M\text{.}\) </p></li>
+<li id="li-352"><p id="p-698">Find a perfect matching in  \(H\text{.}\) Why does part (a) guarantee that \(H = G-M\) has a perfect matching? </p></li>
 </ol>
 </li>
-<li id="li-350"><p id="p-680">Let \(G\) be a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{.}\)  Use (regular) induction on \(d \geq 1\) to prove that a \(d\)-regular bipartite graph  has \(d\) <em class="emphasis">disjoint</em> perfect matchings. This means that we can color the edges of \(G\) using \(d\) colors so that every vertex is incident with exactly one edge from each of the \(d\) colors. </p></li>
+<li id="li-353"><p id="p-699">Let \(G\) be a \(d\)-regular bipartite graph where \(|A|=|B|=n\text{.}\)  Use (regular) induction on \(d \geq 1\) to prove that a \(d\)-regular bipartite graph  has \(d\) <em class="emphasis">disjoint</em> perfect matchings. This means that we can color the edges of \(G\) using \(d\) colors so that every vertex is incident with exactly one edge from each of the \(d\) colors. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-121"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Mathematical Card Trick.</span>
 </h6>
-<p id="p-681">Here is a mathematical card trick whose secret uses a perfect matching in a bipartite graph! In a standard deck of 52 cards, each card has a suit and a value. There are 4 suits (clubs, diamonds, hearts, spades) and 13 values (A, 2, 3, . . . , 10, J, Q, K).</p>
-<p id="p-682">Ask a volunteer (or your worst enemy) to lay out the cards into a grid of 4 rows and 13 columns. Show that you can <em class="emphasis">always</em> pick out 13 cards, one from each column of the grid, so that you end up with a card for every possible value \(A, 2, 3, \ldots , 10 , J, Q, K\text{.}\) Wow!!! Here is an example. The 13 cards I've chosen are highlighted. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching8.svg" role="img" class="contained"></div></p>
+<p id="p-700">Here is a mathematical card trick whose secret uses a perfect matching in a bipartite graph! In a standard deck of 52 cards, each card has a suit and a value. There are 4 suits (clubs, diamonds, hearts, spades) and 13 values (A, 2, 3, . . . , 10, J, Q, K).</p>
+<p id="p-701">Ask a volunteer (or your worst enemy) to lay out the cards into a grid of 4 rows and 13 columns. Show that you can <em class="emphasis">always</em> pick out 13 cards, one from each column of the grid, so that you end up with a card for every possible value \(A, 2, 3, \ldots , 10 , J, Q, K\text{.}\) Wow!!! Here is an example. The 13 cards I've chosen are highlighted. <div class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/fig-img-matching8.svg" role="img" class="contained"></div></p>
 <ol class="lower-alpha">
-<li id="li-351">
-<p id="p-683">You can model this trick using a bipartite graph \(G\)  with \(|A| = |B| = 13\text{.}\)</p>
+<li id="li-354">
+<p id="p-702">You can model this trick using a bipartite graph \(G\)  with \(|A| = |B| = 13\text{.}\)</p>
 <ul class="disc">
-<li id="li-352"><p id="p-684">Let \(A\) be the set of 13 card values \(\{A, 2, 3, \ldots, 10, J, Q, K \}\)</p></li>
-<li id="li-353"><p id="p-685">Let \(B\) be the set of columns \(\{1, 2, 3, \ldots, 13\}\text{.}\)</p></li>
+<li id="li-355"><p id="p-703">Let \(A\) be the set of 13 card values \(\{A, 2, 3, \ldots, 10, J, Q, K \}\)</p></li>
+<li id="li-356"><p id="p-704">Let \(B\) be the set of columns \(\{1, 2, 3, \ldots, 13\}\text{.}\)</p></li>
 </ul>
 <p class="continuation">When should a card in set \(A\) have an edge to a column in set \(B\text{?}\) What is the degree of a vertex in \(A\text{?}\) What is the degree of a vertex in \(B\text{?}\)</p>
-<p id="p-686"></p>
+<p id="p-705"></p>
 </li>
-<li id="li-354"><p id="p-687">Use a  previous problem from this activity to show that your graph \(G\) always has a perfect matching. Then explain why this matching finds 13 cards with distinct values spread among the 13 columns. </p></li>
-<li id="li-355"><p id="p-688">Are you guaranteed to be able to do it again? That is, from the remaining 39 cards, can you find \(A, 2, \ldots, K\text{,}\) one card in each column? Why or why not? </p></li>
+<li id="li-357"><p id="p-706">Use a  previous problem from this activity to show that your graph \(G\) always has a perfect matching. Then explain why this matching finds 13 cards with distinct values spread among the 13 columns. </p></li>
+<li id="li-358"><p id="p-707">Are you guaranteed to be able to do it again? That is, from the remaining 39 cards, can you find \(A, 2, \ldots, K\text{,}\) one card in each column? Why or why not? </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-122"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Finding a Perfect Matching.</span>
 </h6>
-<p id="p-689">Use this algorithm to find a perfect matching in  a bipartite graph \(G\) with \(V=A \cup B\text{.}\)</p>
+<p id="p-708">Use this algorithm to find a perfect matching in  a bipartite graph \(G\) with \(V=A \cup B\text{.}\)</p>
 <ul class="disc">
-<li id="li-356"><p id="p-690">Start with \(M = \emptyset\text{.}\)</p></li>
-<li id="li-357">
-<p id="p-691">Greedy Phase</p>
+<li id="li-359"><p id="p-709">Start with \(M = \emptyset\text{.}\)</p></li>
+<li id="li-360">
+<p id="p-710">Greedy Phase</p>
 <ul class="circle">
-<li id="li-358"><p id="p-692">Add disjoint  edges to \(M\) until you get stuck.</p></li>
-<li id="li-359"><p id="p-693">If you have a perfect matching, then  you are done!</p></li>
-<li id="li-360"><p id="p-694">If not, then move onto the Augmenting Phase.</p></li>
+<li id="li-361"><p id="p-711">Add disjoint  edges to \(M\) until you get stuck.</p></li>
+<li id="li-362"><p id="p-712">If you have a perfect matching, then  you are done!</p></li>
+<li id="li-363"><p id="p-713">If not, then move onto the Augmenting Phase.</p></li>
 </ul>
 </li>
-<li id="li-361">
-<p id="p-695">Augmenting phase</p>
+<li id="li-364">
+<p id="p-714">Augmenting phase</p>
 <ul class="circle">
-<li id="li-362"><p id="p-696">Pick any unmatched vertex \(a \in A\text{.}\)</p></li>
-<li id="li-363"><p id="p-697">Try to find an <em class="emphasis">alternating path</em> \(P\) to an unmatched vertex \(b \in B\text{.}\) The edges in path \(P\) alternately come from the set \(E \backslash M\) and the set \(M\text{.}\)</p></li>
-<li id="li-364"><p id="p-698">If you cannot find such a path, then you are stuck.  There is no matching.</p></li>
-<li id="li-365"><p id="p-699">If you find such a path, then swap the matching edges of \(P\) and the non-matching edges of \(P\) to get a bigger matching.</p></li>
-<li id="li-366"><p id="p-700">Repeat (a) - (d) until you are either stuck, or all vertices are matched!</p></li>
+<li id="li-365"><p id="p-715">Pick any unmatched vertex \(a \in A\text{.}\)</p></li>
+<li id="li-366"><p id="p-716">Try to find an <em class="emphasis">alternating path</em> \(P\) to an unmatched vertex \(b \in B\text{.}\) The edges in path \(P\) alternately come from the set \(E \backslash M\) and the set \(M\text{.}\)</p></li>
+<li id="li-367"><p id="p-717">If you cannot find such a path, then you are stuck.  There is no matching.</p></li>
+<li id="li-368"><p id="p-718">If you find such a path, then swap the matching edges of \(P\) and the non-matching edges of \(P\) to get a bigger matching.</p></li>
+<li id="li-369"><p id="p-719">Repeat (a) - (d) until you are either stuck, or all vertices are matched!</p></li>
 </ul>
 </li>
 </ul>
 <p class="continuation">Here is an example. We start with the following bipartite graph <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching9.svg" role="img" class="contained"></div> In the greedy phase, we add edges until we are stuck, meaning that the neighbors of the unmatched vertices are taken. In our case, we pick the four edges shown. We are stuck because all of the neighbors of \(a\) are already matched. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching10.svg" role="img" class="contained"></div> Next we try to find a path from \(a\) to \(b\) that alternates between edges in \(E \backslash M\) and edges in \(M\text{.}\) We can find one, and it edges are alternately colored red and blue. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching11.svg" role="img" class="contained"></div> Swapping red and blue edges gives a perfect matching! If there were more unmatched vertices, we would repeat this process. <div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-matching12.svg" role="img" class="contained"></div></p>
-<ol class="lower-alpha"><li id="li-367"><p id="p-701">Use the alternating path algorithm to find a perfect matching for this graph, starting from the 4-edge matching shown in the first graph. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching13.svg" role="img" class="contained"></div> </p></li></ol></article></section></section></div></main>
+<ol class="lower-alpha"><li id="li-370"><p id="p-720">Use the alternating path algorithm to find a perfect matching for this graph, starting from the 4-edge matching shown in the first graph. <div class="image-box" style="width: 75%; margin-left: 12.5%; margin-right: 12.5%;"><img src="images/fig-img-matching13.svg" role="img" class="contained"></div> </p></li></ol></article></section></section></div></main>
 </div>
 </body>
 </html>
