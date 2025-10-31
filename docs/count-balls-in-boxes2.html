@@ -269,21 +269,62 @@
 <td class="l m b1 r1 l0 t0 lines">\(\phantom{\displaystyle{{a+b+c \choose d}}}\)</td>
 </tr>
 </table></div>
-<p id="p-572"></p></article><article class="exercise exercise-like" id="exercise-83"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-573">In this problem, you will count sets of functions from \([r]\) to \([s]\text{.}\) You will map each one  to a balls-in-boxes problem. Decide each of the following questions (and write down your answers):</p>
+<p id="p-572"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-166" id="solution-166"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-166"><div class="solution solution-like">
+<p id="p-573"></p>
+<div class="tabular-box natural-width"><table class="tabular">
+<tr>
+<td class="l m b1 r1 l1 t1 lines"></td>
+<td class="l m b1 r1 l0 t1 lines">balls identical</td>
+<td class="l m b1 r1 l0 t1 lines">balls distinct</td>
+<td class="l m b1 r1 l0 t1 lines">conditions?</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">no repetition</td>
+<td class="l m b1 r1 l0 t0 lines">\(\displaystyle{\phantom{{ a \choose b}}}\)  \(1\) \(\displaystyle{\phantom{{ a \choose b}}}\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(n!=k!\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(n=k\)</td>
+</tr>
+<tr>
+<td class="l m b1 r1 l1 t0 lines">with repetition</td>
+<td class="l m b1 r1 l0 t0 lines">\(\displaystyle{{ k -1 \choose n-1}}\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(n! S(k,n)\)</td>
+<td class="l m b1 r1 l0 t0 lines">\(k \geq n\)</td>
+</tr>
+</table></div>
+<p id="p-574">The formula \(n! S(k,n)\) uses the number \(S(k,n)\) which is called the <em class="emphasis">Stirling Number of the Second Kind</em>. It turns out that we've asked a very hard problem!</p>
+<p id="p-575">We do have the tools at our disposal to give and understand the formula for \(S(k,n)\text{.}\) However, the argument is a little more abstract than I usually like to cover in MATH 279. So you can just write down "\(n! S(k,n)\)" as the answer to this question (when it comes up) without knowing the particular formula for \(S(k,n)\text{.}\)</p>
+<p id="p-576">Some more details: the number \(S(k,n)\) counts the number of ways to put \(n\) <em class="emphasis">distinct balls</em> into \(k\) <em class="emphasis">identical boxes</em> where <em class="emphasis">boxes cannot be empty</em> and <em class="emphasis">repetition is allowed</em>. Can you explain why we must multiply by \(n!\) in order to get the number of ways to use \(\) instead?</p>
+</div></div></p></article><article class="exercise exercise-like" id="exercise-83"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
+<p id="p-577">In this problem, you will count sets of functions from \([r]\) to \([s]\text{.}\) You will map each one  to a balls-in-boxes problem. Decide each of the following questions (and write down your answers):</p>
 <ul class="disc">
-<li id="li-276"><p id="p-574">Are the balls distinct?</p></li>
-<li id="li-277"><p id="p-575">Are the boxes distinct?</p></li>
-<li id="li-278"><p id="p-576">Can boxes be empty?</p></li>
-<li id="li-279"><p id="p-577">Is repetition allowed?</p></li>
-<li id="li-280"><p id="p-578">What is the constraint on \(r\) and \(s\text{?}\)</p></li>
+<li id="li-276"><p id="p-578">Are the balls distinct?</p></li>
+<li id="li-277"><p id="p-579">Are the boxes distinct?</p></li>
+<li id="li-278"><p id="p-580">Can boxes be empty?</p></li>
+<li id="li-279"><p id="p-581">Is repetition allowed?</p></li>
+<li id="li-280"><p id="p-582">What is the constraint on \(r\) and \(s\text{?}\)</p></li>
 </ul>
 <p class="continuation">Then write down the formula for the size of the set of functions.</p>
 <ol class="lower-alpha">
-<li id="li-281"><p id="p-579">\(\mathcal{A} = \{ \) all possible functions from \([r]\) to \([s] \}\text{.}\) </p></li>
-<li id="li-282"><p id="p-580">\(\mathcal{B} = \{ \) all injective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
-<li id="li-283"><p id="p-581">\(\mathcal{C} = \{ \) all surjective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
-<li id="li-284"><p id="p-582">\(\mathcal{D} = \{ \) all bijective functions from \([r]\) to \([s] \}\text{.}\) </p></li>
+<li id="li-281"><p id="p-583">\(\mathcal{A} = \{ \) all possible functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-167" id="solution-167"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-167"><div class="solution solution-like"><div class="displaymath" id="p-584">
+\begin{equation*}
+| \mathcal{A}| =  s^r
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-282"><p id="p-585">\(\mathcal{B} = \{ \) all injective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-168" id="solution-168"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-168"><div class="solution solution-like"><div class="displaymath" id="p-586">
+\begin{equation*}
+| \mathcal{B}| =  (s)_r
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-283"><p id="p-587">\(\mathcal{C} = \{ \) all surjective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-169" id="solution-169"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-169"><div class="solution solution-like"><div class="displaymath" id="p-588">
+\begin{equation*}
+| \mathcal{C}| =  r! S(s,r)
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-284"><p id="p-589">\(\mathcal{D} = \{ \) all bijective functions from \([r]\) to \([s] \}\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-170" id="solution-170"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-170"><div class="solution solution-like"><div class="displaymath" id="p-590">
+\begin{equation*}
+| \mathcal{D}| = s!=r!
+\end{equation*}
+</div></div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>

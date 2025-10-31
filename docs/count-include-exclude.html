@@ -218,40 +218,122 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="count-include-exclude"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">18</span> <span class="title">Inclusion/Exclusion</span>
 </h2>
-<section class="introduction" id="introduction-18"><p id="p-583"></p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-18"><p id="p-591"></p></section><section class="exercises" id="exercises-18"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-84"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Rolling 10 Dice.</span>
 </h6>
-<p id="p-584">We roll 6-sided die 10 times, and then list the outcomes in order as \((x_1, x_2, \ldots , x_{10} )\text{.}\) We are interested in counting the total number outcomes in which both  1 appears and 2 appears.  We break this process into multiple steps.</p>
+<p id="p-592">We roll 6-sided die 10 times, and then list the outcomes in order as \((x_1, x_2, \ldots , x_{10} )\text{.}\) We are interested in counting the total number outcomes in which both  1 appears and 2 appears.  We break this process into multiple steps.</p>
 <ol class="lower-alpha">
-<li id="li-285"><p id="p-585">Let \(X\) be the set of all possible outcomes \((x_1, x_2, \ldots , x_{10} )\text{.}\) What is \(|X|\text{?}\) </p></li>
-<li id="li-286"><p id="p-586">Let \(X_1\) be the set of outcomes that <em class="emphasis">do not</em> contain any 1's. I would call \(X_1\) the set of "bad outcomes for 1." What is \(|X_1|\text{?}\) </p></li>
-<li id="li-287"><p id="p-587">Define \(X_2\) in the same way as in part (b), where \(X_2\) is the set of "bad outcomes for 2." What is \(|X_2|\text{?}\) </p></li>
-<li id="li-288"><p id="p-588">How many outcomes are there in which neither 1 or 2 appears? How would you describe this set using the symbols \(X_1\) and \(X_2\text{?}\) </p></li>
-<li id="li-289"><p id="p-589">Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes." </p></li>
-<li id="li-290"><p id="p-590">Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain both 1 and 2? </p></li>
+<li id="li-285"><p id="p-593">Let \(X\) be the set of all possible outcomes \((x_1, x_2, \ldots , x_{10} )\text{.}\) What is \(|X|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-171" id="solution-171"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-171"><div class="solution solution-like">
+<p id="p-594">For each \(x_i\text{,}\) we have 6 possible rolls. By the product principle, the answer is</p>
+<div class="displaymath">
+\begin{equation*}
+|X| = 6^{10}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-286"><p id="p-595">Let \(X_1\) be the set of outcomes that <em class="emphasis">do not</em> contain any 1's. I would call \(X_1\) the set of "bad outcomes for 1." What is \(|X_1|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-172" id="solution-172"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-172"><div class="solution solution-like">
+<p id="p-596">For each \(x_i\text{,}\) we have 5 possible rolls since rolling a 1 is forbidden. By the product principle, the answer is</p>
+<div class="displaymath">
+\begin{equation*}
+|X_1| = 5^{10}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-287"><p id="p-597">Define \(X_2\) in the same way as in part (b), where \(X_2\) is the set of "bad outcomes for 2." What is \(|X_2|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-173" id="solution-173"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-173"><div class="solution solution-like">
+<p id="p-598">As in the previous problem the answer is</p>
+<div class="displaymath">
+\begin{equation*}
+|X_2| = 5^{10}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-288"><p id="p-599">How many outcomes are there in which neither 1 or 2 appears? How would you describe this set using the symbols \(X_1\) and \(X_2\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-174" id="solution-174"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-174"><div class="solution solution-like">
+<p id="p-600">The set described is \(X_1 \cap X_2\text{.}\) This time, there are 4 numbers allowed for each role, so</p>
+<div class="displaymath">
+\begin{equation*}
+|X_1 \cap X_2| = 4^{10}
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-289"><p id="p-601">Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes." <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-175" id="solution-175"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-175"><div class="solution solution-like"><div class="displaymath" id="p-602">
+\begin{equation*}
+|X_1 \cup X_2 | = |X_1| + | X_2| - |X_1 \cap X_2| = 5^{10} + 5^{10}  - 4^{10}
+\end{equation*}
+</div></div></div></p></li>
+<li id="li-290"><p id="p-603">Now use your answer from part (d) to find the number of "good  outcomes." Namely, how many outcomes contain both 1 and 2? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-176" id="solution-176"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-176"><div class="solution solution-like"><div class="displaymath" id="p-604">
+\begin{equation*}
+6^{10} - \left( 5^{10} + 5^{10}  - 4^{10}  \right) = 6^{10} - 2 \cdot 5^{10} + 4^{10}
+\end{equation*}
+</div></div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-85"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">I Hate 2, 5, and 7.</span>
 </h6>
-<p id="p-591">In this question, you will determine how many numbers between 1 and 140 are <em class="emphasis">not</em> divisible by any of 2, 5 or 7. As in the previous question, we  start by counting the complement of the set we are interested in (because it is easier to count).</p>
+<p id="p-605">In this question, you will determine how many numbers between 1 and 140 are <em class="emphasis">not</em> divisible by any of 2, 5 or 7. As in the previous question, we  start by counting the complement of the set we are interested in (because it is easier to count).</p>
 <ol class="lower-alpha">
-<li id="li-291"><p id="p-592">Negate the statement "\(n\) is not divisible by any of 2, 5 and 7." </p></li>
-<li id="li-292"><p id="p-593">The set of numbers that you described in part (a) can be found using inclusion-exclusion. Do so. </p></li>
-<li id="li-293"><p id="p-594">Use your answer to (b) to find how many numbers in [140] are <em class="emphasis">not</em> divisible by any of 2, 5 and 7. </p></li>
+<li id="li-291"><p id="p-606">Negate the statement "\(n\) is not divisible by any of 2, 5 and 7." <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-177" id="solution-177"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-177"><div class="solution solution-like"><p id="p-607">\(n\) is divisible by at least one of 2, 5 or 7</p></div></div></p></li>
+<li id="li-292"><p id="p-608">The set of numbers that you described in part (a) can be found using inclusion-exclusion. Do so. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-178" id="solution-178"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-178"><div class="solution solution-like">
+<p id="p-609">Let \(A_2\text{,}\) \(A_5\) and \(A_7\) be the set of numbers divisible by 2, 5, and 7, respectively. We have</p>
+<div class="displaymath">
+\begin{equation*}
+\begin{array}{ccc}
+|A_2| = 70 &amp; |A_5| = 28 &amp; |A_7| = 20 \\
+|A_2 \cap A_5| = 14 &amp; |A_2 \cap A_7| = 10 &amp; |A_5 \cap A_7| = 4 \\
+&amp;|A_2 \cap A_5 \cap A_7| = 2 \\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">By inclusion-exclusion the answer is</p>
+<div class="displaymath">
+\begin{equation*}
+70+28+20 - 14 - 10 - 4 + 2 = 92
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-293"><p id="p-610">Use your answer to (b) to find how many numbers in [140] are <em class="emphasis">not</em> divisible by any of 2, 5 and 7. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-179" id="solution-179"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-179"><div class="solution solution-like">
+<p id="p-611">We use the useful theorem "good = all - bad" to find that</p>
+<div class="displaymath">
+\begin{equation*}
+140 -92 = 48
+\end{equation*}
+</div>
+</div></div></p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-86"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Sharing French Fries.</span>
 </h6>
-<p id="p-595">Anna, Boris, Clyde and Denise are sharing a basket of 50 french fries. How many ways are there for them to share the fries, assuming nobody gets more than 15 fries?</p>
+<p id="p-612">Anna, Boris, Clyde and Denise are sharing a basket of 50 french fries. How many ways are there for them to share the fries, assuming nobody gets more than 15 fries?</p>
 <ol class="lower-alpha">
-<li id="li-294"><p id="p-596">How many ways are there, with no restrictions, to distribute 50 identical french fries among 4 distinct friends? </p></li>
-<li id="li-295"><p id="p-597">Let \(A\) be the set of outcomes in which Anna gets 16 or more fries. What is \(|A|\text{?}\) (Hint: first give away 16 fries to Anna, then distribute the rest freely among the 4 friends.) Define similar sets \(B,C,D\) for Boris, Clyde and Denise. Find \(|A|+|B|+|C|+|D|\text{.}\) </p></li>
-<li id="li-296"><p id="p-598">What is \(|A \cap B|\text{?}\) (Hint: first give away 16 fries to Anna and 16 more to Boris, then distribute the rest freely.) What is \(| A \cap B| + | A \cap C| + | A \cap D| +
-| B \cap C| + | B \cap D| + | C \cap D|\text{?}\) </p></li>
-<li id="li-297"><p id="p-599">Use similar reasoning to part (c) to find the sum of the sizes of all intersections involving 3 of the sets \(A,B,C,D\text{.}\) </p></li>
-<li id="li-298"><p id="p-600">Find \(|A \cap B \cap C \cap D|\text{.}\) </p></li>
-<li id="li-299"><p id="p-601">Use inclusion-exclusion to find the total number of ways for the friends to share 50 fries where no one gets more than 15 fries. </p></li>
+<li id="li-294"><p id="p-613">How many ways are there, with no restrictions, to distribute 50 identical french fries among 4 distinct friends? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-180" id="solution-180"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-180"><div class="solution solution-like"><p id="p-614">We have 50 identical fries (balls) to give to 4 distinct friends (boxes). Repetition is allowed and boxes can be empty. The number of ways is \({50+4-1 \choose 50} = {53 \choose 50}\text{.}\)</p></div></div></p></li>
+<li id="li-295"><p id="p-615">Let \(A\) be the set of outcomes in which Anna gets 16 or more fries. What is \(|A|\text{?}\) (Hint: first give away 16 fries to Anna, then distribute the rest freely among the 4 friends.) Define similar sets \(B,C,D\) for Boris, Clyde and Denise. Find \(|A|+|B|+|C|+|D|\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-181" id="solution-181"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-181"><div class="solution solution-like">After reserving 16 fries for Anna, we have 34 fries left over, to distribute any way we like. The number of ways is \({34+4-1 \choose 50} = {37 \choose 34}\text{.}\) The same argument holds for Boris, Clyde and Denise. so<div class="displaymath">
+\begin{equation*}
+|A|+|B|+|C|+|D| = 4 {37 \choose 34}.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-296"><p id="p-616">What is \(|A \cap B|\text{?}\) (Hint: first give away 16 fries to Anna and 16 more to Boris, then distribute the rest freely.) What is \(| A \cap B| + | A \cap C| + | A \cap D| +
+| B \cap C| + | B \cap D| + | C \cap D|\text{?}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-182" id="solution-182"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-182"><div class="solution solution-like">After reserving 16 fries for Anna, and 16 fries for Boris, we have 18 fries left over, to distribute any way we like. The number of ways is \({18+4-1 \choose 18} = {21 \choose 18}\text{.}\) The same argument holds for any pair of friends, so<div class="displaymath">
+\begin{equation*}
+| A \cap B| + | A \cap C| + | A \cap D| +
+| B \cap C| + | B \cap D| + | C \cap D|= 6 {21 \choose 18}.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-297"><p id="p-617">Use similar reasoning to part (c) to find the sum of the sizes of all intersections involving 3 of the sets \(A,B,C,D\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-183" id="solution-183"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-183"><div class="solution solution-like">After reserving 16 fries for Anna, and 16 fries for Boris, and 16 fries for Clyde, we have 2 fries left over, to distribute any way we like. The number of ways is \({2+4-1 \choose 18} = {5 \choose 2}\text{.}\) The same argument holds for any triple of friends, so<div class="displaymath">
+\begin{equation*}
+| A \cap B \cap C| + | A \cap B \cap D| + | A \cap C \cap D| +
+| B \cap C \cap D| = 4 {5 \choose 3}.
+\end{equation*}
+</div>
+</div></div></p></li>
+<li id="li-298"><p id="p-618">Find \(|A \cap B \cap C \cap D|\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-184" id="solution-184"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-184"><div class="solution solution-like">There are not enough fries to give 16 fries to each of 4 people. So \(|A \cap B \cap C \cap D|=0\)</div></div></p></li>
+<li id="li-299"><p id="p-619">Use inclusion-exclusion to find the total number of ways for the friends to share 50 fries where no one gets more than 15 fries. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-185" id="solution-185"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-185"><div class="solution solution-like">Our final answer is<div class="displaymath">
+\begin{equation*}
+{53 \choose 50} - 4 {37 \choose 34} + 6 {21 \choose 18} - 4 {5 \choose 3} + 0.
+\end{equation*}
+</div>
+</div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
