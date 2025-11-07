@@ -19,7 +19,7 @@
 </me>
 
 			</p>
-<!--solution>
+<solution>
 		<ul>
 			<li>
 			<p>
@@ -49,7 +49,7 @@
 			</p>
 			</li>
 		</ul>
-</solution-->	
+</solution>	
 			</statement>
 		</exercise>	
 		<exercise>
@@ -60,7 +60,7 @@
 \sum_{k=0}^n \left( {n \choose k} \right)^2 = { 2n \choose n}.
 </me> 
 Hint: you will need the identity <m>{r \choose s} = {r \choose r-s}</m>.
-<!--solution>
+<solution>
 We rewrite this as
 <me>
 \sum_{k=0}^n  {n \choose k}  {n \choose n-k}  = { 2n \choose n}.
@@ -79,7 +79,7 @@ We rewrite this as
 			</p>
 			</li>
 		</ul>
-</solution-->
+</solution>
 			</p>
 			</statement>
 		</exercise>	
@@ -92,7 +92,7 @@ Give a combinatorial proof for the identity
 \sum_{i=0}^r  {n \choose i} {m \choose r-i}.
 </me>
 
-<!--solution>
+<solution>
 
 
 This is a more general version of the previous problem.
@@ -111,7 +111,7 @@ This is a more general version of the previous problem.
 			</li>
 		</ul>
 
-</solution-->
+</solution>
 </p>
 
 			</statement>
@@ -126,7 +126,7 @@ Give a combinatorial proof for the identity
 Hint: For the LHS, we have split into cases according to the LARGEST ELEMENT in our <m>(k+1)</m>-set of 
 <m>[n+1]</m>.
 </p>
-<!--solution>
+<solution>
 Both sides count the number of ways to choose <m>k+1</m> numbers from the set <m>n+1</m>
 
 		<ul>
@@ -150,7 +150,7 @@ Both sides count the number of ways to choose <m>k+1</m> numbers from the set <m
 			</p>
 			</li>
 		</ul>
-</solution-->
+</solution>
 			</statement>
 		</exercise>
 
