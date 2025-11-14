@@ -12,20 +12,14 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Here are some basic definitions for a graph \(G=(V,E)\) with \(n\) vertices and \(m\) edges that we learned a while ago.</p>
-<ul class="disc">
-<li><p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">walk</em> is a sequence of vertices \(v_0, v_1, v_2, \ldots. v_k\) such that \(v_i v_{i+1} \in E\) for \(0 \leq i \leq k-1\text{.}\)</p></li>
-<li><p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">trail</em> is a walk with distinct edges (no repeated edges)</p></li>
-<li><p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">path</em> is a walk with distinct vertices (and hence distinct edges)</p></li>
-<li><p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">circuit</em> is a closed walk (meaning that \(v_0=v_k\text{,}\) we start and end at the same vertex)</p></li>
-<li><p>A <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">cycle</em> is a circuit with distinct vertices (and hence distinct edges)</p></li>
-</ul>
-<p class="continuation">And here are the definitions that we need for today.</p>
-<ul class="disc">
-<li><p>An <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Eulerian circuit</em> is a circuit that contains every edge exactly once.</p></li>
-<li><p>An <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Eulerian trail</em> is a trail that contains every edge exactly once (but starts and ends at different vertices).</p></li>
-<li><p>An <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Eulerian graph</em> is a graph that has an Eulerian circuit.</p></li>
-</ul>
-<span class="incontext"><a href="eulerian.html#p-701">in-context</a></span>
+<p>A graph \(G=(V,E)\) is <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">bipartite</em> if its vertex set can be partitioned into two sets \(A\) and \(B\) such that the only edges in \(G\) run between these two sets. Equivalently: we can color the vertices of a bipartite graph with two colors, red and black, so that adjacent vertices receive different colors. The complete bipartite graph \(K_{n,m}\) is an example of a bipartite graph. Here are some more examples of bipartite graphs. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-graph19.svg" role="img" class="contained"></div></p>
+<ol class="lower-alpha">
+<li><p>For which values of \(n\) is \(P_{n}\) a bipartite graph? <a class="solution-knowl original" data-knowl="./knowl/solution-209-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>For which values of \(n\) is \(C_{n}\) a bipartite graph? <a class="solution-knowl original" data-knowl="./knowl/solution-210-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>For which values of \(n\) is \(W_{n}\) a bipartite graph? <a class="solution-knowl original" data-knowl="./knowl/solution-211-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>For which values of \(n\) is \(K_{n}\) a bipartite graph? <a class="solution-knowl original" data-knowl="./knowl/solution-212-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li><p>Suppose that \(G\) is a bipartite graph on \(n\) vertices. Find an upper bound on \(|E|\text{.}\) Start by exploring examples for \(n=2,3,4,5\text{.}\) You do not need to prove your answer is correct. <a class="solution-knowl original" data-knowl="./knowl/solution-213-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+</ol>
+<span class="incontext"><a href="exercises-22.html#p-701">in-context</a></span>
 </body>
 </html>

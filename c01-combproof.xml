@@ -37,7 +37,7 @@
 			</li>
 			<li>
 			<p>
- <m> 6n {n \choose 2}</m>: Pick one of the three <m>n</m>-sets and take 2 elements from that set (number of ways is <m>3{n \choose 2}</m>. Next, pick one of the remaining two <m>n</m>-sets and take 1 element from that set (number of ways is <m>2 n</m>.
+ <m> 6n {n \choose 2}</m>: Pick one of the three <m>n</m>-sets and take 2 elements from that set: number of ways is <m>3{n \choose 2}</m>. Next, pick one of the remaining two <m>n</m>-sets and take 1 element from that set: number of ways is <m>2 n</m>.
 			</p>
 			</li>
 			<li>

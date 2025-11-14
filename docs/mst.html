@@ -218,52 +218,52 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="mst"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">28</span> <span class="title">Minimum Spanning Trees</span>
 </h2>
-<section class="introduction" id="introduction-28"><p id="p-807"></p></section><section class="exercises" id="exercises-28"><h3 class="heading hide-type">
+<section class="introduction" id="introduction-28"><p id="p-827"></p></section><section class="exercises" id="exercises-28"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
 </h3>
 <article class="exercise exercise-like" id="exercise-136"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Prim's Algorithm.</span>
 </h6>
-<p id="p-808">Prim's Algorithm "grows a minimum edge into a MST." Given weighted graph \(G=(V,E)\text{:}\)</p>
+<p id="p-828">Prim's Algorithm "grows a minimum edge into a MST." Given weighted graph \(G=(V,E)\text{:}\)</p>
 <ul class="disc">
-<li id="li-401"><p id="p-809">Initialize \(T\) to be a vertex \(v\)</p></li>
+<li id="li-401"><p id="p-829">Initialize \(T\) to be a vertex \(v\)</p></li>
 <li id="li-402">
-<p id="p-810">At each step, grow the tree:</p>
-<ul class="circle"><li id="li-403"><p id="p-811">Add the minimum weight edge adjacent to \(T\) that doesn't create a cycle.</p></li></ul>
+<p id="p-830">At each step, grow the tree:</p>
+<ul class="circle"><li id="li-403"><p id="p-831">Add the minimum weight edge adjacent to \(T\) that doesn't create a cycle.</p></li></ul>
 </li>
-<li id="li-404"><p id="p-812">Stop when you can't add more edges.</p></li>
+<li id="li-404"><p id="p-832">Stop when you can't add more edges.</p></li>
 </ul>
 <p class="continuation">Use Prim's Algorithm to find the MST of the following weighted graph. <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-mst0.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-137"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Kruskal's Algorithm.</span>
 </h6>
-<p id="p-813">Kruskal's Algorithm grows a minimum forest until it is a MST. Given weighted graph \(G=(V,E)\text{:}\)</p>
+<p id="p-833">Kruskal's Algorithm grows a minimum forest until it is a MST. Given weighted graph \(G=(V,E)\text{:}\)</p>
 <ul class="disc">
-<li id="li-405"><p id="p-814">Initialize \(T\) to contain all the vertices of \(G\text{,}\) but no edges.</p></li>
+<li id="li-405"><p id="p-834">Initialize \(T\) to contain all the vertices of \(G\text{,}\) but no edges.</p></li>
 <li id="li-406">
-<p id="p-815">At each step, grow the forest:</p>
-<ul class="circle"><li id="li-407"><p id="p-816">Add the minimum weight edge to \(T\) that doesn't create a cycle.</p></li></ul>
+<p id="p-835">At each step, grow the forest:</p>
+<ul class="circle"><li id="li-407"><p id="p-836">Add the minimum weight edge to \(T\) that doesn't create a cycle.</p></li></ul>
 </li>
-<li id="li-408"><p id="p-817">Stop when you can't add more edges.</p></li>
+<li id="li-408"><p id="p-837">Stop when you can't add more edges.</p></li>
 </ul>
 <p class="continuation"><div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-mst2.svg" role="img" class="contained"></div> </p></article><article class="exercise exercise-like" id="exercise-138"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">MST Examples.</span>
 </h6>
-<p id="p-818">Give an example of a weighted graph on 6 vertices that \(\ldots\)</p>
+<p id="p-838">Give an example of a weighted graph on 6 vertices that \(\ldots\)</p>
 <ol class="lower-alpha">
-<li id="li-409"><p id="p-819">has a unique minimum spanning tree. </p></li>
-<li id="li-410"><p id="p-820">has exactly 2  minimum spanning trees. </p></li>
-<li id="li-411"><p id="p-821">has more than 2  minimum spanning trees. </p></li>
+<li id="li-409"><p id="p-839">has a unique minimum spanning tree. </p></li>
+<li id="li-410"><p id="p-840">has exactly 2  minimum spanning trees. </p></li>
+<li id="li-411"><p id="p-841">has more than 2  minimum spanning trees. </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-139"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Minimum Edge.</span>
 </h6>
-<p id="p-822">Let \(G=(V,E)\) be a weighted graph.</p>
+<p id="p-842">Let \(G=(V,E)\) be a weighted graph.</p>
 <ol class="lower-alpha">
-<li id="li-412"><p id="p-823">Suppose that \(G\) contains a unique edge \(e\) of minimum weight in \(G\text{.}\) Prove that \(e\) is contained in every minimum spanning tree of \(G\text{.}\) </p></li>
-<li id="li-413"><p id="p-824">Suppose that \(G\) contains an edge \(e\) such that for every cycle \(C\) containing \(e\text{,}\) the weight \(w(e)\) is smaller than all the other edge weights in \(C-e\text{.}\) Prove that \(e\) is contained in every minimum spanning tree of \(G\text{.}\) </p></li>
+<li id="li-412"><p id="p-843">Suppose that \(G\) contains a unique edge \(e\) of minimum weight in \(G\text{.}\) Prove that \(e\) is contained in every minimum spanning tree of \(G\text{.}\) </p></li>
+<li id="li-413"><p id="p-844">Suppose that \(G\) contains an edge \(e\) such that for every cycle \(C\) containing \(e\text{,}\) the weight \(w(e)\) is smaller than all the other edge weights in \(C-e\text{.}\) Prove that \(e\) is contained in every minimum spanning tree of \(G\text{.}\) </p></li>
 </ol></article><article class="exercise exercise-like" id="exercise-140"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Minimum Spanning Forest.</span>
 </h6>
-<p id="p-825">Extend the concept of a minimum spanning tree to a disconnected, weighted graph. Define a "minimum spanning forest" and describe how you would find it. </p></article></section></section></div></main>
+<p id="p-845">Extend the concept of a minimum spanning tree to a disconnected, weighted graph. Define a "minimum spanning forest" and describe how you would find it. </p></article></section></section></div></main>
 </div>
 </body>
 </html>
