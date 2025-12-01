@@ -1071,60 +1071,60 @@ Here is an example. The 13 cards I've chosen are highlighted.
 
 
 \node[draw,rectangle] at (7,2.25) {A $\!\! \clubsuit$};
-\node[draw,rectangle,fill=gray!50] at (11,2.25) {2 $\!\!\clubsuit$};
-\node[draw,rectangle,fill=gray!50] at (3,2.25) {3 $\!\!\clubsuit$};
+\node[draw,rectangle,fill=red!50] at (11,2.25) {2 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=orange!50] at (3,2.25) {3 $\!\!\spadesuit$};
 \node[draw,rectangle] at (4,2.25) {4 $\!\!\clubsuit$};
-\node[draw,rectangle] at (8,2.25) {5 $\!\!\clubsuit$};
-\node[draw,rectangle] at (12,2.25) {6 $\!\!\clubsuit$};
-\node[draw,rectangle,fill=gray!50] at (2,2.25) {7 $\!\!\clubsuit$};
+\node[draw,rectangle] at (8,2.25) {5 $\!\!\heartsuit$};
+\node[draw,rectangle] at (12,2.25) {6 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=green!50] at (2,2.25) {7 $\!\!\heartsuit$};
 \node[draw,rectangle] at (13,2.25) {8 $\!\!\clubsuit$};
-\node[draw,rectangle] at (1,2.25) {9 $\!\!\clubsuit$};
+\node[draw,rectangle] at (1,2.25) {9 $\!\!\spadesuit$};
 \node[draw,rectangle] at (6,2.25) {10 $\!\!\clubsuit$};
-\node[draw,rectangle,fill=gray!50] at (10,2.25) {J $\!\!\clubsuit$};
-\node[draw,rectangle] at (9,2.25) {Q $\!\!\clubsuit$};
+\node[draw,rectangle] at (10,2.25) {J $\!\!\clubsuit$};
+\node[draw,rectangle] at (9,2.25) {Q $\!\!\heartsuit$};
 \node[draw,rectangle] at (5,2.25) {K $\!\!\clubsuit$};
 
 
 \node[draw,rectangle] at (4,1.5) {A $\!\! \diamondsuit$};
-\node[draw,rectangle] at (2,1.5) {2 $\!\!\diamondsuit$};
+\node[draw,rectangle] at (2,1.5) {2 $\!\!\heartsuit$};
 \node[draw,rectangle] at (7 ,1.5) {3 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=gray!50] at (13,1.5) {4 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=gray!50] at (1,1.5) {5 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=orange!50] at (13,1.5) {4 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=yellow!50] at (1,1.5) {5 $\!\!\spadesuit$};
 \node[draw,rectangle] at (11,1.5) {6 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (9,1.5) {7 $\!\!\diamondsuit$};
+\node[draw,rectangle] at (9,1.5) {7 $\!\!\clubsuit$};
 \node[draw,rectangle] at (5,1.5) {8 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (6,1.5) {9 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=gray!50] at (12,1.5) {10 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (10,1.5) {J $\!\!\diamondsuit$};
-\node[draw,rectangle] at (3,1.5) {Q $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=gray!50] at (8,1.5) {K $\!\!\diamondsuit$};
+\node[draw,rectangle] at (6,1.5) {9 $\!\!\heartsuit$};
+\node[draw,rectangle,fill=blue!50] at (12,1.5) {10 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=blue!50] at (10,1.5) {J $\!\!\spadesuit$};
+\node[draw,rectangle] at (3,1.5) {Q $\!\!\clubsuit$};
+\node[draw,rectangle,fill=violet!50] at (8,1.5) {K $\!\!\diamondsuit$};
 
-\node[draw,rectangle,fill=gray!50] at (7,.75) {A $\!\! \heartsuit$};
-\node[draw,rectangle] at (13,.75) {2 $\!\!\heartsuit$};
+\node[draw,rectangle,fill=red!50] at (7,.75) {A $\!\! \heartsuit$};
+\node[draw,rectangle] at (13,.75) {2 $\!\!\clubsuit$};
 \node[draw,rectangle] at (10,.75) {3 $\!\!\heartsuit$};
 \node[draw,rectangle] at (2,.75) {4 $\!\!\heartsuit$};
-\node[draw,rectangle] at (12,.75) {5 $\!\!\heartsuit$};
-\node[draw,rectangle] at (4,.75) {6 $\!\!\heartsuit$};
-\node[draw,rectangle] at (8,.75) {7 $\!\!\heartsuit$};
-\node[draw,rectangle,fill=gray!50] at (5,.75) {8 $\!\!\heartsuit$};
-\node[draw,rectangle] at (1,.75) {9 $\!\!\heartsuit$};
+\node[draw,rectangle] at (12,.75) {5 $\!\!\clubsuit$};
+\node[draw,rectangle] at (4,.75) {6 $\!\!\spadesuit$};
+\node[draw,rectangle] at (8,.75) {7 $\!\!\spadesuit$};
+\node[draw,rectangle,fill=green!50] at (5,.75) {8 $\!\!\heartsuit$};
+\node[draw,rectangle] at (1,.75) {9 $\!\!\diamondsuit$};
 \node[draw,rectangle] at (3,.75) {10 $\!\!\heartsuit$};
-\node[draw,rectangle] at (9,.75) {J $\!\!\heartsuit$};
-\node[draw,rectangle,fill=gray!50] at (6,.75) {Q $\!\!\heartsuit$};
+\node[draw,rectangle] at (9,.75) {J $\!\!\clubsuit$};
+\node[draw,rectangle,fill=violet!50] at (6,.75) {Q $\!\!\spadesuit$};
 \node[draw,rectangle] at (11,.75) {K $\!\!\heartsuit$};
 
 \node[draw,rectangle] at (11,0) {A $\!\! \spadesuit$};
 \node[draw,rectangle] at (8,0) {2 $\!\!\spadesuit$};
-\node[draw,rectangle] at (3,0) {3 $\!\!\spadesuit$};
+\node[draw,rectangle] at (3,0) {3 $\!\!\clubsuit$};
 \node[draw,rectangle] at (6,0) {4 $\!\!\spadesuit$};
-\node[draw,rectangle] at (13,0) {5 $\!\!\spadesuit$};
-\node[draw,rectangle,fill=gray!50] at (9,0) {6 $\!\!\spadesuit$};
-\node[draw,rectangle] at (2,0) {7 $\!\!\spadesuit$};
+\node[draw,rectangle] at (13,0) {5 $\!\!\diamondsuit$};
+\node[draw,rectangle,fill=yellow!50] at (9,0) {6 $\!\!\clubsuit$};
+\node[draw,rectangle] at (2,0) {7 $\!\!\heartsuit$};
 \node[draw,rectangle] at (12,0) {8 $\!\!\spadesuit$};
-\node[draw,rectangle,fill=gray!50] at (4,0) {9 $\!\!\spadesuit$};
-\node[draw,rectangle] at (7,0) {10 $\!\!\spadesuit$};
+\node[draw,rectangle,fill=green!50] at (4,0) {9 $\!\!\heartsuit$};
+\node[draw,rectangle] at (7,0) {10 $\!\!\diamondsuit$};
 \node[draw,rectangle] at (5,0) {J $\!\!\spadesuit$};
-\node[draw,rectangle] at (1,0) {Q $\!\!\spadesuit$};
+\node[draw,rectangle] at (1,0) {Q $\!\!\diamondsuit$};
 \node[draw,rectangle] at (10,0) {K $\!\!\spadesuit$};
 
 

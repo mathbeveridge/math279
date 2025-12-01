@@ -218,11 +218,11 @@
 <main class="main"><div id="content" class="pretext-content"><section xmlns:svg="http://www.w3.org/2000/svg" class="chapter" id="planar"><h2 class="heading">
 <span class="type">Chapter</span> <span class="codenumber">26</span> <span class="title">Planar Graphs</span>
 </h2>
-<section class="introduction" id="introduction-26"><p id="p-792">A <em class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
+<section class="introduction" id="introduction-26"><p id="p-818">A <em class="emphasis">planar graph</em> is a graph that can be drawn in the plane without crossing edges. Such a <em class="emphasis">plane drawing</em> of \(G\) has three characteristics.</p>
 <ul class="disc">
-<li id="li-382"><p id="p-793">\(v\) = number of vertices of \(G\)</p></li>
-<li id="li-383"><p id="p-794">\(e\) = number of edges of \(G\)</p></li>
-<li id="li-384"><p id="p-795">\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em class="emphasis">including the outer face</em>.</p></li>
+<li id="li-397"><p id="p-819">\(v\) = number of vertices of \(G\)</p></li>
+<li id="li-398"><p id="p-820">\(e\) = number of edges of \(G\)</p></li>
+<li id="li-399"><p id="p-821">\(f\) = number of faces (regions) created by cycles in \(G\text{,}\) <em class="emphasis">including the outer face</em>.</p></li>
 </ul>
 <p class="continuation">Here is a graph with \(v=8\) and \(e=9\) and \(f=3\text{.}\) The  regions are colored yellow, red and blue. <div class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-planar0.svg" role="img" class="contained"></div></p></section><section class="exercises" id="exercises-26"><h3 class="heading hide-type">
 <span class="type">Exercises</span> <span class="codenumber"></span> <span class="title">Practice Problems</span>
@@ -230,7 +230,7 @@
 <article class="exercise exercise-like" id="exercise-123"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Planar Graph Examples.</span>
 </h6>
-<p id="p-796">Fill in the following table for the given connected and planar graphs. Then make a conjecture! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar1.svg" role="img" class="contained"></div></p>
+<p id="p-822">Fill in the following table for the given connected and planar graphs. Then make a conjecture! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar1.svg" role="img" class="contained"></div></p>
 <div class="displaymath">
 \begin{equation*}
 \begin{array}{c|c|c|c|c}
@@ -245,8 +245,8 @@ H &amp;&amp;&amp;&amp;\\
 \end{array}
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-219" id="solution-219"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-219"><div class="solution solution-like">
-<div class="displaymath" id="p-797">
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like">
+<div class="displaymath" id="p-823">
 \begin{equation*}
 \begin{array}{c|c|c|c|c}
 \mbox{Graph} &amp; v \mbox{ (vertices)} &amp; e \mbox{ (edges)} &amp; f \mbox{ (faces)} &amp; v - e + f \\
@@ -260,33 +260,33 @@ H &amp; 9 &amp; 10 &amp; 3 &amp; 9-10+3=2\\
 \end{array}
 \end{equation*}
 </div>
-<p id="p-798">We conjecture that \(v - e + f =2\text{.}\)</p>
+<p id="p-824">We conjecture that \(v - e + f =2\text{.}\)</p>
 </div></div></p></article><article class="exercise exercise-like" id="exercise-124"><h6 class="heading"><span class="codenumber">2<span class="period">.</span></span></h6>
-<p id="p-799">Let \(G\) be a connected planar graph with \(v_G\) vertices and \(e_G\) edges and \(f_G\) faces. You will use <em class="emphasis">strong induction</em> on the number of cycles \(k \geq 0\)  to prove that any plane drawing of \(G\) satisfies</p>
+<p id="p-825">Let \(G\) be a connected planar graph with \(v_G\) vertices and \(e_G\) edges and \(f_G\) faces. You will use <em class="emphasis">strong induction</em> on the number of cycles \(k \geq 0\)  to prove that any plane drawing of \(G\) satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_G -e_G +f_G = 2.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-385"><p id="p-800"><em class="emphasis">Base Case: \(k=0\)</em>. A connected graph with no cycles is a tree. We know that a tree on \(v_G\) vertices has \(v_G-1\) edges. Explain why \(v_G -e_G +f_G = 2.\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-220" id="solution-220"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-220"><div class="solution solution-like">
-<p id="p-801">A tree on \(n_G\) vertices has \(v_G-1\) edges and 1 region. We have</p>
+<li id="li-400"><p id="p-826"><em class="emphasis">Base Case: \(k=0\)</em>. A connected graph with no cycles is a tree. We know that a tree on \(v_G\) vertices has \(v_G-1\) edges. Explain why \(v_G -e_G +f_G = 2.\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-230" id="solution-230"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-230"><div class="solution solution-like">
+<p id="p-827">A tree on \(n_G\) vertices has \(v_G-1\) edges and 1 region. We have</p>
 <div class="displaymath">
 \begin{equation*}
 v_G - (v_G  -1) + 1 = 2.
 \end{equation*}
 </div>
 </div></div></p></li>
-<li id="li-386">
-<p id="p-802"><em class="emphasis">Strong Inductive Hypothesis:</em> Assume that a plane drawing of a connected planar graph \(H\) with fewer than \(k\) cycles satisfies</p>
+<li id="li-401">
+<p id="p-828"><em class="emphasis">Strong Inductive Hypothesis:</em> Assume that a plane drawing of a connected planar graph \(H\) with fewer than \(k\) cycles satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_H - e_H + f_H = 2. \qquad \qquad {(\star)}
 \end{equation*}
 </div>
 </li>
-<li id="li-387">
-<p id="p-803"><em class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
+<li id="li-402">
+<p id="p-829"><em class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
 <div class="displaymath">
 \begin{equation*}
 v_G - e_G + f_G = 2.
@@ -294,29 +294,29 @@ v_G - e_G + f_G = 2.
 </div>
 <p class="continuation">Start with a plane drawing of \(G\text{.}\) Pick any edge \(e\) that is in a cycle of \(G\text{.}\) Let \(H=G-e\) be the graph you obtain by removing the edge \(e\) (but keeping the vertices).</p>
 <ol class="lower-roman">
-<li id="li-388">
-<p id="p-804">What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
-<p id="p-805">We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
+<li id="li-403">
+<p id="p-830">What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
+<p id="p-831">We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
 </li>
-<li id="li-389">
-<p id="p-806">What are the following values:</p>
+<li id="li-404">
+<p id="p-832">What are the following values:</p>
 <div class="displaymath">
 \begin{equation*}
 v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
 \end{equation*}
 </div>
-<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-221" id="solution-221"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-221"><div class="solution solution-like">
-<div class="displaymath" id="p-807">
+<p class="continuation"><a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-231" id="solution-231"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-231"><div class="solution solution-like">
+<div class="displaymath" id="p-833">
 \begin{equation*}
 v_H = v_G \qquad \qquad e_H =  e_G-1 \qquad \qquad f_H =  f_G - 1\qquad \phantom{,}
 \end{equation*}
 </div>
 <p class="continuation">because when we remove the edge \(e\text{,}\) two of the regions merge into one region.</p>
 </div></div></p>
-<p id="p-808"></p>
+<p id="p-834"></p>
 </li>
-<li id="li-390"><p id="p-809">Now complete the inductive step. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-222" id="solution-222"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-222"><div class="solution solution-like">
-<p id="p-810">By induction \((\star)\text{,}\) we know that</p>
+<li id="li-405"><p id="p-835">Now complete the inductive step. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-232" id="solution-232"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-232"><div class="solution solution-like">
+<p id="p-836">By induction \((\star)\text{,}\) we know that</p>
 <div class="displaymath">
 \begin{align*}
 v_H - e_H + f_H &amp;= 2\\
@@ -324,30 +324,30 @@ v_G - (e_G -1) + (f_G -1) &amp;= 2\\
 v_G - e_G + f_G &amp;= 2.
 \end{align*}
 </div>
-<p id="p-811"></p>
+<p id="p-837"></p>
 </div></div></p></li>
 </ol>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-125"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Adding the lengths of all cycles.</span>
 </h6>
-<p id="p-812">Let \(G\) be a planar graph whose plane drawing has regions \(A_1, A_2, \ldots, A_r\text{.}\) Let \(\mbox{len}(A_i)\) denote the <em class="emphasis">number of steps you take</em> when you walk around the boundary of region \(A_i\text{.}\) Explain why</p>
+<p id="p-838">Let \(G\) be a planar graph whose plane drawing has regions \(A_1, A_2, \ldots, A_r\text{.}\) Let \(\mbox{len}(A_i)\) denote the <em class="emphasis">number of steps you take</em> when you walk around the boundary of region \(A_i\text{.}\) Explain why</p>
 <div class="displaymath">
 \begin{equation*}
 \sum_{i=1}^f \mbox{len}(A_i) = 2 e.
 \end{equation*}
 </div>
-<p class="continuation">Start by looking at a small example planar graph to understand what this combinatorial identity is saying. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-223" id="solution-223"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-223"><div class="solution solution-like"><p id="p-813">If edge \(e\) is in a cycle, then it is on the boundary of two regions. If \(e\) is not in a cycle, then it is one one region. But when we walk around the boundary of that region, we traverse the edge \(e\) twice! So when we add up all the lengths of the regions, we count every edge twice.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-126"><h6 class="heading">
+<p class="continuation">Start by looking at a small example planar graph to understand what this combinatorial identity is saying. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-233" id="solution-233"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-233"><div class="solution solution-like"><p id="p-839">If edge \(e\) is in a cycle, then it is on the boundary of two regions. If \(e\) is not in a cycle, then it is one one region. But when we walk around the boundary of that region, we traverse the edge \(e\) twice! So when we add up all the lengths of the regions, we count every edge twice.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-126"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">An upper bound on the number of faces.</span>
 </h6>
-<p id="p-814">Let \(G\) be a simple  (no loops, no multiple edges), connected plane graph on \(v \geq 3\) vertices. Use Problem 3 to  prove that</p>
+<p id="p-840">Let \(G\) be a simple  (no loops, no multiple edges), connected plane graph on \(v \geq 3\) vertices. Use Problem 3 to  prove that</p>
 <div class="displaymath">
 \begin{equation*}
 3f \leq 2e.
 \end{equation*}
 </div>
-<p class="continuation">Hint: what is a <em class="emphasis">lower bound</em> on the number of edges in the boundary of each region? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-224" id="solution-224"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-224"><div class="solution solution-like">
-<p id="p-815">Every region is bounded by at least 3 edges. So</p>
+<p class="continuation">Hint: what is a <em class="emphasis">lower bound</em> on the number of edges in the boundary of each region? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-234" id="solution-234"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-234"><div class="solution solution-like">
+<p id="p-841">Every region is bounded by at least 3 edges. So</p>
 <div class="displaymath">
 \begin{equation*}
 3f \leq  \sum_{i=1}^f \mbox{len}(A_i) = 2 e.
@@ -356,14 +356,14 @@ v_G - e_G + f_G &amp;= 2.
 </div></div></p></article><article class="exercise exercise-like" id="exercise-127"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">An upper bound on the number of edges.</span>
 </h6>
-<p id="p-816">Use the fact that \(v-e+f=2\) and \(3f \leq 2e\) to prove that if \(G\) is a planar graph then</p>
+<p id="p-842">Use the fact that \(v-e+f=2\) and \(3f \leq 2e\) to prove that if \(G\) is a planar graph then</p>
 <div class="displaymath">
 \begin{equation*}
 e \leq 3v -6.
 \end{equation*}
 </div>
-<p class="continuation">In other words, if \(G\) is planar it cannot have "too many" edges. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-225" id="solution-225"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-225"><div class="solution solution-like">
-<p id="p-817">We have</p>
+<p class="continuation">In other words, if \(G\) is planar it cannot have "too many" edges. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-235" id="solution-235"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-235"><div class="solution solution-like">
+<p id="p-843">We have</p>
 <div class="displaymath">
 \begin{equation*}
 f \leq \frac{2}{3} e.
@@ -383,21 +383,21 @@ v - 2 &amp; \geq&amp; \frac{1}{3}e \\
 </div></div></p></article><article class="exercise exercise-like" id="exercise-128"><h6 class="heading">
 <span class="codenumber">6<span class="period">.</span></span><span class="space"> </span><span class="title">\(K_5\) is not planar.</span>
 </h6>
-<p id="p-818">In the previous problem, we  showed that for any planar graph, we have \(e \leq 3v-6\text{.}\) Use this inequality to prove that \(K_5\) is not planar. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-226" id="solution-226"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-226"><div class="solution solution-like"><p id="p-819">\(K_5\) has \(v=5\) vertices and \(e=10\) edges. But \(e = 10 &gt; 9 = 3 \cdot 5 -6\text{.}\) So \(K_5\) is not planar.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-129"><h6 class="heading">
+<p id="p-844">In the previous problem, we  showed that for any planar graph, we have \(e \leq 3v-6\text{.}\) Use this inequality to prove that \(K_5\) is not planar. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-236" id="solution-236"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-236"><div class="solution solution-like"><p id="p-845">\(K_5\) has \(v=5\) vertices and \(e=10\) edges. But \(e = 10 &gt; 9 = 3 \cdot 5 -6\text{.}\) So \(K_5\) is not planar.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-129"><h6 class="heading">
 <span class="codenumber">7<span class="period">.</span></span><span class="space"> </span><span class="title">\(K_{3,3}\) is not planar.</span>
 </h6>
-<p id="p-820">The argument from Problem 5 can be generalized when we know that the planar graph \(G\) does not have any triangles (3-cycles). In this case, we must have</p>
+<p id="p-846">The argument from Problem 5 can be generalized when we know that the planar graph \(G\) does not have any triangles (3-cycles). In this case, we must have</p>
 <div class="displaymath">
 \begin{equation*}
 e \leq 2v -4.
 \end{equation*}
 </div>
 <ol class="lower-alpha">
-<li id="li-391"><p id="p-821">Use this inequality to prove that \(K_{3,3}\) is not planar. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-227" id="solution-227"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-227"><div class="solution solution-like"><p id="p-822">\(K_{3,3}\) has \(v=6\) vertices and \(e=9\) edges. But \(e = 9 &gt; 8 = 2 \cdot 6 -4\text{.}\) So \(K_{3,3}\) is not planar.</p></div></div></p></li>
-<li id="li-392">
-<p id="p-823">Adapt your argument from Problem 5 to prove the following statement.</p>
-<p id="p-824">Let \(G\) be a simple connected planar graph with \(v\) vertices, \(e\) edges and \(f\) faces where every face is bounded by at least 4 edges. Prove that \(e \leq 2v -4\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-228" id="solution-228"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-228"><div class="solution solution-like">
-<p id="p-825">Since \(G\) has no 3-cycles, every region is bounded by at least 4 edges. This means that</p>
+<li id="li-406"><p id="p-847">Use this inequality to prove that \(K_{3,3}\) is not planar. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-237" id="solution-237"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-237"><div class="solution solution-like"><p id="p-848">\(K_{3,3}\) has \(v=6\) vertices and \(e=9\) edges. But \(e = 9 &gt; 8 = 2 \cdot 6 -4\text{.}\) So \(K_{3,3}\) is not planar.</p></div></div></p></li>
+<li id="li-407">
+<p id="p-849">Adapt your argument from Problem 5 to prove the following statement.</p>
+<p id="p-850">Let \(G\) be a simple connected planar graph with \(v\) vertices, \(e\) edges and \(f\) faces where every face is bounded by at least 4 edges. Prove that \(e \leq 2v -4\text{.}\) <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-238" id="solution-238"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-238"><div class="solution solution-like">
+<p id="p-851">Since \(G\) has no 3-cycles, every region is bounded by at least 4 edges. This means that</p>
 <div class="displaymath">
 \begin{equation*}
 4f  \leq  \sum_{i=1}^r \mbox{len}(A_i) = 2 e,
@@ -418,13 +418,13 @@ v - 2 &amp; \geq \frac{1}{2}e\\
 2v -4 &amp; \geq e.
 \end{align*}
 </div>
-<p id="p-826"></p>
+<p id="p-852"></p>
 </div></div></p>
 </li>
 </ol></article><article class="exercise exercise-like" id="exercise-130"><h6 class="heading">
 <span class="codenumber">8<span class="period">.</span></span><span class="space"> </span><span class="title">Drawing \(K_5\) and \(K_{3,3}\) on a Torus.</span>
 </h6>
-<p id="p-827">If you start with a square and we glue the opposite sides to one another, we get a <em class="emphasis">torus</em> (a surface in the shape of a donut). So we can think of this square as a torus, if we identify points on opposite sides. (For example, in some classic video games, walking off the right side of the screen makes you appear at the same height on the left side of the screen.) <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/quotient_torus.png" class="contained"></div> For example, we can draw the 4-cycle \(C_4\) using a square with opposite sides identified like so: <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-planar3.svg" role="img" class="contained"></div> Using a square with opposite sides identified, show that you can draw both \(K_5\) and \(K_{3,3}\) on a torus without any crossing edges! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar4.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-229" id="solution-229"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-229"><div class="solution solution-like"><p id="p-828"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar5.svg" role="img" class="contained"></div></p></div></div></p></article></section></section></div></main>
+<p id="p-853">If you start with a square and we glue the opposite sides to one another, we get a <em class="emphasis">torus</em> (a surface in the shape of a donut). So we can think of this square as a torus, if we identify points on opposite sides. (For example, in some classic video games, walking off the right side of the screen makes you appear at the same height on the left side of the screen.) <div class="image-box" style="width: 60%; margin-left: 20%; margin-right: 20%;"><img src="images/quotient_torus.png" class="contained"></div> For example, we can draw the 4-cycle \(C_4\) using a square with opposite sides identified like so: <div class="image-box" style="width: 30%; margin-left: 35%; margin-right: 35%;"><img src="images/fig-img-planar3.svg" role="img" class="contained"></div> Using a square with opposite sides identified, show that you can draw both \(K_5\) and \(K_{3,3}\) on a torus without any crossing edges! <div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar4.svg" role="img" class="contained"></div> <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-239" id="solution-239"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-239"><div class="solution solution-like"><p id="p-854"><div class="image-box" style="width: 90%; margin-left: 5%; margin-right: 5%;"><img src="images/fig-img-planar5.svg" role="img" class="contained"></div></p></div></div></p></article></section></section></div></main>
 </div>
 </body>
 </html>
