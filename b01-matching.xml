@@ -62,9 +62,9 @@ and therefore <m>|A|=|B|</m>.
 				</li>
 				<li>
 					<p>
- Let <m>G=(V,E)</m> be a bipartite graph on vertices <m>V=A \cup B</m>. Given a set of vertices <m>S \subset A</m>, we define the <em>neighborhood</em> <m>N(S) \subset B</m> to be the set of vertices that are adjacent to some vertex in <m>A</m>. That is,
+ Let <m>G=(V,E)</m> be a bipartite graph on vertices <m>V=A \cup B</m>. Given a set of vertices <m>S \subset A</m>, we define the <em>neighborhood</em> <m>N(S) \subset B</m> to be the set of vertices that are adjacent to some vertex in <m>S</m>. That is,
 <me>
-\mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in A, (a,b) \in E \} .
+\mbox{if } S \subset A \mbox{ then } N(S) = \{ b \in B : \exists a \in S, (a,b) \in E \} .
 </me>
 For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 
