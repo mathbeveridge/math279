@@ -10,5 +10,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like"><p>Let \(P = (v_1, v_2, \ldots, v_k)\) be a path of maximum length. We claim that the endpoints \(v_1, v_k\) of \(P\) are leaves. AFSOC that \(v_1\) is not a leaf. Then \(v_1\) has another neighbor \(u\) besides \(v_2\text{.}\) Since \(G\) is a tree, this neighbor is not already on the path \(P\) because this new edge would create a cycle. But then we can find a longer path by adding the edge from \(v_1\) to \(u\text{,}\) a contradiction. The same argument applies to \(v_k\text{.}\) Therefore \(v_1, v_k\) are both leaves in \(G\text{.}\)</p></div></body>
+<body><div class="solution solution-like">
+<p>Since \(G\) has no 3-cycles, every region is bounded by at least 4 edges. This means that</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+4f  \leq  \sum_{i=1}^r \mbox{len}(A_i) = 2 e,
+\end{equation*}
+</div>
+<p class="continuation">or equivalently,</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+r \leq \frac{1}{2}e.
+\end{equation*}
+</div>
+<p class="continuation">Plugging this into \(v-e+f = 2\) gives</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{align*}
+v-e +  \frac{1}{2} e &amp;\geq 2\\
+v - \frac{1}{2} e &amp;\geq 2\\
+v - 2 &amp; \geq \frac{1}{2}e\\
+2v -4 &amp; \geq e.
+\end{align*}
+</div>
+<p></p>
+</div></body>
 </html>

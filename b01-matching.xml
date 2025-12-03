@@ -29,14 +29,14 @@ Explain why
 \sum_{v \in A} \deg (v) = \sum_{w \in B} \deg(w).
 </me>
 
-<!--solution>
+<solution>
 <p>
 Since the edges run between <m>A</m> and <m>B</m>, each of these sums counts every edge once. That is,
 <me>
 \sum_{v \in A} \deg (v) = |E| = \sum_{w \in B} \deg(w).
 </me>
 </p>
-</solution-->
+</solution>
 
 
 
@@ -46,13 +46,13 @@ Since the edges run between <m>A</m> and <m>B</m>, each of these sums counts eve
 					<p>
  Recall that a graph is <em><m>d</m>-regular</em> when every vertex has degree <m>d</m>. Let <m>G</m> be a <m>d</m>-regular bipartite graph on partite sets <m>A,B</m>. Prove that  <m>|A|=|B|</m>. (Hint: use part (a).)
 
-<!--solution>
+<solution>
 <p>
 Since every vertex has degree equal to <m>d</m>, Problem 1(b) means that
 <me>d |A| = \sum_{v \in A} \deg (v) = |E| = \sum_{w \in B} \deg(w) =  d |B|</me>
 and therefore <m>|A|=|B|</m>.
 </p>
-</solution-->
+</solution>
 
 
 
@@ -87,16 +87,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \node at (6,0) {$A$};
 \node at (6,1.5) {$B$};
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 \draw (2,0) ellipse (1.5 and .3);
 
@@ -116,18 +116,18 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (3,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
-\draw (5,0) -!- (4,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (3,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
+\draw (5,0) -- (4,1.5);
 
 
 \draw (2,0) ellipse (1.5 and .3);
@@ -149,16 +149,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -180,16 +180,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (4,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (2,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (4,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (2,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (5,0) -- (4,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -209,7 +209,7 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 
 
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="100%" xml:id="fig-img-matching1">
@@ -244,16 +244,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \node at (6,0) {$A$};
 \node at (6,1.5) {$B$};
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 \draw (2,0) ellipse (1.5 and .3);
 
@@ -273,18 +273,18 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (3,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
-\draw (5,0) -!- (4,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (3,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
+\draw (5,0) -- (4,1.5);
 
 
 \draw (2,0) ellipse (1.5 and .3);
@@ -306,16 +306,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -352,16 +352,16 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (4,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (2,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (4,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (2,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (5,0) -- (4,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -380,7 +380,7 @@ For each  of the examples  below, find the neighborhood <m>N(S) \subset B</m>:
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -430,16 +430,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 \node at (6,0) {$A$};
 \node at (6,1.5) {$B$};
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -454,18 +454,18 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (3,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
-\draw (5,0) -!- (4,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (3,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
+\draw (5,0) -- (4,1.5);
 
 
 }
@@ -483,16 +483,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (1,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (4,0) -!- (4,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (1,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (4,0) -- (4,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -511,16 +511,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 \draw[fill] (\x,0) circle (2pt);
 \draw[fill] (\x,1.5) circle (2pt);
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (4,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (2,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (4,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (2,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (5,0) -- (4,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 }
@@ -537,7 +537,7 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 
 
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="75%" xml:id="fig-img-matching3">
@@ -555,16 +555,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 \node at (6,0) {$A$};
 \node at (6,1.5) {$B$};
 
-\draw(1,0) -!- (2,1.5);
-\draw[ultra thick] (1,0) -!- (3,1.5);
-\draw[ultra thick] (2,0) -!- (1,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw[ultra thick]  (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw[ultra thick]  (4,0) -!- (4,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw[ultra thick]  (5,0) -!- (5,1.5);
+\draw(1,0) -- (2,1.5);
+\draw[ultra thick] (1,0) -- (3,1.5);
+\draw[ultra thick] (2,0) -- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw[ultra thick]  (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw[ultra thick]  (4,0) -- (4,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw[ultra thick]  (5,0) -- (5,1.5);
 
 
 
@@ -589,18 +589,18 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 }
 
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (3,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (4,0) -!- (5,1.5);
-\draw (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
-\draw (5,0) -!- (4,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (3,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (4,0) -- (5,1.5);
+\draw (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
+\draw (5,0) -- (4,1.5);
 
 
 
@@ -621,16 +621,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 }
 
 
-\draw[ultra thick] (1,0) -!- (2,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw[ultra thick]  (2,0) -!- (1,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw[ultra thick]  (3,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw[ultra thick]  (4,0) -!- (4,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw[ultra thick]  (5,0) -!- (3,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (2,1.5);
+\draw (1,0) -- (3,1.5);
+\draw[ultra thick]  (2,0) -- (1,1.5);
+\draw (2,0) -- (4,1.5);
+\draw[ultra thick]  (3,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw[ultra thick]  (4,0) -- (4,1.5);
+\draw (4,0) -- (1,1.5);
+\draw[ultra thick]  (5,0) -- (3,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -655,16 +655,16 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 
 }
 
-\draw (1,0) -!- (2,1.5);
-\draw (1,0) -!- (4,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (2,0) -!- (5,1.5);
-\draw (3,0) -!- (2,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (3,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw (5,0) -!- (5,1.5);
+\draw (1,0) -- (2,1.5);
+\draw (1,0) -- (4,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (2,0) -- (5,1.5);
+\draw (3,0) -- (2,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (3,1.5);
+\draw (5,0) -- (4,1.5);
+\draw (5,0) -- (5,1.5);
 
 
 
@@ -680,7 +680,7 @@ Given a bipartite graph <m>G= (V,E)</m> where <m>V=A \cup B</m> and <m>|A|=|B|</
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -726,13 +726,13 @@ This means that a <m>d</m>-regular bipartite graph always has a perfect matching
 					<p>
  Pick any subset <m>S \subset A</m>. What is <m>\sum_{v \in S} \deg(v)</m>?
 
-<!--solution>
+<solution>
 <p>
 <me>
 \sum_{v \in S} \deg(v) = d |S|
 </me>
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -742,7 +742,7 @@ This means that a <m>d</m>-regular bipartite graph always has a perfect matching
 
 			</p><p>
 
-<!--solution>
+<solution>
 <p>
 Every edge from a vertex in set <m>S</m> ends at a vertex in <m>N(S)</m>. This confirms that
 <me>
@@ -751,7 +751,7 @@ Every edge from a vertex in set <m>S</m> ends at a vertex in <m>N(S)</m>. This c
 Note that this inequality can be strict: vertices in <m>N(S)</m> may have neighbors outside of the set <m>S</m>.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -759,14 +759,14 @@ Note that this inequality can be strict: vertices in <m>N(S)</m> may have neighb
 					<p>
  Why does part (ii) guarantee that <m>|S| \leq |N(S)|</m>?
 
-<!--solution>
+<solution>
 <p>
 <me>
 d |S| = \sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v)  =  d|N(S)|
 </me>
 and so <m>|S| \leq |N(S)|</m>.
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -788,24 +788,24 @@ and so <m>|S| \leq |N(S)|</m>.
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw (5,0) -!- (6,1.5);
-\draw (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw (6,0) -!- (5,1.5);
+\draw (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw (5,0) -- (6,1.5);
+\draw (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -828,31 +828,31 @@ and so <m>|S| \leq |N(S)|</m>.
 					<p>
  Find a perfect matching <m>M</m> in the graph <m>G</m>.
 
-<!--solution>
+<solution>
 <p>
 			<image width="75%" xml:id="fig-img-matching5">
 				<latex-image>
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw[ultra thick] (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
-\draw[ultra thick] (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw[ultra thick] (5,0) -!- (4,1.5);
-\draw (5,0) -!- (6,1.5);
-\draw[ultra thick] (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw[ultra thick] (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
+\draw[ultra thick] (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw[ultra thick] (5,0) -- (4,1.5);
+\draw (5,0) -- (6,1.5);
+\draw[ultra thick] (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -870,7 +870,7 @@ and so <m>|S| \leq |N(S)|</m>.
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -878,7 +878,7 @@ and so <m>|S| \leq |N(S)|</m>.
 					<p>
   Now draw the graph <m>H=G-M</m> where you remove the edges in your matching <m>M</m>.
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="75%" xml:id="fig-img-matching6">
@@ -887,23 +887,23 @@ and so <m>|S| \leq |N(S)|</m>.
 
 
 
-\draw(1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
+\draw(1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
 
-\draw (2,0) -!- (3,1.5);
-\draw  (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw  (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
 
-\draw (3,0) -!- (6,1.5);
-\draw  (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
+\draw (3,0) -- (6,1.5);
+\draw  (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
 
-\draw  (5,0) -!- (2,1.5);
+\draw  (5,0) -- (2,1.5);
 
-\draw (5,0) -!- (6,1.5);
+\draw (5,0) -- (6,1.5);
 
-\draw (6,0) -!- (4,1.5);
-\draw  (6,0) -!- (5,1.5);
+\draw (6,0) -- (4,1.5);
+\draw  (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -921,7 +921,7 @@ and so <m>|S| \leq |N(S)|</m>.
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -930,7 +930,7 @@ and so <m>|S| \leq |N(S)|</m>.
  Find a perfect matching in  <m>H</m>. Why does part (a) guarantee that <m>H = G-M</m> has a perfect matching?
 
 
-<!--solution>
+<solution>
 <p>
 			<image width="75%" xml:id="fig-img-matching7">
 				<latex-image>
@@ -938,23 +938,23 @@ and so <m>|S| \leq |N(S)|</m>.
 
 
 
-\draw[ultra thick] (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
 
-\draw (2,0) -!- (3,1.5);
-\draw[ultra thick]  (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
+\draw (2,0) -- (3,1.5);
+\draw[ultra thick]  (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
 
-\draw[ultra thick]  (3,0) -!- (6,1.5);
-\draw[ultra thick]  (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
+\draw[ultra thick]  (3,0) -- (6,1.5);
+\draw[ultra thick]  (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
 
-\draw [ultra thick] (5,0) -!- (2,1.5);
+\draw [ultra thick] (5,0) -- (2,1.5);
 
-\draw (5,0) -!- (6,1.5);
+\draw (5,0) -- (6,1.5);
 
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick]  (6,0) -!- (5,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick]  (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -976,7 +976,7 @@ and so <m>|S| \leq |N(S)|</m>.
 
 
 </p>
-</solution-->
+</solution>
 
 
 
@@ -995,7 +995,7 @@ and so <m>|S| \leq |N(S)|</m>.
  Let <m>G</m> be a <m>d</m>-regular bipartite graph where <m>|A|=|B|=n</m>.  Use (regular) induction on <m>d \geq 1</m> to prove that a <m>d</m>-regular bipartite graph  has <m>d</m> <em>disjoint</em> perfect matchings. This means that we can color the edges of <m>G</m> using <m>d</m> colors so that every vertex is incident with exactly one edge from each of the <m>d</m> colors.
 
 
-<!--solution>
+<solution>
 <p>
 
 		<ul>
@@ -1033,7 +1033,7 @@ By part (a), The <m>d</m>-regular bipartite graph <m>G</m> has a perfect matchin
 
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -1067,70 +1067,78 @@ Here is an example. The 13 cards I've chosen are highlighted.
 
 			<image width="100%" xml:id="fig-img-matching8">
 				<latex-image>
-\begin{tikzpicture}
-
-
-\node[draw,rectangle] at (7,2.25) {A $\!\! \clubsuit$};
-\node[draw,rectangle,fill=red!50] at (11,2.25) {2 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=orange!50] at (3,2.25) {3 $\!\!\spadesuit$};
-\node[draw,rectangle] at (4,2.25) {4 $\!\!\clubsuit$};
-\node[draw,rectangle] at (8,2.25) {5 $\!\!\heartsuit$};
-\node[draw,rectangle] at (12,2.25) {6 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=green!50] at (2,2.25) {7 $\!\!\heartsuit$};
-\node[draw,rectangle] at (13,2.25) {8 $\!\!\clubsuit$};
-\node[draw,rectangle] at (1,2.25) {9 $\!\!\spadesuit$};
-\node[draw,rectangle] at (6,2.25) {10 $\!\!\clubsuit$};
-\node[draw,rectangle] at (10,2.25) {J $\!\!\clubsuit$};
-\node[draw,rectangle] at (9,2.25) {Q $\!\!\heartsuit$};
-\node[draw,rectangle] at (5,2.25) {K $\!\!\clubsuit$};
-
-
-\node[draw,rectangle] at (4,1.5) {A $\!\! \diamondsuit$};
-\node[draw,rectangle] at (2,1.5) {2 $\!\!\heartsuit$};
-\node[draw,rectangle] at (7 ,1.5) {3 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=orange!50] at (13,1.5) {4 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=yellow!50] at (1,1.5) {5 $\!\!\spadesuit$};
-\node[draw,rectangle] at (11,1.5) {6 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (9,1.5) {7 $\!\!\clubsuit$};
-\node[draw,rectangle] at (5,1.5) {8 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (6,1.5) {9 $\!\!\heartsuit$};
-\node[draw,rectangle,fill=blue!50] at (12,1.5) {10 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=blue!50] at (10,1.5) {J $\!\!\spadesuit$};
-\node[draw,rectangle] at (3,1.5) {Q $\!\!\clubsuit$};
-\node[draw,rectangle,fill=violet!50] at (8,1.5) {K $\!\!\diamondsuit$};
-
-\node[draw,rectangle,fill=red!50] at (7,.75) {A $\!\! \heartsuit$};
-\node[draw,rectangle] at (13,.75) {2 $\!\!\clubsuit$};
-\node[draw,rectangle] at (10,.75) {3 $\!\!\heartsuit$};
-\node[draw,rectangle] at (2,.75) {4 $\!\!\heartsuit$};
-\node[draw,rectangle] at (12,.75) {5 $\!\!\clubsuit$};
-\node[draw,rectangle] at (4,.75) {6 $\!\!\spadesuit$};
-\node[draw,rectangle] at (8,.75) {7 $\!\!\spadesuit$};
-\node[draw,rectangle,fill=green!50] at (5,.75) {8 $\!\!\heartsuit$};
-\node[draw,rectangle] at (1,.75) {9 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (3,.75) {10 $\!\!\heartsuit$};
-\node[draw,rectangle] at (9,.75) {J $\!\!\clubsuit$};
-\node[draw,rectangle,fill=violet!50] at (6,.75) {Q $\!\!\spadesuit$};
-\node[draw,rectangle] at (11,.75) {K $\!\!\heartsuit$};
-
-\node[draw,rectangle] at (11,0) {A $\!\! \spadesuit$};
-\node[draw,rectangle] at (8,0) {2 $\!\!\spadesuit$};
-\node[draw,rectangle] at (3,0) {3 $\!\!\clubsuit$};
-\node[draw,rectangle] at (6,0) {4 $\!\!\spadesuit$};
-\node[draw,rectangle] at (13,0) {5 $\!\!\diamondsuit$};
-\node[draw,rectangle,fill=yellow!50] at (9,0) {6 $\!\!\clubsuit$};
-\node[draw,rectangle] at (2,0) {7 $\!\!\heartsuit$};
-\node[draw,rectangle] at (12,0) {8 $\!\!\spadesuit$};
-\node[draw,rectangle,fill=green!50] at (4,0) {9 $\!\!\heartsuit$};
-\node[draw,rectangle] at (7,0) {10 $\!\!\diamondsuit$};
-\node[draw,rectangle] at (5,0) {J $\!\!\spadesuit$};
-\node[draw,rectangle] at (1,0) {Q $\!\!\diamondsuit$};
-\node[draw,rectangle] at (10,0) {K $\!\!\spadesuit$};
+					\begin{tikzpicture}
 
 
 
 
-\end{tikzpicture}
+					\node[draw,rectangle,fill=yellow!50] at (1,2.25) {5 $\!\!\spadesuit$};
+					\node[draw,rectangle] at (2,2.25) {2 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (3,2.25) {Q $\!\!\clubsuit$};
+					\node[draw,rectangle] at (4,2.25) {A $\!\! \diamondsuit$};
+					
+					\node[draw,rectangle] at (7,2.25) {A $\!\! \clubsuit$};
+					\node[draw,rectangle,fill=red!50] at (11,2.25) {2 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (8,2.25) {5 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (12,2.25) {6 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (13,2.25) {8 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (6,2.25) {10 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (10,2.25) {J $\!\!\clubsuit$};
+					\node[draw,rectangle] at (9,2.25) {Q $\!\!\heartsuit$};
+					\node[draw,rectangle] at (5,2.25) {K $\!\!\clubsuit$};
+					
+					
+					\node[draw,rectangle] at (1,1.5) {9 $\!\!\spadesuit$};
+					\node[draw,rectangle,fill=green!50] at (2,1.5) {7 $\!\!\heartsuit$};
+					\node[draw,rectangle,fill=orange!50] at (3,1.5) {3 $\!\!\spadesuit$};
+					\node[draw,rectangle] at (4,1.5) {4 $\!\!\clubsuit$};
+					
+					\node[draw,rectangle] at (7 ,1.5) {3 $\!\!\diamondsuit$};
+					\node[draw,rectangle,fill=orange!50] at (13,1.5) {4 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (11,1.5) {6 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (9,1.5) {7 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (5,1.5) {8 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (6,1.5) {9 $\!\!\heartsuit$};
+					\node[draw,rectangle,fill=blue!50] at (12,1.5) {10 $\!\!\diamondsuit$};
+					\node[draw,rectangle,fill=blue!50] at (10,1.5) {J $\!\!\spadesuit$};
+					\node[draw,rectangle,fill=violet!50] at (8,1.5) {K $\!\!\diamondsuit$};
+					
+					
+					
+					
+					\node[draw,rectangle] at (1,0.75) {Q $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (2,0.75) {7 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (3,0.75) {3 $\!\!\clubsuit$};
+					\node[draw,rectangle,fill=green!50] at (4,0.75) {9 $\!\!\heartsuit$};
+					
+					\node[draw,rectangle,fill=red!50] at (7,.75) {A $\!\! \heartsuit$};
+					\node[draw,rectangle] at (13,.75) {2 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (10,.75) {3 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (12,.75) {5 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (8,.75) {7 $\!\!\spadesuit$};
+					\node[draw,rectangle,fill=green!50] at (5,.75) {8 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (9,.75) {J $\!\!\clubsuit$};
+					\node[draw,rectangle,fill=violet!50] at (6,.75) {Q $\!\!\spadesuit$};
+					\node[draw,rectangle] at (11,.75) {K $\!\!\heartsuit$};
+					
+					
+					\node[draw,rectangle] at (1,0) {9 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (2,0) {4 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (3,0) {10 $\!\!\heartsuit$};
+					\node[draw,rectangle] at (4,0) {6 $\!\!\spadesuit$};
+					
+					\node[draw,rectangle] at (11,0) {A $\!\! \spadesuit$};
+					\node[draw,rectangle] at (8,0) {2 $\!\!\spadesuit$};
+					\node[draw,rectangle] at (6,0) {4 $\!\!\spadesuit$};
+					\node[draw,rectangle] at (13,0) {5 $\!\!\diamondsuit$};
+					\node[draw,rectangle,fill=yellow!50] at (9,0) {6 $\!\!\clubsuit$};
+					\node[draw,rectangle] at (12,0) {8 $\!\!\spadesuit$};
+					\node[draw,rectangle] at (7,0) {10 $\!\!\diamondsuit$};
+					\node[draw,rectangle] at (5,0) {J $\!\!\spadesuit$};
+					\node[draw,rectangle] at (10,0) {K $\!\!\spadesuit$};
+					
+					
+					\end{tikzpicture}
 				</latex-image>
 			</image>
 
@@ -1156,13 +1164,13 @@ When should a card in set <m>A</m> have an edge to a column in set <m>B</m>? Wha
 
 			</p><p>
 
-<!--solution>
+<solution>
 <p>
 
 Add an edge from a value <m>v</m> to a column <m>c</m> whenever a card with  value <m>v</m> appears in column <m>c</m>. Crucially, we will need to create a <em>multigraph</em> where we can have multiple edges between vertices. This results in a 4-regular bipartite multigraph.
 
 </p>
-</solution-->
+</solution>
 
 
 					</p>
@@ -1171,12 +1179,12 @@ Add an edge from a value <m>v</m> to a column <m>c</m> whenever a card with  val
 					<p>
  Use a  previous problem from this activity to show that your graph <m>G</m> always has a perfect matching. Then explain why this matching finds 13 cards with distinct values spread among the 13 columns.
 
-<!--solution>
+<solution>
 <p>
 Problem 1(b) applies to a <m>d</m>-regular multigraph. So we can find a perfect matching in our graph. This perfect matching corresponds to the 13 cards that we desire.
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -1184,7 +1192,7 @@ Problem 1(b) applies to a <m>d</m>-regular multigraph. So we can find a perfect 
 					<p>
  Are you guaranteed to be able to do it again? That is, from the remaining 39 cards, can you find <m>A, 2, \ldots, K</m>, one card in each column? Why or why not?
 
-<!--solution>
+<solution>
 <p>
 
 Yes! Removing this matching results in a 3-regular graph. So we can do it again to find a disjoint set of 13 cards with the same property. In fact we can do it a final two times as well!
@@ -1192,7 +1200,7 @@ Yes! Removing this matching results in a 3-regular graph. So we can do it again 
 So we can find four disjoint solutions to the magic trick!
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>
@@ -1291,25 +1299,25 @@ Here is an example. We start with the following bipartite graph
 \node at (-.4,1) {$B$};
 
 
-\draw[thick, gray] (0,0) -!- (0,1);
-\draw[thick, gray] (0,0) -!- (1,1);
+\draw[thick, gray] (0,0) -- (0,1);
+\draw[thick, gray] (0,0) -- (1,1);
 
 
-\draw[thick, gray] (1,0) -!- (0,1);
-\draw[thick, gray] (1,0) -!- (2,1);
+\draw[thick, gray] (1,0) -- (0,1);
+\draw[thick, gray] (1,0) -- (2,1);
 
-\draw[thick, gray] (2,0) -!- (0,1);
-\draw[thick, gray] (2,0) -!- (1,1);
-
-
-\draw[thick, gray] (3,0) -!- (1,1);
-\draw[thick, gray] (3,0) -!- (2,1);
-\draw[thick, gray] (3,0) -!- (3,1);
+\draw[thick, gray] (2,0) -- (0,1);
+\draw[thick, gray] (2,0) -- (1,1);
 
 
+\draw[thick, gray] (3,0) -- (1,1);
+\draw[thick, gray] (3,0) -- (2,1);
+\draw[thick, gray] (3,0) -- (3,1);
 
-\draw[thick, gray] (4,0) -!- (3,1);
-\draw[thick, gray] (4,0) -!- (4,1);
+
+
+\draw[thick, gray] (4,0) -- (3,1);
+\draw[thick, gray] (4,0) -- (4,1);
 
 \foreach \x in {0,1,2,3,4}
 {
@@ -1336,25 +1344,25 @@ In the greedy phase, we add edges until we are stuck, meaning that the neighbors
 \node at (-.4,1) {$B$};
 
 
-\draw[thick, gray] (0,0) -!- (0,1);
-\draw[thick, gray] (0,0) -!- (1,1);
+\draw[thick, gray] (0,0) -- (0,1);
+\draw[thick, gray] (0,0) -- (1,1);
 
 
-\draw[ultra thick] (1,0) -!- (0,1);
-\draw[thick, gray] (1,0) -!- (2,1);
+\draw[ultra thick] (1,0) -- (0,1);
+\draw[thick, gray] (1,0) -- (2,1);
 
-\draw[thick, gray] (2,0) -!- (0,1);
-\draw[ultra thick] (2,0) -!- (1,1);
-
-
-\draw[thick, gray] (3,0) -!- (1,1);
-\draw[ultra thick] (3,0) -!- (2,1);
-\draw[thick, gray] (3,0) -!- (3,1);
+\draw[thick, gray] (2,0) -- (0,1);
+\draw[ultra thick] (2,0) -- (1,1);
 
 
+\draw[thick, gray] (3,0) -- (1,1);
+\draw[ultra thick] (3,0) -- (2,1);
+\draw[thick, gray] (3,0) -- (3,1);
 
-\draw[ultra thick] (4,0) -!- (3,1);
-\draw[thick, gray] (4,0) -!- (4,1);
+
+
+\draw[ultra thick] (4,0) -- (3,1);
+\draw[thick, gray] (4,0) -- (4,1);
 
 \foreach \x in {0,1,2,3,4}
 {
@@ -1385,25 +1393,25 @@ Next we try to find a path from <m>a</m> to <m>b</m> that alternates between edg
 \node at (-.4,1) {$B$};
 
 
-\draw[thick, red] (0,0) -!- (0,1);
-\draw[thick, gray] (0,0) -!- (1,1);
+\draw[thick, red] (0,0) -- (0,1);
+\draw[thick, gray] (0,0) -- (1,1);
 
 
-\draw[ultra thick,blue] (1,0) -!- (0,1);
-\draw[thick, red] (1,0) -!- (2,1);
+\draw[ultra thick,blue] (1,0) -- (0,1);
+\draw[thick, red] (1,0) -- (2,1);
 
-\draw[thick, gray] (2,0) -!- (0,1);
-\draw[ultra thick] (2,0) -!- (1,1);
-
-
-\draw[thick, gray] (3,0) -!- (1,1);
-\draw[ultra thick,blue] (3,0) -!- (2,1);
-\draw[thick, red] (3,0) -!- (3,1);
+\draw[thick, gray] (2,0) -- (0,1);
+\draw[ultra thick] (2,0) -- (1,1);
 
 
+\draw[thick, gray] (3,0) -- (1,1);
+\draw[ultra thick,blue] (3,0) -- (2,1);
+\draw[thick, red] (3,0) -- (3,1);
 
-\draw[ultra thick, blue] (4,0) -!- (3,1);
-\draw[thick, red] (4,0) -!- (4,1);
+
+
+\draw[ultra thick, blue] (4,0) -- (3,1);
+\draw[thick, red] (4,0) -- (4,1);
 
 \foreach \x in {0,1,2,3,4}
 {
@@ -1430,25 +1438,25 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \node at (-.4,1) {$B$};
 
 
-\draw[ultra thick] (0,0) -!- (0,1);
-\draw[thick, gray] (0,0) -!- (1,1);
+\draw[ultra thick] (0,0) -- (0,1);
+\draw[thick, gray] (0,0) -- (1,1);
 
 
-\draw[thick, gray] (1,0) -!- (0,1);
-\draw[ultra thick] (1,0) -!- (2,1);
+\draw[thick, gray] (1,0) -- (0,1);
+\draw[ultra thick] (1,0) -- (2,1);
 
-\draw[thick, gray] (2,0) -!- (0,1);
-\draw[ultra thick] (2,0) -!- (1,1);
-
-
-\draw[thick, gray] (3,0) -!- (1,1);
-\draw[thick, gray] (3,0) -!- (2,1);
-\draw[ultra thick] (3,0) -!- (3,1);
+\draw[thick, gray] (2,0) -- (0,1);
+\draw[ultra thick] (2,0) -- (1,1);
 
 
+\draw[thick, gray] (3,0) -- (1,1);
+\draw[thick, gray] (3,0) -- (2,1);
+\draw[ultra thick] (3,0) -- (3,1);
 
-\draw[thick, gray] (4,0) -!- (3,1);
-\draw[ultra thick] (4,0) -!- (4,1);
+
+
+\draw[thick, gray] (4,0) -- (3,1);
+\draw[ultra thick] (4,0) -- (4,1);
 
 \foreach \x in {0,1,2,3,4}
 {
@@ -1477,24 +1485,24 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick] (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick] (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1511,7 +1519,7 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 
 
 
-<!--solution>
+<solution>
 <p>
 
 			<image width="75%" xml:id="fig-img-matching14">
@@ -1519,24 +1527,24 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (2,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick] (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (2,1.5);
+\draw (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick] (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1559,24 +1567,24 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (2,1.5);
-\draw[ultra thick, red] (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw[ultra thick, red] (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick] (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (2,1.5);
+\draw[ultra thick, red] (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw[ultra thick, red] (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick] (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1600,23 +1608,23 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (3,1.5);
-\draw (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw[ultra thick] (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick] (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (3,1.5);
+\draw (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw[ultra thick] (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick] (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1640,23 +1648,23 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw[ultra thick] (2,0) -!- (3,1.5);
-\draw[ultra thick, red] (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw[ultra thick, red] (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw[ultra thick] (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw[ultra thick, red] (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw[ultra thick] (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw[ultra thick] (2,0) -- (3,1.5);
+\draw[ultra thick, red] (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw[ultra thick, red] (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw[ultra thick] (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw[ultra thick, red] (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw[ultra thick] (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1678,23 +1686,23 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 \begin{tikzpicture}[scale=1.25]
 
 
-\draw[ultra thick] (1,0) -!- (1,1.5);
-\draw (1,0) -!- (3,1.5);
-\draw (1,0) -!- (5,1.5);
-\draw (2,0) -!- (3,1.5);
-\draw[ultra thick] (2,0) -!- (4,1.5);
-\draw (3,0) -!- (1,1.5);
-\draw[ultra thick] (3,0) -!- (5,1.5);
-\draw (3,0) -!- (6,1.5);
-\draw (4,0) -!- (1,1.5);
-\draw[ultra thick] (4,0) -!- (2,1.5);
-\draw (4,0) -!- (6,1.5);
-\draw (5,0) -!- (2,1.5);
-\draw (5,0) -!- (4,1.5);
-\draw[ultra thick] (5,0) -!- (6,1.5);
-\draw[ultra thick] (6,0) -!- (3,1.5);
-\draw (6,0) -!- (4,1.5);
-\draw (6,0) -!- (5,1.5);
+\draw[ultra thick] (1,0) -- (1,1.5);
+\draw (1,0) -- (3,1.5);
+\draw (1,0) -- (5,1.5);
+\draw (2,0) -- (3,1.5);
+\draw[ultra thick] (2,0) -- (4,1.5);
+\draw (3,0) -- (1,1.5);
+\draw[ultra thick] (3,0) -- (5,1.5);
+\draw (3,0) -- (6,1.5);
+\draw (4,0) -- (1,1.5);
+\draw[ultra thick] (4,0) -- (2,1.5);
+\draw (4,0) -- (6,1.5);
+\draw (5,0) -- (2,1.5);
+\draw (5,0) -- (4,1.5);
+\draw[ultra thick] (5,0) -- (6,1.5);
+\draw[ultra thick] (6,0) -- (3,1.5);
+\draw (6,0) -- (4,1.5);
+\draw (6,0) -- (5,1.5);
 
 \foreach \x in {1,2,3,4,5,6}
 {
@@ -1710,7 +1718,7 @@ Swapping red and blue edges gives a perfect matching! If there were more unmatch
 			</image>
 
 </p>
-</solution-->
+</solution>
 
 					</p>
 				</li>

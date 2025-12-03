@@ -11,11 +11,12 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Every region is bounded by at least 3 edges. So</p>
+<p>Every edge from a vertex in set \(S\) ends at a vertex in \(N(S)\text{.}\) This confirms that</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-3f \leq  \sum_{i=1}^f \mbox{len}(A_i) = 2 e.
+\sum_{v \in S} \deg(v)  \leq \sum_{v \in N(S)} \deg(v).
 \end{equation*}
 </div>
+<p class="continuation">Note that this inequality can be strict: vertices in \(N(S)\) may have neighbors outside of the set \(S\text{.}\)</p>
 </div></body>
 </html>
