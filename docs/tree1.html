@@ -224,33 +224,39 @@
 <article class="exercise exercise-like" id="exercise-131"><h6 class="heading">
 <span class="codenumber">1<span class="period">.</span></span><span class="space"> </span><span class="title">Trees on 4 Vertices.</span>
 </h6>
-<p id="p-883">Draw all non-isomorphic trees on 4 vertices </p></article><article class="exercise exercise-like" id="exercise-132"><h6 class="heading">
+<p id="p-883">Draw all non-isomorphic trees on 4 vertices <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-255" id="solution-255"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-255"><div class="solution solution-like"><p id="p-884"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-tree10.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-132"><h6 class="heading">
 <span class="codenumber">2<span class="period">.</span></span><span class="space"> </span><span class="title">Trees on 5 Vertices.</span>
 </h6>
-<p id="p-884">Draw all non-isomorphic trees on 5 vertices </p></article><article class="exercise exercise-like" id="exercise-133"><h6 class="heading">
+<p id="p-885">Draw all non-isomorphic trees on 5 vertices <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-256" id="solution-256"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-256"><div class="solution solution-like"><p id="p-886"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-tree11.svg" role="img" class="contained"></div></p></div></div></p></article><article class="exercise exercise-like" id="exercise-133"><h6 class="heading">
 <span class="codenumber">3<span class="period">.</span></span><span class="space"> </span><span class="title">Leaves on Trees.</span>
 </h6>
-<p id="p-885">More generally, consider the set of trees on \(n \geq 3\) vertices. Which tree has the fewest leaves? Which tree has the most leaves? Draw these trees and state how many leaves each has. </p></article><article class="exercise exercise-like" id="exercise-134"><h6 class="heading">
+<p id="p-887">More generally, consider the set of trees on \(n \geq 3\) vertices. Which tree has the fewest leaves? Which tree has the most leaves? Draw these trees and state how many leaves each has. <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-257" id="solution-257"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-257"><div class="solution solution-like"><p id="p-888"><div class="image-box" style="width: 50%; margin-left: 25%; margin-right: 25%;"><img src="images/fig-img-tree12.svg" role="img" class="contained"></div> The path \(P_n\) has the fewest leaves: it has 2 of them. The star \(S_n\text{,}\) consisting of one central hub vertex and \(n-1\) leaves, has the most.</p></div></div></p></article><article class="exercise exercise-like" id="exercise-134"><h6 class="heading">
 <span class="codenumber">4<span class="period">.</span></span><span class="space"> </span><span class="title">A Tree Has At Least 2 Leaves.</span>
 </h6>
-<p id="p-886">In this problem, you will give <em class="emphasis">another proof</em> that a tree on \(n \geq 3\) has at least two leaves (recall that a leaf is a vertex with degree equal 1). Let \(G\) be a tree on \(n\geq 3\) vertices. Let \(S\) be the set of all paths from one vertex to another on \(G\text{.}\) Among all the paths in \(S\text{,}\) let \(P\) be a path with the most edges.</p>
-<p id="p-887">How does this path \(P\) help us to find two leaves? </p></article><article class="exercise exercise-like" id="exercise-135"><h6 class="heading">
+<p id="p-889">In this problem, you will give <em class="emphasis">another proof</em> that a tree on \(n \geq 3\) has at least two leaves (recall that a leaf is a vertex with degree equal 1). Let \(G\) be a tree on \(n\geq 3\) vertices. Let \(S\) be the set of all paths from one vertex to another on \(G\text{.}\) Among all the paths in \(S\text{,}\) let \(P\) be a path with the most edges.</p>
+<p id="p-890">How does this path \(P\) help us to find two leaves? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-258" id="solution-258"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-258"><div class="solution solution-like"><p id="p-891">Let \(P = (v_1, v_2, \ldots, v_k)\) be a path of maximum length. We claim that the endpoints \(v_1, v_k\) of \(P\) are leaves. AFSOC that \(v_1\) is not a leaf. Then \(v_1\) has another neighbor \(u\) besides \(v_2\text{.}\) Since \(G\) is a tree, this neighbor is not already on the path \(P\) because this new edge would create a cycle. But then we can find a longer path by adding the edge from \(v_1\) to \(u\text{,}\) a contradiction. The same argument applies to \(v_k\text{.}\) Therefore \(v_1, v_k\) are both leaves in \(G\text{.}\)</p></div></div></p></article><article class="exercise exercise-like" id="exercise-135"><h6 class="heading">
 <span class="codenumber">5<span class="period">.</span></span><span class="space"> </span><span class="title">Definitions for a Tree.</span>
 </h6>
-<p id="p-888">Here is a theorem that gives four different ways to describe a tree.</p>
-<p id="p-889"><em class="emphasis">Theorem:</em> The following statements are equivalent for a graph \(G=(V,E)\) on \(n\) vertices</p>
+<p id="p-892">Here is a theorem that gives four different ways to describe a tree.</p>
+<p id="p-893"><em class="emphasis">Theorem:</em> The following statements are equivalent for a graph \(G=(V,E)\) on \(n\) vertices</p>
 <ol class="lower-alpha">
-<li id="li-411"><p id="p-890">\(G\) is connected and acyclic</p></li>
-<li id="li-412"><p id="p-891">\(G\) is connected and \(|E|=n-1\)</p></li>
-<li id="li-413"><p id="p-892">\(G\) is acyclic  and \(|E|=n-1\)</p></li>
-<li id="li-414"><p id="p-893">There is a unique path between each pair of vertices in \(G\)</p></li>
-<li id="li-415"><p id="p-894">\(G\) is connected but deleting any edge disconnects the graph.</p></li>
+<li id="li-411"><p id="p-894">\(G\) is connected and acyclic</p></li>
+<li id="li-412"><p id="p-895">\(G\) is connected and \(|E|=n-1\)</p></li>
+<li id="li-413"><p id="p-896">\(G\) is acyclic  and \(|E|=n-1\)</p></li>
+<li id="li-414"><p id="p-897">There is a unique path between each pair of vertices in \(G\)</p></li>
+<li id="li-415"><p id="p-898">\(G\) is connected but deleting any edge disconnects the graph.</p></li>
 </ol>
-<p id="p-895">We will focus on (d) \(\Rightarrow\) (a) and the equivalence (a) \(\Leftrightarrow\) (e).</p>
+<p id="p-899">We will focus on (d) \(\Rightarrow\) (a) and the equivalence (a) \(\Leftrightarrow\) (e).</p>
 <ol class="lower-alpha">
-<li id="li-416"><p id="p-896">Prove that (d) \(\Rightarrow\) (a) using a proof by contradiction. Assuming that (d) holds, why must \(G\) be connected? Why must \(G\) be acyclic? </p></li>
-<li id="li-417"><p id="p-897">Prove that (a) \(\Rightarrow\) (e) using a proof by contradiction. Assume that (a) holds, but there is an edge \(e\) such that the graph \(G-e\) obtained by removing \(e\) is connected. Why does this lead to a contradiction? </p></li>
-<li id="li-418"><p id="p-898">Prove that (e) \(\Rightarrow\) (a) by proving the contrapositive statement "not (a) \(\Rightarrow\) not (e)." </p></li>
+<li id="li-416"><p id="p-900">Prove that (d) \(\Rightarrow\) (a) using a proof by contradiction. Assuming that (d) holds, why must \(G\) be connected? Why must \(G\) be acyclic? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-259" id="solution-259"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-259"><div class="solution solution-like">
+<p id="p-901">Assume that there is a unique path between each pair of vertices in \(G\text{.}\)</p>
+<ul class="disc">
+<li id="li-417"><p id="p-902">The graph is connected: a path between \(u\) and \(v\) is a walk between \(u\) and \(v\text{.}\) So each pair of vertices is joined by a walk.</p></li>
+<li id="li-418"><p id="p-903">AFSOC that there is a cycle \(C\) in the graph. Let \(e=(u,v)\) be an edge in \(C\text{.}\) Then there are two paths between these vertices: the edge \(e\) and \(C-e\text{,}\) the cycle minus this edge. This contradicts the fact that there is a unique path between \(u\) and \(v\text{.}\)</p></li>
+</ul>
+</div></div></p></li>
+<li id="li-419"><p id="p-904">Prove that (a) \(\Rightarrow\) (e) using a proof by contradiction. Assume that (a) holds, but there is an edge \(e\) such that the graph \(G-e\) obtained by removing \(e\) is connected. Why does this lead to a contradiction? <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-260" id="solution-260"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-260"><div class="solution solution-like"><p id="p-905">Let \(G\) be connected and acyclic. AFSOC that  there is an edge \(e=(u,v)\) such that the graph \(G-e\) obtained by removing \(e\) is connected. This means that there is a \((u,v)\)-path \(P\) in \(G-e\text{.}\) But then \(P+e\) is a cycle in \(G\text{,}\) a contradiction.</p></div></div></p></li>
+<li id="li-420"><p id="p-906">Prove that (e) \(\Rightarrow\) (a) by proving the contrapositive statement "not (a) \(\Rightarrow\) not (e)." <a data-knowl="" class="id-ref solution-knowl original" data-refid="hk-solution-261" id="solution-261"><span class="type">Solution.</span> </a><div class="hidden-content tex2jax_ignore" id="hk-solution-261"><div class="solution solution-like"><p id="p-907">Let \(G\) be a connected graph. We prove that if \(G\) contains a cycle then there exists an edge \(e\) such that \(G-e\) is connected. Pick a cycle \(C\) in the graph and let \(e=(u,v)\) be an edge in \(C\text{.}\) Then \(P=C-e\) is a path in \(G-e\text{.}\) We now show that \(G-e\) is connected. Intuitively, any \((x,y)\)-path that uses \(e\) can be "re-rerouted" to use the other part of the cycle instead. Let \(x,y\) be any two vertices. Since \(G\) is connected, there is a walk \(Q\) from \(x\) to \(y\text{.}\) If \(e \notin Q\) then \(Q\) is a walk in \(G-e\text{.}\) If \(e \in Q\text{,}\) then we can split \(Q\) into \(Q_1 \cup e \cup Q_2\) where \(Q_1\) and \(Q_2\) are walks. But then \(Q_1 + P + Q_2\) is an \((x,y)\)-walk in \(G-e\text{.}\) Therefore, \(G-e\) is connected.</p></div></div></p></li>
 </ol></article></section></section></div></main>
 </div>
 </body>
