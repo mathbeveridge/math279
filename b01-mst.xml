@@ -428,9 +428,7 @@ Give an example of a weighted graph on 6 vertices that <m>\ldots</m>
 \node at (1.4,.8) {1};
 \node at (2.6,.8) {1};
 \node at (1.4,-.7) {1};
-\node at (2.6,-.7) {3};
-
-
+\node at (2.6,-.7) {1};
 
 \end{tikzpicture}
 				</latex-image>
