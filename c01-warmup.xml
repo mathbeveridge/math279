@@ -27,9 +27,9 @@ There are  six different types of sandwiches,   five kinds of fruit, and three d
 <p>
 We are making three independent decisions. We need to multiply the number of options for each decision.
 <me>
+\underbrace{6}_{\mbox{sandwich}} \times
 \underbrace{5}_{\mbox{fruit}} \times
-\underbrace{3}_{\mbox{tea}} \times
-\underbrace{6}_{\mbox{sandwich}}  = 90
+\underbrace{3}_{\mbox{drink}}  = 90
 </me>
 </p>
 </solution>
