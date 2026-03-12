@@ -27,9 +27,9 @@ There are  six different types of sandwiches,   five kinds of fruit, and three d
 <p>
 We are making three independent decisions. We need to multiply the number of options for each decision.
 <me>
+\underbrace{6}_{\mbox{sandwich}} \times
 \underbrace{5}_{\mbox{fruit}} \times
-\underbrace{3}_{\mbox{tea}} \times
-\underbrace{6}_{\mbox{sandwich}}  = 90
+\underbrace{3}_{\mbox{drink}}  = 90
 </me>
 </p>
 </solution>
@@ -53,7 +53,7 @@ An ice cream store has five flavors of ice cream: vanilla, chocolate, strawberry
 <solution>
 <p>
 <me>
-\underbrace{3}_{\mbox{cone}} \times \underbrace{5}_{\mbox{scoop}}
+\underbrace{3}_{\mbox{cone}} \times \underbrace{5}_{\mbox{scoop}} = 15
 </me>
 </p>
 </solution>
@@ -176,7 +176,7 @@ However, we <em>double count</em> each game, since choosing (Team A,Team B) is t
 
 <solution>
 <p>
-This must happen on or before the fifth armband. You have three categories (red, blue, yellow and green) and five armbands. So one category must have at least 2. Note that this is the smallest number for which this is true: if we only pull out 4 armbands, then we could possibly have one of each color
+This must happen on or before the fifth armband. You have four categories (red, blue, yellow and green) and five armbands. So one category must have at least 2. Note that this is the smallest number for which this is true: if we only pull out 4 armbands, then we could possibly have one of each color.
 </p>
 </solution>
 
