@@ -89,12 +89,12 @@ Let <m>X</m> be the set of all people. Let <m>P(x,y)</m> be the statement "<m>x<
 			<ol>
 				<li>
 					<p>
- <m>\forall x \in X, \exists y \in Y, P(x,y)</m>
+ <m>\forall x \in X, \exists y \in X, P(x,y)</m>
 					</p>
 				</li>
 				<li>
 					<p>
- <m>\exists x \in X, \forall y \in Y, P(x,y)</m>
+ <m>\exists x \in X, \forall y \in X, P(x,y)</m>
 					</p>
 				</li>
 			</ol>
@@ -116,12 +116,12 @@ Negate the formal statements you made in the previous problem, then translate th
 			<ol>
 				<li>
 					<p>
- <m>\exists x \in X, \forall y \in Y, \neg P(x,y)</m>, which means  "Somebody hates everybody."
+ <m>\exists x \in X, \forall y \in X, \neg P(x,y)</m>, which means  "Somebody hates everybody."
 					</p>
 				</li>
 				<li>
 					<p>
- <m>\forall x \in X, \exists y \in Y, \neg P(x,y)</m>, which means  "Everybody hates somebody."
+ <m>\forall x \in X, \exists y \in X, \neg P(x,y)</m>, which means  "Everybody hates somebody."
 					</p>
 				</li>
 			</ol>
