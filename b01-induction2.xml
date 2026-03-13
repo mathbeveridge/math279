@@ -160,15 +160,17 @@ Assume: <m>(\star)</m> For <m>1 \leq k &lt; n</m>, splitting  a rectangular choc
 <solution>
 <p>
 
-Prove: Use <m>(\star)</m> to prove that splitting  a rectangular chocolate bar with <m>n</m> squares requires exactly <m>n</m> breaks.
+Prove: Use <m>(\star)</m> to prove that splitting  a rectangular chocolate bar with <m>n</m> squares requires exactly <m>n-1</m> breaks.
 
 
 			</p><p>
 
-Break the chocolate bar along the <m>k</m>th column to get two chocolate bars: one <m>k \times s</m> and one <m>(r-k) \times s</m>. By strong induction, it takes <m>ks-1</m> breaks to finish the left bar and it takes <m>(r-k)s -1</m> breaks to finish the right one. The total number of breaks used is
+Break the chocolate bar along the <m>i</m>th column to get two chocolate bars: one <m>i \times s</m> and one <m>(r-i) \times s</m>. By strong induction, it takes <m>is-1</m> breaks to finish the left bar and it takes <m>(r-i)s -1</m> breaks to finish the right one. The total number of breaks used is
 <me>
-1 + (ks-1) + ((r-k)s-1) = rs -1.
+1 + (is-1) + ((r-i)s-1) = rs -1.
 </me>
+
+Note that <m>r</m> and <m>s</m> reference the dimensions of the chocolate bar, given <m>n=rs</m>.
 
 </p>
 </solution>
