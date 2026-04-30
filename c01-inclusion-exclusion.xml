@@ -80,7 +80,7 @@ The set described is <m>X_1 \cap X_2</m>. This time, there are 4 numbers allowed
 				</li>
 				<li>
 					<p>
- Use inclusion-exclusion to find the number of outcomes in which either 1 does not or appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes."
+ Use inclusion-exclusion to find the number of outcomes in which either 1 does not appear or 2 does not appear (or both do not appear). This account for all the "bad outcomes."
 
 <solution>
 <p>
