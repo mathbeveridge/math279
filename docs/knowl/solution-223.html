@@ -15,7 +15,11 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p>Let \(G\) be a graph with exactly two vertices with odd degree. Add an edge \(e\) between these two vertices. Then \(G+e\) has an Eulerian circuit (by Property EC). Removing the edge \(e\) once more gives us an Eulerian trail in the original graph \(G\text{.}\)</p>
+<p>Assume that there is a unique path between each pair of vertices in \(G\text{.}\)</p>
+<ul class="disc">
+<li><p>The graph is connected: a path between \(u\) and \(v\) is a walk between \(u\) and \(v\text{.}\) So each pair of vertices is joined by a walk.</p></li>
+<li><p>AFSOC that there is a cycle \(C\) in the graph. Let \(e=(u,v)\) be an edge in \(C\text{.}\) Then there are two paths between these vertices: the edge \(e\) and \(C-e\text{,}\) the cycle minus this edge. This contradicts the fact that there is a unique path between \(u\) and \(v\text{.}\)</p></li>
+</ul>
 </div>
 <span class="incontext"><a href="exercises-24.html#solution-223">in-context</a></span>
 </body>

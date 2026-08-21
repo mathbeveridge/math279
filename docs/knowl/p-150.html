@@ -12,7 +12,20 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>\((A \cup B ) \cap C\text{.}\) <a class="solution-knowl original" data-knowl="./knowl/solution-46-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\begin{array}{c|c||c|c|c|c|c}
+P &amp; Q &amp; P \Leftrightarrow Q 
+&amp; \neg P &amp; \neg Q &amp; P \wedge  Q  &amp; \neg P \wedge \neg Q &amp; (P \wedge Q) \vee (\neg P \wedge \neg Q)\\
+\hline
+T &amp; T &amp; T &amp; F &amp; F &amp; T &amp; F &amp; T\\
+T &amp; F &amp; F &amp; F &amp; T &amp; F &amp; F &amp; F\\
+F &amp; T &amp; F &amp; T &amp; F &amp; F &amp; F &amp; F\\
+F &amp; F &amp; T &amp; T &amp; T &amp; F &amp; T &amp; T\\
+\end{array}
+\end{equation*}
+</div>
+<p class="continuation">The columns for \(\neg(P \Rightarrow Q) \) and \(P \wedge \neg Q\) are identical. So these statements are equivalent.</p>
 <span class="incontext"><a href="exercises-4.html#p-150">in-context</a></span>
 </body>
 </html>

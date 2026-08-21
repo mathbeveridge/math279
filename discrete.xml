@@ -58,10 +58,10 @@ pull the name of the problem from the first line  of  the \item
 
     <part xml:id="part-slf">
         <title>Sets, Logic and Functions</title>
+            <xi:include href="./a01-sets1.xml" />   
+            <xi:include href="./a01-sets2.xml" />        
             <xi:include href="./a01-logic1.xml" />   
             <xi:include href="./a01-logic2.xml" />         
-            <xi:include href="./a01-sets1.xml" />   
-            <xi:include href="./a01-sets2.xml" />
             <xi:include href="./a01-quantifiers.xml" />
             <xi:include href="./a01-proof1.xml" />
             <xi:include href="./a01-function1.xml" /> 
@@ -87,12 +87,13 @@ pull the name of the problem from the first line  of  the \item
     <part xml:id="part-gi">
         <title>Graphs, and Trees</title>
             <xi:include href="./b01-graph1.xml" />
-            <xi:include href="./b01-graph2.xml" />  
+            <xi:include href="./b01-graph2.xml" />
+            <xi:include href="./b01-tree1.xml" />   
+            <xi:include href="./b01-mst.xml" />   
              <xi:include href="./b01-eulerian.xml" /> 
              <xi:include href="./b01-matching.xml" />              
             <xi:include href="./b01-planar.xml" />               
-            <xi:include href="./b01-tree1.xml" />   
-            <xi:include href="./b01-mst.xml" />   
+  
 
              
             <!--xi:include href="./ex01-counting.xml" /-->                       
