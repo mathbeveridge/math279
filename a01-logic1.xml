@@ -58,8 +58,28 @@ Express the following statements in words.
 
 <solution>
 <p>
-Under negation, AND becomes OR, while OR becomes AND.
-</p>
+<ol>
+	<li>
+		<p>
+		The rent increases or I will renew my lease.
+		</p>		
+	</li>
+	<li>
+		<p>
+		 The rent does not increase and I will renew my lease.
+		</p>		
+	</li>	
+	<li>
+		<p>
+		 If the rent does not increase then I will renew my lease.
+		</p>		
+	</li>
+	<li>
+		<p>
+		If the rent increases then I will not renew my lease.
+		</p>		
+	</li>
+</ol></p>
 </solution>
 
 
@@ -127,7 +147,7 @@ may help you to imagine what it would mean for each of these statements to be fa
 	</li>	
 	<li>
 		<p>
-		 If I get a promotion at work thrn I will go to my class reunion.
+		 If I get a promotion at work then I will go to my class reunion.
 		</p>		
 	</li>
 	<li>

@@ -43,11 +43,11 @@ Therefore, in the worst case scenario, we must play 7 games to determine the win
 			<idx><h>What's Your Birth Stone?</h></idx>
 			<statement>
 				<p>
-There 28 students enrolled in a math course. What is the largest number of these students that you can guarantee are  born in the same month?  (What are your pigeons? What are your pigeonholes?)
+There are 28 students enrolled in a math course. What is the largest number of these students that you can guarantee are  born in the same month?  (What are your pigeons? What are your pigeonholes?)
 
 <solution>
 <p>
-Keep in my that our worst enemy gets to decide when the birthdays are. So we must consider the worst case scenario, that the birthdays are as evenly divided as possible.
+Keep in mind that our worst enemy gets to decide when the birthdays are. So we must consider the worst case scenario, that the birthdays are as evenly divided as possible.
 
 			</p><p>
 
