@@ -12,20 +12,27 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>First, we prove that if \(x \in \overline{(A \cap B)}\) then \(x \in \overline{A} \cup \overline{B}\text{.}\)</p>
+<p>In this problem, we will see that the <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">order</em> of our quantifiers matters</p>
+<ol class="lower-alpha">
+<li>
+<p>Consider the statement</p>
 <div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
 \begin{equation*}
-\begin{array}{rcl}
-x \in \overline{(A \cap B)}
-&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \cap B) \\
-&amp; \Rightarrow &amp; \mbox{ NOT } ( x \in A \mbox{ AND } x \in  B) \\
-&amp; \Rightarrow &amp; \mbox{ NOT } (  x \in A) \mbox{ OR } \mbox{NOT } ( x \in  B) \\
-&amp; \Rightarrow &amp;   x \in \overline{A} \mbox{ OR }  x \in  \overline{B} \\
-&amp; \Rightarrow &amp;   x \in \overline{A}  \cup  \overline{B} \\
-\end{array}
+\exists y \in \mathbb{R},  \forall x \in \mathbb{R},  x = y^3.
 \end{equation*}
 </div>
-<p class="continuation">Let's talk about that third step, since this is a new idea. We know that the statement "\(x  \in A\) AND \(x \in B\)" is FALSE. So (at least) one of these statements is FALSE. In other words, either \(x \notin A\) or \(x \notin B\text{.}\)</p>
-<span class="incontext"><a href="exercises-2.html#p-95">in-context</a></span>
+<p class="continuation">Restate the above in plain English (as well as you can). Is this statement <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">true</em> or <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">false</em>? </p>
+</li>
+<li>
+<p>Now consider the statement</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+\forall y \in \mathbb{R},   \exists x \in \mathbb{R},  x = y^3.
+\end{equation*}
+</div>
+<p class="continuation">Restate the above in plain English (as well as you can). Is this statement <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">true</em> or <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">false</em>? </p>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-5.html#p-95">in-context</a></span>
 </body>
 </html>
