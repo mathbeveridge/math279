@@ -235,11 +235,11 @@ the sets <m>A,B,C,D</m>.
 <!--solution>
 After reserving 16 fries for Anna, and 16 fries for Boris, and 16 fries for Clyde, we have 2 fries left over, 
 to distribute any way we like.
-The number of ways is <m>{2+4-1 \choose 18} = {5 \choose 2}</m>. 
+The number of ways is <m>{2+4-1 \choose 2} = {5 \choose 2}</m>. 
 The same argument holds for any triple of friends, so 
 <me>
 | A \cap B \cap C| + | A \cap B \cap D| + | A \cap C \cap D| +
-| B \cap C \cap D| = 4 {5 \choose 3}.
+| B \cap C \cap D| = 4 {5 \choose 2}.
 </me>
 </solution-->
 </p> 
@@ -257,7 +257,7 @@ no one gets more than 15 fries.
 <!--solution>
 Our final answer is
 <me>
-{53 \choose 50} - 4 {37 \choose 34} + 6 {21 \choose 18} - 4 {5 \choose 3} + 0.
+{53 \choose 50} - 4 {37 \choose 34} + 6 {21 \choose 18} - 4 {5 \choose 2} + 0.
 </me>
 </solution-->
 </p> 
