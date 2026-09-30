@@ -12,6 +12,77 @@
 		<title>Practice Problems</title>
 
 		<exercise>
+			<title>Is it a function?</title>
+			<idx><h>Is it a function?</h></idx>
+			<statement>
+				<p>
+Which of the following arrow diagrams are functions? Justify your answers.
+
+			<image width="100%" xml:id="fig-img-functions" source="images/functions.png" />
+
+
+<!--solution>
+<p>
+(a) and (c) are functions. Every element in the domain has an arrow starting from it that points to a unique element in the target.
+Meanwhile, (b) is not a function. The element 1 does not have an arrow starting at it, so it has no image in the target set. 
+Also, element 2 has TWO arrows starting from it, which is not allowed.
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<title>Is the mapping a function?</title>
+			<idx><h>Is the mapping a function?</h></idx>
+			<statement>
+				<p>
+Consider the following mappings from domain <m>X= \{ x \in \mathbb{R} : 0 \leq x \leq 5 \}</m> to codomain
+<m>Y= \{ x \in \mathbb{R} : -10 \leq x \leq 10 \}</m>. Decide whether each of the following mappings is a function. 
+Justify your answers.
+
+<ol>
+	<li>
+		<p>
+			<m>f(x) = 2x</m>
+			<!--solution>
+<p>
+Yes, this is a funtion. Every element in the domain maps to a unique element in the codomain.
+</p>
+</solution-->
+		</p>
+	</li>
+	<li>
+		<p>
+			<m>f(x) = x^2</m>
+			<!--solution>
+<p>
+No, this is not a funtion. When <m>\sqrt{10} < x < 5</m>, the image <m>f(x) \notin Y</m>
+</p>
+</solution-->			
+		</p>
+	</li>
+	<li>	
+		<p>
+			<m>f(x) = \pm \sqrt{x}</m>
+			<!--solution>
+<p>
+No, this is not a funtion. Every element in the domain, except for 0, maps to two different elements in the codomain.
+</p>
+</solution-->				
+		</p>				
+	</li>
+</ol>
+
+
+
+				</p>
+			</statement>
+		</exercise>
+
+
+		<exercise>
 			<title>Listing all functions</title>
 			<idx><h>Listing all functions</h></idx>
 			<statement>
