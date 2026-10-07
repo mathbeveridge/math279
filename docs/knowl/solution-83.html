@@ -15,14 +15,23 @@
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading">
 <span class="type">Solution</span><span class="space"> </span><span class="codenumber">1</span><span class="period">.</span>
 </h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">The function \(f\) is injective.</em> Suppose that \(f(x_1, y_1) = f(x_2, y_2)\text{.}\) This means that \((2y_1, x_1-y_1) = (2y_2, x_2 - y_2)\text{.}\) We  find that \​begin{eqnarray*} 2y_1 &amp;=&amp; 2y_2 \\ y_1 &amp;=&amp; y_2 \end{eqnarray*} and then \​begin{eqnarray*} x_1 - y_1 &amp;=&amp; x_2 - y_2 \\ x_1 - y_1 &amp;=&amp; x_2 - y_1 \\ x_1 &amp;=&amp; x_2 \end{eqnarray*} Therefore \((x_1, y_1) = (x_2, y_2)\text{.}\)</p>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">The function \(f\) is surjective.</em> Pick any \((a,b) \in \R \times \R)\text{.}\) We must find \((x,y) \in \R \times \R\) such that \(f(x,y)=(a,b)\text{.}\) In order for this to hold, we need \​begin{eqnarray*} 2y &amp;=&amp; a \\ x-y &amp;=&amp; b \end{eqnarray*} Solving this linear systems gives \(x= b+ \frac{a}{2}\) and \(y=\frac{a}{2}\text{.}\) We can then check that</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-f \left(b+ \frac{a}{2},  \frac{a}{2} \right) = \left( 2 \cdot \frac{a}{2}, b+ \frac{a}{2} - \frac{a}{2} \right) = (a,b).
-\end{equation*}
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">true</em>. We will give TWO proofs. <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">First, we prove the contrapositive statement.</em> If \(f\) is not injective then \(g \circ f\) is not injective. <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Know:</em> There exist \(x_1, x_2 \in X\) such that \(x_1 \neq x_2\) and \(f(x_1) = f(x_2)\text{.}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Show:</em> There exist \(a_1, a_2 \in X\) such that \(a_1 \neq a_2\) and \(g \circ f(a_1) = g \circ  f(a_2)\text{.}\)</p>
+<ul class="disc">
+<li><p>Pick  \(x_1, x_2 \in X\) such that \(x_1 \neq x_2\) and \(f(x_1) = f(x_2)\text{.}\)</p></li>
+<li><p>Then we have \(x_1 \neq x_2\) and \[ g \circ f (x_1) = g(f(x_1)) = g(f(x_2)) = g \circ f(x_2). \]</p></li>
+<li><p>In other words, taking \(a_1=x_1\) and \(a_2=x_2\) satisfies our <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Show</em> statement.</p></li>
+<li><p>Therefore \(g \circ f: X \rightarrow Z\) is not injective.</p></li>
+</ul>
+<p class="continuation"><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Next, we prove the original statement.</em> <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Know:</em> If \(x_1 \neq x_2 \) then  \(g \circ f(x_1) \neq g \circ f(x_2)\text{.}\) <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Show:</em> If \(x_1 \neq x_2 \) then  \(f(x_1) \neq   f(x_2)\text{.}\)</p>
+<ul class="disc">
+<li><p>Pick any \(x_1 \neq x_2\text{.}\) We know that \(g \circ f(x_1) \neq g \circ f(x_2).\)</p></li>
+<li><p>Let \(y_1=f(x_1)\) and \(y_2 =   f(x_2)\text{.}\)</p></li>
+<li><p>Then \(g \circ f(x_1) \neq g \circ f(x_2)\) is equivalent to \(g (y_1) \neq g (y_2).\)</p></li>
+<li><p>Since \(g\) is well defined function, we must have \(y_1 \neq y_2\text{.}\)</p></li>
+<li><p>This is the same as saying that \(f(x_1) \neq f(x_2)\text{.}\)</p></li>
+<li><p>Therefore \(f: X \rightarrow Y\) is  injective.</p></li>
+</ul>
 </div>
-</div>
-<span class="incontext"><a href="exercises-9.html#solution-83">in-context</a></span>
+<span class="incontext"><a href="exercises-8.html#solution-83">in-context</a></span>
 </body>
 </html>

@@ -69,6 +69,30 @@ Let <m>f: \R \times \R \rightarrow \R \times \R</m> be defined by <m>f(x,y) = (5
 				</p>
 			</statement>
 		</exercise>
+
+
+		<exercise>
+			<title>Composition of injective functions</title>
+			<idx><h>Composition of injective functions</h></idx>
+			<statement>
+				<p>
+					Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m> both be injective functions. 
+					Prove that <m>g \circ f : X \rightarrow Z</m> is injective.
+				</p>
+			</statement>			
+		</exercise>
+
+				<exercise>
+			<title>Composition of surjective functions</title>
+			<idx><h>Composition of surjective functions</h></idx>
+			<statement>
+				<p>
+					Let <m>f:X \rightarrow Y</m> and <m>g:Y \rightarrow Z</m> both be surjective functions. 
+					Prove that <m>g \circ f : X \rightarrow Z</m> is surjective.
+				</p>
+			</statement>			
+		</exercise>
+
 		<exercise>
 			<title>Functions from <m>\Z</m> to <m>\Z</m></title>
 			<idx><h>Functions from <m>\Z</m> to <m>\Z</m></h></idx>
