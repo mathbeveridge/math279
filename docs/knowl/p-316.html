@@ -12,19 +12,24 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Consider a pie fight between an odd number of people in which everyone throws a pie at her nearest neighbor. Assume that all pairwise distances are distinct. Prove that in such a pie fight between \(2r+1\) people with \(r \geq 1\text{,}\) there is at least one person who is not hit by a pie.</p>
+<p>Let \(f : X \rightarrow Y\) be a function. Let \(A \subseteq X\) and \(B \subseteq X\text{.}\) For a subset \(S \subseteq X\text{,}\) define the subset \(f(S) \subseteq Y\) by</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+f(S) = \{ y \in Y \mid \exists s \in S, f(s) = y \}
+\end{equation*}
+</div>
 <ol class="lower-alpha">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case:</em> (Check for \(r=1\text{.}\)) Hint: Start by considering the two people who are the smallest distance from one another. </p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Hypothesis:</em> Write down your inductive hypothesis for \(k\text{.}\) </p></li>
 <li>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Write down what you want to SHOW for \(k+1\text{.}\)</p>
-<p>As in your base case,  start by considering the two people (Alice and Bob) who are the smallest distance from one another. There are 2 cases to consider</p>
-<ul class="disc">
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Case 1:</em> Suppose that someone else throws a pie at Alice or Bob. In this case, you can immediately find a person who is not hit by a pie. Why?</p></li>
-<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Case 2:</em> No one else throws a pie at Alice or Bob. In this case, you need to use the induction hypothesis!</p></li>
-</ul>
+<p>Prove that if \(A \subseteq B\) then \(f(A) \subseteq f(B)\) <a class="solution-knowl original" data-knowl="./knowl/solution-99-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p></p>
 </li>
+<li><p>Draw an example for which \(A \not\subseteq B\text{,}\) but \(f(A) \subseteq f(B)\text{.}\) <a class="solution-knowl original" data-knowl="./knowl/solution-100-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
+<li>
+<p>Prove that \(f(A \cap B) \subseteq f(A) \cap f(B)\text{.}\) <a class="solution-knowl original" data-knowl="./knowl/solution-101-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p>
+<p></p>
+</li>
+<li><p>Draw an example for which \(f(A \cap B) \neq f(A) \cap f(B)\) <a class="solution-knowl original" data-knowl="./knowl/solution-102-hidden.html" title="Solution 1"><span xmlns:svg="http://www.w3.org/2000/svg" class="type">Solution.</span> </a></p></li>
 </ol>
-<span class="incontext"><a href="exercises-10.html#p-316">in-context</a></span>
+<span class="incontext"><a href="exercises-9.html#p-316">in-context</a></span>
 </body>
 </html>
