@@ -132,7 +132,7 @@ Assume that
 				</li>
 				<li>
 					<p>
- <em> Inductive Step:</em> Write down what you want to SHOW for <m>k+1</m>. Then try to find "a copy of the size <m>n</m> problem" in the size <m>n+1</m> problem. Rearrange and use your inductive hypothesis to prove the result!
+ <em> Inductive Step:</em> Write down what you want to SHOW for <m>k+1</m>. Then try to find "a copy of the size <m>k</m> problem" in the size <m>k+1</m> problem. Rearrange and use your inductive hypothesis to prove the result!
 
 <!--solution>
 <p>
