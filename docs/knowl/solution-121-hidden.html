@@ -11,12 +11,8 @@
 <meta name="robots" content="noindex, nofollow">
 </head>
 <body><div class="solution solution-like">
-<p>Prove: Use \((\star)\) to prove that splitting  a rectangular chocolate bar with \(n\) squares requires exactly \(n\) breaks.</p>
-<p>Break the chocolate bar along the \(k\)th column to get two chocolate bars: one \(k \times s\) and one \((r-k) \times s\text{.}\) By strong induction, it takes \(ks-1\) breaks to finish the left bar and it takes \((r-k)s -1\) breaks to finish the right one. The total number of breaks used is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-1 + (ks-1) + ((r-k)s-1) = rs -1.
-\end{equation*}
-</div>
+<p>Use \((\star)\) to prove that any \(2^{k+1} \times 2^{k+1}\) board that is missing one square can be covered by triominoes.</p>
+<p>By splitting the board down the middle (both horizontally and vertically), we now have the option to think of this one board as four independent \(2^k \times 2^k\) boards. In particular, if we place a triomino in the middle so that it has one square in each of the three smaller boards that have  no missing square, then we end up with 4 independent instances of the problem using  \(2^k \times 2^k\) boards  (each missing one square).</p>
+<p>By \((\star)\text{,}\) we can cover each of these four boards using triominoes. When we put them all together, we get a covering of the \(2^{k+1} \times 2^{k+1}\) board that is missing one square.</p>
 </div></body>
 </html>
