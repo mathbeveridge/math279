@@ -12,7 +12,13 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>Label the vertices as \(1,2, \ldots, n\text{.}\)</p>
+<p>Break the chocolate bar along the \(i\)th column to get two chocolate bars: one \(i \times s\) and one \((r-i) \times s\text{.}\) By strong induction, it takes \(is-1\) breaks to finish the left bar and it takes \((r-i)s -1\) breaks to finish the right one. The total number of breaks used is</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+1 + (is-1) + ((r-i)s-1) = rs -1.
+\end{equation*}
+</div>
+<p class="continuation">Note that \(r\) and \(s\) reference the dimensions of the chocolate bar, given \(n=rs\text{.}\)</p>
 <span class="incontext"><a href="exercises-11.html#p-427">in-context</a></span>
 </body>
 </html>

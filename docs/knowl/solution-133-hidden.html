@@ -10,18 +10,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta name="robots" content="noindex, nofollow">
 </head>
-<body><div class="solution solution-like">
-<p>How many ways can we choose two teams to play a game? My recipe for setting up a game will be: "choose the first team and then choose the second team." The total number of ways to do this is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-4 \times 3.
-\end{equation*}
-</div>
-<p class="continuation">However, we <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">double count</em> each game, since choosing (Team A,Team B) is the same as choosing (Team B, Team A). Therefore we must divide our answer above by 2. The final answer is</p>
-<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
-\begin{equation*}
-\frac{4 \times 3}{2}.
-\end{equation*}
-</div>
-</div></body>
+<body><div class="solution solution-like"><ul class="disc">
+<li><p>We start with an odd number of \(H\) in our game.</p></li>
+<li><p>Find the leftmost \(H\text{.}\) There are zero heads to the left of this coin, and an even number to the right of it.</p></li>
+<li><p>When you remove this coin, it creates two disjoint games (unless \(H\) is the first or last coin, in which case there is only one game after your move). The left game has a single \(H\) (because the rightmost coin changed from \(T\) to \(H\text{.}\) The right game has an odd number of \(H\) since the leftmost coin changed state.</p></li>
+<li><p>Both of these games are smaller than the original game. By the induction hypothesis, both of these games are winning configurations. Therefore the original game has a winning strategy.</p></li>
+</ul></div></body>
 </html>

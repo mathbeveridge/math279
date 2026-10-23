@@ -12,12 +12,16 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p>In other words, you want to repeat the fewest number of (weighted) edges in a circuit that contains all the edges.</p>
-<ol class="lower-alpha">
-<li><p>Find the shortest closed postman route for the following graphs. Indicate the edges that must be repeated. <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 70%; margin-left: 15%; margin-right: 15%;"><img src="images/fig-img-eulerian1.svg" role="img" class="contained"></div> </p></li>
-<li><p>Try to come up with a procedure for finding the shortest closed postman route of a graph. What are the "problem vertices?" How should we deal with them? </p></li>
-<li><p>Try out your procedure on this graph which connects US states that share a border. How many "problem" vertices are there? How many edges do you need to add? <div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 100%; margin-left: 0%; margin-right: 0%;"><img src="images/ContiguousUSAGraph.png" class="contained"></div> </p></li>
-</ol>
-<span class="incontext"><a href="exercises-26.html#p-675">in-context</a></span>
+<p>Kruskal's Algorithm grows a minimum forest until it is a MST. Given weighted graph \(G=(V,E)\text{:}\)</p>
+<ul class="disc">
+<li><p>Initialize \(T\) to contain all the vertices of \(G\text{,}\) but no edges.</p></li>
+<li>
+<p>At each step, grow the forest:</p>
+<ul class="circle"><li><p>Add the minimum weight edge to \(T\) that doesn't create a cycle.</p></li></ul>
+</li>
+<li><p>Stop when you can't add more edges.</p></li>
+</ul>
+<p class="continuation"><div xmlns:svg="http://www.w3.org/2000/svg" class="image-box" style="width: 80%; margin-left: 10%; margin-right: 10%;"><img src="images/fig-img-mst2.svg" role="img" class="contained"></div> </p>
+<span class="incontext"><a href="exercises-25.html#p-675">in-context</a></span>
 </body>
 </html>
