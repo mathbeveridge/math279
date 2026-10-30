@@ -42,6 +42,75 @@ C(n,k) = {n \choose k} = \frac{n!}{k! (n-k)!}.
 	<exercises>
 		<title>Practice Problems</title>
 
+
+		<exercise>
+			<title>Five Digits, No Zeros</title>
+			<idx><h>Five Digits, No Zeros</h></idx>
+			<statement>
+				<p>
+			<ol>
+				<li>
+					<p>
+ How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear?
+
+<!--solution>
+<p>
+<me>
+(9)_5 = P(9,5)
+</me>
+</p>
+</solution-->
+
+					</p>
+				</li>
+				<li>
+					<p>
+ How many numbers in part (a) contain a 3 or a 6 (or both)? (Hint: you will need to use "good = all - bad.")
+
+<!--solution>
+<p>
+The bad numbers are the ones that don't contain a 3 or a 6. There are
+<m>
+(7)_5 = P(7,5) 
+</m>
+bad numbers. Therefore we have
+<me>
+(9)_5 -  (7)_5 = p(9,5) -  P(7,5)
+</me>
+good numbers.
+</p>
+</solution-->
+
+					</p>
+				</li>
+			</ol>
+
+
+				</p>
+			</statement>
+		</exercise>
+
+		<exercise>
+			<title>Forming a Circle</title>
+			<idx><h>Forming a Circle</h></idx>
+			<statement>
+				<p>
+In how many ways can <m>n</m> people stand in a circle? (How is this problem different from standing in a line?)
+
+<!--solution>
+<p>
+When standing in the circle, we have a rotational symmetry that does not appear when standing a line. For <m>0 \leq k \leq n-1</m>, everyone can move counterclockwise by <m>k</m> spots, and we still have the same configuration. Therefore the total number of circular configurations is
+
+<me>
+\frac{n!}{n} = (n-1)!
+</me>
+</p>
+</solution-->
+
+				</p>
+			</statement>
+		</exercise>
+
 		<exercise>
 			<title>Bus Stop</title>
 			<idx><h>Bus Stop</h></idx>
@@ -129,72 +198,6 @@ First we line up the adults, and there are <m>10!</m> ways to do so. Now there a
 </me>
 </p>
 </solution-->
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Forming a Circle</title>
-			<idx><h>Forming a Circle</h></idx>
-			<statement>
-				<p>
-In how many ways can <m>n</m> people stand in a circle? (How is this problem different from standing in a line?)
-
-<!--solution>
-<p>
-When standing in the circle, we have a rotational symmetry that does not appear when standing a line. For <m>0 \leq k \leq n-1</m>, everyone can move counterclockwise by <m>k</m> spots, and we still have the same configuration. Therefore the total number of circular configurations is
-
-<me>
-\frac{n!}{n} = (n-1)!
-</me>
-</p>
-</solution-->
-
-				</p>
-			</statement>
-		</exercise>
-		<exercise>
-			<title>Five Digits, No Zeros</title>
-			<idx><h>Five Digits, No Zeros</h></idx>
-			<statement>
-				<p>
-			<ol>
-				<li>
-					<p>
- How many 5-digit numbers are there where no digit repeats and only the digits 1-9 appear?
-
-<!--solution>
-<p>
-<me>
-(9)_5 = P(9,5)
-</me>
-</p>
-</solution-->
-
-					</p>
-				</li>
-				<li>
-					<p>
- How many numbers in part (a) contain a 3 or a 6 (or both)? (Hint: you will need to use "good = all - bad.")
-
-<!--solution>
-<p>
-The bad numbers are the ones that don't contain a 3 or a 6. There are
-<m>
-(7)_5 = P(7,5) 
-</m>
-bad numbers. Therefore we have
-<me>
-(9)_5 -  (7)_5 = p(9,5) -  P(7,5)
-</me>
-good numbers.
-</p>
-</solution-->
-
-					</p>
-				</li>
-			</ol>
-
 
 				</p>
 			</statement>
