@@ -12,7 +12,48 @@
 </head>
 <body>
 <h6 xmlns:svg="http://www.w3.org/2000/svg" class="heading"><span class="type">Paragraph</span></h6>
-<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Consider a graph \(G\) where every degree is even and \(|E|=m\text{.}\) Start at any vertex \(v\) and walk without repeating edges until you return to \(v\text{.}\) You cannot get stuck along the way since every vertex has even degree: if you enter a vertex then there must be an edge available to leave the vertex. Call this resulting circuit \(W\text{.}\) Now look at \(H=G-W\text{.}\) Every vertex of graph \(H\) has even degree, but it may have multiple components. Each component has fewer than \(m\) edges, so these components each have an Eulerian Circuit. We can splice these together along with the circuit \(W\) to create an Eulerian Circuit for \(G\text{.}\)</p>
-<span class="incontext"><a href="exercises-26.html#p-814">in-context</a></span>
+<p>Let \(G\) be a connected planar graph with \(v_G\) vertices and \(e_G\) edges and \(f_G\) faces. You will use <em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">strong induction</em> on the number of cycles \(k \geq 0\)  to prove that any plane drawing of \(G\) satisfies</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+v_G -e_G +f_G = 2.
+\end{equation*}
+</div>
+<ol class="lower-alpha">
+<li><p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Base Case: \(k=0\)</em>. A connected graph with no cycles is a tree. We know that a tree on \(v_G\) vertices has \(v_G-1\) edges. Explain why \(v_G -e_G +f_G = 2.\) </p></li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Strong Inductive Hypothesis:</em> Assume that a plane drawing of a connected planar graph \(H\) with fewer than \(k\) cycles satisfies</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+v_H - e_H + f_H = 2. \qquad \qquad {(\star)}
+\end{equation*}
+</div>
+</li>
+<li>
+<p><em xmlns:svg="http://www.w3.org/2000/svg" class="emphasis">Inductive Step:</em> Use \((\star)\) to prove that a graph \(G\) with \(k\) cycles satisfies</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+v_G - e_G + f_G = 2.
+\end{equation*}
+</div>
+<p class="continuation">Start with a plane drawing of \(G\text{.}\) Pick any edge \(e\) that is in a cycle of \(G\text{.}\) Let \(H=G-e\) be the graph you obtain by removing the edge \(e\) (but keeping the vertices).</p>
+<ol class="lower-roman">
+<li>
+<p>What can you say about the number of cycles in the graph \(H=G-e\text{?}\)</p>
+<p>We have removed an edge that was part of one or more cycles. So the number of cycles in \(H=G-e\) is strictly smaller than \(k\text{.}\)</p>
+</li>
+<li>
+<p>What are the following values:</p>
+<div xmlns:svg="http://www.w3.org/2000/svg" class="displaymath">
+\begin{equation*}
+v_H =  \qquad \qquad e_H =  \qquad \qquad f_H =
+\end{equation*}
+</div>
+<p></p>
+</li>
+<li><p>Now complete the inductive step. </p></li>
+</ol>
+</li>
+</ol>
+<span class="incontext"><a href="exercises-28.html#p-814">in-context</a></span>
 </body>
 </html>
